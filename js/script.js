@@ -11,6 +11,38 @@ $.fn.animateRotate = function(angle, duration, easing, complete) {
     });
 };
 
+function findNode(id, currentNode) {
+    var i;
+    var currentChild;
+    var result;
+
+    console.log(currentNode['_id']);
+    if (id == currentNode['_id']) {
+        return currentNode;
+    } else {
+        
+        // Use a for loop instead of forEach to avoid nested functions
+        // Otherwise "return" will not work properly
+        // for (i = 0; i < currentNode.length; i += 1) {
+            
+        for (var node in currentNode) {
+            currentChild = currentNode[node];
+
+            // Search in the current child
+            result = findNode(id, currentChild);
+            console.log(result);
+
+            // Return the result if the node has been found
+            if (result !== false) {
+                return result;
+            }
+        }
+
+        // The node has not been found and we have no more options
+        return false;
+    }
+}
+
 var contentHTML = [ '<div class="half half-rightr">',
                         '<div class="htmlcontainer">',
                             '<div class="visible-xs centermycontentvertically nazajcontainer"><div class="centermevertically nazaj bck">Nazaj</div></div>',
@@ -76,8 +108,18 @@ function repaintMe() {
 
 function moveLeftStupid() {
     $('.half-left').animate({
-        'margin-left': '-=50%'
-    }, 500);
+        'margin-left': '-50%'
+    }, 500, function() {
+        // cleanup
+        
+        $('.half-leftr').removeClass('half-leftr');
+        $('.half-left').removeClass('half-left').addClass('half-leftr');
+        $('.half-right').removeClass('half-right').addClass('half-left');
+        $('.half-rightr').removeClass('half-rightr').addClass('half-right').next().addClass('half-rightr').removeClass('half-right');
+        
+        animating = false;
+        
+    });
 }
 function moveRightStupid() {
     $('.half-left').animate({
@@ -152,6 +194,13 @@ function moveRight() {
         animating = false;
         
     });
+    
+    currentnode = basenode;
+    breadcrumbs.splice(breadcrumbs.length - 1, 1);
+    for (var breadcrumb in breadcrumbs) {
+        currentnode = currentnode['items'][breadcrumbs[breadcrumb]];
+    }
+    
 }
 
 function moveRightContent() {
@@ -162,7 +211,7 @@ function moveRightContent() {
         'width': '50%'
     }, 500);
     
-    // move right
+    // left half animate
     $('.half-leftr').animate({
         'margin-left': '0%'
     }, 500, function() {
@@ -175,6 +224,12 @@ function moveRightContent() {
         animating = false;
         
     });
+    
+    currentnode = basenode;
+    breadcrumbs.splice(breadcrumbs.length - 1, 1);
+    for (var breadcrumb in breadcrumbs) {
+        currentnode = currentnode['items'][breadcrumbs[breadcrumb]];
+    }
 }
 
 function switchContent(id) {
@@ -249,7 +304,9 @@ function getRenderNextHalfLocal(id) {
 
 $(document).ready(function() {
     
-    repaintMe();
+    // render first node and repaint
+    
+    generateFirstNode();
     
     window.onresize = function() {
         repaintMe();
@@ -282,7 +339,8 @@ $(document).ready(function() {
 //                } else {
 //                    moveLeft([{'id': 1, 'content': 'asd'}, {'id': 2, 'content': 'asdasd'}, {'id': 3, 'content': 'nomore asd'}]);
 //                }
-                getRenderNextHalfLocal($(this).data('id'));
+                //getRenderNextHalfLocal($(this).data('id'));
+                displayNextHalfAPI($(this).data('id'));
 
             } else if ($(this).parent().hasClass('half-left')) {
                 if ($(this).children('.centermevertically').children('h1').hasClass('bck')) {
@@ -294,7 +352,7 @@ $(document).ready(function() {
                 } else {
                     $(this).siblings('.item-red').removeClass('item-red');
                     $(this).addClass('item-red');
-                    switchContent($(this).data('id'));
+                    switchContentAPI($(this).data('id'));
                     $(this).siblings().children('.centermevertically').children('h1.bck').toggleClass('fwd').toggleClass('bck');
                 }
             }
