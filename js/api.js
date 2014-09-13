@@ -1,7 +1,3 @@
-var basenode = tree['tree'][0];
-var currentnode = basenode;
-var breadcrumbs = [];
-
 function generateFirstNode() {
     for (var node in basenode['items']) {
         $('.half-right').append('<div class="item centermycontentvertically" data-id="' + node + '"><div class="centermevertically"><h1 class="fwd">' + basenode['items'][node]['name'] + '</h1></div></div>');

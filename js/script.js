@@ -302,93 +302,117 @@ function getRenderNextHalfLocal(id) {
     });
 }
 
+var tree;
+
+var basenode;
+var currentnode;
+var breadcrumbs = [];
+
 $(document).ready(function() {
     
-    // render first node and repaint
+    // get data and run everything
     
-    generateFirstNode();
+    console.log('hi, I am about to fetch the tree.');
     
-    window.onresize = function() {
-        repaintMe();
-    }
+    repaintMe();
     
-    $('#confirmcookies').on('click', function() {
-        $('.cookiewarning').animateRotate(-720, 600);//, function() {
-        $('.cookiewarning').animate({
-            'top': -150,
-            'left': -150,
-        }, 600);
-        //});
-    });
-    
-    // set event for mobile back
-    $('.container').on('click', '.nazajcontainer', function() {
-        moveRightContent();
-        $(this).parents('.half').prev().children('.item-red').removeClass('item-red').children('.centermevertically').children('h1').toggleClass('fwd').toggleClass('bck');
-    });
-    
-    // set item events
-    $('.container').on('click', '.item', function() {
-        if (!animating) {
-            animating = true;
-            if ($(this).parent().hasClass('half-right')) {
-                
-                $(this).addClass('item-red');
-//                if (Math.random() > 0.66) {
-//                    moveLeftContent(contentHTML);
-//                } else {
-//                    moveLeft([{'id': 1, 'content': 'asd'}, {'id': 2, 'content': 'asdasd'}, {'id': 3, 'content': 'nomore asd'}]);
-//                }
-                //getRenderNextHalfLocal($(this).data('id'));
-                displayNextHalfAPI($(this).data('id'));
+    $.getJSON('http://cefizeljapi.djnd.si/node/tree', function(r) {
+        
+        tree = r;
+        
+        console.log('got tree, rendering now.');
+        
+        basenode = tree['tree'][0];
+        currentnode = basenode;
 
-            } else if ($(this).parent().hasClass('half-left')) {
-                if ($(this).children('.centermevertically').children('h1').hasClass('bck')) {
+        
+        // render first node and repaint
+    
+        generateFirstNode();
 
-                    $(this).children('h1').toggleClass('fwd').toggleClass('bck');
-                    $(this).children('.centermevertically').children('h1').text($(this).children('.centermevertically').children('h1').data('text'));
-                    $(this).removeClass('item-red');
-                    moveRight();
-                } else {
-                    $(this).siblings('.item-red').removeClass('item-red');
+        window.onresize = function() {
+            repaintMe();
+        }
+
+        $('#confirmcookies').on('click', function() {
+            $('.cookiewarning').animateRotate(-720, 600);//, function() {
+            $('.cookiewarning').animate({
+                'top': -150,
+                'left': -150,
+            }, 600);
+            //});
+        });
+
+        // set event for mobile back
+        $('.container').on('click', '.nazajcontainer', function() {
+            moveRightContent();
+            $(this).parents('.half').prev().children('.item-red').removeClass('item-red').children('.centermevertically').children('h1').toggleClass('fwd').toggleClass('bck');
+        });
+
+        // set item events
+        $('.container').on('click', '.item', function() {
+            if (!animating) {
+                animating = true;
+                if ($(this).parent().hasClass('half-right')) {
+
                     $(this).addClass('item-red');
-                    switchContentAPI($(this).data('id'));
-                    $(this).siblings().children('.centermevertically').children('h1.bck').toggleClass('fwd').toggleClass('bck');
-                }
-            }
+        //                if (Math.random() > 0.66) {
+        //                    moveLeftContent(contentHTML);
+        //                } else {
+        //                    moveLeft([{'id': 1, 'content': 'asd'}, {'id': 2, 'content': 'asdasd'}, {'id': 3, 'content': 'nomore asd'}]);
+        //                }
+                    //getRenderNextHalfLocal($(this).data('id'));
+                    displayNextHalfAPI($(this).data('id'));
 
-            $(this).children('.centermevertically').children('h1').toggleClass('fwd').toggleClass('bck');
-        }
-    });
-    
-    // set item-red hover events
-    $('.container').on({
-        'mouseenter': function() {
-            $(this).children('.centermevertically').children('h1').data('text', $(this).children('.centermevertically').children('h1').text()).text('nazaj');
-        }, 
-        'mouseleave': function() {
-            $(this).children('.centermevertically').children('h1').text($(this).children('.centermevertically').children('h1').data('text'));
-        }
-    }, '.item-red');
-    
-    // set tab events
-    $('.container').on('click', '.tab', function() {
-        if (!$(this).hasClass('open')) {
-            $(this).siblings().toggleClass('open');
-            $(this).toggleClass('open');
-            
-            $(this).parent().next().children('div').toggleClass('open');
-        }
-    });
-    
-    // confirm cookies
-    $('#confirmcookies').on('click', function() {
-        updateConsent();
-    });
-    
-    // get cookie info
-    $('#getinfoaboutcookies').on('click', function() {
-        window.open('http://danesjenovdan.si/piskotki/'); // TODO
+                } else if ($(this).parent().hasClass('half-left')) {
+                    if ($(this).children('.centermevertically').children('h1').hasClass('bck')) {
+
+                        $(this).children('h1').toggleClass('fwd').toggleClass('bck');
+                        $(this).children('.centermevertically').children('h1').text($(this).children('.centermevertically').children('h1').data('text'));
+                        $(this).removeClass('item-red');
+                        moveRight();
+                    } else {
+                        $(this).siblings('.item-red').removeClass('item-red');
+                        $(this).addClass('item-red');
+                        switchContentAPI($(this).data('id'));
+                        $(this).siblings().children('.centermevertically').children('h1.bck').toggleClass('fwd').toggleClass('bck');
+                    }
+                }
+
+                $(this).children('.centermevertically').children('h1').toggleClass('fwd').toggleClass('bck');
+            }
+        });
+
+        // set item-red hover events
+        $('.container').on({
+            'mouseenter': function() {
+                $(this).children('.centermevertically').children('h1').data('text', $(this).children('.centermevertically').children('h1').text()).text('nazaj');
+            }, 
+            'mouseleave': function() {
+                $(this).children('.centermevertically').children('h1').text($(this).children('.centermevertically').children('h1').data('text'));
+            }
+        }, '.item-red');
+
+        // set tab events
+        $('.container').on('click', '.tab', function() {
+            if (!$(this).hasClass('open')) {
+                $(this).siblings().toggleClass('open');
+                $(this).toggleClass('open');
+
+                $(this).parent().next().children('div').toggleClass('open');
+            }
+        });
+
+        // confirm cookies
+        $('#confirmcookies').on('click', function() {
+            updateConsent();
+        });
+
+        // get cookie info
+        $('#getinfoaboutcookies').on('click', function() {
+            window.open('http://danesjenovdan.si/piskotki/'); // TODO
+        }); 
+        
     });
     
 });
