@@ -318,6 +318,8 @@ $(document).ready(function() {
     
     $.getJSON('http://cefizeljapi.djnd.si/node/tree', function(r) {
         
+        $('.spinner').hide();
+        
         tree = r;
         
         console.log('got tree, rendering now.');
