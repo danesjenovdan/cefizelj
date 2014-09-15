@@ -16,6 +16,8 @@
         <meta property="og:description" content="Cefizelj opis">
         <meta property="og:image" content="./img/og_kultorg.png">
 
+        <!-- Twitter card tags -->
+        
         <!-- Normalise.css -->
         <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet" type="text/css">
 
@@ -31,56 +33,45 @@
         <link href="fonts/fonts.css" rel="stylesheet" type="text/css">
 
         <!-- CSS -->
-        <link href="css/perfect-scrollbar.min.css" type="text/css">
         <link href="css/style.css" rel="stylesheet" type="text/css">
         
-        <!-- jQuery -->
+        <!-- jQuery + fallback -->
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js">\x3C/script>')</script>
         
-        <!-- JS -->
+        <!-- JS TODO -->
         <script type="text/javascript" src="js/jquery.cookie.js"></script>
-        <script type="text/javascript" src="js/content.js"></script>
+        <script type="text/javascript" src="js/animaterotate.js"></script>
+        <script type="text/javascript" src="js/templates.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
-        <script type="text/javascript" src="js/nsa.js"></script>
-        <script type="text/javascript" src="js/api.js"></script>
+<!--        <script type="text/javascript" src="js/nsa.js"></script>-->
+        <script type="text/javascript" src="js/svgcheckbx.js"></script>
     </head>
     
     <body>
+        
+        <!-- cookie warning -->
         <div class="cookiewarning">
             <p class="cookietext">Soglašam z<br>uporabo piškotkov.</p>
             <div id="confirmcookies" class="cookieoption"><div class="cookieok"></div>V&nbsp;redu</div>
             <div id="getinfoaboutcookies" class="cookieoption"><div class="cookiemoreinfo"></div>Želim&nbsp;več informacij</div>
         </div>
+        <!-- end cookie warning -->
+        
         <div class="container">
+            
             <div class="half half-left bck-red border-red centermycontentvertically">
                 <div class="centermevertically">
                     <h1 class="col-black">Spremenil/-a bom<br>kulturno dogajanje!</h1>
                     <h2 class="col-grey">vodič je pripravil<br>Bunker</h2>
                 </div>
             </div>
-            <div class="half half-right">
-                
+            
+            <div class="half half-right">      
                 <div class="spinner"></div>
-                
-<!--
-                <div class="item centermycontentvertically" data-id="1">
-                    <div class="centermevertically">
-                        <h1 class="fwd">Želim delovati sam/-a</h1>
-                    </div>
-                </div>
-                <div class="item centermycontentvertically" data-id="2">
-                    <div class="centermevertically">
-                        <h1 class="fwd">Želim se organizirati v skupini</h1>
-                    </div>
-                </div>
--->
             </div>
         </div>
         
-        
-        <!-- fancy checkboxes js -->
-        <script type="text/javascript" src="js/svgcheckbx.js"></script>
     </body>
         
 </html>
