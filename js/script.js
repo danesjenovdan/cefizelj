@@ -162,7 +162,6 @@ function displayNextHalfAPI(target) {
     
     moveLeftStupid();
     
-//    repaintMe(); TODO seems redundant
 }
 
 // move right
@@ -280,7 +279,7 @@ $(document).ready(function() {
     // first, repaint
     repaintMe();
     
-    // get tree and ... TODO
+    // get tree and start app
     getTree(startapp);
     
     // set onresize events
@@ -308,7 +307,6 @@ $(document).ready(function() {
                 .prev()
                     .children('.item-red')
                         .removeClass('item-red') // previous selected remove red
-                        // todo stretch back to half
                         .children('.centermevertically') // toggle fwd/bck
                             .children('h1')
                             .toggleClass('fwd')
