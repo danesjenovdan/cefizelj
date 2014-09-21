@@ -591,3 +591,11 @@ a {
         padding-top: 75px;
     }
 }
+
+/* naprej hack TODO */
+.naprejprosim {
+    background: red;
+    height: 100px;
+    color: black;
+    cursor: pointer;
+}

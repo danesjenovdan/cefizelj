@@ -136,8 +136,12 @@ function renderNext(targetnode) {
     
     } else {
         
+        var content = targetnode['items'][0]['content'];
+        var _id = targetnode['items'][0]['_id'];
+        
         // render content TODO
-        alert('content');
+        $('.half-right')
+            .after(createContentHalf('<div class="half half-rightr">', content, _id));
 //        $('.half-right')
 //            .after(createContentHalf('<div class=half half-rightr">', target['content']));
         
@@ -172,6 +176,13 @@ function createListHalf(firstdiv, items) {
     });
     
     result = result + '</div>';
+    
+    return result;
+}
+
+// create content half
+function createContentHalf(firstdiv, content, _id) {
+    var result = firstdiv + '<div class="contentcontainer" data-id="0">' + content + '</div></div>';
     
     return result;
 }
@@ -353,5 +364,20 @@ $(document).ready(function() {
     $('#getinfoaboutcookies').on('click', function() {
         window.open('http://danesjenovdan.si/piskotki/'); // TODO
     }); 
+    
+    // naprejprosim hack TODO
+    $('.container').on('click', '.naprejprosim', function() {
+        
+        if ($(this).hasClass('bck')) {
+            
+            moveRight();
+            
+        } else {
+            // display next half
+            displayNextHalfAPI($(this).parent().data('id'));
+            $(this).addClass('bck');
+        }
+        
+    });
     
 });
