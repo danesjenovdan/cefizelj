@@ -45,7 +45,7 @@ var contentHTML = [ '<div class="half half-rightr">',
 
 var itemHTML = ['<div class="item centermycontentvertically" data-id="{{ id }}">',
                     '<div class="centermevertically">',
-                        '<h1 class="fwd">{{ itemcontent }}</h1>',
+                        '<h1 class="fwd" data-text="{{ itemcontent }}">{{ itemcontent }}</h1>',
                     '</div>',
                 '</div>'].join('\n');
 

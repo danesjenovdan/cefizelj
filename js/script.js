@@ -44,7 +44,7 @@ function generateFirstNode() {
         $('.half-right')
             .append(itemHTML
                     .replace('{{ id }}', node)
-                    .replace('{{ itemcontent }}', basenode['items'][node]['name'])
+                    .replace(/{{ itemcontent }}/g, basenode['items'][node]['name'])
             );
     }
     
@@ -170,9 +170,8 @@ function createListHalf(firstdiv, items) {
     
     $.each(items, function(i, e) {
         result = result + itemHTML
-                            .replace('{{ itemcontent }}', e['name'])
+                            .replace(/{{ itemcontent }}/g, e['name'])
                             .replace('{{ id }}', i)
-                            .replace('{{ itemsubtitle }}', ''); // add subtitle TODO
     });
     
     result = result + '</div>';
@@ -312,19 +311,14 @@ $(document).ready(function() {
         }
     });
     
-    // set item-red hover events TODO CAN BE OPTIMISED
+    // set item-red hover events
     $('.container').on({
         'mouseenter': function() {
             
             $(this)
                 .children('.centermevertically')
                     .children('h1')
-                    .data('text', $(this) // save text for later
-                                    .children('.centermevertically')
-                                        .children('h1')
-                                            .text()
-                         )
-                    .text('nazaj'); // set text to nazaj
+                        .text('nazaj'); // set text to nazaj
         }, 
         'mouseleave': function() {
             $(this)
