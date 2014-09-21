@@ -1,0 +1,9 @@
+{
+    "name": "cefizelj",
+    "version": "0.0.1",
+    "dependencies": {
+        "jquery": "~2.1.1",
+        "jquery-cookie": "~1.4.1"
+    },
+    "private": true
+}
