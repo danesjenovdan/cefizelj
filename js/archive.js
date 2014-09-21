@@ -250,3 +250,68 @@ function getRenderNextHalfLocal(id) {
         }
     });
 }
+
+//////////////////////////////////////////////
+//////////// SWITCH CONTENT SETUP ////////////
+//////////////////////////////////////////////
+
+// on click
+// click was on a back button
+if ($(this).children('.centermevertically').children('h1').hasClass('bck')) {
+    // move back
+} else {
+    $(this).siblings('.item-red').removeClass('item-red');
+        $(this).addClass('item-red');
+        switchContentAPI($(this).data('id'));
+        $(this)
+            .siblings()
+                .children('.centermevertically')
+                    .children('h1.bck')
+                    .toggleClass('fwd')
+                    .toggleClass('bck');
+}
+
+// switch content
+function switchContentAPI(target) {
+    $('.half-right').remove();
+    
+    currentnode = basenode;
+    breadcrumbs.splice(breadcrumbs.length - 1, 1);
+    for (var breadcrumb in breadcrumbs) {
+        currentnode = currentnode['items'][breadcrumbs[breadcrumb]];
+    }
+    
+    breadcrumbs[breadcrumbs.length] = target;
+    
+    renderNow(currentnode['items'][target]);
+    
+    currentnode = currentnode['items'][target];
+    
+    repaintMe();
+    
+    animating = false;
+    
+}
+
+// probably redundant
+function renderNow(targetnode) {
+    
+    // if targetnode is menu -> probably wrong TODO
+    if (targetnode['type'] === 'menu') {
+    
+        var items = targetnode['items']
+        
+        // render list
+        $('.half-left')
+            .after(createListHalf('<div class="half half-right">', items));
+    
+    } else {
+        
+        // rendercontent
+        alert('content');
+//        $('.half-right').after(createContentHalf('<div class=half half-rightr">', target['content']));
+            
+    }
+    
+    repaintRightr();
+}

@@ -7,7 +7,23 @@ function updateVictim(id, name, lastname, email, fbid) {
 		'fbid': fbid
 	}, function(r) {
 		console.log(r);
-	})
+	});
+}
+
+function checkVictim(id) {
+    $.post('http://djapi.danesjenovdan.si/nsa/checkvictim', {
+		'id': id
+	}, function(r) {
+		if (r != 1) {
+            $.removeCookie('djndid', {path: '/'});
+            $.removeCookie('dolzniCart', {path: '/'});
+            $.removeCookie('djndconsent', {path: '/'});
+            
+            $.post('http://djapi.danesjenovdan.si/nsa/createanonvictim', function(r) {
+                $.cookie('djndid', r, { 'expires': 730, 'path': '/'});
+            });
+        }
+	});
 }
 
 function getCurrentID() {
@@ -23,26 +39,39 @@ function getConsent() {
 }
 
 function updateConsent() {
-    if (!getConsent()) {
+    if (getConsent() != 1) {
         $.cookie('djndconsent', 1, {'expires': 730, 'path': '/'});
     }
 }
 
 $(document).ready(function() {
+    // check for broken victim
+    checkVictim($.cookie('djndid'));
+    
 	// check for cookie
 	if ($.cookie('djndid')) {
 		// old acquaintance
-		
-		// should probably check for items in basket
+		// hide the warning
+        if (getConsent() == 1) {
+            $('.cookiewarning').css('display', 'none');
+        }
 		
 	} else {
 		// first time user
 		$.post('http://djapi.danesjenovdan.si/nsa/createanonvictim', function(r) {
-			$.cookie('djndid', r, {'expires': 730, 'path': '/'});
+			$.cookie('djndid', r, { 'expires': 730, 'path': '/'});
 		});
 	}
     
-    if (getConsent() === 1) {
-        $('.cookiewarning').hide();
-    }
 });
+
+
+// EXAMPLE USE
+//    // agree with cookies
+//    $('.confirmcookies').on('click', function() {
+//        updateConsent();
+//    });
+//    // get more info about cookies
+//    $('.cookiemoreinfo').on('click', function() {
+//        window.open('http://danesjenovdan.si/piskotki/', '_blank');
+//    });

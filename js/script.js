@@ -12,8 +12,11 @@ function repaintMe() {
     
     $('.container').width($(window).width()).height($(window).height());
     
-    $('.item').each(function(i, e) {
+    $('.item').not('.stretched, .shrunk').each(function(i, e) {
         $(e).height($(e).parent().height() / $(e).parent().children('.item').length);
+    });
+    $('.stretched').each(function(i, e) {
+        $(e).height($(e).parent().height());
     });
 }
 
@@ -173,59 +176,19 @@ function createListHalf(firstdiv, items) {
     return result;
 }
 
-// switch content - probably redundant
-function switchContentAPI(target) {
-    $('.half-right').remove();
-    
-    currentnode = basenode;
-    breadcrumbs.splice(breadcrumbs.length - 1, 1);
-    for (var breadcrumb in breadcrumbs) {
-        currentnode = currentnode['items'][breadcrumbs[breadcrumb]];
-    }
-    
-    breadcrumbs[breadcrumbs.length] = target;
-    
-    renderNow(currentnode['items'][target]);
-    
-    currentnode = currentnode['items'][target];
-    
-    repaintMe();
-    
-    animating = false;
-    
-}
-
-// probably redundant - switchContentAPI legacy TODO
-function renderNow(targetnode) {
-    
-    // if targetnode is menu -> probably wrong TODO
-    if (targetnode['type'] === 'menu') {
-    
-        var items = targetnode['items']
-        
-        // render list
-        $('.half-left')
-            .after(createListHalf('<div class="half half-right">', items));
-    
-    } else {
-        
-        // rendercontent
-        alert('content');
-//        $('.half-right').after(createContentHalf('<div class=half half-rightr">', target['content']));
-            
-    }
-    
-    repaintRightr();
-}
-
 // stretch item
 function stretchItem(item) {
-    item.animate({
-        height: item.parent().height()
-    }, 300);
-    item.siblings().animate({
-        height: 0
-    }, 300);
+    item
+        .addClass('stretched')
+        .animate({
+            height: item.parent().height()
+        }, 300);
+    item
+        .siblings()
+            .addClass('shrunk')
+            .animate({
+                height: 0
+            }, 300);
 }
 
 // shrink item
@@ -254,16 +217,6 @@ $(document).ready(function() {
     window.onresize = function() {
         repaintMe();
     }
-    
-    // set confirmcookies event TODO make it permanent
-    $('#confirmcookies').on('click', function() {
-        $('.cookiewarning').animateRotate(-720, 600);//, function() {
-        $('.cookiewarning').animate({
-            'top': -150,
-            'left': -150,
-        }, 600);
-        //});
-    });
     
     // set event for mobile back
     $('.container').on('click', '.nazajcontainer', function() {
@@ -306,45 +259,37 @@ $(document).ready(function() {
                     displayNextHalfAPI(_this.data('id'));
                 
                 }, 300);
-                
-                
-
             
             // the click happened on the left-hand side
             } else if ($(this).parent().hasClass('half-left')) {
                 
-                // click was on a back button TODO redundant soon
-                if ($(this).children('.centermevertically').children('h1').hasClass('bck')) {
+                // change text from nazaj to whatever it's supposed to be
+                $(this)
+                    .removeClass('stretched')
+                    .children('.centermevertically')
+                    .children('h1')
+                        .text($(this)
+                                .children('.centermevertically')
+                                    .children('h1')
+                                    .data('text')
+                             );
+                
+                $(this)
+                    .siblings()
+                        .removeClass('shrunk');
+
+                // remove class red from clicked element
+                $(this).removeClass('item-red');
+
+                moveRight();
+                var _this = $(this);
+                window.setTimeout(function() {
+
+                    // shrink item
+                    shrinkItem(_this);
+
+                }, 400);
                     
-                    // change text from nazaj to whatever it's supposed to be
-                    $(this)
-                        .children('.centermevertically')
-                        .children('h1')
-                            .text($(this)
-                                    .children('.centermevertically')
-                                        .children('h1')
-                                        .data('text')
-                                 );
-                    
-                    // remove class red from clicked element
-                    $(this).removeClass('item-red');
-                    
-                    moveRight();
-                    var _this = $(this);
-                    window.setTimeout(function() {
-                    
-                        // shrink item
-                        shrinkItem(_this);
-                        
-                    }, 400);
-                    
-                // this whole thing will become redundant
-                } else {
-                    $(this).siblings('.item-red').removeClass('item-red');
-                    $(this).addClass('item-red');
-                    switchContentAPI($(this).data('id'));
-                    $(this).siblings().children('.centermevertically').children('h1.bck').toggleClass('fwd').toggleClass('bck');
-                }
             } // end of left-right if
 
             // switch fwd/bck classes
@@ -391,9 +336,17 @@ $(document).ready(function() {
         }
     });
     
-    // confirm cookies TODO
+    // confirm cookies
     $('#confirmcookies').on('click', function() {
+        
         updateConsent();
+        
+        $('.cookiewarning').animateRotate(-720, 600);
+        
+        $('.cookiewarning').animate({
+            'top': -150,
+            'left': -150,
+        }, 600);
     });
 
     // get cookie info
