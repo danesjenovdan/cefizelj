@@ -84,24 +84,17 @@ function startapp() {
     
 }
 
-// move content right (back / nazaj)
-function moveRightContent() {
+// move right
+function moveRight() {
     
-    // right half animate
-    $('.half-right').animate({
-        'margin-left': '0%',
-        'width': '50%'
-    }, 500);
-    
-    // left half animate
+    // move right
     $('.half-leftr').animate({
         'margin-left': '0%'
     }, 500, function() {
+        //cleanup
         
-        //cleanup - remove hidden
         $('.half-right').remove();
         
-        // update classes
         $('.half-left')
             .removeClass('half-left')
             .addClass('half-right')
@@ -119,12 +112,12 @@ function moveRightContent() {
         
     });
     
-    // update position
     currentnode = basenode;
     breadcrumbs.splice(breadcrumbs.length - 1, 1);
     for (var breadcrumb in breadcrumbs) {
         currentnode = currentnode['items'][breadcrumbs[breadcrumb]];
     }
+    
 }
 
 // render next half
@@ -163,31 +156,6 @@ function displayNextHalfAPI(target) {
     moveLeftStupid();
     
 }
-
-// move right
-function moveRight() {
-    
-    // move right
-    $('.half-leftr').animate({
-        'margin-left': '0%'
-    }, 500, function() {
-        //cleanup
-        
-        $('.half-right').remove();
-        $('.half-left').removeClass('half-left').addClass('half-right').children('h1').removeClass('bck').addClass('fwd');
-        $('.half-leftr').removeClass('half-leftr').addClass('half-left').prev().addClass('half-leftr');
-        
-        animating = false;
-        
-    });
-    
-    currentnode = basenode;
-    breadcrumbs.splice(breadcrumbs.length - 1, 1);
-    for (var breadcrumb in breadcrumbs) {
-        currentnode = currentnode['items'][breadcrumbs[breadcrumb]];
-    }
-    
-} // TODO compare with moverightcontent
 
 // create list half
 function createListHalf(firstdiv, items) {
@@ -300,7 +268,7 @@ $(document).ready(function() {
     // set event for mobile back
     $('.container').on('click', '.nazajcontainer', function() {
         
-        moveRightContent();
+        moveRight();
         
         $(this)
             .parents('.half')

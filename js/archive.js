@@ -1,3 +1,47 @@
+// move content right (back / nazaj)
+function moveRightContent() {
+    
+    // right half animate
+    $('.half-right').animate({
+        'margin-left': '0%',
+        'width': '50%'
+    }, 500);
+    
+    // left half animate
+    $('.half-leftr').animate({
+        'margin-left': '0%'
+    }, 500, function() {
+        
+        //cleanup - remove hidden
+        $('.half-right').remove();
+        
+        // update classes
+        $('.half-left')
+            .removeClass('half-left')
+            .addClass('half-right')
+            .children('h1')
+                .removeClass('bck')
+                .addClass('fwd');
+        
+        $('.half-leftr')
+            .removeClass('half-leftr')
+            .addClass('half-left')
+            .prev()
+                .addClass('half-leftr');
+        
+        animating = false;
+        
+    });
+    
+    // update position
+    currentnode = basenode;
+    breadcrumbs.splice(breadcrumbs.length - 1, 1);
+    for (var breadcrumb in breadcrumbs) {
+        currentnode = currentnode['items'][breadcrumbs[breadcrumb]];
+    }
+}
+
+
 function repaintMe() {
     
     $('.container').width($(window).width()).height($(window).height());
