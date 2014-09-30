@@ -357,6 +357,13 @@ $(document).ready(function() {
     // get cookie info
     $('#getinfoaboutcookies').on('click', function() {
         window.open('http://danesjenovdan.si/piskotki/'); // TODO
+        
+        $('.cookiewarning').animateRotate(-720, 600);
+        
+        $('.cookiewarning').animate({
+            'top': -150,
+            'left': -150,
+        }, 600);
     }); 
     
     // naprejprosim hack TODO
