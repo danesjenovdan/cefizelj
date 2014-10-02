@@ -20,6 +20,30 @@ function repaintMe() {
     });
 }
 
+// parse HTML and transform
+function pageParser(content) {
+    // update html on save
+    // ul
+    content = content.replace(/<ul>/g, '<form class="ac-custom" autocomplete="off">\n<ul class="parsed">');
+    // /ul
+    content = content.replace(/<\/ul>/g, '</ul>\n</form>');
+    // ol
+    content = content.replace(/<ol>/g, '<form class="ac-custom ac-list" autocomplete="off">\n<ul class="parsed">');
+    // /ol
+    content = content.replace(/<\/ol>/g, '</ul>\n</form>');
+
+    // parse li and increment
+    var n = 0;
+    content = content.replace(/<li>/g, function (m, p1) {
+        return '<li><input id="list' + (++n).toString() + '" name="list' + n.toString() + '" type="checkbox"><label for="list' + n.toString() + '"><p>';
+    });
+
+    // parse /li
+    content = content.replace(/<\/li>/g, '</p><svg viewBox="0 0 300 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"></svg></label></li>');
+    
+    return content;
+}
+
 // repaint rightr
 function repaintRightr() {
     $('.half-rightr .item').each(function(i, e) {
@@ -142,6 +166,7 @@ function renderNext(targetnode) {
         // render content TODO
         $('.half-right')
             .after(createContentHalf('<div class="half half-rightr">', content, _id));
+        makeCheckList();
 //        $('.half-right')
 //            .after(createContentHalf('<div class=half half-rightr">', target['content']));
         
@@ -181,7 +206,7 @@ function createListHalf(firstdiv, items) {
 
 // create content half
 function createContentHalf(firstdiv, content, _id) {
-    var result = firstdiv + '<div class="contentcontainer" data-id="0">' + content + '</div></div>';
+    var result = firstdiv + '<div class="htmlcontainer" data-id="0">' + pageParser(content) + '</div></div>';
     
     return result;
 }
