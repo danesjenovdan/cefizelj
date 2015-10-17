@@ -1,7 +1,7 @@
 // initialise variables
 var animating = false;
 
-var tree;
+//var tree; HACK FOR PROTOTYPE
 
 var basenode;
 var currentnode;
@@ -54,12 +54,12 @@ function repaintRightr() {
 // api tree getter
 function getTree(callback) {
     console.log('hi, I am about to fetch the tree.');
-    $.getJSON('http://cefizeljapi.djnd.si/node/tree', function(r) {
-        
-        tree = r;
-        
-        callback();
-    });
+//    $.getJSON('http://cefizeljapi.djnd.si/node/tree', function(r) { HACK FOR PROTOTYPE
+//         HACK FOR PROTOTYPE
+//        tree = r; HACK FOR PROTOTYPE
+//        
+//        callback(); HACK FOR PROTOTYPE
+//    });
 }
 
 // generate first node
@@ -246,7 +246,8 @@ $(document).ready(function() {
     repaintMe();
     
     // get tree and start app
-    getTree(startapp);
+//    getTree(startapp); HACK FOR PROTOTYPE
+    startapp();
     
     // set onresize events
     window.onresize = function() {

@@ -1,4 +1,4 @@
-var tree2 = {
+var tree = {
   "tree": [
     {
       "_id": "53fd8435ed9308573d21db36",
