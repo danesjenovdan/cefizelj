@@ -1,0 +1,27 @@
+{
+  "name": "cefizelj",
+  "title": "Cefizelj",
+  "description": "Cefizelj tool za pedre.",
+  "version": "0.1.0",
+  "homepage": "http://danesjenovdan.si/cefizelj",
+  "author": {
+    "name": "Danes je nov dan, inštitut za druga vprašanja",
+    "email": "filip@danesjenovdan.si",
+    "url": "http://danesjenovdan.si"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danesjenovdan/cefizelj.git"
+  },
+  "bugs": "https://github.com/danesjenovdan/cefizelj/issues",
+  "licenses": [
+    {
+      "type": "WTFPL",
+      "url": "http://danesjenovdan.si/cefizelj/blob/master/LICENSE-WTFPL"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}
