@@ -444,6 +444,9 @@ $(document).ready(function() {
 
   });
 
+  // generate social buttons
+  generateSocial();
+
   // go to node
   if (document.location.href.indexOf('#') > -1) {
     window.setTimeout(function() {
