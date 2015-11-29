@@ -7,6 +7,32 @@ var basenode;
 var currentnode;
 var breadcrumbs = [];
 
+// make step
+function makeStep(step, index) {
+  window.setTimeout(function() {
+    $($('.half-right').children()[step]).click();
+  }, 900 * index);
+}
+
+// go to link
+function goToNode() {
+  var steps = document.location.href.split('#');
+  steps.splice(0, 1);
+
+  console.log('steps processed: ' + steps);
+
+  window.history.pushState('object or string', 'home', document.location.href.split('#')[0]);
+
+  for (var i = 0; i < steps.length; i++) {
+
+    var step = steps[i];
+    var index = i;
+
+    makeStep(step, index);
+
+  }
+}
+
 // repaint screen
 function repaintMe() {
 
@@ -113,6 +139,8 @@ function startapp() {
 // move right
 function moveRight() {
 
+  window.history.pushState('object or string', 'back', document.location.href.substring(0, document.location.href.length - 2));
+
   // move right
   $('.half-leftr').animate({
     'margin-left': '0%'
@@ -184,6 +212,8 @@ function displayNextHalfAPI(target) {
   currentnode = currentnode['items'][target];
 
   moveLeftStupid();
+
+  window.history.pushState('object or string', target, document.location.href + '#' + target);
 
 }
 
@@ -292,7 +322,7 @@ $(document).ready(function() {
         // if ($(window).width() < 768 && $('.half-rightr').hasClass('half-content')) {
         //   alert('ping');
         // } else {
-          stretchItem($(this));
+        stretchItem($(this));
         // }
 
         var _this = $(this)
@@ -413,5 +443,12 @@ $(document).ready(function() {
     }
 
   });
+
+  // go to node
+  if (document.location.href.indexOf('#') > -1) {
+    window.setTimeout(function() {
+      goToNode();
+    }, 500);
+  }
 
 });
