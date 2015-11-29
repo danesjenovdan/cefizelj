@@ -133,7 +133,7 @@ var gaytree = {
             'title': 'Sem gibalno oviran/-a.',
             'name': 'Sem gibalno oviran/-a.',
             'type': 'page',
-            'content': '<div class="htmlcontainer"> <div class="visible-xs centermycontentvertically nazajcontainer"> <div class="centermevertically nazaj bck">Nazaj</div></div><h1>Kako lahko glasujem?</h1> <h2>Glasujem lahko po pošti.</h2> <p>1. <a href="http://www.dvk-rs.si/files/files/Obr06_glasovanje_na_voliscu_dostopno_invalidom.pdf" target="_blank">Namero (link)</a> posredujem državni volilni komisiji do <strong>16.12. (Državna volilna komisija mora obvestilo volivca prejeti najkasneje 3 (tri) dni pred glasovanjem.</strong> </p><ul> <li>po e-pošti (skenirano zaradi podpisa) na e-naslov gp.dvk@dvk-rs.si </li><li>po faksu na številko: 00386 143 31 269 </li><li>na naslov: Državna volilna komisija, Slovenska cesta 54, SI-1000 Ljubljana, Slovenija </li></ul></div>',
+            'content': '<div class="htmlcontainer"> <div class="visible-xs centermycontentvertically nazajcontainer"> <div class="centermevertically nazaj bck">Nazaj</div></div><h1>Kako lahko glasujem?</h1> <h2>Glasujem lahko po pošti.</h2> <p>1. <a href="http://www.dvk-rs.si/files/files/Obr06_glasovanje_na_voliscu_dostopno_invalidom.pdf" target="_blank">Namero (link)</a> posredujem državni volilni komisiji do <strong>16.12. (Državna volilna komisija mora obvestilo volivca prejeti najkasneje 3 (tri) dni pred glasovanjem.)</strong> </p><ul> <li>po e-pošti (skenirano zaradi podpisa) na e-naslov gp.dvk@dvk-rs.si </li><li>po faksu na številko: 00386 143 31 269 </li><li>na naslov: Državna volilna komisija, Slovenska cesta 54, SI-1000 Ljubljana, Slovenija </li></ul></div>',
             'items': []
           }]
         }, {
@@ -146,7 +146,7 @@ var gaytree = {
             'title': 'Sem senzorno oviran/-a.',
             'name': 'Sem senzorno oviran/-a.',
             'type': 'page',
-            'content': '<div class="htmlcontainer"> <div class="visible-xs centermycontentvertically nazajcontainer"> <div class="centermevertically nazaj bck">Nazaj</div></div><h1>Kako lahko glasujem?</h1> <h2>Glasujem lahko po pošti.</h2> <p>1. <a href="http://www.dvk-rs.si/files/files/Obr06_glasovanje_na_voliscu_dostopno_invalidom.pdf" target="_blank">Namero (link)</a> posredujem državni volilni komisiji do <strong>16.12. (Državna volilna komisija mora obvestilo volivca prejeti najkasneje 3 (tri) dni pred glasovanjem.</strong> </p><ul> <li>po e-pošti (skenirano zaradi podpisa) na e-naslov gp.dvk@dvk-rs.si </li><li>po faksu na številko: 00386 143 31 269 </li><li>na naslov: Državna volilna komisija, Slovenska cesta 54, SI-1000 Ljubljana, Slovenija </li></ul></div>',
+            'content': '<div class="htmlcontainer"> <div class="visible-xs centermycontentvertically nazajcontainer"> <div class="centermevertically nazaj bck">Nazaj</div></div><h1>Kako lahko glasujem?</h1> <h2>Glasujem lahko po pošti.</h2> <p>1. <a href="http://www.dvk-rs.si/files/files/Obr06_glasovanje_na_voliscu_dostopno_invalidom.pdf" target="_blank">Namero (link)</a> posredujem državni volilni komisiji do <strong>16.12. (Državna volilna komisija mora obvestilo volivca prejeti najkasneje 3 (tri) dni pred glasovanjem.)</strong> </p><ul> <li>po e-pošti (skenirano zaradi podpisa) na e-naslov gp.dvk@dvk-rs.si </li><li>po faksu na številko: 00386 143 31 269 </li><li>na naslov: Državna volilna komisija, Slovenska cesta 54, SI-1000 Ljubljana, Slovenija </li></ul></div>',
             'items': []
           }]
         }]
