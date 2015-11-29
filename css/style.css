@@ -802,6 +802,16 @@ a {
 
 /* share stuff */
 
+.share-instructions {
+    color: #000000;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 30px;
+    margin-right: 10px;
+    font-family: 'Titillium Web';
+    font-weight: 700;
+}
+
 .circle {
     background-color: #b0003f;
     height: 30px;

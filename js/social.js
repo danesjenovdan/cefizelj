@@ -19,4 +19,23 @@ function generateSocial() {
         return false;
     });
 
+    $('.container').on('click', '.fb-all', function() {
+        url = 'https://www.facebook.com/dialog/share?app_id=301375193309601&display=popup&href=' + encodeURIComponent(document.location.href.split('#')[0]) + '&redirect_uri=' + encodeURIComponent(document.location.href.split('#')[0]) + '&ref=responsive';
+        window.open(url, '_blank');
+        return false;
+    });
+
+    $('.container').on('click', '.tw-all', function () {
+
+        url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent('Smernice za vse, ki ne morejo glasovati na običajen način.' + document.location.href.split('#')[0]);
+        window.open(url, '_blank');
+        return false;
+    });
+
+    $('.container').on('click', '.email-all', function() {
+        url = 'mailto:?subject=Smernice za vse, ki ne morejo glasovati na običajen način.&body=' + document.location.href.split('#')[0];
+        window.open(url, '_blank');
+        return false;
+    });
+
 }
