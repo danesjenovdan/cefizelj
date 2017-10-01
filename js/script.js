@@ -375,24 +375,24 @@ $(document).ready(function() {
   });
 
   // set item-red hover events
-  $('.container').on({
-    'mouseenter': function() {
+  // $('.container').on({
+  //   'mouseenter': function() {
 
-      $(this)
-        .children('.centermevertically')
-        .children('h1')
-        .text('Nazaj'); // set text to nazaj
-    },
-    'mouseleave': function() {
-      $(this)
-        .children('.centermevertically')
-        .children('h1')
-        .text($(this)
-          .children('.centermevertically')
-          .children('h1')
-          .data('text'));
-    }
-  }, '.item-red');
+  //     $(this)
+  //       .children('.centermevertically')
+  //       .children('h1')
+  //       .text('Nazaj'); // set text to nazaj
+  //   },
+  //   'mouseleave': function() {
+  //     $(this)
+  //       .children('.centermevertically')
+  //       .children('h1')
+  //       .text($(this)
+  //         .children('.centermevertically')
+  //         .children('h1')
+  //         .data('text'));
+  //   }
+  // }, '.item-red');
 
   // set tab events TODO
   $('.container').on('click', '.tab', function() {

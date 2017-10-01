@@ -45,12 +45,12 @@ a {
 }
 
 .bck-red {
-    background-color: #b0003f;
+    background-color: #DD786B;
     /* #de786b; */
 }
 
 .col-red {
-    color: #b0003f;
+    color: #DD786B;
     /* #de786b; */
 }
 
@@ -228,9 +228,9 @@ a {
     width: 100%;
     height: auto;
     cursor: pointer;
-    background-color: #b0003f;
+    background-color: #DD786B;
     box-shadow: inset 0 0 0 1px #f6f6f6;
-    color: #ffffff;
+    color: #333333;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -239,14 +239,14 @@ a {
 }
 
 .item:hover {
-    background-color: #920135;
+    background-color: rgb(203, 110, 98);
     box-shadow: inset 0 0 0 1px #f6f6f6;
-    color: #ffffff;
+    color: #333333;
 }
 
 .item-red {
-    background-color: #920135;
-    color: #ffffff;
+    background-color: #DD786B;
+    color: #333333;
     box-shadow: inset 0 0 0 1px #f6f6f6;
 }
 
@@ -258,7 +258,7 @@ a {
 }
 
 .fwd:after {
-    content: '';
+    /* content: ''; */
     width: 20px;
     height: 21px;
     font-size: 0;
@@ -289,11 +289,11 @@ a {
 }
 
 .item:hover .fwd:after {
-    border-color: transparent transparent transparent #ffffff;
+    border-color: transparent transparent transparent #333333;
 }
 
 .bck:before {
-    content: '';
+    /* content: ''; */
     width: 20px;
     height: 21px;
     font-size: 0;
@@ -329,7 +329,7 @@ a {
 }
 
 .item:hover .bck:before {
-    border-color: transparent #ffffff transparent transparent;
+    border-color: transparent #333333 transparent transparent;
 }
 
 .htmlcontainer {
@@ -545,7 +545,7 @@ a {
 .nazajcontainer {
     width: 100%;
     height: 60px;
-    background-color: #b0003f;
+    background-color: #DD786B;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
@@ -564,8 +564,8 @@ a {
 }
 
 .nazajcontainer:hover {
-    background-color: #920135;
-    color: #ffffff;
+    background-color: rgb(203, 110, 98);
+    color: #333333;
 }
 
 .nazaj.bck:before {
@@ -675,7 +675,7 @@ a {
 .htmlcontainer h1,
 .htmlcontainer h2,
 .htmlcontainer h3 {
-    color: #b0003f;
+    color: #DD786B;
     font-weight: 700;
     font-size: 36px;
     margin-top: 1.5em;
@@ -700,11 +700,11 @@ a {
 }
 
 .htmlcontainer a {
-    color: #b0003f;
+    color: #DD786B;
 }
 
 .htmlcontainer a:hover {
-    color: #920135;
+    color: rgb(203, 110, 98);
 }
 
 
@@ -723,7 +723,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 160px;
     position: relative;
     margin: auto;
 }
@@ -813,7 +813,7 @@ a {
 }
 
 .circle {
-    background-color: #b0003f;
+    background-color: #DD786B;
     height: 30px;
     width: 30px;
     padding: 6px 6px 6px 6px;
@@ -853,7 +853,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 1px solid #b0003f;
+    border: 1px solid #DD786B;
     -moz-transition-property: all;
     -o-transition-property: all;
     -webkit-transition-property: all;
@@ -915,3 +915,13 @@ a {
 
 
 /* end of icons */
+
+
+.img-responsive {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    display: block;
+}
