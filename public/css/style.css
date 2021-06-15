@@ -940,3 +940,14 @@ content: "\e60f";
 .sqs-block-content ul {
   font-size: 18px;
 }
+
+.sqs-block-content .btn.btn-primary {
+  background-color: #6ba8a0;
+  border-color: #416660;
+  padding: 10px 20px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-right: 15px;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px #111;
+}

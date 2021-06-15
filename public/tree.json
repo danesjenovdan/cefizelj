@@ -35,7 +35,7 @@
               },
               {
                 "_id": "9",
-                "name": "Na dan referenduma bom v zavodu za izvrševanje kazenskih sankcij.",
+                "name": "Na dan referenduma bom v bolnišnici, socialnovarstvenem zavodu, priporu ali zavodu za prestajanje kazni.",
                 "type": "link",
                 "article": "posta-pripor.html"
               }
@@ -58,19 +58,19 @@
             "_id": "11",
             "name": "Sem v bolnišnici ali zdravilišču.",
             "type": "link",
-            "article": "posta-pripor.html"
+            "article": "posta-bolnisnica.html"
           },
           {
             "_id": "111",
             "name": "Imam status invalida.",
             "type": "link",
-            "article": "posta-pripor.html"
+            "article": "posta-invalidi.html"
           },
           {
             "_id": "13",
             "name": "Bivam v domu za starejše, ki ni moje stalno prebivališče.",
             "type": "link",
-            "article": "posta-pripor.html"
+            "article": "posta-socialzavod.html"
           }
         ]
       }
