@@ -644,7 +644,7 @@ a {
   .fwd:after,
   .bck:before,
   .bck:after {
-      top: -10px;
+      top: 8px;
   }
 }
 
@@ -812,7 +812,7 @@ a {
   .bck:before {
       /*width: 13px;*/
       /*height: 13px;*/
-      top: 0;
+      /* top: 0; */
   }
 }
 
@@ -943,4 +943,10 @@ content: "\e60f";
   margin-right: 15px;
   font-size: 18px;
   text-shadow: 1px 1px 2px #111;
+}
+
+@media (max-width: 575px) {
+  .sqs-block-content .btn.btn-primary {
+    font-size: 14px;
+  }
 }
