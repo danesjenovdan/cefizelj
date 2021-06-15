@@ -75,6 +75,10 @@ function generateFirstNode() {
       .replace(/{{ itemcontent }}/g, basenode.name)
       .replace(/"item /g, '"item noclick ')
   );
+  if (basenode.image) {
+    $('.half-left .centermevertically').addClass('forbaloncek');
+    $('.half-left .fwd').html('<img class="img-responsive" src="' + basenode.image + '" alt="' + basenode.name + '">');
+  }
   for (var i in basenode.items) {
     var node = basenode.items[i];
     $('.half-right')

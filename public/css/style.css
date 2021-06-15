@@ -911,3 +911,26 @@ content: "\e60f";
 
 
 /* end of share stuff */
+
+
+/* sqs-block-content je direkt copy-paste iz njihovega sajta za referendum za vodo */
+.sqs-block-content {
+  padding: 20px 40px;
+}
+
+.sqs-block-content h3 {
+  color: #6ba8a0;
+}
+
+.sqs-block-content h3,
+.sqs-block-content h3 span {
+  font-weight: 700 !important;
+}
+
+.sqs-block-content h3 em {
+  font-style: normal;
+}
+
+.sqs-block-content p {
+  font-size: 18px;
+}
