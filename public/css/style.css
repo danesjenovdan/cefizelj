@@ -49,13 +49,13 @@ a {
 } */
 
 .bck-red {
-   background-color: #DAE4EC;
+   background-color: #6ba8a0;
    /* #b0003f;  */
   /* #de786b; */
 }
 
 .col-red {
-  color: #DAE4EC;
+  color: #6ba8a0;
   /* #b0003f; */
   /* #de786b; */
 }
@@ -240,10 +240,10 @@ a {
   width: 100%;
   height: auto;
   cursor: pointer;
-  background-color: #DAE4EC;
+  background-color: #6ba8a0;
   /* #b0003f; */
   box-shadow: inset 0 0 0 1px #f6f6f6;
-  color: #333333;
+  color: #111;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -252,23 +252,25 @@ a {
 }
 
 .item:hover {
-  background-color: #88ACC3;
+  filter: brightness(95%);
+  /* background-color: #88ACC3; */
   /* #920135; */
   box-shadow: inset 0 0 0 1px #f6f6f6;
-  color: #333333;
+  color: #111;
 }
 .noclick .fwd::after {
   display: none;
 }
 .noclick:hover {
-  background-color: #DAE4EC;
+  filter: none;
+  /* background-color: #6ba8a0; */
   cursor: default;
 }
 
 .item-red {
-  background-color: #DAE4EC;
+  background-color: #6ba8a0;
   /* #920135; */
-  color: #333333;
+  color: #111;
   box-shadow: inset 0 0 0 1px #f6f6f6;
 }
 
@@ -569,9 +571,9 @@ border-color: transparent #ffffff transparent transparent;*/
 .nazajcontainer {
   width: 100%;
   height: 60px;
-  background-color: #DAE4EC;
+  background-color: #6ba8a0;
   /* #b0003f; */
-  color: #333333;
+  color: #111;
   text-align: center;
   text-transform: uppercase;
   position: relative;
