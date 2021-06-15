@@ -16,9 +16,9 @@ var animateSpeedStretch = 300;
 
 var originalTitle = document.title;
 var baseurl = window.location.pathname;
-if (baseurl.indexOf('/korak/') !== -1) {
-  baseurl = baseurl.slice(0, baseurl.indexOf('/korak/') + 1);
-}
+// if (baseurl.indexOf('/korak/') !== -1) {
+//   baseurl = baseurl.slice(0, baseurl.indexOf('/korak/') + 1);
+// }
 
 var itemHTML = ['<div class="item centermycontentvertically" data-id="{{ id }}">',
                   '<div class="centermevertically">',
@@ -93,7 +93,7 @@ function generateFirstNode() {
 
 function animationFinished() {
   if (!dontChangeCrumbs) {
-    window.history.pushState(breadcrumbs, '', baseurl + 'korak/' + breadcrumbs.join('/'));
+    window.history.pushState(breadcrumbs, '', baseurl + '#/korak/' + breadcrumbs.join('/'));
     console.log('pushState', breadcrumbs);
   }
 
@@ -422,7 +422,7 @@ $(document).ready(function () {
   });
 
   // if url has steps defined to to the correct one
-  var path = window.location.pathname;
+  var path = window.location.hash;
   if (path.indexOf('/korak/') !== -1) {
     var newcrumbs = path.slice(path.indexOf('/korak/') + '/korak/'.length)
       .split('/')
@@ -434,6 +434,6 @@ $(document).ready(function () {
     }
     animateSpeedMove = 0;
     animateSpeedStretch = 0;
-    window.history.replaceState(newcrumbs, '', baseurl + 'korak/' + newcrumbs.join('/'));
+    window.history.replaceState(newcrumbs, '', baseurl + '#/korak/' + newcrumbs.join('/'));
   }
 });
