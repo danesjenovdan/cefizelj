@@ -93,7 +93,8 @@ function generateFirstNode() {
 
 function animationFinished() {
   if (!dontChangeCrumbs) {
-    window.history.pushState(breadcrumbs, '', baseurl + '#/korak/' + breadcrumbs.join('/'));
+    var newhash = breadcrumbs.length ? '#/korak/' + breadcrumbs.join('/') : '';
+    window.history.pushState(breadcrumbs, '', baseurl + newhash);
     console.log('pushState', breadcrumbs);
   }
 
