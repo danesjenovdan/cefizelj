@@ -8,6 +8,11 @@ body {
   background-color: #ffffff;
 }
 
+.img-responsive {
+  width: 700px;
+  margin: 0 auto;
+}
+
 h1,
 h2,
 h3 {
@@ -931,6 +936,7 @@ content: "\e60f";
   font-style: normal;
 }
 
-.sqs-block-content p {
+.sqs-block-content p,
+.sqs-block-content ul {
   font-size: 18px;
 }

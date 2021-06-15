@@ -13,21 +13,8 @@
           {
             "_id": "3",
             "name": "Na dan referenduma bom v tujini.",
-            "type": "menu",
-            "items": [
-              {
-                "_id": "5",
-                "name": "V tujini imam stalno prebivališče.",
-                "type": "link",
-                "article": "v-tujini.html"
-              },
-              {
-                "_id": "6",
-                "name": "V tujini bom začasno.",
-                "type": "link",
-                "article": "v-tujini.html"
-              }
-            ]
+            "type": "link",
+            "article": "v-tujini.html"
           },
           {
             "_id": "4",
@@ -76,21 +63,8 @@
           {
             "_id": "111",
             "name": "Imam status invalida.",
-            "type": "menu",
-            "items": [
-              {
-                "_id": "1111",
-                "name": "Želim glasovati na volišču, dostopnem invalidom.",
-                "type": "link",
-                "article": "dostopno-invalidom.html"
-              },
-              {
-                "_id": "1121",
-                "name": "Želim glasovati po pošti.",
-                "type": "link",
-                "article": "posta-pripor.html"
-              }
-            ]
+            "type": "link",
+            "article": "posta-pripor.html"
           },
           {
             "_id": "13",
