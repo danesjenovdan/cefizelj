@@ -48,7 +48,7 @@ function repaintMe() {
 function getTree(callback) {
   $.get('./tree.json', function (r) {
     console.log('getTree response', r);
-    tree = {tree: r};
+    tree = r.tree;
     callback();
   });
 }
@@ -56,7 +56,7 @@ function getTree(callback) {
 // start the app
 function startApp() {
   // set basenode and currentnode
-  basenode = tree.tree[0];
+  basenode = tree;
   currentnode = basenode;
 
   generateFirstNode();

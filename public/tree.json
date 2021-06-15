@@ -1,1530 +1,1008 @@
-[
-  {
+{
+  "tree": {
     "_id": 1,
     "type": "menu",
-    "title": "Testni vodič - to je naslov",
-    "article": "",
-    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
     "name": "CNVOS VODIČI",
     "items": [
       {
         "_id": 2,
         "type": "menu",
-        "title": "Prvi node",
-        "article": "",
-        "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
         "name": "Ustanovitev in upravljanje NVO",
         "items": [
           {
             "_id": 382,
             "type": "menu",
-            "title": "Kaj je nevladna organizacija?",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Kaj je nevladna organizacija?",
             "items": [
               {
                 "_id": 344,
                 "type": "link",
-                "title": "Kratka opredelitev",
                 "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/kaj-je-nevladna-organizacija-nvo/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kratka opredelitev",
-                "url": ""
+                "name": "Kratka opredelitev"
               },
               {
                 "_id": 379,
                 "type": "link",
-                "title": "Pogoj nepridobitnosti",
                 "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/pogoj-nepridobitnosti/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Pogoj nepridobitnosti",
-                "url": ""
+                "name": "Pogoj nepridobitnosti"
               },
               {
                 "_id": 380,
                 "type": "link",
-                "title": "Pogoj neprofitnosti",
                 "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/pogoj-neprofitnosti/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Pogoj neprofitnosti",
-                "url": ""
+                "name": "Pogoj neprofitnosti"
               },
               {
                 "_id": 381,
                 "type": "link",
-                "title": "Pogoj neodvisnosti",
                 "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/pogoj-neodvisnosti/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Pogoj neodvisnosti",
-                "url": ""
+                "name": "Pogoj neodvisnosti"
               },
               {
                 "_id": 383,
                 "type": "link",
-                "title": "Ostali pogoji",
                 "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/ostali-pogoji/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Ostali pogoji",
-                "url": ""
+                "name": "Ostali pogoji"
               }
-            ],
-            "url": ""
+            ]
           },
           {
             "_id": 377,
             "type": "link",
-            "title": "Ustanoviti zavod, društvo ali ustanovo?",
             "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/ustanoviti-zavod-dru%C5%A1tvo-ali-ustanovo/",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-            "name": "Ustanoviti zavod, društvo ali ustanovo?",
-            "url": ""
+            "name": "Ustanoviti zavod, društvo ali ustanovo?"
           },
           {
             "_id": 4,
             "type": "menu",
-            "title": "Zavod",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Zavod",
             "items": [
               {
                 "_id": 28,
                 "type": "link",
-                "title": "Kaj je zavod?",
                 "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/kaj-je-zavod/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                 "name": "Kaj je zavod?",
                 "url": "https://parlameter.si"
               },
               {
                 "_id": 29,
                 "type": "link",
-                "title": "Ustanovitev in registracija zavoda",
                 "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/ustanovitev-registracija/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Ustanovitev in registracija zavoda",
-                "url": null
+                "name": "Ustanovitev in registracija zavoda"
               },
               {
                 "_id": 30,
                 "type": "menu",
-                "title": "Organi in akti zavoda",
-                "article": "",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                 "name": "Organi in akti zavoda",
                 "items": [
                   {
                     "_id": 54,
                     "type": "link",
-                    "title": "Obvezni in drugi organi zavoda",
                     "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/obvezni-drugi-organi/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                     "name": "Obvezni in drugi organi zavoda",
                     "items": [
                       {
                         "_id": 261,
                         "type": "page",
-                        "title": "Obvezni in drugi organi zavoda",
-                        "article": "",
-                        "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;h2 style=&quot;margin-left:0cm; margin-right:0cm&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;Obvezni organi zavoda so:&lt;/span&gt;&lt;/h2&gt;    &lt;ul&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;em&gt;direktor&lt;/em&gt;, ki je individualni poslovodni organ, vodi delo in poslovanje zavoda, predstavlja in zastopa zavod ter je odgovoren za zakonitost dela zavoda,&amp;nbsp;&lt;/span&gt;&lt;/li&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;em&gt;svet zavoda&lt;/em&gt;, ki je&amp;nbsp;kolegijski organ upravljanja, sestavljajo ga po najmanj eden predstavnik ustanoviteljev, predstavnik delavcev in predstavniki uporabnikov storitev zavoda oziroma zainteresirane javnosti. Njegova naloga je upravljanje zavoda - sprejemanje letnih poročil, načrtov dela, nadziranje dela direktorja in podobno. V postopku registracije zavoda imena članov sveta ni potrebno&amp;nbsp;imensko navesti in&lt;/span&gt;&lt;/li&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;em&gt;strokovni svet&lt;/em&gt;, to je&amp;nbsp;kolegijski organ, ki obravnava vpra&amp;scaron;anja s področja strokovnega dela zavoda. Svetu zavoda in direktorju daje nasvete glede vsebinskega dela zavoda in pogojev za razvoj dejavnosti.&lt;/span&gt;&lt;/li&gt;  &lt;/ul&gt;    &lt;h2 style=&quot;margin-left:0cm; margin-right:0cm&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;V zavodu lahko imate tudi druge organe, to so:&lt;/span&gt;&lt;/h2&gt;    &lt;ul&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;em&gt;strokovnega vodjo&lt;/em&gt;, ki vodi strokovno delo zavoda in&lt;/span&gt;&lt;/li&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;em&gt;različne komisije ali odbore&lt;/em&gt;, ki izvajajo pristojnosti, kot se določijo v Aktu o ustanovitvi ali statutu zavoda.&lt;/span&gt;&lt;/li&gt;  &lt;/ul&gt;&lt;/div&gt;",
-                        "name": "Obvezni in drugi organi zavoda",
-                        "url": null
+                        "name": "Obvezni in drugi organi zavoda"
                       }
-                    ],
-                    "url": null
+                    ]
                   },
                   {
                     "_id": 31,
                     "type": "link",
-                    "title": "Obvezni in priporočljivi akti za zavode",
                     "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/obvezni-priporo%C4%8Dljivi-akti_zavoda/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                     "name": "Obvezni in priporočljivi akti za zavode",
                     "items": [
                       {
                         "_id": 55,
                         "type": "page",
-                        "title": "Obvezni in priporočljivi akti za zavode",
-                        "article": "",
-                        "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;h2 style=&quot;margin-left:0cm; margin-right:0cm&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;Akti, ki jih va&amp;scaron; zavod obvezno mora imeti, so: &lt;/span&gt;&lt;/h2&gt;    &lt;ul&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;em&gt;akt o ustanovitvi,&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;em&gt;statut,&lt;/em&gt; ki podrobneje uredi delovanje zavoda in njegove organe,&lt;/span&gt;&lt;/li&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;em&gt;pravilnik o računovodstvu,&lt;/em&gt;&amp;nbsp;s katerim podrobneje uredite način sestavljanja knjigovodskih listin, vrste knjigovodskih listin, odgovornost za sestavo, gibanje in kontrolo knjigovodskih listin ter njihovo hranjenje in&lt;/span&gt;&lt;/li&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;em&gt;izjava o varnosti,&lt;/em&gt; s katero identificirate nevarnosti, ocenite tveganja za delavce in določite ukrepov za zmanj&amp;scaron;anje nesprejemljivega tveganja.&lt;/span&gt;&lt;/li&gt;  &lt;/ul&gt;    &lt;p style=&quot;margin-left:0cm; margin-right:0cm&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;strong&gt;&lt;em&gt;Če je v zavodu zaposlenih več kot deset delavcev, je obvezen tudi&lt;/em&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;    &lt;ul&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;Akt o sistemizaciji delovnih mest&lt;/span&gt;&lt;/li&gt;  &lt;/ul&gt;    &lt;p style=&quot;margin-left:0cm; margin-right:0cm&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;&lt;strong&gt;&lt;em&gt;Če izvajate zdravstvene storitve ali če vodite zbirke občutljivih osebnih podatkov kot del svoje registrirane dejavnosti, je obvezen tudi&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; &lt;/em&gt;&lt;/span&gt;&lt;/p&gt;    &lt;ul&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;Pravilnik o varstvu osebnih podatkov&lt;/span&gt;&lt;/li&gt;  &lt;/ul&gt;    &lt;h2 style=&quot;margin-left:0cm; margin-right:0cm&quot;&gt;&lt;span style=&quot;color:black&quot;&gt;Priporočljivi akti za zavode pa so: &lt;/span&gt;&lt;/h2&gt;    &lt;ul&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;pravilnik o delovnih razmerjih (predvsem, če je v zavodu več zaposlenih),&lt;/span&gt;&lt;/li&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;pravilnik o varstvu osebnih podatkov, če obdelujete osebne podatke,&lt;/span&gt;&lt;/li&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;akt o sistemizaciji delovnih mest (običajno je koristen že pri več kot 3 zaposlenih),&lt;/span&gt;&lt;/li&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;pravilnik o varnosti in zdravju pri delu, ki ureja postopke izpolnjevanja zahtev zakonodaje na tem področju in&lt;/span&gt;&lt;/li&gt;  \t&lt;li&gt;&lt;span style=&quot;color:black&quot;&gt;poslovnik o delu sveta zavoda in poslovnik o delu strokovnega sveta zavoda.&lt;/span&gt;&lt;/li&gt;  &lt;/ul&gt;&lt;/div&gt;",
-                        "name": "Obvezni in priporočljivi akti za zavode",
-                        "url": null
+                        "name": "Obvezni in priporočljivi akti za zavode"
                       }
-                    ],
-                    "url": null
+                    ]
                   }
-                ],
-                "url": null
+                ]
               },
               {
                 "_id": 32,
                 "type": "menu",
-                "title": "Obvezna zavarovanja za ustanovitelje in direktorje zasebnih zavodov",
-                "article": "",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                 "name": "Obvezna zavarovanja za ustanovitelje in direktorje zasebnih zavodov",
                 "items": [
                   {
                     "_id": 56,
                     "type": "menu",
-                    "title": "Sem direktor in ustanovitelj zavoda",
-                    "article": "",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                     "name": "Sem direktor in ustanovitelj zavoda",
                     "items": [
                       {
                         "_id": 266,
                         "type": "menu",
-                        "title": "Sem edini ustanovitelj",
-                        "article": "",
-                        "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                         "name": "Sem edini ustanovitelj",
                         "items": [
                           {
                             "_id": 268,
                             "type": "link",
-                            "title": "Nisem zaposlen niti samozaposlen",
                             "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/ustanovitelj-direktor-zavoda-edini-ustanovitelj-nisem-zaposlen-niti-samozaposlen/",
-                            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                            "name": "Nisem zaposlen niti samozaposlen",
-                            "url": null
+                            "name": "Nisem zaposlen niti samozaposlen"
                           },
                           {
                             "_id": 272,
                             "type": "link",
-                            "title": "Sem zaposlen za polni delovni čas",
                             "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/ustanovitelj-direktor-zavoda-edini-ustanovitelj-zaposlen-za-polni-delovni-%C4%8D/",
-                            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                            "name": "Sem zaposlen za polni delovni čas",
-                            "url": null
+                            "name": "Sem zaposlen za polni delovni čas"
                           },
                           {
                             "_id": 276,
                             "type": "link",
-                            "title": "Sem zaposlen za krajši delovni čas",
                             "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/ustanovitelj-direktor-zavoda-edini-ustanovitelj-zaposlen-za-kraj%C5%A1i-delovni-%C4%8D/",
-                            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                            "name": "Sem zaposlen za krajši delovni čas",
-                            "url": null
+                            "name": "Sem zaposlen za krajši delovni čas"
                           },
                           {
                             "_id": 280,
                             "type": "link",
-                            "title": "Sem samozaposlen",
                             "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/ustanovitelj-direktor-zavoda-edini-ustanovitelj-samozaposlen/",
-                            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                            "name": "Sem samozaposlen",
-                            "url": null
+                            "name": "Sem samozaposlen"
                           }
-                        ],
-                        "url": null
+                        ]
                       },
                       {
                         "_id": 267,
                         "type": "menu",
-                        "title": "V zavodu je več ustanoviteljev",
-                        "article": "",
-                        "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                         "name": "V zavodu je več ustanoviteljev",
                         "items": [
                           {
                             "_id": 269,
                             "type": "link",
-                            "title": "Nisem zaposlen niti samozaposlen",
                             "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/ustanovitelj-direktor-zavoda-ve%C4%8D-ustanoviteljev-nisem-zaposlen-niti-samozaposlen/",
-                            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                            "name": "Nisem zaposlen niti samozaposlen",
-                            "url": null
+                            "name": "Nisem zaposlen niti samozaposlen"
                           },
                           {
                             "_id": 273,
                             "type": "link",
-                            "title": "Sem zaposlen za polni delovni čas",
                             "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/ustanovitelj-direktor-zavoda-ve%C4%8D-ustanoviteljev-zaposlen-za-polni-delovni-%C4%8D/",
-                            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                            "name": "Sem zaposlen za polni delovni čas",
-                            "url": null
+                            "name": "Sem zaposlen za polni delovni čas"
                           },
                           {
                             "_id": 277,
                             "type": "link",
-                            "title": "Sem zaposlen za krajši delovni čas",
                             "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/ustanovitelj-direktor-zavoda-ve%C4%8D-ustanoviteljev-zaposlen-za-kraj%C5%A1i-delovni-%C4%8D/",
-                            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                            "name": "Sem zaposlen za krajši delovni čas",
-                            "url": null
+                            "name": "Sem zaposlen za krajši delovni čas"
                           },
                           {
                             "_id": 281,
                             "type": "link",
-                            "title": "Sem samozaposlen",
                             "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/ustanovitelj-direktor-zavoda-ve%C4%8D-ustanoviteljev-samozaposlen/",
-                            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                            "name": "Sem samozaposlen",
-                            "url": null
+                            "name": "Sem samozaposlen"
                           }
-                        ],
-                        "url": null
+                        ]
                       }
-                    ],
-                    "url": null
+                    ]
                   },
                   {
                     "_id": 262,
                     "type": "link",
-                    "title": "Sem direktor, ne pa tudi ustanovitelj",
                     "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/sem-direktor-zavoda-nisem-pa-ustanovitelj/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Sem direktor, ne pa tudi ustanovitelj",
-                    "url": null
+                    "name": "Sem direktor, ne pa tudi ustanovitelj"
                   },
                   {
                     "_id": 264,
                     "type": "link",
-                    "title": "Sem ustanovitelj, ne pa tudi direktor",
                     "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/sem-ustanovitelj-ne-pa-tudi-direktor/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Sem ustanovitelj, ne pa tudi direktor",
-                    "url": null
+                    "name": "Sem ustanovitelj, ne pa tudi direktor"
                   }
-                ],
-                "url": ""
+                ]
               }
-            ],
-            "url": null
+            ]
           },
           {
             "_id": 6,
             "type": "menu",
-            "title": "Društvo",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Društvo",
             "items": [
               {
                 "_id": 33,
                 "type": "link",
-                "title": "Kaj je društvo?",
                 "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/bla-bla-bla-samo-za-primer/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kaj je društvo?",
-                "url": ""
+                "name": "Kaj je društvo?"
               },
               {
                 "_id": 34,
                 "type": "link",
-                "title": "Ustanovitev društva",
                 "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/je-naslov/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Ustanovitev društva",
-                "url": null
+                "name": "Ustanovitev društva"
               },
               {
                 "_id": 35,
                 "type": "link",
-                "title": "Organi društva",
                 "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/organi-dru%C5%A1tva/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Organi društva",
-                "url": ""
+                "name": "Organi društva"
               },
               {
                 "_id": 36,
                 "type": "link",
-                "title": "Obvezni in priporočljivi akti",
                 "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/obvezni-priporo%C4%8Dljivi-akti/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Obvezni in priporočljivi akti",
-                "url": null
+                "name": "Obvezni in priporočljivi akti"
               }
-            ],
-            "url": null
+            ]
           },
           {
             "_id": 26,
             "type": "menu",
-            "title": "Ustanova",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Ustanova",
             "items": [
               {
                 "_id": 60,
                 "type": "link",
-                "title": "Kaj je ustanova?",
                 "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/kaj-je-ustanova/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kaj je ustanova?",
-                "url": ""
+                "name": "Kaj je ustanova?"
               },
               {
                 "_id": 62,
                 "type": "link",
-                "title": "Ustanovitev ustanove",
                 "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/ustanovitev-ustanove/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Ustanovitev ustanove",
-                "url": null
+                "name": "Ustanovitev ustanove"
               },
               {
                 "_id": 65,
                 "type": "link",
-                "title": "Organi ustanove",
                 "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/organi-ustanove/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Organi ustanove",
-                "url": ""
+                "name": "Organi ustanove"
               },
               {
                 "_id": 67,
                 "type": "link",
-                "title": "Obvezni in priporočljivi akti",
                 "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/obvezni-priporo%C4%8Dljivi-akti-ustanove/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Obvezni in priporočljivi akti",
-                "url": null
+                "name": "Obvezni in priporočljivi akti"
               }
-            ],
-            "url": null
+            ]
           },
           {
             "_id": 378,
             "type": "link",
-            "title": "Ključne obveznosti po ustanovitvi zavoda, društva, ustanove",
             "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/klju%C4%8Dne-obveznosti-po-ustanovitvi-zavoda-dru%C5%A1tva-ustanove/",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-            "name": "Ključne obveznosti po ustanovitvi zavoda, društva, ustanove",
-            "url": ""
+            "name": "Ključne obveznosti po ustanovitvi zavoda, društva, ustanove"
           }
-        ],
-        "url": null
+        ]
       },
       {
         "_id": 22,
         "type": "menu",
-        "title": "Četrti node",
-        "article": "",
-        "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
         "name": "Davki in računovodstvo",
         "items": [
           {
             "_id": 76,
             "type": "menu",
-            "title": "Letna poročila",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Letna poročila",
             "items": [
               {
                 "_id": 217,
                 "type": "menu",
-                "title": "Društva",
-                "article": "",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                 "name": "Društva",
                 "items": [
                   {
                     "_id": 219,
                     "type": "link",
-                    "title": "Splošno o oddaji letnega poročila",
                     "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/oddaja-letnega-poro%C4%8Dila-dru%C5%A1tva/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Splošno o oddaji letnega poročila",
-                    "url": null
+                    "name": "Splošno o oddaji letnega poročila"
                   },
                   {
                     "_id": 221,
                     "type": "link",
-                    "title": "Postopek oddaje letnega poročila",
                     "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/postopek-oddaje-letnega-poro%C4%8Dila-dru%C5%A1tva/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Postopek oddaje letnega poročila",
-                    "url": null
+                    "name": "Postopek oddaje letnega poročila"
                   },
                   {
                     "_id": 223,
                     "type": "link",
-                    "title": "Zamudili smo rok za oddajo",
                     "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/kaj-storite-%C4%8De-ste-zamudili-rok-za-oddajo-letnega-poro%C4%8Dila/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Zamudili smo rok za oddajo",
-                    "url": null
+                    "name": "Zamudili smo rok za oddajo"
                   }
-                ],
-                "url": null
+                ]
               },
               {
                 "_id": 218,
                 "type": "menu",
-                "title": "Zavodi, ustanove in druge nepridobitne organizacije",
-                "article": "",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                 "name": "Zavodi, ustanove in druge nepridobitne organizacije",
                 "items": [
                   {
                     "_id": 227,
                     "type": "link",
-                    "title": "Postopek oddaje letnega poročila",
                     "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/postopek-oddaje-letnega-poro%C4%8Dila-zavodi/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Postopek oddaje letnega poročila",
-                    "url": null
+                    "name": "Postopek oddaje letnega poročila"
                   },
                   {
                     "_id": 229,
                     "type": "link",
-                    "title": "Zamudili smo rok za oddajo",
                     "article": "/nvo-vseved/spletni-vodici/ustanovitev-upravljanje-nvo/kaj-storite-%C4%8De-ste-zamudili-rok-za-oddajo-letnega-poro%C4%8Dila-zavodi/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Zamudili smo rok za oddajo",
-                    "url": null
+                    "name": "Zamudili smo rok za oddajo"
                   }
-                ],
-                "url": null
+                ]
               }
-            ],
-            "url": null
+            ]
           },
           {
             "_id": 78,
             "type": "menu",
-            "title": "Davčni obračun",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Davčni obračun",
             "items": [
               {
                 "_id": 231,
                 "type": "link",
-                "title": "Oddaja davčnega obračuna",
                 "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/oddaja-dav%C4%8Dnega-obra%C4%8Duna/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Oddaja davčnega obračuna",
-                "url": null
+                "name": "Oddaja davčnega obračuna"
               },
               {
                 "_id": 233,
                 "type": "link",
-                "title": "Zamudili smo rok za oddajo",
                 "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/zamudili-smo-rok-za-oddajo-dav%C4%8Dnega-obra%C4%8Duna/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Zamudili smo rok za oddajo",
-                "url": null
+                "name": "Zamudili smo rok za oddajo"
               }
-            ],
-            "url": null
+            ]
           },
           {
             "_id": 81,
             "type": "menu",
-            "title": "Davek od dohodka pravnih oseb",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Davek od dohodka pravnih oseb",
             "items": [
               {
                 "_id": 213,
                 "type": "link",
-                "title": "Ali moramo plačati davek?",
                 "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/ali-moramo-pla%C4%8Dati-ddpo/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Ali moramo plačati davek?",
-                "url": null
+                "name": "Ali moramo plačati davek?"
               },
               {
                 "_id": 215,
                 "type": "link",
-                "title": "Izračun davka",
                 "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/izra%C4%8Dun-davka-od-dohodkov-pravnih-oseb/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Izračun davka",
-                "url": null
+                "name": "Izračun davka"
               },
               {
                 "_id": 236,
                 "type": "link",
-                "title": "Plačevanje davka",
                 "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/pla%C4%8Devanje-davka-od-dohodkov-pravnih-oseb/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Plačevanje davka",
-                "url": null
+                "name": "Plačevanje davka"
               }
-            ],
-            "url": ""
+            ]
           },
           {
             "_id": 83,
             "type": "menu",
-            "title": "Vse o DDV",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Vse o DDV",
             "items": [
               {
                 "_id": 84,
                 "type": "link",
-                "title": "Ali je NVO zavezanec za DDV?",
                 "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/ali-je-nvo-zavezanec-za-ddv/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Ali je NVO zavezanec za DDV?",
-                "url": null
+                "name": "Ali je NVO zavezanec za DDV?"
               },
               {
                 "_id": 239,
                 "type": "link",
-                "title": "Obvezna prijava davčnemu organu za zavezance",
                 "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/ddv-priglasitev-zavezanca-dav%C4%8Dnemu-organu/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Obvezna prijava davčnemu organu za zavezance",
-                "url": null
+                "name": "Obvezna prijava davčnemu organu za zavezance"
               },
               {
                 "_id": 241,
                 "type": "link",
-                "title": "Obračunavanje DDV",
                 "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/kako-se-obra%C4%8Duna-ddv-po-kak%C5%A1ni-stopnji/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Obračunavanje DDV",
-                "url": null
+                "name": "Obračunavanje DDV"
               },
               {
                 "_id": 243,
                 "type": "menu",
-                "title": "Izdajanje računov z  in brez DDV",
-                "article": "",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                 "name": "Izdajanje računov z  in brez DDV",
                 "items": [
                   {
                     "_id": 244,
                     "type": "link",
-                    "title": "Smo zavezanci za DDV",
                     "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/kaj-mora-biti-navedeno-na-ra%C4%8Dunu-ki-ga-izdajate-tisti-ki-ste-zavezanci-za-ddv/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Smo zavezanci za DDV",
-                    "url": null
+                    "name": "Smo zavezanci za DDV"
                   },
                   {
                     "_id": 246,
                     "type": "link",
-                    "title": "Nismo zavezanci za DDV",
                     "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/kaj-mora-pisati-na-izdanem-ra%C4%8Dunu-kadar-ga-izdate-tisti-ki-niste-zavezanci-za-ddv/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Nismo zavezanci za DDV",
-                    "url": null
+                    "name": "Nismo zavezanci za DDV"
                   }
-                ],
-                "url": null
+                ]
               }
-            ],
-            "url": null
+            ]
           },
           {
             "_id": 216,
             "type": "menu",
-            "title": "Izvajanje in prejemanje plačil ter gotovinsko poslovanje",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Izvajanje in prejemanje plačil ter gotovinsko poslovanje",
             "items": [
               {
                 "_id": 248,
                 "type": "link",
-                "title": "Obveznost imeti transakcijski račun",
                 "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/obveznost-imeti-transakcijski-ra%C4%8Du/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Obveznost imeti transakcijski račun",
-                "url": null
+                "name": "Obveznost imeti transakcijski račun"
               },
               {
                 "_id": 374,
                 "type": "menu",
-                "title": "Primerjava bančnih stroškov za NVO",
-                "article": "",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                 "name": "Primerjava bančnih stroškov za NVO",
                 "items": [
                   {
                     "_id": 375,
                     "type": "link",
-                    "title": "Primerjava bančnih stroškov za društva",
                     "article": "/nvo-vseved/spletni-vodici/stro%C5%A1ki-ban%C4%8Dnih-storitev-za-nvo/primerjava-bancnih-stroskov-za-drustva/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Primerjava bančnih stroškov za društva",
-                    "url": ""
+                    "name": "Primerjava bančnih stroškov za društva"
                   },
                   {
                     "_id": 376,
                     "type": "link",
-                    "title": "Primerjava bančnih stroškov za zavode in ustanove",
                     "article": "/nvo-vseved/spletni-vodici/stro%C5%A1ki-ban%C4%8Dnih-storitev-za-nvo/primerjava-bancnih-stroskov-za-zavode-in-ustanove/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Primerjava bančnih stroškov za zavode in ustanove",
-                    "url": ""
+                    "name": "Primerjava bančnih stroškov za zavode in ustanove"
                   }
-                ],
-                "url": ""
+                ]
               },
               {
                 "_id": 87,
                 "type": "link",
-                "title": "Omejitve za gotovinska izplačila",
                 "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/omejitve-za-gotovinska-pla%C4%8Dila/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Omejitve za gotovinska izplačila",
-                "url": null
+                "name": "Omejitve za gotovinska izplačila"
               },
               {
                 "_id": 85,
                 "type": "menu",
-                "title": "Davčno potrjevanje računov",
-                "article": "",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                 "name": "Davčno potrjevanje računov",
                 "items": [
                   {
                     "_id": 250,
                     "type": "link",
-                    "title": "Ali moramo račune davčno potrjevati?",
                     "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/kdaj-je-dav%C4%8Dno-potrjevanje-ra%C4%8Dunov-obvezno/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Ali moramo račune davčno potrjevati?",
-                    "url": null
+                    "name": "Ali moramo račune davčno potrjevati?"
                   },
                   {
                     "_id": 252,
                     "type": "menu",
-                    "title": "Kako račune davčno potrdimo?",
-                    "article": "",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                     "name": "Kako račune davčno potrdimo?",
                     "items": [
                       {
                         "_id": 253,
                         "type": "link",
-                        "title": "Ali uporabimo davčno blagajno ali vezano knjigo računov?",
                         "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/ali-uporabimo-dav%C4%8Dno-blagajno-ali-vezano-knjigo-ra%C4%8Dunov/",
-                        "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                        "name": "Ali uporabimo davčno blagajno ali vezano knjigo računov?",
-                        "url": null
+                        "name": "Ali uporabimo davčno blagajno ali vezano knjigo računov?"
                       },
                       {
                         "_id": 255,
                         "type": "link",
-                        "title": "Uporabljali bomo davčno blagajno.",
                         "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/dav%C4%8Dno-potrjevanje-ra%C4%8Dunov-uporabljali-bomo-dav%C4%8Dno-blagajno/",
-                        "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                        "name": "Uporabljali bomo davčno blagajno.",
-                        "url": null
+                        "name": "Uporabljali bomo davčno blagajno."
                       },
                       {
                         "_id": 257,
                         "type": "link",
-                        "title": "Uporabljali bomo vezano knjigo računov.",
                         "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/dav%C4%8Dno-potrjevanje-ra%C4%8Dunov-uporabljali-bomo-vezano-knjigo-ra%C4%8Dunov/",
-                        "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                        "name": "Uporabljali bomo vezano knjigo računov.",
-                        "url": null
+                        "name": "Uporabljali bomo vezano knjigo računov."
                       },
                       {
                         "_id": 259,
                         "type": "link",
-                        "title": "Uporabljali bomo oboje.",
                         "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/dav%C4%8Dno-potrjevanje-ra%C4%8Dunov-uporabljali-bomo-oboje/",
-                        "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                        "name": "Uporabljali bomo oboje.",
-                        "url": null
+                        "name": "Uporabljali bomo oboje."
                       }
-                    ],
-                    "url": null
+                    ]
                   }
-                ],
-                "url": null
+                ]
               }
-            ],
-            "url": null
+            ]
           }
-        ],
-        "url": ""
+        ]
       },
       {
         "_id": 23,
         "type": "menu",
-        "title": "Peti node",
-        "article": "",
-        "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
         "name": "Delo v NVO",
         "items": [
           {
             "_id": 102,
             "type": "menu",
-            "title": "Delovno razmerje",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Delovno razmerje",
             "items": [
               {
                 "_id": 113,
                 "type": "menu",
-                "title": "Kako zaposlimo delavca?",
-                "article": "",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                 "name": "Kako zaposlimo delavca?",
                 "items": [
                   {
                     "_id": 284,
                     "type": "link",
-                    "title": "Objava prostega delovnega mesta",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-objava-prostega-delovnega-mesta/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Objava prostega delovnega mesta",
-                    "url": null
+                    "name": "Objava prostega delovnega mesta"
                   },
                   {
                     "_id": 286,
                     "type": "link",
-                    "title": "Seznanitev delavca s pogoji dela",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nov-seznanitev-delavca-s-pogoji-dela-sklenitev-pogodbe-o-zaposlitvi/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Seznanitev delavca s pogoji dela",
-                    "url": null
+                    "name": "Seznanitev delavca s pogoji dela"
                   },
                   {
                     "_id": 288,
                     "type": "link",
-                    "title": "Napotitev na zdravstveni pregled",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-napotitev-na-predhodni-zdravstveni-pregled/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Napotitev na zdravstveni pregled",
-                    "url": null
+                    "name": "Napotitev na zdravstveni pregled"
                   },
                   {
                     "_id": 290,
                     "type": "link",
-                    "title": "Prijava delavca v obvezna socialna zavarovanja",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-prijava-delavca-v-obvezna-socialna-zavarovanja/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Prijava delavca v obvezna socialna zavarovanja",
-                    "url": null
+                    "name": "Prijava delavca v obvezna socialna zavarovanja"
                   },
                   {
                     "_id": 292,
                     "type": "link",
-                    "title": "Obvestilo neizbranim kandidatom",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-obvestilo-neizbranim-kandidatom/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Obvestilo neizbranim kandidatom",
-                    "url": null
+                    "name": "Obvestilo neizbranim kandidatom"
                   }
-                ],
-                "url": null
+                ]
               },
               {
                 "_id": 115,
                 "type": "link",
-                "title": "Varnost in zdravje pri delu",
                 "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-obveznosti-nvo-glede-varnosti-zdravja-pri-delu/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Varnost in zdravje pri delu",
-                "url": null
+                "name": "Varnost in zdravje pri delu"
               },
               {
                 "_id": 351,
                 "type": "link",
-                "title": "Plače v humanitarnih in invalidskih organizacijah",
                 "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-place-v-humanitarnih-invalidskih-organizacijah/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Plače v humanitarnih in invalidskih organizacijah",
-                "url": ""
+                "name": "Plače v humanitarnih in invalidskih organizacijah"
               }
-            ],
-            "url": null
+            ]
           },
           {
             "_id": 103,
             "type": "menu",
-            "title": "Prostovoljsko delo",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Prostovoljsko delo",
             "items": [
               {
                 "_id": 152,
                 "type": "link",
-                "title": "Kaj je in kaj ni prostovoljsko delo?",
                 "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-kaj-je-kaj-ni-prostovoljsko-delo/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kaj je in kaj ni prostovoljsko delo?",
-                "url": null
+                "name": "Kaj je in kaj ni prostovoljsko delo?"
               },
               {
                 "_id": 154,
                 "type": "link",
-                "title": "Prostovoljsko delo na pridobitni dejavnosti",
                 "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-prostovoljsko-delo-na-pridobitni-dejavnosti/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Prostovoljsko delo na pridobitni dejavnosti",
-                "url": null
+                "name": "Prostovoljsko delo na pridobitni dejavnosti"
               },
               {
                 "_id": 156,
                 "type": "link",
-                "title": "Prostovoljske organizacije",
                 "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-kaj-je-prostovoljska-organizacija/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Prostovoljske organizacije",
-                "url": null
+                "name": "Prostovoljske organizacije"
               },
               {
                 "_id": 158,
                 "type": "menu",
-                "title": "Dogovor o prostovoljskem delu",
-                "article": "",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                 "name": "Dogovor o prostovoljskem delu",
                 "items": [
                   {
                     "_id": 294,
                     "type": "link",
-                    "title": "Smo prostovoljska organizacija",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/dogovor-o-prostovoljskem-delu-smo-prostovoljska-organizacija-dogovor-o-prostovoljskem-delu-za-prostovoljske-organizacije/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Smo prostovoljska organizacija",
-                    "url": null
+                    "name": "Smo prostovoljska organizacija"
                   },
                   {
                     "_id": 296,
                     "type": "link",
-                    "title": "Nismo prostovoljska organizacija",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/dogovor-o-prostovoljskem-delu-nismo-prostovoljska-organizacija/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Nismo prostovoljska organizacija",
-                    "url": null
+                    "name": "Nismo prostovoljska organizacija"
                   }
-                ],
-                "url": null
+                ]
               },
               {
                 "_id": 160,
                 "type": "link",
-                "title": "Obvezno zavarovanje prostovoljcev",
                 "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-obvezno-zavarovanje-prostovoljcev/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Obvezno zavarovanje prostovoljcev",
-                "url": null
+                "name": "Obvezno zavarovanje prostovoljcev"
               },
               {
                 "_id": 162,
                 "type": "link",
-                "title": "Povračila stroškov prostovoljcem",
                 "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-povra%C4%8Dilo-stro%C5%A1kov-prostovoljcem/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Povračila stroškov prostovoljcem",
-                "url": null
+                "name": "Povračila stroškov prostovoljcem"
               },
               {
                 "_id": 297,
                 "type": "menu",
-                "title": "Izplačilo nagrad za posebne dosežke prostovoljcev",
-                "article": "",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                 "name": "Izplačilo nagrad za posebne dosežke prostovoljcev",
                 "items": [
                   {
                     "_id": 298,
                     "type": "link",
-                    "title": "Smo prostovoljska organizacija",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-izpla%C4%8Dilo-nagrad-za-posebne-dose%C5%BEke-prostovoljcev-po/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Smo prostovoljska organizacija",
-                    "url": null
+                    "name": "Smo prostovoljska organizacija"
                   },
                   {
                     "_id": 300,
                     "type": "link",
-                    "title": "Nismo prostovoljska organizacija",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-izpla%C4%8Dilo-nagrad-za-posebne-dose%C5%BEke-prostovoljcev-nismo-po/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Nismo prostovoljska organizacija",
-                    "url": null
+                    "name": "Nismo prostovoljska organizacija"
                   }
-                ],
-                "url": null
+                ]
               }
-            ],
-            "url": ""
+            ]
           },
           {
             "_id": 104,
             "type": "menu",
-            "title": "Avtorska pogodba",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Avtorska pogodba",
             "items": [
               {
                 "_id": 302,
                 "type": "link",
-                "title": "Kaj je avtorska pogodba in kdaj jo sklenemo?",
                 "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-kaj-je-avtorska-pogodba-kdaj-jo-sklenete/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kaj je avtorska pogodba in kdaj jo sklenemo?",
-                "url": null
+                "name": "Kaj je avtorska pogodba in kdaj jo sklenemo?"
               },
               {
                 "_id": 109,
                 "type": "menu",
-                "title": "Davki in prispevki pri avtorski pogodbi",
                 "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-davki-prispevki-pri-avtorski-pogodbi/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                 "name": "Davki in prispevki pri avtorski pogodbi",
                 "items": [
                   {
                     "_id": 338,
                     "type": "link",
-                    "title": "Splošno o davkih in prispevkih pri avtorski pogodbi",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-splo%C5%A1no-o-davkih-prispevkih-pri-avtorski-pogodbi/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Splošno o davkih in prispevkih pri avtorski pogodbi",
-                    "url": ""
+                    "name": "Splošno o davkih in prispevkih pri avtorski pogodbi"
                   },
                   {
                     "_id": 339,
                     "type": "link",
-                    "title": "Dohodnina",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-dohodnina-avtorska-pogodba/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Dohodnina",
-                    "url": ""
+                    "name": "Dohodnina"
                   },
                   {
                     "_id": 340,
                     "type": "link",
-                    "title": "Prispevki za pokojninsko in invalidsko zavarovanje",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-prispevki-za-pokojninsko-invalidsko-zavarovanje-avtorska-pogodba/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Prispevki za pokojninsko in invalidsko zavarovanje",
-                    "url": ""
+                    "name": "Prispevki za pokojninsko in invalidsko zavarovanje"
                   },
                   {
                     "_id": 341,
                     "type": "link",
-                    "title": "Prispevki za zdravstveno zavarovanje",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-prispevki-za-zdravstveno-zavarovanje-avtorska-pogodba/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Prispevki za zdravstveno zavarovanje",
-                    "url": ""
+                    "name": "Prispevki za zdravstveno zavarovanje"
                   },
                   {
                     "_id": 342,
                     "type": "link",
-                    "title": "Primer izračuna prispevkov po avtorski pogodbi",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-primer-izra%C4%8Duna-prispevkov-po-avtorski-pogodbi/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Primer izračuna prispevkov po avtorski pogodbi",
-                    "url": ""
+                    "name": "Primer izračuna prispevkov po avtorski pogodbi"
                   }
-                ],
-                "url": ""
+                ]
               },
               {
                 "_id": 111,
                 "type": "link",
-                "title": "Povračila stroškov pri avtorski pogodbi",
                 "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-avtorska-pogodba-povra%C4%8Dilo-stro%C5%A1kov-pri-avtorski-pogodbi/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Povračila stroškov pri avtorski pogodbi",
-                "url": ""
+                "name": "Povračila stroškov pri avtorski pogodbi"
               }
-            ],
-            "url": ""
+            ]
           },
           {
             "_id": 105,
             "type": "menu",
-            "title": "Podjemna pogodba",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Podjemna pogodba",
             "items": [
               {
                 "_id": 304,
                 "type": "link",
-                "title": "Kaj je podjemna pogodba in kdaj jo sklenemo?",
                 "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-kaj-je-podjemna-pogodba-kdaj-jo-lahko-sklenete/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kaj je podjemna pogodba in kdaj jo sklenemo?",
-                "url": null
+                "name": "Kaj je podjemna pogodba in kdaj jo sklenemo?"
               },
               {
                 "_id": 305,
                 "type": "menu",
-                "title": "Davki in prispevki pri podjemni pogodbi",
-                "article": "",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                 "name": "Davki in prispevki pri podjemni pogodbi",
                 "items": [
                   {
                     "_id": 337,
                     "type": "link",
-                    "title": "Splošno o davkih in prispevkih pri podjemni pogodbi",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-davki-prispevki-pri-podjemni-pogodbi-splo%C5%A1no/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Splošno o davkih in prispevkih pri podjemni pogodbi",
-                    "url": ""
+                    "name": "Splošno o davkih in prispevkih pri podjemni pogodbi"
                   },
                   {
                     "_id": 310,
                     "type": "link",
-                    "title": "Dohodnina",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-dohodnina/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Dohodnina",
-                    "url": null
+                    "name": "Dohodnina"
                   },
                   {
                     "_id": 312,
                     "type": "link",
-                    "title": "Posebni davek na določene prejemke",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-posebni-davek-na-dolo%C4%8Dene-prejemke/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Posebni davek na določene prejemke",
-                    "url": null
+                    "name": "Posebni davek na določene prejemke"
                   },
                   {
                     "_id": 313,
                     "type": "link",
-                    "title": "Prispevki za pokojninsko in invalidsko zavarovanje",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-prispevki-za-pokojninsko-invalidsko-zavarovanje/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Prispevki za pokojninsko in invalidsko zavarovanje",
-                    "url": null
+                    "name": "Prispevki za pokojninsko in invalidsko zavarovanje"
                   },
                   {
                     "_id": 316,
                     "type": "link",
-                    "title": "Prispevki za zdravstveno zavarovanje",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-prispevki-za-zdravstveno-zavarovanje/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Prispevki za zdravstveno zavarovanje",
-                    "url": null
+                    "name": "Prispevki za zdravstveno zavarovanje"
                   },
                   {
                     "_id": 318,
                     "type": "link",
-                    "title": "Primer izračuna prispevkov po podjemni pogodbi",
                     "article": "/nvo-vseved/spletni-vodici/davki-ra%C4%8Dunovodstvo-itd/primer-izra%C4%8Duna-davkov-prispevkov-po-podjemni-pogodbi/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Primer izračuna prispevkov po podjemni pogodbi",
-                    "url": null
+                    "name": "Primer izračuna prispevkov po podjemni pogodbi"
                   }
-                ],
-                "url": null
+                ]
               },
               {
                 "_id": 306,
                 "type": "link",
-                "title": "Povračilo stroškov pri podjemni pogodbi",
                 "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-povra%C4%8Dilo-stro%C5%A1kov-pri-podjemni-pogodbi/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Povračilo stroškov pri podjemni pogodbi",
-                "url": null
+                "name": "Povračilo stroškov pri podjemni pogodbi"
               }
-            ],
-            "url": null
+            ]
           },
           {
             "_id": 106,
             "type": "menu",
-            "title": "Mandatna pogodba",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Mandatna pogodba",
             "items": [
               {
                 "_id": 320,
                 "type": "link",
-                "title": "Kaj je mandatna pogodba in kdaj jo sklenemo?",
                 "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-kaj-je-mandatna-pogodba-kdaj-jo-lahko-sklenete/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kaj je mandatna pogodba in kdaj jo sklenemo?",
-                "url": null
+                "name": "Kaj je mandatna pogodba in kdaj jo sklenemo?"
               },
               {
                 "_id": 322,
                 "type": "menu",
-                "title": "Davki in prispevki pri mandatni pogodbi",
-                "article": "",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
                 "name": "Davki in prispevki pri mandatni pogodbi",
                 "items": [
                   {
                     "_id": 325,
                     "type": "link",
-                    "title": "Splošno o davkih in prispevkih pri mandatni pogodbi",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-davki-prispevki-pri-mandatni-pogodbi-splo%C5%A1o/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Splošno o davkih in prispevkih pri mandatni pogodbi",
-                    "url": null
+                    "name": "Splošno o davkih in prispevkih pri mandatni pogodbi"
                   },
                   {
                     "_id": 327,
                     "type": "link",
-                    "title": "Dohodnina",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-dohodnina-mandatna-pogodba/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Dohodnina",
-                    "url": null
+                    "name": "Dohodnina"
                   },
                   {
                     "_id": 329,
                     "type": "link",
-                    "title": "Posebni davek na določene prejemke",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-posebni-davek-na-dolo%C4%8Dene-prejemke-mandana-pogodba/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Posebni davek na določene prejemke",
-                    "url": null
+                    "name": "Posebni davek na določene prejemke"
                   },
                   {
                     "_id": 331,
                     "type": "link",
-                    "title": "Prispevki za pokojninsko in invalidsko zavarovanje",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-prispevki-za-pokojninsko-invalidsko-zavarovanje-mandatna-pogodba/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Prispevki za pokojninsko in invalidsko zavarovanje",
-                    "url": null
+                    "name": "Prispevki za pokojninsko in invalidsko zavarovanje"
                   },
                   {
                     "_id": 333,
                     "type": "link",
-                    "title": "Prispevki za zdravstveno zavarovanje",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-prispevki-za-zdravstveno-zavarovanje-mandatna-pogodba/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Prispevki za zdravstveno zavarovanje",
-                    "url": null
+                    "name": "Prispevki za zdravstveno zavarovanje"
                   },
                   {
                     "_id": 335,
                     "type": "link",
-                    "title": "Primer izračuna prispevkov po mandatni pogodbi",
                     "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-primer-izra%C4%8Duna-davkov-prispevkov-mandatna-pogodba/",
-                    "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                    "name": "Primer izračuna prispevkov po mandatni pogodbi",
-                    "url": null
+                    "name": "Primer izračuna prispevkov po mandatni pogodbi"
                   }
-                ],
-                "url": null
+                ]
               },
               {
                 "_id": 323,
                 "type": "link",
-                "title": "Povračilo stroškov pri mandatni pogodbi",
                 "article": "/nvo-vseved/spletni-vodici/delo-v-nvo/delo-v-nvo-povra%C4%8Dilo-stro%C5%A1kov-pri-mandatni-pogodbi/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Povračilo stroškov pri mandatni pogodbi",
-                "url": null
+                "name": "Povračilo stroškov pri mandatni pogodbi"
               }
-            ],
-            "url": null
+            ]
           }
-        ],
-        "url": ""
+        ]
       },
       {
         "_id": 352,
         "type": "menu",
-        "title": "Posebni statusi za NVO",
-        "article": "",
-        "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
         "name": "Posebni statusi za NVO",
         "items": [
           {
             "_id": 346,
             "type": "menu",
-            "title": "Status NVO v javnem interesu",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Status NVO v javnem interesu",
             "items": [
               {
                 "_id": 347,
                 "type": "link",
-                "title": "Kdo lahko pridobi status NVO v javnem interesu?",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/kdo-lahko-pridobi-status-nvo-v-javnem-interesu/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kdo lahko pridobi status NVO v javnem interesu?",
-                "url": ""
+                "name": "Kdo lahko pridobi status NVO v javnem interesu?"
               },
               {
                 "_id": 348,
                 "type": "link",
-                "title": "Kako pridobimo status NVO v javnem interesu?",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/kako-pridobimo-status-nvo-v-javnem-interesu/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kako pridobimo status NVO v javnem interesu?",
-                "url": ""
+                "name": "Kako pridobimo status NVO v javnem interesu?"
               },
               {
                 "_id": 349,
                 "type": "link",
-                "title": "Ugodnosti NVO v javnem interesu",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/ugodnosti-nvo-v-javnem-interesu/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Ugodnosti NVO v javnem interesu",
-                "url": ""
+                "name": "Ugodnosti NVO v javnem interesu"
               },
               {
                 "_id": 350,
                 "type": "link",
-                "title": "Obveznosti NVO v javnem interesu",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/obveznosti-nvo-v-javnem-interesu/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Obveznosti NVO v javnem interesu",
-                "url": ""
+                "name": "Obveznosti NVO v javnem interesu"
               }
-            ],
-            "url": ""
+            ]
           },
           {
             "_id": 353,
             "type": "menu",
-            "title": "Humanitarna organizacija",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Humanitarna organizacija",
             "items": [
               {
                 "_id": 358,
                 "type": "link",
-                "title": "Kdo lahko pridobi status humanitarne organizacije?",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/humanitarna-organizacija-kdo-lahko-pridobi-status-humanitarne-organizacije/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kdo lahko pridobi status humanitarne organizacije?",
-                "url": ""
+                "name": "Kdo lahko pridobi status humanitarne organizacije?"
               },
               {
                 "_id": 359,
                 "type": "link",
-                "title": "Kako pridobimo status humanitarne organizacije?",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/humanitarna-organizacija-kako-pridobimo-status-humanitarne-organizacije/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kako pridobimo status humanitarne organizacije?",
-                "url": ""
+                "name": "Kako pridobimo status humanitarne organizacije?"
               },
               {
                 "_id": 360,
                 "type": "link",
-                "title": "Ugodnosti humanitarnih organizacij",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/humanitarna-organizacija-ugodnosti-humanitarnih-organizacij/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Ugodnosti humanitarnih organizacij",
-                "url": ""
+                "name": "Ugodnosti humanitarnih organizacij"
               },
               {
                 "_id": 361,
                 "type": "link",
-                "title": "Obveznosti humanitarnih organizacij",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/humanitarna-organizacija-obveznosti-humanitarnih-organizacij/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Obveznosti humanitarnih organizacij",
-                "url": ""
+                "name": "Obveznosti humanitarnih organizacij"
               }
-            ],
-            "url": ""
+            ]
           },
           {
             "_id": 354,
             "type": "menu",
-            "title": "Invalidska organizacija",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Invalidska organizacija",
             "items": [
               {
                 "_id": 362,
                 "type": "link",
-                "title": "Kdo lahko pridobi status invalidske organizacije?",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/invalidska-organizacija-kdo-lahko-pridobi-status-invalidske-organizacije/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kdo lahko pridobi status invalidske organizacije?",
-                "url": ""
+                "name": "Kdo lahko pridobi status invalidske organizacije?"
               },
               {
                 "_id": 363,
                 "type": "link",
-                "title": "Kako pridobimo status invalidske organizacije?",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/invalidska-organizacija-kako-pridobimo-status-invalidske-organizacije/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kako pridobimo status invalidske organizacije?",
-                "url": ""
+                "name": "Kako pridobimo status invalidske organizacije?"
               },
               {
                 "_id": 364,
                 "type": "link",
-                "title": "Ugodnosti invalidskih organizacij",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/invalidska-organizacija-ugodnosti-invalidskih-organizacij/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Ugodnosti invalidskih organizacij",
-                "url": ""
+                "name": "Ugodnosti invalidskih organizacij"
               },
               {
                 "_id": 365,
                 "type": "link",
-                "title": "Obveznosti invalidskih organizacij",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/invalidska-organizacija-obveznosti-invalidskih-organizacij/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Obveznosti invalidskih organizacij",
-                "url": ""
+                "name": "Obveznosti invalidskih organizacij"
               }
-            ],
-            "url": ""
+            ]
           },
           {
             "_id": 355,
             "type": "menu",
-            "title": "Prostovoljska organizacija",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Prostovoljska organizacija",
             "items": [
               {
                 "_id": 366,
                 "type": "link",
-                "title": "Kdo je lahko prostovoljska organizacija?",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/prostovoljska-organizacija-kdo-je-lahko-prostovoljska-organizacija/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kdo je lahko prostovoljska organizacija?",
-                "url": ""
+                "name": "Kdo je lahko prostovoljska organizacija?"
               },
               {
                 "_id": 367,
                 "type": "link",
-                "title": "Kako postanemo prostovoljska organizacija?",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/prostovoljska-organizacija-kako-postanemo-prostovoljska-organizacija/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kako postanemo prostovoljska organizacija?",
-                "url": ""
+                "name": "Kako postanemo prostovoljska organizacija?"
               },
               {
                 "_id": 368,
                 "type": "link",
-                "title": "Ugodnosti prostovoljskih organizacij",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/prostovoljska-organizacija-ugodnosti-prostovoljskih-organizacij/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Ugodnosti prostovoljskih organizacij",
-                "url": ""
+                "name": "Ugodnosti prostovoljskih organizacij"
               },
               {
                 "_id": 369,
                 "type": "link",
-                "title": "Obveznosti prostovoljskih organizacij",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/prostovoljska-organizacija-obveznosti-prostovoljskih-organizacij/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Obveznosti prostovoljskih organizacij",
-                "url": ""
+                "name": "Obveznosti prostovoljskih organizacij"
               }
-            ],
-            "url": ""
+            ]
           },
           {
             "_id": 356,
             "type": "menu",
-            "title": "Socialno podjetje",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Socialno podjetje",
             "items": [
               {
                 "_id": 370,
                 "type": "link",
-                "title": "Kdo lahko pridobi status socialnega podjetja?",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/socialno-podjetje-kdo-lahko-pridobi-status-socialnega-podjetja/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kdo lahko pridobi status socialnega podjetja?",
-                "url": ""
+                "name": "Kdo lahko pridobi status socialnega podjetja?"
               },
               {
                 "_id": 371,
                 "type": "link",
-                "title": "Kako pridobimo status socialnega podjetja?",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/socialno-podjetje-kako-pridobimo-status-socialnega-podjetja/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kako pridobimo status socialnega podjetja?",
-                "url": ""
+                "name": "Kako pridobimo status socialnega podjetja?"
               },
               {
                 "_id": 372,
                 "type": "link",
-                "title": "Ugodnosti socialnih podjetij",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/socialno-podjetje-ugodnosti-socialnih-podjetij/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Ugodnosti socialnih podjetij",
-                "url": ""
+                "name": "Ugodnosti socialnih podjetij"
               },
               {
                 "_id": 373,
                 "type": "link",
-                "title": "Obveznosti socialnih podjetij",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/socialno-podjetje-obveznosti-socialnih-podjetij/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Obveznosti socialnih podjetij",
-                "url": ""
+                "name": "Obveznosti socialnih podjetij"
               }
-            ],
-            "url": ""
+            ]
           },
           {
             "_id": 384,
             "type": "menu",
-            "title": "Mladinska organizacija v javnem interesu v mladinskem sektorju",
-            "article": "",
-            "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
             "name": "Mladinska organizacija v javnem interesu v mladinskem sektorju",
             "items": [
               {
                 "_id": 385,
                 "type": "link",
-                "title": "Kdo lahko pridobi status mladinske organizacije v javnem interesu v mladinskem sektorju?",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/kdo-lahko-pridobi-status-mladinske-organizacije-v-javnem-interesu-v-mladinskem-sektorju/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kdo lahko pridobi status mladinske organizacije v javnem interesu v mladinskem sektorju?",
-                "url": ""
+                "name": "Kdo lahko pridobi status mladinske organizacije v javnem interesu v mladinskem sektorju?"
               },
               {
                 "_id": 386,
                 "type": "link",
-                "title": "Kako pridobimo status mladinske organizacije v javnem interesu v mladinskem sektorju?",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/kako-pridobimo-status-mladinske-organizacije-v-javnem-interesu-v-mladinskem-sektorju/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Kako pridobimo status mladinske organizacije v javnem interesu v mladinskem sektorju?",
-                "url": ""
+                "name": "Kako pridobimo status mladinske organizacije v javnem interesu v mladinskem sektorju?"
               },
               {
                 "_id": 387,
                 "type": "link",
-                "title": "Ugodnosti mladinskih organizacij v  javnem interesu v mladinskem sektorju",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/ugodnosti-mladinskih-organizacij-v-javnem-interesu-v-mladinskem-sektorju/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Ugodnosti mladinskih organizacij v  javnem interesu v mladinskem sektorju",
-                "url": ""
+                "name": "Ugodnosti mladinskih organizacij v  javnem interesu v mladinskem sektorju"
               },
               {
                 "_id": 388,
                 "type": "link",
-                "title": "Obveznosti mladinskih organizacij v  javnem interesu v mladinskem sektorju",
                 "article": "/nvo-vseved/spletni-vodici/status-nvo-v-javnem-interesu/obveznosti-mladinskih-organizacij-v-javnem-interesu-v-mladinskem-sektorju/",
-                "content": "&lt;div class=&quot;htmlcontainer&quot;&gt;&lt;div class=&quot;visible-xs centermycontentvertically nazajcontainer&quot;&gt;&lt;div class=&quot;centermevertically nazaj bck&quot;&gt;Nazaj&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-                "name": "Obveznosti mladinskih organizacij v  javnem interesu v mladinskem sektorju",
-                "url": ""
+                "name": "Obveznosti mladinskih organizacij v  javnem interesu v mladinskem sektorju"
               }
-            ],
-            "url": ""
+            ]
           }
-        ],
-        "url": ""
+        ]
       }
-    ],
-    "url": ""
+    ]
   }
-]
+}
