@@ -45,6 +45,12 @@
       },
       {
         "_id": "2",
+        "name": "... stalno prebivališče imam v tujini.",
+        "type": "link",
+        "article": "v-tujini.html"
+      },
+      {
+        "_id": "3",
         "name": "... volišče mi ni dostopno.",
         "type": "menu",
         "items": [
