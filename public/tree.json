@@ -17,6 +17,12 @@
             "article": "v-tujini.html"
           },
           {
+            "_id": "2",
+            "name": "Doma bom v tednu pred referendumom.",
+            "type": "link",
+            "article": "predcasno.html"
+          },
+          {
             "_id": "4",
             "name": "Na dan referenduma bom v Sloveniji.",
             "type": "menu",
