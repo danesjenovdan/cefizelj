@@ -950,3 +950,16 @@ content: "\e60f";
     font-size: 14px;
   }
 }
+
+dl {
+  font-size: 16px;
+}
+
+dl dt {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 0.5em;
+}
