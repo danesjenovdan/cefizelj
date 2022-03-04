@@ -907,6 +907,7 @@ content: "\e60f";
 /* sqs-block-content je direkt copy-paste iz njihovega sajta za referendum za vodo */
 .sqs-block-content {
   padding: 20px 40px;
+  font-family: 'acumin-pro', sans-serif;
 }
 
 .sqs-block-content h3 {
@@ -932,12 +933,16 @@ content: "\e60f";
   border-color: #dc776b;
   color: #dc776b;
   border-radius: 0;
-  padding: 15px 20px 12px;
+  padding: 15px 20px;
   font-weight: 700;
   margin-top: 15px;
   margin-right: 15px;
   font-size: 18px;
   font-style: italic;
+  transition: background-color .15s
+}
+.sqs-block-content .btn.btn-primary:hover {
+  background-color: #f9e4e2;
 }
 
 @media (max-width: 575px) {
@@ -952,9 +957,15 @@ dl {
 
 dl dt {
   margin-top: 1.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
-p {
-  margin-bottom: 0.5em;
+p,
+ul {
+  margin-bottom: 1em;
+}
+
+.nodeimage-filter {
+  mix-blend-mode: multiply;
+  filter: contrast(1.3) grayscale(0.5);
 }
