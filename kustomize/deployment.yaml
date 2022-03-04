@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: volitveni-vodic
+  labels:
+    app: volitveni-vodic
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: volitveni-vodic
+  template:
+    metadata:
+      labels:
+        app: volitveni-vodic
+    spec:
+      containers:
+        - name: volitveni-vodic
+          image: volitveni-vodic
+          ports:
+            - containerPort: 80

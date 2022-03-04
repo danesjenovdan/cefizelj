@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: volitveni-vodic
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-production"
+spec:
+  tls:
+    - hosts:
+        - volitveni-vodic.lb.djnd.si
+      secretName: volitveni-vodic-tls
+  rules:
+    - host: volitveni-vodic.lb.djnd.si
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: volitveni-vodic
+                port:
+                  number: 80
