@@ -7,24 +7,24 @@
     "items": [
       {
         "_id": "1",
-        "name": "... na dan referenduma me ne bo doma.",
+        "name": "... na dan volitev me ne bo doma.",
         "type": "menu",
         "items": [
           {
             "_id": "3",
-            "name": "Na dan referenduma bom v tujini.",
+            "name": "Na dan volitev bom v tujini.",
             "type": "link",
             "article": "v-tujini.html"
           },
           {
             "_id": "2",
-            "name": "Doma bom v tednu pred referendumom.",
+            "name": "Doma bom v tednu pred volitvami.",
             "type": "link",
             "article": "predcasno.html"
           },
           {
             "_id": "4",
-            "name": "Na dan referenduma bom v Sloveniji.",
+            "name": "Na dan volitev bom v Sloveniji.",
             "type": "menu",
             "items": [
               {
@@ -35,13 +35,13 @@
               },
               {
                 "_id": "8",
-                "name": "Na dan referenduma bom izven kraja stalnega prebivališča.",
+                "name": "Na dan volitev bom izven kraja stalnega prebivališča.",
                 "type": "link",
                 "article": "omnia.html"
               },
               {
                 "_id": "9",
-                "name": "Na dan referenduma bom v bolnišnici, socialnovarstvenem zavodu, priporu ali zavodu za prestajanje kazni.",
+                "name": "Na dan volitev bom v bolnišnici, socialnovarstvenem zavodu, priporu ali zavodu za prestajanje kazni.",
                 "type": "link",
                 "article": "posta-pripor.html"
               }
@@ -53,7 +53,7 @@
         "_id": "2",
         "name": "... stalno prebivališče imam v tujini.",
         "type": "link",
-        "article": "v-tujini.html"
+        "article": "v-tujini-stalno.html"
       },
       {
         "_id": "3",
@@ -68,21 +68,40 @@
           },
           {
             "_id": "11",
-            "name": "Sem v bolnišnici ali zdravilišču.",
+            "name": "Na dan volitev bom v bolnišnici ali zdravilišču.",
             "type": "link",
             "article": "posta-bolnisnica.html"
           },
           {
             "_id": "111",
-            "name": "Imam status invalida.",
-            "type": "link",
-            "article": "posta-invalidi.html"
+            "name": "Imam status invalida in želim glasovati po pošti.",
+            "type": "menu",
+            "items": [
+              {
+                "_id": "112",
+                "name": "Po pošti želim glasovati enkratno.",
+                "type": "link",
+                "article": "posta-invalidi.html"
+              },
+              {
+                "_id": "113",
+                "name": "Po pošti želim glasovati stalno.",
+                "type": "link",
+                "article": "posta-invalidi-stalno.html"
+              }
+            ]
           },
           {
             "_id": "13",
             "name": "Bivam v domu za starejše, ki ni moje stalno prebivališče.",
             "type": "link",
             "article": "posta-socialzavod.html"
+          },
+          {
+            "_id": "14",
+            "name": "Imam okužbo s SARS-COV-2 (Covid) in mi je odrejena izolacija.",
+            "type": "link",
+            "article": "posta-covid.html"
           }
         ]
       }
