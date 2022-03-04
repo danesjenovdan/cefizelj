@@ -16,7 +16,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'acumin-pro', sans-serif;
   font-weight: 400;
 }
 
@@ -44,7 +44,7 @@ h3 {
 
 /* p {
   font-size: 16px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'acumin-pro', sans-serif;
   font-weight: 300;
   margin: 0;
 } */
@@ -54,13 +54,13 @@ a {
 } */
 
 .bck-red {
-   background-color: #6ba8a0;
+   background-color: #f9e4e2;
    /* #b0003f;  */
   /* #de786b; */
 }
 
 .col-red {
-  color: #6ba8a0;
+  color: #f9e4e2;
   /* #b0003f; */
   /* #de786b; */
 }
@@ -116,7 +116,7 @@ a {
   overflow: visible;
   font-size: 12px;
   line-height: 1.2em;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'acumin-pro', sans-serif;
   cursor: pointer;
 }
 
@@ -245,9 +245,8 @@ a {
   width: 100%;
   height: auto;
   cursor: pointer;
-  background-color: #6ba8a0;
-  /* #b0003f; */
-  box-shadow: inset 0 0 0 1px #f6f6f6;
+  background-color: #f9e4e2;
+  box-shadow: 0 0 0 1px #dc776b;
   color: #111;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -257,26 +256,20 @@ a {
 }
 
 .item:hover {
-  filter: brightness(95%);
-  /* background-color: #88ACC3; */
-  /* #920135; */
-  box-shadow: inset 0 0 0 1px #f6f6f6;
+  background-color: #f4cfcb;
   color: #111;
 }
 .noclick .fwd::after {
   display: none;
 }
 .noclick:hover {
-  filter: none;
-  /* background-color: #6ba8a0; */
+  background-color: #f9e4e2;
   cursor: default;
 }
 
 .item-red {
-  background-color: #6ba8a0;
-  /* #920135; */
+  background-color: #f9e4e2;
   color: #111;
-  box-shadow: inset 0 0 0 1px #f6f6f6;
 }
 
 .fwd,
@@ -380,7 +373,7 @@ a {
   line-height: 67px;
   text-align: center;
   /*text-transform: uppercase;*/
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'acumin-pro', sans-serif;
   position: relative;
   overflow: visible;
   background-color: #3d3d3d;
@@ -467,7 +460,7 @@ a {
   padding: 0;
   margin: 0;
   width: 100%;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'acumin-pro', sans-serif;
   font-weight: 300;
 }
 
@@ -568,7 +561,7 @@ a {
 .nazajcontainer {
   width: 100%;
   height: 40px;
-  background-color: #6ba8a0;
+  background-color: #f9e4e2;
   /* #b0003f; */
   color: #111;
   text-align: center;
@@ -579,7 +572,7 @@ a {
   z-index: 9000;
   overflow: hidden;
   font-size: 18px;
-  /* font-family: 'Titillium Web'; */
+  /* font-family: 'acumin-pro'; */
   cursor: pointer;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -680,7 +673,7 @@ a {
 
 .htmlcontainer ul li {
   font-size: 16px;
-  font-family: 'Titillium Web';
+  font-family: 'acumin-pro';
   list-style: none;
   padding-left: 0;
 }
@@ -834,7 +827,7 @@ a {
   display: inline-block;
   line-height: 30px;
   margin-right: 10px;
-  font-family: 'Titillium Web';
+  font-family: 'acumin-pro';
   font-weight: 700;
 }
 
@@ -917,7 +910,7 @@ content: "\e60f";
 }
 
 .sqs-block-content h3 {
-  color: #6ba8a0;
+  color: #f9e4e2;
 }
 
 .sqs-block-content h3,
@@ -935,14 +928,16 @@ content: "\e60f";
 }
 
 .sqs-block-content .btn.btn-primary {
-  background-color: #6ba8a0;
-  border-color: #416660;
-  padding: 10px 20px;
+  background: transparent;
+  border-color: #dc776b;
+  color: #dc776b;
+  border-radius: 0;
+  padding: 15px 20px 12px;
   font-weight: 700;
   margin-top: 15px;
   margin-right: 15px;
   font-size: 18px;
-  text-shadow: 1px 1px 2px #111;
+  font-style: italic;
 }
 
 @media (max-width: 575px) {
