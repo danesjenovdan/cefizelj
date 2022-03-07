@@ -275,8 +275,8 @@ a {
 .fwd,
 .bck {
   text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .fwd:after {
@@ -294,7 +294,7 @@ a {
   left: 10px;
 }
 
-.fwd:before {
+/* .fwd:before {
   content: '';
   width: 0;
   height: 0;
@@ -305,7 +305,7 @@ a {
   position: relative;
   top: -19px;
   left: -3px;
-}
+} */
 
 .item:hover .fwd:after {
   border-color: transparent transparent transparent #ffffff;
@@ -331,7 +331,7 @@ a {
   transform: rotate(180deg);
 }
 
-.bck:after {
+/* .bck:after {
   content: '';
   width: 0;
   height: 0;
@@ -342,7 +342,7 @@ a {
   position: relative;
   top: -19px;
   left: 3px;
-}
+} */
 
 .item:hover .bck:before {
   border-color: transparent #ffffff transparent transparent;
@@ -908,6 +908,13 @@ content: "\e60f";
 .sqs-block-content {
   padding: 20px 40px;
   font-family: 'acumin-pro', sans-serif;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.sqs-block-content hr {
+  margin: 50px 0;
+  border-top-color: #dc776b;
 }
 
 .sqs-block-content h3 {
@@ -926,6 +933,11 @@ content: "\e60f";
 .sqs-block-content p,
 .sqs-block-content ul {
   font-size: 18px;
+}
+
+.sqs-block-content p.question {
+  margin-bottom: 0.5em;
+  margin-top: 2em;
 }
 
 .sqs-block-content .btn.btn-primary {
