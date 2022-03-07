@@ -4,7 +4,7 @@ metadata:
   name: volitveni-vodic
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   tls:
     - hosts:
@@ -15,7 +15,7 @@ spec:
     - host: volitveni-vodic.lb.djnd.si
       http:
         paths:
-          - path: /
+          - path: /()(.*)
             pathType: Prefix
             backend:
               service:
@@ -25,7 +25,7 @@ spec:
     - host: vodici.djnd.si
       http:
         paths:
-          - path: /volitve/
+          - path: /volitve(/|$)(.*)
             pathType: Prefix
             backend:
               service:
