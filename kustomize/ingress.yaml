@@ -25,7 +25,7 @@ spec:
     - host: vodici.djnd.si
       http:
         paths:
-          - path: /vodici
+          - path: /volitve/
             pathType: Prefix
             backend:
               service:
