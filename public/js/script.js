@@ -100,6 +100,17 @@ function animationFinished() {
     var newhash = breadcrumbs.length ? '#/korak/' + breadcrumbs.join('/') : '';
     window.history.pushState(breadcrumbs, '', baseurl + newhash);
     console.log('pushState', breadcrumbs);
+    try {
+      var data_item = tree
+      for (var i = 0; i < breadcrumbs.length; i++) {
+        data_item = data_item.items.find(it => it._id == breadcrumbs[i])
+      }
+      plausible('clicked item', {
+        props: {
+          itemName: data_item.name,
+        },
+      });
+    } catch (error) {}
   }
 
   // var title = $('.half-right .contentcontainer .block-heading .info__title h1').first().text();
