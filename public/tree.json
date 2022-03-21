@@ -52,8 +52,21 @@
       {
         "_id": "2",
         "name": "... stalno prebivališče imam v tujini.",
-        "type": "link",
-        "article": "v-tujini-stalno.html"
+        "type": "menu",
+        "items": [
+          {
+            "_id": "1",
+            "name": "Na dan volitev bom v tujini.",
+            "type": "link",
+            "article": "v-tujini-stalno.html"
+          },
+          {
+            "_id": "2",
+            "name": "Na dan volitev bom v Sloveniji.",
+            "type": "link",
+            "article": "zivim-v-tujini.html"
+          }
+        ]
       },
       {
         "_id": "3",
