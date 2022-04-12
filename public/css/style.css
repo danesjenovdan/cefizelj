@@ -940,6 +940,12 @@ content: "\e60f";
   margin-top: 2em;
 }
 
+.sqs-block-content a {
+  color: #dc776b;
+  font-weight: 700;
+  font-size: 18px;
+}
+
 .sqs-block-content .btn.btn-primary {
   background: transparent;
   border-color: #dc776b;
