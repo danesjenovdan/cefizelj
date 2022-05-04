@@ -8,6 +8,7 @@ metadata:
     nginx.ingress.kubernetes.io/configuration-snippet: |
       rewrite ^(/volitve)$ $1/ redirect; # add trailing slash
 spec:
+  ingressClassName: nginx
   tls:
     - hosts:
         - vodici.djnd.si
