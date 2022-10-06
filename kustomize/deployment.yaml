@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: volitveni-vodic
+  name: volitveni-vodic-predsednik-2022
   labels:
-    app: volitveni-vodic
+    app: volitveni-vodic-predsednik-2022
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: volitveni-vodic
+      app: volitveni-vodic-predsednik-2022
   template:
     metadata:
       labels:
-        app: volitveni-vodic
+        app: volitveni-vodic-predsednik-2022
     spec:
       containers:
-        - name: volitveni-vodic
-          image: volitveni-vodic
+        - name: volitveni-vodic-predsednik-2022
+          image: volitveni-vodic-predsednik-2022
           ports:
             - containerPort: 80
           resources:

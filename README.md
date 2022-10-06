@@ -1,4 +1,4 @@
 cefizelj
 ========
 
-državnozborske volitve 2022
+predsedniške volitve 2022

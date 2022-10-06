@@ -1,26 +1,26 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: volitveni-vodic
+  name: volitveni-vodic-predsednik-2022
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
     nginx.ingress.kubernetes.io/rewrite-target: /$2
     nginx.ingress.kubernetes.io/configuration-snippet: |
-      rewrite ^(/volitve)$ $1/ redirect; # add trailing slash
+      rewrite ^(/predsedniske-volitve)$ $1/ redirect; # add trailing slash
 spec:
   ingressClassName: nginx
   tls:
     - hosts:
         - vodici.djnd.si
-      secretName: volitveni-vodic-tls
+      secretName: volitveni-vodic-predsednik-2022-tls
   rules:
     - host: vodici.djnd.si
       http:
         paths:
-          - path: /volitve(/|$)(.*)
+          - path: /predsedniske-volitve(/|$)(.*)
             pathType: Prefix
             backend:
               service:
-                name: volitveni-vodic
+                name: volitveni-vodic-predsednik-2022
                 port:
                   number: 80
