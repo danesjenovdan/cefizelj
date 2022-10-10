@@ -1,7 +1,7 @@
 {
   "tree": {
     "_id": "0",
-    "name": "Želim glasovati na državnozborskih volitvah 24. 4. 2022, toda ...",
+    "name": "Želim glasovati na predsedniških volitvah 23. 10. 2022, toda ...",
     "image": "img/vodic-volitve-slika.png",
     "type": "menu",
     "items": [
@@ -29,7 +29,7 @@
             "items": [
               {
                 "_id": "7",
-                "name": "Imam stalno prebivališče v tujini.",
+                "name": "Stalno prebivališče imam v tujini.",
                 "type": "link",
                 "article": "zivim-v-tujini.html"
               },
@@ -41,7 +41,7 @@
               },
               {
                 "_id": "9",
-                "name": "Na dan volitev bom v bolnišnici, socialnovarstvenem zavodu, priporu ali zavodu za prestajanje kazni.",
+                "name": "Na dan volitev bom v bolnišnici, socialnovarstvenem zavodu za institucionalno varstvo, priporu, zavodu za prestajanje kazni ali v izolaciji zaradi okužbe s koronavirusom.",
                 "type": "link",
                 "article": "posta-pripor.html"
               }
@@ -84,6 +84,12 @@
             "name": "Na dan volitev bom v bolnišnici ali zdravilišču.",
             "type": "link",
             "article": "posta-bolnisnica.html"
+          },
+          {
+            "_id": "131",
+            "name": "Bivam v domu za starejše, ki je moje stalno prebivališče.",
+            "type": "link",
+            "article": "posta-socialzavod-stalno.html"
           },
           {
             "_id": "111",
