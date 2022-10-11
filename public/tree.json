@@ -2,7 +2,7 @@
   "tree": {
     "_id": "0",
     "name": "Želim glasovati na predsedniških volitvah 23. 10. 2022, toda ...",
-    "image": "img/vodic-volitve-slika.png",
+    "image": "img/vodic-predsedniske-volitve-slika.png",
     "type": "menu",
     "items": [
       {
@@ -43,7 +43,7 @@
                 "_id": "9",
                 "name": "Na dan volitev bom v bolnišnici, socialnovarstvenem zavodu za institucionalno varstvo, priporu, zavodu za prestajanje kazni ali v izolaciji zaradi okužbe s koronavirusom.",
                 "type": "link",
-                "article": "posta-pripor.html"
+                "article": "posta-bolnisnica-pripor.html"
               }
             ]
           }
@@ -121,6 +121,12 @@
             "name": "Imam okužbo s SARS-COV-2 (Covid) in mi je odrejena izolacija.",
             "type": "link",
             "article": "posta-covid.html"
+          },
+          {
+            "_id": "15",
+            "name": "Na dan volitev bom v priporu ali zavodu za prestajanje kazni.",
+            "type": "link",
+            "article": "posta-pripor.html"
           }
         ]
       }
