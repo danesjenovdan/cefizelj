@@ -46,7 +46,7 @@ function repaintMe() {
 
 // api tree getter
 function getTree(callback) {
-  $.get('./tree.json?v=2', function (r) {
+  $.get('./tree.json?v=1', function (r) {
     console.log('getTree response', r);
     tree = r.tree;
     callback();
