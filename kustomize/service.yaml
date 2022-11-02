@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: volitveni-vodic-predsednik-2022
+  name: volitveni-vodic-predsednik-2022-drugi-krog
 spec:
   selector:
-    app: volitveni-vodic-predsednik-2022
+    app: volitveni-vodic-predsednik-2022-drugi-krog
   ports:
     - protocol: TCP
       port: 80
