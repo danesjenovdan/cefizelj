@@ -6,6 +6,6 @@ resources:
   - service.yaml
   - ingress.yaml
 images:
-  - name: volitveni-vodic-predsednik-2022-drugi-krog
-    newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-predsednik-2022-drugi-krog
+  - name: volitveni-vodic-rtv-referendum-2022
+    newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-rtv-referendum-2022
     newTag: 'f21fee671e4b20b13a6c10b9e0eeb43a95a71ccc'

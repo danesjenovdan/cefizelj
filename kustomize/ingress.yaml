@@ -1,26 +1,26 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: volitveni-vodic-predsednik-2022-drugi-krog
+  name: volitveni-vodic-rtv-referendum-2022
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
     nginx.ingress.kubernetes.io/rewrite-target: /$2
     nginx.ingress.kubernetes.io/configuration-snippet: |
-      rewrite ^(/volitve/predsedniske/2)$ $1/ redirect; # add trailing slash
+      rewrite ^(/referendum/rtv)$ $1/ redirect; # add trailing slash
 spec:
   ingressClassName: nginx
   tls:
     - hosts:
         - vodici.djnd.si
-      secretName: volitveni-vodic-predsednik-2022-drugi-krog-tls
+      secretName: volitveni-vodic-rtv-referendum-2022-tls
   rules:
     - host: vodici.djnd.si
       http:
         paths:
-          - path: /volitve/predsedniske/2(/|$)(.*)
+          - path: /referendum/rtv(/|$)(.*)
             pathType: Prefix
             backend:
               service:
-                name: volitveni-vodic-predsednik-2022-drugi-krog
+                name: volitveni-vodic-rtv-referendum-2022
                 port:
                   number: 80
