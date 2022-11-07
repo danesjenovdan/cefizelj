@@ -1,13 +1,13 @@
 {
   "tree": {
     "_id": "0",
-    "name": "Želim glasovati v drugem krogu predsedniških volitev 13. 11. 2022, toda …",
+    "name": "Želim glasovati ZA javno in neodvisno RTV, toda …",
     "image": "img/vodic-predsedniske-volitve-slika-2krog.png?v=1",
     "type": "menu",
     "items": [
       {
         "_id": "1",
-        "name": "... na dan volitev me ne bo doma.",
+        "name": "… na dan volitev me ne bo doma.",
         "type": "menu",
         "items": [
           {
@@ -51,7 +51,7 @@
       },
       {
         "_id": "2",
-        "name": "... stalno prebivališče imam v tujini.",
+        "name": "… stalno prebivališče imam v tujini.",
         "type": "menu",
         "items": [
           {
@@ -70,7 +70,7 @@
       },
       {
         "_id": "3",
-        "name": "... volišče mi ni dostopno.",
+        "name": "… volišče mi ni dostopno.",
         "type": "menu",
         "items": [
           {
