@@ -8,4 +8,4 @@ resources:
 images:
   - name: volitveni-vodic-rtv-referendum-2022
     newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-rtv-referendum-2022
-    newTag: 'a759a6f3c237b237f2440cf1b0e13003be6fecfb'
+    newTag: '2d08f9a098a9875fe685ba899130073dff6c6bcf'
