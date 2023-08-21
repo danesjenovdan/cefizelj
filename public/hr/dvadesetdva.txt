@@ -1,0 +1,6 @@
+Pratite stranicu Europske komisije i sudjelujte u davanju mišljenja o evaluacijama propisa/politika EU putem portala IZNESITE SVOJE MIŠLJENJE.
+
+
+"stranicu Europske komisije" bi trebao biti hiperlinkano ili prikazano kao gumb s linkom na: https://commission.europa.eu/law/law-making-process/evaluating-and-improving-existing-laws/evaluating-laws/planned-evaluations_hr
+
+"IZNESITE SVOJE MIŠLJENJE" bi trebao biti hiperlinkano ili prikazano kao gumb s linkom na: https://ec.europa.eu/info/law/better-regulation/have-your-say_hr

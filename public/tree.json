@@ -1,121 +1,156 @@
 {
   "tree": {
     "_id": "0",
-    "name": "Želim glasovati na državnozborskih volitvah 24. 4. 2022, toda ...",
-    "image": "img/vodic-volitve-slika.png",
+    "name": "Faze razvoja EU zakonodavstva i mogućnosti sudjelovanja zainteresirane javnosti",
+    "image": "img/Kako-da-se-moj-glas-cuje.png",
     "type": "menu",
-    "items": [
-      {
+    "items": [{
         "_id": "1",
-        "name": "... na dan volitev me ne bo doma.",
+        "name": "POSTAVLJANJE POLITIČKOG DNEVNOG REDA EU - PLANOVI I PRIORITETI DJELOVANJA",
         "type": "menu",
-        "items": [
-          {
-            "_id": "3",
-            "name": "Na dan volitev bom v tujini.",
+        "items": [{
+            "_id": "2",
+            "name": "Europsko vijeće usvaja petogodišnji strateški program djelovanja EU (NA POČETKU MANDATA) SUDJELUJTE!",
             "type": "link",
-            "article": "v-tujini.html?v=2"
+            "article": "dva.html"
           },
           {
-            "_id": "2",
-            "name": "Doma bom v tednu pred volitvami.",
+            "_id": "3",
+            "name": "Europska komisija usvaja svoj petogodišnji politički program (NA POČETKU MANDATA) SUDJELUJTE!",
             "type": "link",
-            "article": "predcasno.html"
+            "article": "tri.html"
           },
           {
             "_id": "4",
-            "name": "Na dan volitev bom v Sloveniji.",
-            "type": "menu",
-            "items": [
-              {
-                "_id": "7",
-                "name": "Imam stalno prebivališče v tujini.",
-                "type": "link",
-                "article": "zivim-v-tujini.html"
-              },
-              {
-                "_id": "8",
-                "name": "Na dan volitev bom izven kraja stalnega prebivališča.",
-                "type": "link",
-                "article": "omnia.html"
-              },
-              {
-                "_id": "9",
-                "name": "Na dan volitev bom v bolnišnici, socialnovarstvenem zavodu, priporu ali zavodu za prestajanje kazni.",
-                "type": "link",
-                "article": "posta-pripor.html"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "_id": "2",
-        "name": "... stalno prebivališče imam v tujini.",
-        "type": "menu",
-        "items": [
-          {
-            "_id": "1",
-            "name": "Na dan volitev bom v tujini.",
+            "name": "Europska komisija usvaja godišnji program izrade EU propisa i politika (SVAKE GODINE U LISTOPADU ZA SLJEDEĆU GODINU) SUDJELUJTE!",
             "type": "link",
-            "article": "v-tujini-stalno.html"
+            "article": "cetiri.html"
           },
           {
-            "_id": "2",
-            "name": "Na dan volitev bom v Sloveniji.",
+            "_id": "5",
+            "name": "Usvajanje zajedničke izjave Europske komisije, Europskog parlamenta i Vijeća EU o zakonodavnim prioritetima (SVAKE GODINE U PROSINCU ZA SLJEDEĆU GODINU) SUDJELUJTE!",
             "type": "link",
-            "article": "zivim-v-tujini.html"
+            "article": "pet.html"
+          },
+          {
+            "_id": "6",
+            "name": "Hrvatski sabor izrađuje program razmatranja nacionalnih stajališta RH u tekućoj godini (POČETKOM GODINE) SUDJELUJTE!",
+            "type": "link",
+            "article": "sest.html"
           }
         ]
       },
       {
-        "_id": "3",
-        "name": "... volišče mi ni dostopno.",
+        "_id": "7",
+        "name": "IZRADA PROPISA/POLITIKA EU",
         "type": "menu",
-        "items": [
+        "items": [{
+            "_id": "8",
+            "name": "Europska komisija priprema nacrt akta/politike  SUDJELUJTE!",
+            "type": "link",
+            "article": "osam.html"
+          },
+          {
+            "_id": "9",
+            "name": "EK Izrađuje izvještaj o procjeni učinka novih propisa EU  SUDJELUJTE! ",
+            "type": "link",
+            "article": "osam.html"
+          },
           {
             "_id": "10",
-            "name": "Zaradi bolezni ne morem od doma.",
+            "name": "Europska Komisija provodi javno savjetovanje (8-12 TJEDANA) o nacrtu akta (UKLJUČUJUĆI I IZVJEŠĆE O PROCJENI UČINKA AKTA) na središnjem portalu EK za javna savjetovanja  SUDJELUJTE!",
             "type": "link",
-            "article": "na-domu.html"
-          },
-          {
-            "_id": "11",
-            "name": "Na dan volitev bom v bolnišnici ali zdravilišču.",
+            "article": "deset.html"
+          }
+        ]
+      },
+      {
+        "_id": "11",
+        "name": "ODLUČIVANJE O PREDLOŽENIM PROPISIMA/POLITIKAMA EU",
+        "type": "menu",
+        "items": [{
+            "_id": "12",
+            "name": "Europska komisija predlaže zakonodavni akt i šalje ga EP, Vijeću, EGSO, OR, Hrvatskom saboru SUDJELUJTE!",
             "type": "link",
-            "article": "posta-bolnisnica.html"
-          },
-          {
-            "_id": "111",
-            "name": "Imam status invalida in želim glasovati po pošti.",
-            "type": "menu",
-            "items": [
-              {
-                "_id": "112",
-                "name": "Po pošti želim glasovati enkratno.",
-                "type": "link",
-                "article": "posta-invalidi.html"
-              },
-              {
-                "_id": "113",
-                "name": "Po pošti želim glasovati stalno.",
-                "type": "link",
-                "article": "posta-invalidi-stalno.html"
-              }
-            ]
+            "article": "dvanaest.html"
           },
           {
             "_id": "13",
-            "name": "Bivam v domu za starejše, ki ni moje stalno prebivališče.",
+            "name": "Vlada priprema nacionalno stajalište RH SUDJELUJTE!",
             "type": "link",
-            "article": "posta-socialzavod.html"
+            "article": "dvanaest.html"
           },
           {
             "_id": "14",
-            "name": "Imam okužbo s SARS-COV-2 (Covid) in mi je odrejena izolacija.",
+            "name": "Sabor raspravlja o nacionalnom stajalištu i o njemu usvaja zaključak kojeg bi Vlada odnosno nadležno ministarstvo trebalo slijediti pri djelovanju na razini EU SUDJELUJTE!",
             "type": "link",
-            "article": "posta-covid.html"
+            "article": "cetrnaest.html"
+          },
+          {
+            "_id": "15",
+            "name": "Vlada glasuje u Vijeću EU o prijedlogu akta SUDJELUJTE!",
+            "type": "link",
+            "article": "cetrnaest.html"
           }
+        ]
+      },
+      {
+        "_id": "16",
+        "name": "PROVEDBA USVOJENIH PROPISA/POLITIKA EU",
+        "type": "menu",
+        "items": [{
+            "_id": "17",
+            "name": "Sabor donosi GODIŠNJI PLAN USKLAĐIVANJA zakonodavstva, na temelju Vladinog Plana za preuzimanje i provedbu pravne stečevine EU, kao osnovni dokument u postupku preuzimanja i provedbe prava EU u hrvatsko zakonodavstvo. SUDJELUJTE! ",
+            "type": "link",
+            "article": "sedamnaest.html"
+          },
+          {
+            "_id": "18",
+            "name": "Sabor može tražiti od Vlade očitovanje o statusu provedbe bilo kojeg EU akta u RH. SUDJELUJTE!",
+            "type": "link",
+            "article": "sedamnaest.html"
+          },
+          {
+            "_id": "19",
+            "name": "Europska komisija objavljuje GODIŠNJA IZVJEŠĆA O PRAĆENJU PRIMJENE PRAVA EU u državama članicama.  SUDJELUJTE!",
+            "type": "link",
+            "article": "devetnaest.html"
+          },
+          {
+            "_id": "20",
+            "name": "U okviru provedbe pojedinih zakonodavnih akata, Europska komisija ima ovlasti donositi PROVEDBENE I DELEGIRANE AKTE u postupku tzv. KOMITOLOGIJE u okviru odbora u kojima sjede predstavnici nadležnih tijela državne uprave iz svih država članica EU koji nadziru i odobravaju donošenje pojedinih provedbenih akata SUDJELUJTE!",
+            "type": "link",
+            "article": "dvadeset.html"
+          }
+        ]
+      },
+      {
+        "_id": "21",
+        "name": "EVALUACIJA PROVEDBE USVOJENIH PROPISA/POLITIKA",
+        "type": "menu",
+        "items": [{
+            "_id": "22",
+            "name": "Europska komisija objavljuje planove evaluacija koji se mogu pratiti na STRANICI EK. SUDJELUJTE!",
+            "type": "link",
+            "article": "dvadesetdva.html"
+          },
+          {
+            "_id": "23",
+            "name": "Komisija provodi evaluacije provedbe postojećeg zakonodavstva. SUDJELUJTE!",
+            "type": "link",
+            "article": "dvadesettri.html"
+          },
+          {
+            "_id": "24",
+            "name": "Sabor može tražiti od Vlade evaluaciju učinaka usvojenog zakonodavstva EU. SUDJELUJTE!",
+            "type": "link",
+            "article": "dvadesettri.html"
+          }
+
+
+
+
+
         ]
       }
     ]

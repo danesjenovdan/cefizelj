@@ -1,0 +1,8 @@
+U slučaju da se smatra da Europska komisija nije odgovarajuće obradila podnesenu pritužbu odnosno zahtjev, može se obratiti EUROPSKOM OMBUDSMANU.
+Godišnje izvješća o praćenju primjene prava EU u državama članicama nađite OVDJE
+
+
+
+"EUROPSKOM OMBUDSMANU" bi trebao biti hiperlinkano ili prikazano kao gumb s linkom na: https://www.ombudsman.europa.eu/en/home
+
+"OVDJE" bi trebao biti hiperlinkano ili prikazano kao gumb s linkom na: https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/upholding-rule-law/rule-law/rule-law-mechanism/2022-rule-law-report_hr

@@ -2,7 +2,7 @@ name: Build and publish Docker image
 on:
   push:
     branches:
-      - 'dz-2022'
+      - 'parlametar-hr'
 jobs:
   push_to_registry:
     name: Build and push Docker image to registry
@@ -27,8 +27,8 @@ jobs:
           context: .
           push: true
           tags: |
-            rg.fr-par.scw.cloud/djnd/volitveni-vodic:${{ github.sha }}
-            rg.fr-par.scw.cloud/djnd/volitveni-vodic:latest
+            rg.fr-par.scw.cloud/djnd/eu-poslovi:${{ github.sha }}
+            rg.fr-par.scw.cloud/djnd/eu-poslovi:latest
 
       - name: Update image versions in kustomize/kustomization.yaml
         run: |

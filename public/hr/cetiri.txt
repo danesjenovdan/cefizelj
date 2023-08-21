@@ -1,0 +1,4 @@
+Obraćanje Saboru koji može inicirati vlastito mišljenje i pokrenuti politički dijalog s Komisijom o bilo kojoj temi iz NADLEŽNOSTI EU koja se može naći na agendi odnosno sjednicama Vijeća EU i Europskog vijeća.
+
+
+"NADLEŽNOSTI EU" bi trebao biti hiperlinkano ili prikazano kao gumb s linkom na: https://commission.europa.eu/about-european-commission/what-european-commission-does/law/areas-eu-action_hr

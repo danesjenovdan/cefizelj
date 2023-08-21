@@ -1,0 +1,4 @@
+Reagiranje na pozive Europske komisije na očitovanja o planovima djelovanja putem portala IZNESITE SVOJE MIŠLJENJE. 
+
+
+"iznesite svoje mišljenje" bi trebao biti hiperlinkano ili prikazano kao gumb s linkom na: https://ec.europa.eu/info/law/better-regulation/have-your-say_en
