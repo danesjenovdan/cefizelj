@@ -17,7 +17,7 @@ spec:
     - host: parlametar.lb.djnd.si
       http:
         paths:
-          - path: /volitve(/|$)(.*)
+          - path: /eu-poslovi(/|$)(.*)
             pathType: Prefix
             backend:
               service:

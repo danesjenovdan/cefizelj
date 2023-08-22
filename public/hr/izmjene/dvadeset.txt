@@ -1,0 +1,7 @@
+Za provedbene akte koje usvaja Europska komisija (uz potvrđivanje predstavnika vlada država članica) u postupku komitologije, građani se mogu obratiti nadležnom ministarstvu/tijelu državne uprave radi dodatnih informacija o stajalištu RH o pojedinom provedbenom aktu odnosno planovima djelovanja u pojedinim odborima.
+[space]
+O provedbenim i delegiranim aktima vidi više OVDJE.
+
+"komitologije" hiperlinkati: https://commission.europa.eu/law/law-making-process/adopting-eu-law/implementing-and-delegated-acts/comitology_hr
+
+OVDJE" bi trebao biti hiperlinkano ili prikazano kao gumb s linkom na: https://commission.europa.eu/law/law-making-process/adopting-eu-law/implementing-and-delegated-acts_hr 

@@ -10,31 +10,31 @@
         "type": "menu",
         "items": [{
             "_id": "2",
-            "name": "Europsko vijeće usvaja petogodišnji strateški program djelovanja EU (NA POČETKU MANDATA) SUDJELUJTE!",
+            "name": "Europsko vijeće usvaja petogodišnji strateški program djelovanja EU (na početku mandata) SUDJELUJTE!",
             "type": "link",
             "article": "dva.html"
           },
           {
             "_id": "3",
-            "name": "Europska komisija usvaja svoj petogodišnji politički program (NA POČETKU MANDATA) SUDJELUJTE!",
+            "name": "Europska komisija usvaja svoj petogodišnji politički program (na početku mandata) SUDJELUJTE!",
             "type": "link",
             "article": "tri.html"
           },
           {
             "_id": "4",
-            "name": "Europska komisija usvaja godišnji program izrade EU propisa i politika (SVAKE GODINE U LISTOPADU ZA SLJEDEĆU GODINU) SUDJELUJTE!",
+            "name": "Europska komisija usvaja godišnji program izrade EU propisa i politika (svake godine u listopadu za sljedeću godinu) SUDJELUJTE!",
             "type": "link",
             "article": "cetiri.html"
           },
           {
             "_id": "5",
-            "name": "Usvajanje zajedničke izjave Europske komisije, Europskog parlamenta i Vijeća EU o zakonodavnim prioritetima (SVAKE GODINE U PROSINCU ZA SLJEDEĆU GODINU) SUDJELUJTE!",
+            "name": "Usvajanje zajedničke izjave Europske komisije, Europskog parlamenta i Vijeća EU o zakonodavnim prioritetima (svake godine u prosincu za sljedeću godinu) SUDJELUJTE!",
             "type": "link",
             "article": "pet.html"
           },
           {
             "_id": "6",
-            "name": "Hrvatski sabor izrađuje program razmatranja nacionalnih stajališta RH u tekućoj godini (POČETKOM GODINE) SUDJELUJTE!",
+            "name": "Hrvatski sabor izrađuje program razmatranja nacionalnih stajališta RH u tekućoj godini (početkom godine) SUDJELUJTE!",
             "type": "link",
             "article": "sest.html"
           }
@@ -58,7 +58,7 @@
           },
           {
             "_id": "10",
-            "name": "Europska Komisija provodi javno savjetovanje (8-12 TJEDANA) o nacrtu akta (UKLJUČUJUĆI I IZVJEŠĆE O PROCJENI UČINKA AKTA) na središnjem portalu EK za javna savjetovanja  SUDJELUJTE!",
+            "name": "Europska Komisija provodi javno savjetovanje (8-12 TJEDANA) o nacrtu akta (uključujući i izvješće o procjeni učinka akta) na središnjem portalu EK za javna savjetovanja  SUDJELUJTE!",
             "type": "link",
             "article": "deset.html"
           }
@@ -146,11 +146,6 @@
             "type": "link",
             "article": "dvadesettri.html"
           }
-
-
-
-
-
         ]
       }
     ]

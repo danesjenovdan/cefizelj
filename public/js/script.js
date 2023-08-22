@@ -166,7 +166,7 @@ function renderNext(targetnode) {
 
 function createUrlHalf(url) {
   $.get(url, function(r) {
-    var result = '<div class="half half-rightr half-content"><div class="visible-xs centermycontentvertically nazajcontainer"><div class="centermevertically nazaj bck">Nazaj</div></div>' + '<div class="contentcontainer" data-id="0">' + r + '</div></div>';
+    var result = '<div class="half half-rightr half-content"><div class="visible-xs centermycontentvertically nazajcontainer"><div class="centermevertically nazaj bck">Nazad</div></div>' + '<div class="contentcontainer" data-id="0">' + r + '</div></div>';
     $('.half-right').after(result);
     repaintRightr();
     moveLeft();
@@ -327,7 +327,7 @@ function onBackItemClick(item) {
     shrinkItem(item);
   }, animateSpeedStretch);
 
-  // change text from nazaj to whatever it's supposed to be
+  // change text from nazad to whatever it's supposed to be
   if (item.children('.centermevertically').children('h1').data('text')) {
     item
       .removeClass('stretched')
@@ -391,7 +391,7 @@ $(document).ready(function () {
       $(this)
         .children('.centermevertically')
         .children('h1')
-        .text('Nazaj'); // set text to nazaj
+        .text('Nazad'); // set text to nazaj
     },
     'mouseleave': function () {
       $(this)
