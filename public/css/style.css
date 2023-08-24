@@ -773,7 +773,12 @@ a {
       width: 100%;
   }
   .item h1 {
-      font-size: 14px;
+      font-size: 13px;
+  }
+  .fwd,
+  .bck {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .fwd:after,
   .bck:before {
