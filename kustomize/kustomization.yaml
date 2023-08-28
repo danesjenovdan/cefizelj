@@ -8,4 +8,4 @@ resources:
 images:
   - name: eu-poslovi
     newName: rg.fr-par.scw.cloud/djnd/eu-poslovi
-    newTag: 'fb0255da337968327f2b5fe331c35566ebaa90bd'
+    newTag: '19cc9b9e84ca5249bc4d7653ee0f7aa320e7633d'
