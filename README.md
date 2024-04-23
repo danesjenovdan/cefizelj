@@ -1,4 +1,4 @@
 cefizelj
 ========
 
-predsedniške volitve 2022
+evropske volitve 2024

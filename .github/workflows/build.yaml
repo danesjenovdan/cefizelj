@@ -2,7 +2,7 @@ name: Build and publish Docker image
 on:
   push:
     branches:
-      - 'predsednik-2022-drugi-krog'
+      - 'evropske-2024'
 jobs:
   push_to_registry:
     name: Build and push Docker image to registry
@@ -27,8 +27,8 @@ jobs:
           context: .
           push: true
           tags: |
-            rg.fr-par.scw.cloud/djnd/volitveni-vodic-predsednik-2022-drugi-krog:${{ github.sha }}
-            rg.fr-par.scw.cloud/djnd/volitveni-vodic-predsednik-2022-drugi-krog:latest
+            rg.fr-par.scw.cloud/djnd/volitveni-vodic-evropske-2024:${{ github.sha }}
+            rg.fr-par.scw.cloud/djnd/volitveni-vodic-evropske-2024:latest
 
       - name: Update image versions in kustomize/kustomization.yaml
         run: |
