@@ -1,3 +1,18 @@
+# build image
+FROM debian:latest as build
+
+RUN apt-get update && apt-get install -y gettext-base
+
+ARG COMMIT_SHA="dev"
+
+WORKDIR /app
+
+COPY public public
+COPY replace_env.sh .
+
+RUN ./replace_env.sh
+
+# final image
 FROM nginx:alpine
 
-COPY public /usr/share/nginx/html
+COPY --from=build /app/public /usr/share/nginx/html

@@ -46,7 +46,7 @@ function repaintMe() {
 
 // api tree getter
 function getTree(callback) {
-  $.get('./tree.json?v=1', function (r) {
+  $.get('./tree.json?v=${COMMIT_SHA}', function (r) {
     console.log('getTree response', r);
     tree = r.tree;
     callback();
@@ -76,8 +76,8 @@ function generateFirstNode() {
       .replace(/"item /g, '"item noclick ')
   );
   if (basenode.image) {
-    $('.half-left .centermevertically').addClass('forbaloncek');
-    $('.half-left .fwd').html('<img class="img-responsive nodeimage-filter" src="' + basenode.image + '" alt="' + basenode.name + '">');
+    $('.half-left .fwd').addClass('has-img-root');
+    $('.half-left .fwd').prepend('<img class="img-root" src="' + basenode.image + '" alt="">');
   }
   for (var i in basenode.items) {
     var node = basenode.items[i];
