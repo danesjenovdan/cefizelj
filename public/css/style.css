@@ -10,12 +10,13 @@ body {
 
 .fwd.has-img-root {
   text-align: left;
-  max-width: 485px;
+  max-width: 735px;
+  font-size: 48px;
 }
 
 .img-root {
   display: block;
-  width: 100px;
+  width: 140px;
   margin-bottom: 2rem;
 }
 
@@ -605,6 +606,22 @@ a {
 }
 
 
+@media (max-width: 1441px) {
+  .fwd.has-img-root {
+    max-width: 605px;
+    font-size: 36px;
+  }
+  .img-root {
+    width: 100px;
+  }
+}
+
+@media (max-width: 1111px) {
+  .fwd.has-img-root {
+    font-size: 32px;
+  }
+}
+
 /* small devices */
 
 @media (max-width: 991px) {
@@ -640,9 +657,10 @@ a {
   }
   .fwd.has-img-root {
     max-width: 370px;
+    font-size: 28px;
   }
   .img-root {
-    width: 65px;
+    width: 80px;
   }
 }
 
@@ -659,12 +677,18 @@ a {
   .fwd.has-img-root {
     max-width: 280px;
   }
+}
+
+@media (max-width: 575px) {
+  .fwd.has-img-root {
+    max-width: 280px;
+    font-size: 21px;
+  }
   .img-root {
     width: 45px;
     margin-bottom: 1rem;
   }
 }
-
 
 /* naprej hack TODO */
 
