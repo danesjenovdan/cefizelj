@@ -165,7 +165,7 @@ function renderNext(targetnode) {
 }
 
 function createUrlHalf(url) {
-  $.get(url, function(r) {
+  $.get(url + '?v=${COMMIT_SHA}', function(r) {
     var result = '<div class="half half-rightr half-content"><div class="visible-xs centermycontentvertically nazajcontainer"><div class="centermevertically nazaj bck">Nazaj</div></div>' + '<div class="contentcontainer" data-id="0">' + r + '</div></div>';
     $('.half-right').after(result);
     repaintRightr();
