@@ -8,4 +8,4 @@ resources:
 images:
   - name: volitveni-vodic-evropske-2024
     newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-evropske-2024
-    newTag: '2268a87d09fb184d319faacb8cf190b8ab8a2edd'
+    newTag: '169f4757a2d016eb565f84d612fb0727430793a0'
