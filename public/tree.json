@@ -1,18 +1,18 @@
 {
   "tree": {
     "_id": "0",
-    "name": "Želim glasovati na volitvah v Evropski parlament 9. 6. 2024, toda ...",
+    "name": "Želim glasovati na volitvah v Evropski parlament in referendumih 9. 6. 2024, toda ...",
     "image": "img/glasovanje.svg",
     "type": "menu",
     "items": [
       {
         "_id": "1",
-        "name": "... na dan volitev me ne bo doma.",
+        "name": "... na dan glasovanja me ne bo doma.",
         "type": "menu",
         "items": [
           {
             "_id": "3",
-            "name": "Na dan volitev bom v tujini.",
+            "name": "Na dan glasovanja bom v tujini.",
             "type": "link",
             "article": "v-tujini.html"
           },
