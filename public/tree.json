@@ -75,7 +75,7 @@
         "items": [
           {
             "_id": "10",
-            "name": "Zaradi bolezni ne morem od doma.",
+            "name": "Zaradi bolezni ali invalidnosti ne morem od doma.",
             "type": "link",
             "article": "na-domu.html"
           },
