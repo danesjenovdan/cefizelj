@@ -2,7 +2,7 @@ name: Build and publish Docker image
 on:
   push:
     branches:
-      - 'evropske-2024'
+      - "pic-obnovljivi-viri"
 jobs:
   push_to_registry:
     name: Build and push Docker image to registry
@@ -29,8 +29,8 @@ jobs:
             COMMIT_SHA=${{ github.sha }}
           push: true
           tags: |
-            rg.fr-par.scw.cloud/djnd/volitveni-vodic-evropske-2024:${{ github.sha }}
-            rg.fr-par.scw.cloud/djnd/volitveni-vodic-evropske-2024:latest
+            rg.fr-par.scw.cloud/djnd/vodic-pic-obnovljivi-viri:${{ github.sha }}
+            rg.fr-par.scw.cloud/djnd/vodic-pic-obnovljivi-viri:latest
 
       - name: Update image versions in kustomize/kustomization.yaml
         run: |
@@ -39,5 +39,5 @@ jobs:
       - name: Commit and push new image versions
         uses: EndBug/add-and-commit@v9
         with:
-          add: '.'
-          message: 'Update image versions in kustomize/kustomization.yaml'
+          add: "."
+          message: "Update image versions in kustomize/kustomization.yaml"

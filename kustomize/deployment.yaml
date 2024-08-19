@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: volitveni-vodic-evropske-2024
+  name: vodic-pic-obnovljivi-viri
   labels:
-    app: volitveni-vodic-evropske-2024
+    app: vodic-pic-obnovljivi-viri
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: volitveni-vodic-evropske-2024
+      app: vodic-pic-obnovljivi-viri
   template:
     metadata:
       labels:
-        app: volitveni-vodic-evropske-2024
+        app: vodic-pic-obnovljivi-viri
     spec:
       containers:
-        - name: volitveni-vodic-evropske-2024
-          image: volitveni-vodic-evropske-2024
+        - name: vodic-pic-obnovljivi-viri
+          image: vodic-pic-obnovljivi-viri
           ports:
             - containerPort: 80
           resources:

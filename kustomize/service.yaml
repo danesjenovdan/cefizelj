@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: volitveni-vodic-evropske-2024
+  name: vodic-pic-obnovljivi-viri
 spec:
   selector:
-    app: volitveni-vodic-evropske-2024
+    app: vodic-pic-obnovljivi-viri
   ports:
     - protocol: TCP
       port: 80

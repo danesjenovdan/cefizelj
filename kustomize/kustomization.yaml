@@ -6,6 +6,6 @@ resources:
   - service.yaml
   - ingress.yaml
 images:
-  - name: volitveni-vodic-evropske-2024
-    newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-evropske-2024
-    newTag: 'd43877ea55601f511b5bb1b3b201f75981239e99'
+  - name: vodic-pic-obnovljivi-viri
+    newName: rg.fr-par.scw.cloud/djnd/vodic-pic-obnovljivi-viri
+    newTag: "latest"
