@@ -1,0 +1,56 @@
+/* Dela Gothic One */
+@font-face {
+  font-display: swap;
+  font-family: "wf-dela-gothic-one";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./dela-gothic-one/dela-gothic-one-v16-latin_latin-ext-regular.woff2") format("woff2"),
+       url("./dela-gothic-one/dela-gothic-one-v16-latin_latin-ext-regular.ttf") format("truetype");
+}
+
+/* Bluu Next */
+@font-face {
+  font-display: swap;
+  font-family: "wf-bluu-next";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./bluu-next/bluunext-bold.woff2") format("woff2"),
+       url("./bluu-next/bluunext-bold.ttf") format("truetype");
+}
+
+/* Space Mono */
+@font-face {
+  font-display: swap;
+  font-family: "wf-space-mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./space-mono/space-mono-v13-latin_latin-ext-regular.woff2") format("woff2"),
+       url("./space-mono/space-mono-v13-latin_latin-ext-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "wf-space-mono";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./space-mono/space-mono-v13-latin_latin-ext-italic.woff2") format("woff2"),
+       url("./space-mono/space-mono-v13-latin_latin-ext-italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "wf-space-mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./space-mono/space-mono-v13-latin_latin-ext-700.woff2") format("woff2"),
+       url("./space-mono/space-mono-v13-latin_latin-ext-700.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "wf-space-mono";
+  font-style: italic;
+  font-weight: 700;
+  src: url("./space-mono/space-mono-v13-latin_latin-ext-700italic.woff2") format("woff2"),
+       url("./space-mono/space-mono-v13-latin_latin-ext-700italic.ttf") format("truetype");
+}

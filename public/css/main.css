@@ -20,9 +20,9 @@
 
   --opct-bg-image: 0.2;
 
-  --ff-heading: "Dela Gothic One", sans-serif;
-  --ff-title: "Bluu Next", serif;
-  --ff-body: "Space Mono", monospace;
+  --ff-heading: "wf-dela-gothic-one", sans-serif;
+  --ff-title: "wf-bluu-next", serif;
+  --ff-body: "wf-space-mono", monospace;
 }
 
 body {
