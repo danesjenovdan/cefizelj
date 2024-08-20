@@ -16,25 +16,21 @@ var animateSpeedStretch = 300;
 
 var originalTitle = document.title;
 var baseurl = window.location.pathname;
-// if (baseurl.indexOf('/korak/') !== -1) {
-//   baseurl = baseurl.slice(0, baseurl.indexOf('/korak/') + 1);
-// }
 
-var itemHTML = ['<div class="item centermycontentvertically" data-id="{{ id }}">',
-                  '<div class="centermevertically">',
-                    '<h1 class="fwd" data-text="{{ itemcontent }}">{{ itemcontent }}</h1>',
-                  '</div>',
-                '</div>'].join('\n');
+var itemHTML = `
+  <div class="item centermycontentvertically" data-id="{{ id }}">
+    <div class="centermevertically">
+      <h1 class="fwd" data-text="{{ itemcontent }}">{{ itemcontent }}</h1>
+    </div>
+  </div>
+`;
 
 // ---
 // FIRST PAINT
 // ---
 
 // set correct item heights
-function repaintMe() {
-  // $('.cefizelj-container').height($('.cefizelj-container').parent().height());
-  $('.cefizelj-container').height('100vh');
-
+function updateItemHeights() {
   $('.item').not('.stretched, .shrunk').each(function (i, e) {
     $(e).height($(e).parent().height() / $(e).parent().children('.item').length);
   });
@@ -47,19 +43,18 @@ function repaintMe() {
 // api tree getter
 function getTree(callback) {
   $.get('./tree.json?v=${COMMIT_SHA}', function (r) {
-    console.log('getTree response', r);
     tree = r.tree;
     callback();
   });
 }
 
 // start the app
-function startApp() {
+async function startApp() {
   // set basenode and currentnode
   basenode = tree;
   currentnode = basenode;
 
-  generateFirstNode();
+  await generateFirstNode();
 
   if (animationQueue.length) {
     goToNewCrumbs(animationQueue.shift());
@@ -67,28 +62,27 @@ function startApp() {
 }
 
 // generate first node
-function generateFirstNode() {
+async function generateFirstNode() {
   $('.cefizelj-container').html('<div class="half half-left"></div><div class="half half-right"></div>');
-  $('.half-left').append(
-    itemHTML
-      .replace('{{ id }}', basenode._id)
-      .replace(/{{ itemcontent }}/g, basenode.name)
-      .replace(/"item /g, '"item noclick ')
-  );
-  if (basenode.image) {
-    $('.half-left .fwd').addClass('has-img-root');
-    $('.half-left .fwd').prepend('<img class="img-root" src="' + basenode.image + '" alt="">');
-  }
-  for (var i in basenode.items) {
-    var node = basenode.items[i];
-    $('.half-right')
-      .append(
-        itemHTML
-          .replace('{{ id }}', node._id)
-          .replace(/{{ itemcontent }}/g, node.name)
-      );
-  }
-  repaintMe();
+
+  const res = await fetch('pages/' + basenode.html + '?v=${COMMIT_SHA}')
+  const html = await res.text()
+  $('.half-left').append(itemHTML.replaceAll('{{ id }}', basenode._id));
+  $('.half-left .item').addClass('noclick').removeClass('centermycontentvertically');
+  $('.half-left .item .centermevertically').replaceWith(html);
+
+  basenode.items.forEach(node => {
+    $('.half-right').append(
+      itemHTML
+        .replaceAll('{{ id }}', node._id)
+        .replaceAll('{{ itemcontent }}', node.name)
+    );
+    if (node.class) {
+      $(`.half-right .item[data-id="${node._id}"]`).addClass(node.class);
+    }
+  });
+
+  updateItemHeights();
 }
 
 // ---
@@ -157,7 +151,7 @@ function renderNext(targetnode) {
   } else if ((targetnode.items[0].type == 'menu') || (targetnode.items[0].type == 'link')) {
     // render list
     $('.half-right').after(createListHalf(targetnode.items));
-    repaintMe();
+    updateItemHeights();
     moveLeft();
   } else {
     moveLeft();
@@ -373,11 +367,11 @@ function goToNewCrumbs(newcrumbs) {
 
 $(document).ready(function () {
   // first, repaint
-  repaintMe();
+  updateItemHeights();
 
   // set onresize events
   window.onresize = function () {
-    repaintMe();
+    updateItemHeights();
   }
 
   // get tree and start app

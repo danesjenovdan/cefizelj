@@ -7,7 +7,7 @@
   --clr-teal-100: #ceeadb;
   --clr-blue-600: #154a95;
   --clr-blue-300: #c5c9dd;
-  --clr-white: #cfe7fc;
+  --clr-white: #ffffff;
 
   --clr-base: var(--clr-blue-600);
   --clr-surface: var(--clr-blue-300);
@@ -15,8 +15,8 @@
   --clr-link: var(--clr-teal-600);
   --clr-surface-wind: var(--clr-teal-300);
   --clr-surface-wind-light: var(--clr-teal-100);
-  --clr-surface-sun: var(--clr-yellow-300);
-  --clr-surface-sun-light: var(--clr-yellow-100);
+  --clr-surface-solar: var(--clr-yellow-300);
+  --clr-surface-solar-light: var(--clr-yellow-100);
 
   --opct-bg-image: 0.2;
 
@@ -30,14 +30,54 @@ body {
   background: #fff;
 }
 
-.cefizelj-container {
-  width: auto;
-  height: 100%;
-  white-space: nowrap;
+/* component styles */
+
+.circle-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  box-shadow: inset 0 0 0 2px var(--clr-base);
+  color: var(--clr-base);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-h1 {
-  font-size: 1rem;
+.circle-icon:hover {
+  background: var(--clr-white);
+  box-shadow: inset 0 0 0 3px var(--clr-base);
+}
+
+.circle-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* fixed overlay styles */
+
+.cefizelj-overlay .top-left-icons {
+  position: absolute;
+  top: 45px;
+  left: 45px;
+  z-index: 1000;
+  display: flex;
+  gap: 20px;
+}
+
+.cefizelj-overlay .top-left-icons button {
+  width: 85px;
+  height: 85px;
+}
+
+/* main cefizelj app styles */
+
+.cefizelj-container {
+  width: auto;
+  height: 100vh;
+  white-space: nowrap;
 }
 
 .half {
@@ -62,10 +102,15 @@ h1 {
 }
 
 .item {
+  --_item-bg: var(--clr-surface);
+  --_item-bg-hover: var(--clr-surface);
   width: 100%;
   height: auto;
-  background-color: var(--clr-surface);
-  box-shadow: 0 0 0 1px var(--clr-base);
+  background-color: var(--_item-bg);
+  background-repeat: no-repeat;
+  background-size: auto 85%;
+  background-position: 20% bottom;
+  box-shadow: 0 0 0 3px var(--clr-base);
   color: var(--clr-base);
   user-select: none;
   overflow: hidden;
@@ -76,5 +121,113 @@ h1 {
 }
 
 .item:not(.noclick):hover {
-  background-color: var(--clr-surface);
+  background-color: var(--_item-bg-hover);
+}
+
+.item h1 {
+  font-family: var(--ff-title);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--clr-base);
+}
+
+/* extra class item variants */
+
+.item.solar {
+  --_item-bg: var(--clr-surface-solar-light);
+  --_item-bg-hover: var(--clr-surface-solar);
+  background-image: url("../img/solar.svg");
+}
+
+.item.wind {
+  --_item-bg: var(--clr-surface-wind-light);
+  --_item-bg-hover: var(--clr-surface-wind);
+  background-image: url("../img/turbine.svg");
+}
+
+/* root html page */
+
+.root-html {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 45px;
+}
+
+.root-html .title {
+  margin-top: 25vh;
+  margin-bottom: 8vh;
+}
+
+.root-html .title h1 {
+  font-family: var(--ff-heading);
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 1.1;
+  color: var(--clr-base);
+  text-align: right;
+}
+
+.root-html .title h1 em {
+  font-style: normal;
+  color: var(--clr-white);
+}
+
+.root-html .content {
+  margin-bottom: auto;
+}
+
+.root-html .content p.lead {
+  font-family: var(--ff-body);
+  font-size: 1.6rem;
+  line-height: 1.3;
+  color: var(--clr-base);
+  text-align: left;
+}
+
+.root-html .footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.root-html .footer .logos {
+  display: flex;
+  gap: 25px;
+}
+
+.root-html .footer .logos a {
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+.root-html .footer .logos a:hover {
+  color: var(--clr-base);
+}
+
+.root-html .footer .logos svg {
+  height: 55px;
+}
+
+.root-html .footer .show-more a {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-family: var(--ff-title);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--clr-base);
+  text-decoration: none;
+}
+
+.root-html .footer .show-more a:hover {
+  text-decoration: underline;
+}
+
+.root-html .footer .show-more a span {
+  display: inline-block;
+  margin-top: -0.2em;
+}
+
+.root-html .footer .show-more a svg {
+  height: 30px;
 }

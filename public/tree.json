@@ -1,12 +1,13 @@
 {
   "tree": {
     "_id": "0",
-    "name": "Root node title",
     "type": "menu",
+    "html": "root.html",
     "items": [
       {
         "_id": "1",
         "type": "menu",
+        "class": "solar",
         "name": "option 1",
         "items": [
           {
@@ -51,6 +52,7 @@
       {
         "_id": "2",
         "type": "menu",
+        "class": "wind",
         "name": "option 2",
         "items": [
           {
