@@ -103,6 +103,22 @@ body {
   margin: auto;
 }
 
+.item,
+.article {
+  box-shadow: 0 0 0 3px var(--clr-base);
+}
+
+.item.hide-border,
+.article.hide-border {
+  box-shadow: none;
+}
+
+.article {
+  overflow-y: auto;
+  height: 100%;
+  background: var(--clr-white);
+}
+
 .item {
   --_item-bg: var(--clr-surface);
   --_item-bg-hover: var(--clr-surface);
@@ -112,7 +128,6 @@ body {
   background-repeat: no-repeat;
   background-size: auto 85%;
   background-position: 20% bottom;
-  box-shadow: 0 0 0 3px var(--clr-base);
   color: var(--clr-base);
   user-select: none;
   overflow: hidden;
@@ -124,10 +139,6 @@ body {
 
 .item:not(.noclick):hover {
   background-color: var(--_item-bg-hover);
-}
-
-.item.hide-border {
-  box-shadow: none;
 }
 
 .item h1.fwd,
@@ -183,7 +194,7 @@ body {
 }
 
 .item.solar-img {
-  background-image: url("../img/solar.svg");
+  background-image: url("../img/solar.svg?v=${COMMIT_SHA}");
 }
 
 .item.wind {
@@ -192,7 +203,7 @@ body {
 }
 
 .item.wind-img {
-  background-image: url("../img/turbine.svg");
+  background-image: url("../img/turbine.svg?v=${COMMIT_SHA}");
 }
 
 /* root html page */

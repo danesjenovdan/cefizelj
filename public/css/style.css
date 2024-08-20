@@ -1,66 +1,3 @@
-.fwd,
-.bck {
-  text-align: center;
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.fwd:after {
-  content: "";
-  width: 31px;
-  height: 31px;
-  font-size: 0;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMid' viewBox='0 0 100 100'%3E%3Cpath d='M81 50c0-.463-.28-1.077-.564-1.376l-16-17c-.747-.772-1.957-.862-2.828-.078-.778.7-.798 2.067-.078 2.828L74.374 48H21a2 2 0 1 0 0 4h53.374L61.53 65.625c-.72.76-.669 2.094.078 2.828.789.775 2.093.706 2.828-.078l16-17c.47-.461.556-.905.564-1.375z' fill='%23000'/%3E%3C/svg%3E");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: inline-block;
-  position: relative;
-  top: 5px;
-  left: 10px;
-}
-
-.item:hover .fwd:after {
-  border-color: transparent transparent transparent #ffffff;
-}
-
-.bck:before {
-  content: "";
-  width: 31px;
-  height: 31px;
-  font-size: 0;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMid' viewBox='0 0 100 100'%3E%3Cpath d='M81 50c0-.463-.28-1.077-.564-1.376l-16-17c-.747-.772-1.957-.862-2.828-.078-.778.7-.798 2.067-.078 2.828L74.374 48H21a2 2 0 1 0 0 4h53.374L61.53 65.625c-.72.76-.669 2.094.078 2.828.789.775 2.093.706 2.828-.078l16-17c.47-.461.556-.905.564-1.375z' fill='%23000'/%3E%3C/svg%3E");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: inline-block;
-  position: relative;
-  top: 5px;
-  left: -10px;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.item:hover .bck:before {
-  border-color: transparent #ffffff transparent transparent;
-}
-
-@media (max-width: 991px) {
-  .fwd:before,
-  .fwd:after,
-  .bck:before,
-  .bck:after {
-    top: 8px;
-  }
-}
-
-.contentcontainer {
-  overflow-y: auto;
-  height: 100%;
-}
 
 .half-left {
   overflow: hidden;
@@ -70,26 +7,10 @@
   .half-content {
     width: 100%;
   }
-  .fwd:after,
-  .bck:before {
-    width: 16px;
-    height: 16px;
-    top: 3px;
-    left: 6px;
-  }
-  .bck:before {
-    left: -6px;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .item h1 {
     font-size: 20px;
-  }
-  .fwd:after,
-  .bck:before {
-    /*width: 13px;*/
-    /*height: 13px;*/
-    /* top: 0; */
   }
 }

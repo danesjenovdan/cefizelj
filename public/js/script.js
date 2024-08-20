@@ -174,7 +174,7 @@ function renderNext(targetnode) {
 
 function createUrlHalf(url) {
   $.get('pages/' + url + '?v=${COMMIT_SHA}', function(r) {
-    var result = '<div class="half half-rightr half-content"><div class="contentcontainer" data-id="0">' + r + '</div></div>';
+    var result = '<div class="half half-rightr half-content"><div class="article" data-id="0">' + r + '</div></div>';
     $('.half-right').after(result);
     repaintRightr();
     moveLeft();
