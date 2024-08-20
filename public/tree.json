@@ -1,49 +1,48 @@
 {
   "tree": {
     "_id": "0",
-    "name": "Želim glasovati na volitvah v Evropski parlament in referendumih 9. 6. 2024, toda ...",
-    "image": "img/glasovanje.svg",
+    "name": "Root node title",
     "type": "menu",
     "items": [
       {
         "_id": "1",
-        "name": "... na dan glasovanja me ne bo doma.",
         "type": "menu",
+        "name": "option 1",
         "items": [
           {
-            "_id": "3",
-            "name": "Na dan glasovanja bom v tujini.",
+            "_id": "1",
             "type": "link",
-            "article": "v-tujini.html"
+            "name": "option 1-1 (test)",
+            "article": "test.html"
           },
           {
             "_id": "2",
-            "name": "Doma bom v tednu pred volitvami.",
             "type": "link",
-            "article": "predcasno.html"
+            "name": "option 1-2 (lorem)",
+            "article": "lorem.html"
           },
           {
-            "_id": "4",
-            "name": "Na dan volitev bom v Sloveniji.",
+            "_id": "3",
             "type": "menu",
+            "name": "option 1-3",
             "items": [
               {
-                "_id": "7",
-                "name": "Stalno prebivališče imam v tujini.",
+                "_id": "1",
                 "type": "link",
-                "article": "zivim-v-tujini.html"
+                "name": "option 1-3-1 (test)",
+                "article": "test.html"
               },
               {
-                "_id": "8",
-                "name": "Na dan volitev bom izven kraja stalnega prebivališča.",
+                "_id": "2",
                 "type": "link",
-                "article": "omnia.html"
+                "name": "option 1-3-2 (lorem)",
+                "article": "lorem.html"
               },
               {
-                "_id": "9",
-                "name": "Na dan volitev bom v bolnišnici, socialnovarstvenem zavodu za institucionalno varstvo, priporu ali zavodu za prestajanje kazni.",
+                "_id": "3",
                 "type": "link",
-                "article": "posta-bolnisnica-pripor.html"
+                "name": "option 1-3-3 (paragraph)",
+                "article": "paragraph.html"
               }
             ]
           }
@@ -51,76 +50,20 @@
       },
       {
         "_id": "2",
-        "name": "... stalno prebivališče imam v tujini.",
         "type": "menu",
+        "name": "option 2",
         "items": [
           {
             "_id": "1",
-            "name": "Na dan volitev bom v tujini.",
             "type": "link",
-            "article": "v-tujini-stalno.html"
+            "name": "option 2-1 (test)",
+            "article": "test.html"
           },
           {
             "_id": "2",
-            "name": "Na dan volitev bom v Sloveniji.",
             "type": "link",
-            "article": "zivim-v-tujini.html"
-          }
-        ]
-      },
-      {
-        "_id": "3",
-        "name": "... volišče mi ni dostopno.",
-        "type": "menu",
-        "items": [
-          {
-            "_id": "10",
-            "name": "Zaradi bolezni ali invalidnosti ne morem od doma.",
-            "type": "link",
-            "article": "na-domu.html"
-          },
-          {
-            "_id": "11",
-            "name": "Na dan volitev bom v bolnišnici ali zdravilišču.",
-            "type": "link",
-            "article": "posta-bolnisnica.html"
-          },
-          {
-            "_id": "131",
-            "name": "Bivam v domu za starejše, ki je moje stalno prebivališče.",
-            "type": "link",
-            "article": "posta-socialzavod-stalno.html"
-          },
-          {
-            "_id": "111",
-            "name": "Imam status invalida in želim glasovati po pošti.",
-            "type": "menu",
-            "items": [
-              {
-                "_id": "112",
-                "name": "Po pošti želim glasovati enkratno.",
-                "type": "link",
-                "article": "posta-invalidi.html"
-              },
-              {
-                "_id": "113",
-                "name": "Po pošti želim glasovati stalno.",
-                "type": "link",
-                "article": "posta-invalidi-stalno.html"
-              }
-            ]
-          },
-          {
-            "_id": "13",
-            "name": "Bivam v domu za starejše, ki ni moje stalno prebivališče.",
-            "type": "link",
-            "article": "posta-socialzavod.html"
-          },
-          {
-            "_id": "15",
-            "name": "Na dan volitev bom v priporu ali zavodu za prestajanje kazni.",
-            "type": "link",
-            "article": "posta-pripor.html"
+            "name": "option 2-2 (lorem)",
+            "article": "lorem.html"
           }
         ]
       }

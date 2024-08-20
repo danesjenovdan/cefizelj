@@ -1,0 +1,80 @@
+:root {
+  --clr-yellow-600: #fbdd6d;
+  --clr-yellow-300: #fdeba5;
+  --clr-yellow-100: #fff2c9;
+  --clr-teal-600: #47afae;
+  --clr-teal-300: #90d6d1;
+  --clr-teal-100: #ceeadb;
+  --clr-blue-600: #154a95;
+  --clr-blue-300: #c5c9dd;
+  --clr-white: #cfe7fc;
+
+  --clr-base: var(--clr-blue-600);
+  --clr-surface: var(--clr-blue-300);
+  --clr-highlight: var(var(--clr-white));
+  --clr-link: var(--clr-teal-600);
+  --clr-surface-wind: var(--clr-teal-300);
+  --clr-surface-wind-light: var(--clr-teal-100);
+  --clr-surface-sun: var(--clr-yellow-300);
+  --clr-surface-sun-light: var(--clr-yellow-100);
+
+  --opct-bg-image: 0.2;
+
+  --ff-heading: "Dela Gothic One", sans-serif;
+  --ff-title: "Bluu Next", serif;
+  --ff-body: "Space Mono", monospace;
+}
+
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: #fff;
+}
+
+.cefizelj-container {
+  width: auto;
+  height: 100%;
+  white-space: nowrap;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+.half {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+  position: relative;
+}
+
+.centermycontentvertically {
+  text-align: center;
+  display: flex;
+}
+
+.centermevertically {
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  margin: auto;
+}
+
+.item {
+  width: 100%;
+  height: auto;
+  background-color: var(--clr-surface);
+  box-shadow: 0 0 0 1px var(--clr-base);
+  color: var(--clr-base);
+  user-select: none;
+  overflow: hidden;
+}
+
+.item:not(.noclick) {
+  cursor: pointer;
+}
+
+.item:not(.noclick):hover {
+  background-color: var(--clr-surface);
+}

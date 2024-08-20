@@ -68,7 +68,7 @@ function startApp() {
 
 // generate first node
 function generateFirstNode() {
-  $('.cefizelj-container').html('<div class="half half-left bck-red border-red"></div><div class="half half-right"></div>');
+  $('.cefizelj-container').html('<div class="half half-left"></div><div class="half half-right"></div>');
   $('.half-left').append(
     itemHTML
       .replace('{{ id }}', basenode._id)
@@ -165,7 +165,7 @@ function renderNext(targetnode) {
 }
 
 function createUrlHalf(url) {
-  $.get(url + '?v=${COMMIT_SHA}', function(r) {
+  $.get('pages/' + url + '?v=${COMMIT_SHA}', function(r) {
     var result = '<div class="half half-rightr half-content"><div class="visible-xs centermycontentvertically nazajcontainer"><div class="centermevertically nazaj bck">Nazaj</div></div>' + '<div class="contentcontainer" data-id="0">' + r + '</div></div>';
     $('.half-right').after(result);
     repaintRightr();
