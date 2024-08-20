@@ -38,7 +38,7 @@ body {
   border-radius: 50%;
   background: transparent;
   border: none;
-  box-shadow: inset 0 0 0 2px var(--clr-base);
+  box-shadow: inset 0 0 0 3px var(--clr-base);
   color: var(--clr-base);
   display: flex;
   justify-content: center;
@@ -48,7 +48,7 @@ body {
 
 .circle-icon:hover {
   background: var(--clr-white);
-  box-shadow: inset 0 0 0 3px var(--clr-base);
+  box-shadow: inset 0 0 0 4px var(--clr-base);
 }
 
 .circle-icon svg {
@@ -58,7 +58,8 @@ body {
 
 /* fixed overlay styles */
 
-.cefizelj-overlay .top-left-icons {
+.cefizelj-overlay .top-left-icons,
+.item .top-left-icons {
   position: absolute;
   top: 45px;
   left: 45px;
@@ -136,8 +137,8 @@ body {
   gap: 25px;
   margin: 0;
   font-family: var(--ff-title);
+  font-weight: 400;
   font-size: 2.8rem;
-  font-weight: 700;
   color: var(--clr-base);
 }
 
@@ -159,17 +160,38 @@ body {
   transform: scaleX(-1);
 }
 
+.item.stretched:not(.hide-border) .top-left-icons,
+.item.shrunk .top-left-icons {
+  display: none;
+}
+
+.item.stretched.hide-border .top-left-icons {
+  top: auto;
+  bottom: 45px;
+}
+
+.item .top-left-icons button {
+  width: 65px;
+  height: 65px;
+}
+
 /* extra class item variants */
 
 .item.solar {
   --_item-bg: var(--clr-surface-solar-light);
   --_item-bg-hover: var(--clr-surface-solar);
+}
+
+.item.solar-img {
   background-image: url("../img/solar.svg");
 }
 
 .item.wind {
   --_item-bg: var(--clr-surface-wind-light);
   --_item-bg-hover: var(--clr-surface-wind);
+}
+
+.item.wind-img {
   background-image: url("../img/turbine.svg");
 }
 
@@ -190,7 +212,7 @@ body {
 
 .root-html .title h1 {
   font-family: var(--ff-heading);
-  font-weight: 900;
+  font-weight: 400;
   font-size: 4rem;
   line-height: 1.1;
   color: var(--clr-base);
@@ -244,7 +266,6 @@ body {
   gap: 25px;
   font-family: var(--ff-title);
   font-size: 2.8rem;
-  font-weight: 700;
   color: var(--clr-base);
   text-decoration: none;
 }

@@ -32,6 +32,16 @@ var itemHTML = `
   </div>
 `;
 
+var helpHTML = `
+  <div class="top-left-icons">
+    <button type="button" class="circle-icon" data-help="{{ help }}">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.953 7.705" fill="currentColor" style="height: 45%;">
+        <path fill="#154a95" d="M2.963 3.683c.318 0 .58-.116.789-.35.208-.232.312-.539.312-.92V2.35c0-.212-.037-.41-.111-.593a1.473 1.473 0 0 0-.312-.482 1.478 1.478 0 0 0-.487-.328 1.603 1.603 0 0 0-.635-.121c-.508 0-.907.155-1.196.465-.29.31-.434.72-.434 1.228v.444H0v-.508c0-.324.055-.635.164-.93.11-.297.27-.558.481-.784.212-.226.477-.406.794-.54A2.81 2.81 0 0 1 2.54 0c.354 0 .678.06.975.18.296.12.55.284.762.492.211.208.377.448.497.72.12.271.18.559.18.862v.19c0 .276-.048.539-.143.79a1.945 1.945 0 0 1-.995 1.09 1.71 1.71 0 0 1-.746.163h-.148c-.198 0-.296.106-.296.318v.783h-.847v-.995c0-.268.085-.487.254-.656a.888.888 0 0 1 .656-.254h.275m-1.492 3.28c0-.204.072-.378.217-.523a.714.714 0 0 1 .524-.217c.204 0 .379.072.524.217.144.145.217.32.217.524 0 .205-.073.38-.217.524a.714.714 0 0 1-.524.217.714.714 0 0 1-.524-.217.714.714 0 0 1-.217-.524Z"/>
+      </svg>
+    </button>
+  </div>
+`;
+
 // ---
 // FIRST PAINT
 // ---
@@ -88,6 +98,9 @@ async function generateFirstNode() {
     if (node.class) {
       $(`.half-right .item[data-id="${node._id}"]`).addClass(node.class);
     }
+    if (node.help) {
+      $(`.half-right .item[data-id="${node._id}"]`).append(helpHTML.replaceAll('{{ help }}', node.help));
+    }
   });
 
   updateItemHeights();
@@ -101,7 +114,6 @@ function animationFinished() {
   if (!dontChangeCrumbs) {
     var newhash = breadcrumbs.length ? '#/korak/' + breadcrumbs.join('/') : '';
     window.history.pushState(breadcrumbs, '', baseurl + newhash);
-    console.log('pushState', breadcrumbs);
     try {
       var data_item = tree
       for (var i = 0; i < breadcrumbs.length; i++) {
@@ -152,7 +164,7 @@ function renderNext(targetnode) {
     createUrlHalf(targetnode.article);
   } else if ((targetnode.items[0].type == 'menu') || (targetnode.items[0].type == 'link')) {
     // render list
-    $('.half-right').after(createListHalf(targetnode.items));
+    $('.half-right').after(createListHalf(targetnode.items, targetnode));
     updateItemHeights();
     moveLeft();
   } else {
@@ -177,17 +189,24 @@ function repaintRightr() {
 }
 
 // create list half
-function createListHalf(items) {
-  var result = '<div class="half half-rightr">';
+function createListHalf(items, parent) {
+  var half = $('<div class="half half-rightr"></div>');
 
-  $.each(items, function (i, item) {
-    result += itemHTML
-      .replace('{{ id }}', item._id)
-      .replace(/{{ itemcontent }}/g, item.name);
+  items.forEach(node => {
+    half.append(
+      itemHTML
+        .replaceAll('{{ id }}', node._id)
+        .replaceAll('{{ itemcontent }}', node.name)
+    );
+    if (node.class) {
+      half.find(`.item[data-id="${node._id}"]`).addClass(node.class);
+    }
+    if (node.help) {
+      half.find(`.item[data-id="${node._id}"]`).append(helpHTML.replaceAll('{{ help }}', node.help));
+    }
   });
 
-  result += '</div>';
-  return result;
+  return half;
 }
 
 // move left and cleanup (next)
@@ -276,7 +295,7 @@ function stretchItem(item) {
     .animate(
       { height: item.parent().height() },
       animateSpeedStretch,
-  );
+    );
   item
     .siblings()
     .addClass('shrunk')
@@ -288,14 +307,25 @@ function stretchItem(item) {
 
 // shrink item
 function shrinkItem(item) {
-  item.animate({
-    height: item.parent().height() / item.parent().children('.item').length
-  }, animateSpeedStretch);
-  item.siblings().each(function (i, e) {
-    $(e).animate({
-      height: $(e).parent().height() / $(e).parent().children('.item').length
-    }, animateSpeedStretch);
-  });
+  item
+    .animate(
+      { height: item.parent().height() / item.parent().children('.item').length },
+      animateSpeedStretch,
+      function () {
+        item.removeClass('stretched');
+      },
+    );
+  item
+    .siblings()
+    .each(function (i, e) {
+      $(e).animate(
+        { height: $(e).parent().height() / $(e).parent().children('.item').length },
+        animateSpeedStretch,
+        function () {
+          $(e).removeClass('shrunk');
+        }
+      );
+    });
 }
 
 function onForwardItemClick(item) {
@@ -323,17 +353,17 @@ function onForwardItemClick(item) {
 function onBackItemClick(item) {
   animating = true;
 
+  item.removeClass('hide-border');
   displayPreviousHalf();
 
   window.setTimeout(function () {
+    item.siblings().removeClass('hide-border');
     shrinkItem(item);
-  }, animateSpeedStretch);
+  }, animateSpeedMove);
 
   // change text from nazaj to whatever it's supposed to be
   if (item.children('.centermevertically').children('h1').data('text')) {
     item
-      .removeClass('stretched')
-      .removeClass('hide-border')
       .children('.centermevertically')
       .children('h1')
       .children('span')
@@ -344,11 +374,6 @@ function onBackItemClick(item) {
           .data('text')
       );
   }
-
-  item
-    .siblings()
-    .removeClass('shrunk')
-    .removeClass('hide-border');
 
   item
     .removeClass('item-selected') // previous selected remove
@@ -429,7 +454,6 @@ $(document).ready(function () {
 
   $(window).on('popstate', function(event) {
     var newcrumbs = event.originalEvent.state || [];
-    console.log('popstate', newcrumbs);
     if (animating) {
       // if we're animating push to queue
       animationQueue.push(newcrumbs);
