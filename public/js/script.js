@@ -17,10 +17,17 @@ var animateSpeedStretch = 300;
 var originalTitle = document.title;
 var baseurl = window.location.pathname;
 
+var backText = 'Nazaj';
+
 var itemHTML = `
   <div class="item centermycontentvertically" data-id="{{ id }}">
     <div class="centermevertically">
-      <h1 class="fwd" data-text="{{ itemcontent }}">{{ itemcontent }}</h1>
+      <h1 class="fwd" data-text="{{ itemcontent }}">
+        <span>{{ itemcontent }}</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.651 9.158" fill="currentColor">
+          <path d="m7.976 9.158 6.675-4.556L7.976 0v1.118l4.428 3.054H0v.894h12.35L7.975 8.05Z"/>
+        </svg>
+      </h1>
     </div>
   </div>
 `;
@@ -44,6 +51,7 @@ function updateItemHeights() {
 function getTree(callback) {
   $.get('./tree.json?v=${COMMIT_SHA}', function (r) {
     tree = r.tree;
+    backText = r.backText;
     callback();
   });
 }
@@ -99,17 +107,11 @@ function animationFinished() {
       for (var i = 0; i < breadcrumbs.length; i++) {
         data_item = data_item.items.find(it => it._id == breadcrumbs[i])
       }
-      plausible('clicked item', {
-        props: {
-          itemName: data_item.name,
-        },
-      });
     } catch (error) {}
   }
 
-  // var title = $('.half-right .contentcontainer .block-heading .info__title h1').first().text();
   var selectedItem = $('.half-left .item.stretched h1').first();
-  var title = selectedItem.data('text') || selectedItem.text();
+  var title = selectedItem.data('text') || selectedItem.children('span').text();
   if (title) {
     document.title = title + ' - ' + originalTitle;
   } else {
@@ -160,7 +162,7 @@ function renderNext(targetnode) {
 
 function createUrlHalf(url) {
   $.get('pages/' + url + '?v=${COMMIT_SHA}', function(r) {
-    var result = '<div class="half half-rightr half-content"><div class="visible-xs centermycontentvertically nazajcontainer"><div class="centermevertically nazaj bck">Nazaj</div></div>' + '<div class="contentcontainer" data-id="0">' + r + '</div></div>';
+    var result = '<div class="half half-rightr half-content"><div class="contentcontainer" data-id="0">' + r + '</div></div>';
     $('.half-right').after(result);
     repaintRightr();
     moveLeft();
@@ -271,15 +273,17 @@ function displayPreviousHalf() {
 function stretchItem(item) {
   item
     .addClass('stretched')
-    .animate({
-      height: item.parent().height()
-    }, animateSpeedStretch);
+    .animate(
+      { height: item.parent().height() },
+      animateSpeedStretch,
+  );
   item
     .siblings()
     .addClass('shrunk')
-    .animate({
-      height: 0
-    }, animateSpeedStretch);
+    .animate(
+      { height: 0 },
+      animateSpeedStretch,
+    );
 }
 
 // shrink item
@@ -300,12 +304,16 @@ function onForwardItemClick(item) {
   stretchItem(item);
 
   window.setTimeout(function () {
-    // display next half
+    item.siblings().addClass('hide-border');
     displayNextHalf(item.data('id'));
   }, animateSpeedStretch);
 
+  window.setTimeout(function () {
+    item.addClass('hide-border');
+  }, animateSpeedStretch + animateSpeedMove);
+
   item
-    .addClass('item-red') // make item selected
+    .addClass('item-selected') // make item selected
     .children('.centermevertically') // toggle fwd/bck
     .children('h1')
     .toggleClass('fwd')
@@ -325,8 +333,10 @@ function onBackItemClick(item) {
   if (item.children('.centermevertically').children('h1').data('text')) {
     item
       .removeClass('stretched')
+      .removeClass('hide-border')
       .children('.centermevertically')
       .children('h1')
+      .children('span')
       .text(
         item
           .children('.centermevertically')
@@ -337,10 +347,11 @@ function onBackItemClick(item) {
 
   item
     .siblings()
-    .removeClass('shrunk');
+    .removeClass('shrunk')
+    .removeClass('hide-border');
 
   item
-    .removeClass('item-red') // previous selected remove red
+    .removeClass('item-selected') // previous selected remove
     .children('.centermevertically') // toggle fwd/bck
     .children('h1')
     .toggleClass('fwd')
@@ -385,12 +396,14 @@ $(document).ready(function () {
       $(this)
         .children('.centermevertically')
         .children('h1')
-        .text('Nazaj'); // set text to nazaj
+        .children('span')
+        .text(backText); // set text to nazaj
     },
     'mouseleave': function () {
       $(this)
         .children('.centermevertically')
         .children('h1')
+        .children('span')
         .text(
           $(this)
             .children('.centermevertically')
@@ -398,7 +411,7 @@ $(document).ready(function () {
             .data('text')
         );
     }
-  }, '.item-red');
+  }, '.item-selected');
 
   // on clicking item
   $('.cefizelj-container').on('click', '.item', function () {
@@ -412,12 +425,6 @@ $(document).ready(function () {
         onBackItemClick($(this));
       }
     }
-  });
-
-  // set event for mobile back
-  $('.cefizelj-container').on('click', '.nazajcontainer', function () {
-    var item = $(this).parents('.half').prev().children('.item-red');
-    onBackItemClick(item);
   });
 
   $(window).on('popstate', function(event) {

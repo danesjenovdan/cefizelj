@@ -78,6 +78,7 @@ body {
   width: auto;
   height: 100vh;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .half {
@@ -124,11 +125,38 @@ body {
   background-color: var(--_item-bg-hover);
 }
 
-.item h1 {
+.item.hide-border {
+  box-shadow: none;
+}
+
+.item h1.fwd,
+.item h1.bck {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
   font-family: var(--ff-title);
   font-size: 2.8rem;
   font-weight: 700;
   color: var(--clr-base);
+}
+
+.item h1.fwd span,
+.item h1.bck span {
+  margin-top: -0.2em;
+}
+
+.item h1.fwd svg,
+.item h1.bck svg {
+  height: 30px;
+}
+
+.item h1.bck {
+  flex-direction: row-reverse;
+}
+
+.item h1.bck svg {
+  transform: scaleX(-1);
 }
 
 /* extra class item variants */
@@ -152,10 +180,11 @@ body {
   flex-direction: column;
   height: 100%;
   padding: 45px;
+  overflow-y: auto;
 }
 
 .root-html .title {
-  margin-top: 25vh;
+  margin-top: 15vh;
   margin-bottom: 8vh;
 }
 
@@ -188,6 +217,7 @@ body {
 .root-html .footer {
   display: flex;
   justify-content: space-between;
+  margin-top: 4vh;
 }
 
 .root-html .footer .logos {
@@ -224,7 +254,6 @@ body {
 }
 
 .root-html .footer .show-more a span {
-  display: inline-block;
   margin-top: -0.2em;
 }
 
