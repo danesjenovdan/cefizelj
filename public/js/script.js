@@ -384,6 +384,13 @@ function onBackItemClick(item) {
 }
 
 function goToNewCrumbs(newcrumbs) {
+  if (typeof newcrumbs === 'string') {
+    openModal(newcrumbs);
+    return;
+  }
+
+  closeModals();
+
   if (breadcrumbs.length > newcrumbs.length) {
     var item = $('.cefizelj-container .half-left .item.stretched');
     breadcrumbs = newcrumbs;
@@ -395,6 +402,48 @@ function goToNewCrumbs(newcrumbs) {
     dontChangeCrumbs = true;
     onForwardItemClick(item);
   }
+}
+
+async function openModal(modalName) {
+  if (modalName === '#vec') {
+    $('.show-more').hide();
+
+    $('.half-left').after('<div class="half half-left half-left-more"></div>');
+    $('.half-left-more').width('0%');
+    const res = await fetch('pages/' + basenode.more + '?v=${COMMIT_SHA}')
+    const html = await res.text()
+    $('.half-left-more').append(itemHTML.replaceAll('{{ id }}', basenode._id));
+    $('.half-left-more .item').addClass('noclick hide-border').removeClass('centermycontentvertically');
+    $('.half-left-more .item').width($('.half-left').width());
+    $('.half-left-more .item .centermevertically').replaceWith(html);
+
+    updateItemHeights();
+
+    $('.half-left-more').animate(
+      { width: '50%' },
+      animateSpeedMove,
+      function () {
+        $('.half-left-more').width('');
+        $('.half-left-more .item').width('');
+        $('.half-right .item').addClass('hide-border');
+      },
+    );
+
+    return;
+  }
+}
+
+function closeModals() {
+  $('.half-left-more .item').width($('.half-left').width());
+  $('.half-right .item').removeClass('hide-border');
+  $('.half-left-more').animate(
+    { width: '0%' },
+    animateSpeedMove,
+    function () {
+      $('.half-left-more').remove();
+      $('.show-more').show();
+    },
+);
 }
 
 // ---
@@ -454,6 +503,9 @@ $(document).ready(function () {
 
   $(window).on('popstate', function(event) {
     var newcrumbs = event.originalEvent.state || [];
+    if (newcrumbs.length === 0 && window.location.hash && window.location.hash[1] !== '/') {
+      newcrumbs = window.location.hash;
+    }
     if (animating) {
       // if we're animating push to queue
       animationQueue.push(newcrumbs);
@@ -476,5 +528,7 @@ $(document).ready(function () {
     animateSpeedMove = 0;
     animateSpeedStretch = 0;
     window.history.replaceState(newcrumbs, '', baseurl + '#/korak/' + newcrumbs.join('/'));
+  } else if (path === '#vec') {
+    animationQueue.push(path);
   }
 });

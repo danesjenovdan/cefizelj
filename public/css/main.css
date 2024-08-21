@@ -56,6 +56,13 @@ body {
   height: 100%;
 }
 
+.scrollable {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--clr-base) var(--clr-surface);
+  padding-right: 25px;
+}
+
 /* fixed overlay styles */
 
 .cefizelj-overlay .top-left-icons,
@@ -239,12 +246,38 @@ body {
   margin-bottom: auto;
 }
 
-.root-html .content p.lead {
+.root-html .content h2,
+.root-html .content h3,
+.root-html .content h4 {
+  font-family: var(--ff-title);
+  font-weight: 400;
+  color: var(--clr-base);
+  margin-bottom: 1.5rem;
+}
+
+.root-html .content h2 {
+  font-size: 2.8rem;
+}
+
+.root-html .content h3 {
+  font-size: 2.4rem;
+}
+
+.root-html .content h4 {
+  font-size: 2rem;
+}
+
+.root-html .content p {
   font-family: var(--ff-body);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.3;
   color: var(--clr-base);
   text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.root-html .content p.lead {
+  font-size: 1.6rem;
 }
 
 .root-html .footer {
@@ -271,7 +304,8 @@ body {
   height: 55px;
 }
 
-.root-html .footer .show-more a {
+.root-html .footer .show-more a,
+.root-html .footer .hide-more a {
   display: flex;
   align-items: center;
   gap: 25px;
@@ -281,14 +315,21 @@ body {
   text-decoration: none;
 }
 
-.root-html .footer .show-more a:hover {
+.root-html .footer .show-more a:hover,
+.root-html .footer .hide-more a:hover {
   text-decoration: underline;
 }
 
-.root-html .footer .show-more a span {
+.root-html .footer .show-more a span,
+.root-html .footer .hide-more a span {
   margin-top: -0.2em;
 }
 
-.root-html .footer .show-more a svg {
+.root-html .footer .show-more a svg,
+.root-html .footer .hide-more a svg {
   height: 30px;
+}
+
+.root-html .footer .hide-more a svg {
+  transform: scaleX(-1);
 }
