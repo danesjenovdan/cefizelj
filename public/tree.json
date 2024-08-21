@@ -68,12 +68,14 @@
           {
             "_id": "1",
             "type": "link",
+            "class": "wind",
             "name": "option 2-1 (test)",
             "article": "test.html"
           },
           {
             "_id": "2",
             "type": "link",
+            "class": "wind",
             "name": "option 2-2 (lorem)",
             "article": "lorem.html"
           }

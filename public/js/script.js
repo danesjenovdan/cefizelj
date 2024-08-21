@@ -42,6 +42,23 @@ var helpHTML = `
   </div>
 `;
 
+var modalHTML = `
+  <div class="modal-bg">
+    <div class="modal">
+      <div class="modal-content">
+        <div class="close-icon">
+          <button type="button" class="circle-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.461 7.408" fill="currentColor" style="height: 45%;">
+              <path fill="#154a95" d="m.974 0 1.661 3.28h.19L4.488 0h.974L3.609 3.63v.127L5.46 7.408h-.974l-1.66-3.302h-.19L.973 7.408H0l1.852-3.651V3.63L0 0Z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="article scrollable"></div>
+      </div>
+    </div>
+  </div>
+`;
+
 // ---
 // FIRST PAINT
 // ---
@@ -174,7 +191,7 @@ function renderNext(targetnode) {
 
 function createUrlHalf(url) {
   $.get('pages/' + url + '?v=${COMMIT_SHA}', function(r) {
-    var result = '<div class="half half-rightr half-content"><div class="article" data-id="0">' + r + '</div></div>';
+    var result = '<div class="half half-rightr half-content"><div class="article scrollable" data-id="0">' + r + '</div></div>';
     $('.half-right').after(result);
     repaintRightr();
     moveLeft();
@@ -404,7 +421,7 @@ function goToNewCrumbs(newcrumbs) {
   }
 }
 
-async function openModal(modalName) {
+async function openModal(modalName, path) {
   if (modalName === '#vec') {
     $('.show-more').hide();
 
@@ -431,6 +448,13 @@ async function openModal(modalName) {
 
     return;
   }
+
+  if (modalName === 'help') {
+    $('.cefizelj-overlay').append(modalHTML);
+    const res = await fetch('pages/' + path + '?v=${COMMIT_SHA}')
+    const html = await res.text()
+    $('.modal .article').html(html);
+  }
 }
 
 function closeModals() {
@@ -443,7 +467,9 @@ function closeModals() {
       $('.half-left-more').remove();
       $('.show-more').show();
     },
-);
+  );
+
+  $('.cefizelj-overlay .modal-bg').remove();
 }
 
 // ---
@@ -487,6 +513,27 @@ $(document).ready(function () {
     }
   }, '.item-selected');
 
+  $('.cefizelj-container').on('click', '.item button[data-help]', function (event) {
+    event.stopPropagation();
+
+    var helphash = `help:${$(this).data('help')}`;
+    var newhash = breadcrumbs.length ? '#/korak/' + breadcrumbs.join('/') : '';
+    newhash += `${newhash ? ';' : '#'}${helphash}`;
+    window.history.pushState(breadcrumbs, '', baseurl + newhash);
+
+    openModal('help', $(this).data('help'));
+  });
+
+  $('.cefizelj-overlay').on('click', '.modal-bg', function (event) {
+    if (event.target === this) {
+      window.history.back();
+    }
+  });
+
+  $('.cefizelj-overlay').on('click', '.modal .close-icon', function (event) {
+    window.history.back();
+  });
+
   // on clicking item
   $('.cefizelj-container').on('click', '.item', function () {
     // if not animating and not root
@@ -515,7 +562,8 @@ $(document).ready(function () {
   });
 
   // if url has steps defined to to the correct one
-  var path = window.location.hash;
+  var path = window.location.hash.split(';')[0];
+  var extrahash = window.location.hash.split(';')[1];
   if (path.indexOf('/korak/') !== -1) {
     var newcrumbs = path.slice(path.indexOf('/korak/') + '/korak/'.length)
       .split('/')
@@ -530,5 +578,7 @@ $(document).ready(function () {
     window.history.replaceState(newcrumbs, '', baseurl + '#/korak/' + newcrumbs.join('/'));
   } else if (path === '#vec') {
     animationQueue.push(path);
+  } else if (path && path.startsWith('#help')) {
+    window.history.replaceState([], '', baseurl);
   }
 });
