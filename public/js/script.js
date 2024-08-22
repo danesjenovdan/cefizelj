@@ -59,6 +59,22 @@ var modalHTML = `
   </div>
 `;
 
+var articleHTML = `
+  <div class="half half-rightr half-content">
+    <div class="top-left-icons">
+      <div class="back-icon">
+        <button type="button" class="circle-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.651 9.158" fill="currentColor" style="height: 33%; transform: scaleX(-1);">
+            <path d="m7.976 9.158 6.675-4.556L7.976 0v1.118l4.428 3.054H0v.894h12.35L7.975 8.05Z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="article scrollable" data-id="0">
+    </div>
+  </div>
+`;
+
 // ---
 // FIRST PAINT
 // ---
@@ -98,7 +114,7 @@ async function startApp() {
 
 // generate first node
 async function generateFirstNode() {
-  $('.cefizelj-container').html('<div class="half half-left"></div><div class="half half-right"></div>');
+  $('.cefizelj-container').html('<div class="half half-left half-root"></div><div class="half half-right"></div>');
 
   const res = await fetch('pages/' + basenode.html + '?v=${COMMIT_SHA}')
   const html = await res.text()
@@ -189,13 +205,13 @@ function renderNext(targetnode) {
   }
 }
 
-function createUrlHalf(url) {
-  $.get('pages/' + url + '?v=${COMMIT_SHA}', function(r) {
-    var result = '<div class="half half-rightr half-content"><div class="article scrollable" data-id="0">' + r + '</div></div>';
-    $('.half-right').after(result);
-    repaintRightr();
-    moveLeft();
-  });
+async function createUrlHalf(url) {
+  const res = await fetch('pages/' + url + '?v=${COMMIT_SHA}')
+  const html = await res.text()
+  $('.half-right').after(articleHTML.trim());
+  $('.half-rightr .article').html(html);
+  repaintRightr();
+  moveLeft();
 }
 
 // repaint rightr
@@ -530,7 +546,7 @@ $(document).ready(function () {
     }
   });
 
-  $('.cefizelj-overlay').on('click', '.modal .close-icon', function (event) {
+  $('.cefizelj-overlay').on('click', '.modal .close-icon button', function (event) {
     window.history.back();
   });
 
@@ -546,6 +562,12 @@ $(document).ready(function () {
         onBackItemClick($(this));
       }
     }
+  });
+
+  // set event for mobile back
+  $('.cefizelj-container').on('click', '.half-content .back-icon', function () {
+    var item = $(this).parents('.half').prev().children('.item-selected');
+    onBackItemClick(item);
   });
 
   $(window).on('popstate', function(event) {
