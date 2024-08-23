@@ -495,7 +495,7 @@ function closeModals() {
     },
   );
   $('.half-root').animate(
-    { 'margin-left': '0%' },
+    { 'margin-left': breadcrumbs.length ? '-50%' : '0%' },
     animateSpeedMove,
   );
 
