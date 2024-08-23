@@ -162,6 +162,7 @@ body {
 .half-content .top-left-icons button {
   width: 38px;
   height: 38px;
+  background: var(--clr-white);
 }
 
 .cefizelj-overlay .top-left-icons button {
@@ -380,6 +381,10 @@ body {
   .half-content .article .hero-image h1 {
     padding-inline: 24px;
   }
+}
+
+.half-content .article > *:not(.hero-image):first-child {
+  padding-top: 3rem;
 }
 
 .item {
