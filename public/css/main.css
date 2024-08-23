@@ -1019,6 +1019,10 @@ body {
   list-style: none;
 }
 
+.article details summary::-webkit-details-marker {
+  display: none;
+}
+
 @media (max-width: 1199.98px) {
   .article details summary {
     font-size: 1.4rem;
