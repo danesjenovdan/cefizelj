@@ -792,6 +792,8 @@ body {
 @media (max-width: 767.98px) {
   .root-html .footer {
     margin-top: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 }
 
@@ -821,8 +823,15 @@ body {
 
 @media (max-width: 767.98px) {
   .root-html .footer .logos svg {
-    height: 10px;
+    height: 25px;
   }
+}
+
+.root-html .footer .show-more,
+.root-html .footer .hide-more {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .root-html .footer .show-more a,
