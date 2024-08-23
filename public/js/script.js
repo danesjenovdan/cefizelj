@@ -442,7 +442,7 @@ async function openModal(modalName, path) {
     var isMobile = $(window).width() < 576;
     var moreWidth = isMobile ? $('.half-left').width() * 2 : $('.half-left').width();
 
-    $('.show-more').hide();
+    $('.show-more').addClass('active').attr('href', '#');
 
     $('.half-left').after('<div class="half half-left half-left-more"></div>');
     $('.half-left-more').width('0%');
@@ -491,7 +491,7 @@ function closeModals() {
     animateSpeedMove,
     function () {
       $('.half-left-more').remove();
-      $('.show-more').show();
+      $('.show-more').removeClass('active').attr('href', '#vec');
     },
   );
   $('.half-root').animate(
