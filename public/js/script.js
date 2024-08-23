@@ -75,6 +75,18 @@ var articleHTML = `
   </div>
 `;
 
+function isSameArrayFuzzy(a, b) {
+  if (a.length !== b.length) {
+    return false;
+  }
+  for (var i in a) {
+    if (a[i] != b[i]) {
+      return false;
+    }
+  }
+  return true;
+}
+
 // ---
 // FIRST PAINT
 // ---
@@ -143,7 +155,7 @@ async function generateFirstNode() {
 // END OF FIRST PAINT
 // ---
 
-function animationFinished() {
+async function animationFinished() {
   if (!dontChangeCrumbs) {
     var newhash = breadcrumbs.length ? '#/korak/' + breadcrumbs.join('/') : '';
     window.history.pushState(breadcrumbs, '', baseurl + newhash);
@@ -162,6 +174,9 @@ function animationFinished() {
   } else {
     document.title = originalTitle;
   }
+
+  // a little delay to prevent animation race conditions
+  await new Promise(resolve => setTimeout(resolve, 100));
 
   // reset values
   animating = false;
@@ -245,6 +260,8 @@ function createListHalf(items, parent) {
 // move left and cleanup (next)
 function moveLeft() {
   if ($(window).width() < 768 && $('.half-rightr').hasClass('half-content')) {
+    $('.cefizelj-overlay .top-left-icons').hide();
+
     $('.half-left').animate({
       'margin-left': '-100%'
     }, animateSpeedMove, function () {
@@ -312,6 +329,8 @@ function displayPreviousHalf() {
       .addClass('half-left')
       .prev()
       .addClass('half-leftr');
+
+    $('.cefizelj-overlay .top-left-icons').show();
 
     animationFinished();
   });
@@ -439,10 +458,16 @@ function goToNewCrumbs(newcrumbs) {
 
 async function openModal(modalName, path) {
   if (modalName === '#vec') {
+    if (breadcrumbs.length) {
+      return;
+    }
+
+    animating = true;
+
     var isMobile = $(window).width() < 576;
     var moreWidth = isMobile ? $('.half-left').width() * 2 : $('.half-left').width();
 
-    $('.show-more').addClass('active').attr('href', '#');
+    $('.show-more').addClass('active');
 
     $('.half-left').after('<div class="half half-left half-left-more"></div>');
     $('.half-left-more').width('0%');
@@ -462,6 +487,7 @@ async function openModal(modalName, path) {
         $('.half-left-more').width('');
         $('.half-left-more .item').width('');
         $('.half-right .item').addClass('hide-border');
+        animating = false;
       },
     );
 
@@ -484,6 +510,10 @@ async function openModal(modalName, path) {
 }
 
 function closeModals() {
+  animating = true;
+
+  var isMobile = $(window).width() < 576;
+
   $('.half-left-more .item').width($('.half-left-more').width());
   $('.half-right .item').removeClass('hide-border');
   $('.half-left-more').animate(
@@ -491,13 +521,16 @@ function closeModals() {
     animateSpeedMove,
     function () {
       $('.half-left-more').remove();
-      $('.show-more').removeClass('active').attr('href', '#vec');
+      $('.show-more').removeClass('active');
+      animating = false;
     },
   );
-  $('.half-root').animate(
-    { 'margin-left': breadcrumbs.length ? '-50%' : '0%' },
-    animateSpeedMove,
-  );
+  if (isMobile && $('.half-left-more').length) {
+    $('.half-root').animate(
+      { 'margin-left': breadcrumbs.length ? '-50%' : '0%' },
+      animateSpeedMove,
+    );
+  }
 
   $('.cefizelj-overlay .modal-bg').remove();
 }
@@ -575,6 +608,83 @@ $(document).ready(function () {
         // the click happened on the left-hand side
         onBackItemClick($(this));
       }
+    }
+  });
+
+  // on clicking go-to item
+  $('#app').on('click', 'button[data-go-to]', function () {
+    if (animating) {
+      return;
+    }
+
+    var target = $(this).data('go-to');
+    var newcrumbs = target.slice(target.indexOf('/korak/') + '/korak/'.length)
+      .split('/')
+      .filter(function (part) {
+        return part.length;
+      });
+
+    if (isSameArrayFuzzy(newcrumbs, breadcrumbs)) {
+      return;
+    }
+
+    var steps = [];
+    var shortPath = false;
+
+    if (newcrumbs.length < breadcrumbs.length) {
+      var shorter = breadcrumbs.slice(0, newcrumbs.length);
+      if (isSameArrayFuzzy(newcrumbs, shorter)) {
+        shortPath = true;
+      }
+    }
+
+    if (shortPath) {
+      var current = breadcrumbs;
+      while (current.length > newcrumbs.length) {
+        current = current.slice(0, -1);
+        steps.push(current);
+      }
+    } else {
+      var current = breadcrumbs;
+      while (current.length) {
+        current = current.slice(0, -1);
+        steps.push(current);
+      }
+      for (var i in newcrumbs) {
+        steps.push(newcrumbs.slice(0, Number(i) + 1));
+      }
+    }
+
+    for (var i in steps) {
+      animationQueue.push(steps[i]);
+    }
+    window.history.replaceState(newcrumbs, '', baseurl + '#/korak/' + newcrumbs.join('/'));
+    goToNewCrumbs(animationQueue.shift());
+  });
+
+  // set event for show more
+  $('#app').on('click', '.show-more, .hide-more', function (event) {
+    event.preventDefault();
+    if (animating) {
+      return;
+    }
+    var isOpen = $('.cefizelj-overlay .show-more').hasClass('active');
+    if (isOpen) {
+      closeModals();
+      window.history.pushState([], '', baseurl);
+    } else {
+      var steps = [];
+      var current = breadcrumbs;
+      while (current.length) {
+        current = current.slice(0, -1);
+        steps.push(current);
+      }
+      for (var i in steps) {
+        animationQueue.push(steps[i]);
+      }
+      animationQueue.push('#vec');
+      window.history.replaceState([], '', baseurl + '#vec');
+      goToNewCrumbs(animationQueue.shift());
     }
   });
 
