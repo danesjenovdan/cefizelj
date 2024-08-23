@@ -295,6 +295,12 @@ body {
   }
 }
 
+@media (max-width: 575.98px) {
+  .half-left-more {
+    width: 100%;
+  }
+}
+
 .item,
 .half-content .article {
   box-shadow: 0 0 0 3px var(--clr-base);
@@ -590,6 +596,12 @@ body {
 }
 
 /* root html page */
+
+@media (max-width: 575.98px) {
+  .root-more .content {
+    margin-top: 10vh;
+  }
+}
 
 .root-html {
   display: flex;

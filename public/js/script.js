@@ -439,6 +439,9 @@ function goToNewCrumbs(newcrumbs) {
 
 async function openModal(modalName, path) {
   if (modalName === '#vec') {
+    var isMobile = $(window).width() < 576;
+    var moreWidth = isMobile ? $('.half-left').width() * 2 : $('.half-left').width();
+
     $('.show-more').hide();
 
     $('.half-left').after('<div class="half half-left half-left-more"></div>');
@@ -447,13 +450,13 @@ async function openModal(modalName, path) {
     const html = await res.text()
     $('.half-left-more').append(itemHTML.replaceAll('{{ id }}', basenode._id));
     $('.half-left-more .item').addClass('noclick hide-border').removeClass('centermycontentvertically');
-    $('.half-left-more .item').width($('.half-left').width());
+    $('.half-left-more .item').width(moreWidth);
     $('.half-left-more .item .centermevertically').replaceWith(html);
 
     updateItemHeights();
 
     $('.half-left-more').animate(
-      { width: '50%' },
+      { width: moreWidth },
       animateSpeedMove,
       function () {
         $('.half-left-more').width('');
@@ -461,6 +464,13 @@ async function openModal(modalName, path) {
         $('.half-right .item').addClass('hide-border');
       },
     );
+
+    if (isMobile) {
+      $('.half-root').animate(
+        { 'margin-left': '-50%' },
+        animateSpeedMove,
+      );
+    }
 
     return;
   }
@@ -474,7 +484,7 @@ async function openModal(modalName, path) {
 }
 
 function closeModals() {
-  $('.half-left-more .item').width($('.half-left').width());
+  $('.half-left-more .item').width($('.half-left-more').width());
   $('.half-right .item').removeClass('hide-border');
   $('.half-left-more').animate(
     { width: '0%' },
@@ -483,6 +493,10 @@ function closeModals() {
       $('.half-left-more').remove();
       $('.show-more').show();
     },
+  );
+  $('.half-root').animate(
+    { 'margin-left': '0%' },
+    animateSpeedMove,
   );
 
   $('.cefizelj-overlay .modal-bg').remove();
