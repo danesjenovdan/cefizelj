@@ -65,9 +65,30 @@ body {
 
 .scrollable {
   overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: var(--clr-base) transparent;
   padding-right: 45px;
+}
+
+@supports selector(::-webkit-scrollbar) {
+  .scrollable::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+  }
+
+  .scrollable::-webkit-scrollbar-thumb {
+    background: var(--clr-base);
+    border-radius: 4px;
+  }
+
+  .scrollable::-webkit-scrollbar-button {
+    display: none;
+  }
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .scrollable {
+    scrollbar-width: thin;
+    scrollbar-color: var(--clr-base) transparent;
+  }
 }
 
 @media (max-width: 1199.98px) {
