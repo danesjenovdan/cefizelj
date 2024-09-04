@@ -3,7 +3,7 @@
   --clr-yellow-300: #fdeba5;
   --clr-yellow-100: #fff2c9;
   --clr-teal-600: #47afae;
-  --clr-teal-300: #90d6d1;
+  --clr-teal-300: #ade0d6;
   --clr-teal-100: #ceeadb;
   --clr-blue-600: #154a95;
   --clr-blue-300: #c5c9dd;
@@ -55,10 +55,23 @@ body {
   }
 }
 
+@media (max-width: 767.98px) {
+  .circle-icon {
+    box-shadow: inset 0 0 0 2px var(--clr-base);
+  }
+}
+
 .circle-icon:hover,
 .circle-icon.active {
   background: var(--clr-white);
   box-shadow: inset 0 0 0 4px var(--clr-base);
+}
+
+@media (max-width: 767.98px) {
+  .circle-icon:hover,
+  .circle-icon.active {
+    box-shadow: inset 0 0 0 2px var(--clr-base);
+  }
 }
 
 .circle-icon svg {
@@ -308,6 +321,13 @@ body {
   box-shadow: 0 0 0 3px var(--clr-base);
 }
 
+@media (max-width: 767.98px) {
+  .item,
+  .half-content .article {
+    box-shadow: 0 0 0 2px var(--clr-base);
+  }
+}
+
 .item.hide-border,
 .half-content .article.hide-border {
   box-shadow: none;
@@ -410,6 +430,7 @@ body {
   color: var(--clr-base);
   user-select: none;
   overflow: hidden;
+  position: relative;
 }
 
 @media (max-width: 991.98px) {
@@ -548,7 +569,8 @@ body {
   --_item-bg-hover: var(--clr-surface-solar);
 }
 
-.item.solar-img {
+.item.solar-img,
+.item.solar.item-selected {
   background-image: url("../img/solar.svg?v=${COMMIT_SHA}");
 }
 
@@ -557,7 +579,8 @@ body {
   --_item-bg-hover: var(--clr-surface-wind);
 }
 
-.item.wind-img {
+.item.wind-img,
+.item.wind.item-selected {
   background-image: url("../img/turbine.svg?v=${COMMIT_SHA}");
 }
 
@@ -654,7 +677,7 @@ body {
 
 @media (max-width: 991.98px) {
   .root-html .title h1 {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -1044,12 +1067,20 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.article details > p {
+  margin-left: 4rem;
+}
+
 @media (max-width: 1199.98px) {
   .article p,
   .article ul,
   .article ol,
   .article details {
     font-size: 1rem;
+  }
+
+  .article details > p {
+    margin-left: 3.5rem;
   }
 }
 
@@ -1059,6 +1090,10 @@ body {
   .article ol,
   .article details {
     font-size: 0.875rem;
+  }
+
+  .article details > p {
+    margin-left: 3rem;
   }
 }
 
