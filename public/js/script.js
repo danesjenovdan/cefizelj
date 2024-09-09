@@ -155,10 +155,21 @@ async function generateFirstNode() {
 // END OF FIRST PAINT
 // ---
 
+function setTopLeftIconsState(newcrumbs) {
+  $('.cefizelj-overlay .top-left-icons .go-to-solar').removeClass('active');
+  $('.cefizelj-overlay .top-left-icons .go-to-wind').removeClass('active');
+  if (newcrumbs.length && newcrumbs[0] == '1') {
+    $('.cefizelj-overlay .top-left-icons .go-to-solar').addClass('active');
+  } else if (newcrumbs.length && newcrumbs[0] == '2') {
+    $('.cefizelj-overlay .top-left-icons .go-to-wind').addClass('active');
+  }
+}
+
 async function animationFinished() {
   if (!dontChangeCrumbs) {
     var newhash = breadcrumbs.length ? '#/korak/' + breadcrumbs.join('/') : '';
     window.history.pushState(breadcrumbs, '', baseurl + newhash);
+    setTopLeftIconsState(breadcrumbs);
     try {
       var data_item = tree
       for (var i = 0; i < breadcrumbs.length; i++) {
@@ -659,6 +670,7 @@ $(document).ready(function () {
       animationQueue.push(steps[i]);
     }
     window.history.replaceState(newcrumbs, '', baseurl + '#/korak/' + newcrumbs.join('/'));
+    setTopLeftIconsState(newcrumbs);
     goToNewCrumbs(animationQueue.shift());
   });
 
@@ -703,6 +715,7 @@ $(document).ready(function () {
       // if we're animating push to queue
       animationQueue.push(newcrumbs);
     } else {
+      setTopLeftIconsState(newcrumbs);
       goToNewCrumbs(newcrumbs);
     }
   });
@@ -722,6 +735,7 @@ $(document).ready(function () {
     animateSpeedMove = 0;
     animateSpeedStretch = 0;
     window.history.replaceState(newcrumbs, '', baseurl + '#/korak/' + newcrumbs.join('/'));
+    setTopLeftIconsState(newcrumbs);
   } else if (path === '#vec') {
     animationQueue.push(path);
   } else if (path && path.startsWith('#help')) {
