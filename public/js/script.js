@@ -521,26 +521,30 @@ async function openModal(modalName, path) {
 }
 
 function closeModals() {
-  animating = true;
+  if ($('.half-left-more').length) {
+    animating = true;
 
-  var isMobile = $(window).width() < 576;
+    var isMobile = $(window).width() < 576;
 
-  $('.half-left-more .item').width($('.half-left-more').width());
-  $('.half-right .item').removeClass('hide-border');
-  $('.half-left-more').animate(
-    { width: '0%' },
-    animateSpeedMove,
-    function () {
-      $('.half-left-more').remove();
-      $('.show-more').removeClass('active');
-      animating = false;
-    },
-  );
-  if (isMobile && $('.half-left-more').length) {
-    $('.half-root').animate(
-      { 'margin-left': breadcrumbs.length ? '-50%' : '0%' },
+    $('.half-left-more .item').width($('.half-left-more').width());
+    $('.half-right .item').removeClass('hide-border');
+    $('.half-left-more').animate(
+      { width: '0%' },
       animateSpeedMove,
+      function () {
+        $('.half-left-more').remove();
+        $('.show-more').removeClass('active');
+        animating = false;
+        console.log('done');
+      },
     );
+
+    if (isMobile) {
+      $('.half-root').animate(
+        { 'margin-left': breadcrumbs.length ? '-50%' : '0%' },
+        animateSpeedMove,
+      );
+    }
   }
 
   $('.cefizelj-overlay .modal-bg').remove();
