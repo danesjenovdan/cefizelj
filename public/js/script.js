@@ -156,12 +156,12 @@ async function generateFirstNode() {
 // ---
 
 function setTopLeftIconsState(newcrumbs) {
-  $('.cefizelj-overlay .top-left-icons .go-to-solar').removeClass('active');
   $('.cefizelj-overlay .top-left-icons .go-to-wind').removeClass('active');
+  $('.cefizelj-overlay .top-left-icons .go-to-solar').removeClass('active');
   if (newcrumbs.length && newcrumbs[0] == '1') {
-    $('.cefizelj-overlay .top-left-icons .go-to-solar').addClass('active');
-  } else if (newcrumbs.length && newcrumbs[0] == '2') {
     $('.cefizelj-overlay .top-left-icons .go-to-wind').addClass('active');
+  } else if (newcrumbs.length && newcrumbs[0] == '2') {
+    $('.cefizelj-overlay .top-left-icons .go-to-solar').addClass('active');
   }
 }
 
