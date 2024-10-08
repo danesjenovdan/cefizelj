@@ -8,35 +8,35 @@
       {
         "_id": 1,
         "type": "menu",
-        "name": "Vetrne",
+        "name": "Vetrne elektrarne",
         "class": "wind wind-img",
         "help": "1_help.html",
         "items": [
           {
             "_id": 1,
             "type": "menu",
-            "name": "Večje (nazivna moč nad 10 MW) (1)",
+            "name": "Večje",
             "class": "wind",
             "help": "1_1_help.html",
             "items": [
               {
                 "_id": 1,
                 "type": "menu",
-                "name": "Izven potencialnih prednostnih območij (1.1)",
+                "name": "Izven prednostnih območij",
                 "class": "wind",
                 "help": "1_1_1_help.html",
                 "items": [
                   {
                     "_id": 1,
                     "type": "menu",
-                    "name": "Uredba o DPN (1.1.1)",
+                    "name": "Uredba o DPN",
                     "class": "wind",
                     "help": "1_1_1_1_help.html",
                     "items": [
                       {
                         "_id": 1,
                         "type": "link",
-                        "name": "Integralno GD (1.1.1.1)",
+                        "name": "Integralno gradbeno dovoljenje",
                         "class": "wind",
                         "article": "1_1_1_1_1.html",
                         "help": "1_1_1_1_1_help.html"
@@ -44,7 +44,7 @@
                       {
                         "_id": 2,
                         "type": "link",
-                        "name": "Navadno GD (1.1.1.2)",
+                        "name": "Navadno gradbeno dovoljenje",
                         "class": "wind",
                         "article": "1_1_1_1_2.html",
                         "help": "1_1_1_1_2_help.html"
@@ -54,7 +54,7 @@
                   {
                     "_id": 2,
                     "type": "link",
-                    "name": "Združeni postopek – celovito d. (1.1.2)",
+                    "name": "Združeni postopek",
                     "class": "wind",
                     "article": "1_1_1_2.html",
                     "help": "1_1_1_2_help.html"
@@ -62,7 +62,7 @@
                   {
                     "_id": 3,
                     "type": "link",
-                    "name": "Delni združeni postopek-celovito d.  (1.1.3)",
+                    "name": "Delni združeni postopek",
                     "class": "wind",
                     "article": "1_1_1_3.html",
                     "help": "1_1_1_3_help.html"
@@ -72,14 +72,14 @@
               {
                 "_id": 2,
                 "type": "menu",
-                "name": "Potencialna prednostna območja (1.2)",
+                "name": "Prednostna območja",
                 "class": "wind",
                 "help": "1_1_2_help.html",
                 "items": [
                   {
                     "_id": 1,
                     "type": "link",
-                    "name": "Združeni postopek-celovito d. (1.2.1)",
+                    "name": "Združeni postopek",
                     "class": "wind",
                     "article": "1_1_2_1.html",
                     "help": "1_1_2_1_help.html"
@@ -87,7 +87,7 @@
                   {
                     "_id": 2,
                     "type": "link",
-                    "name": "Delni združeni postopek-celovito d. (1.2.2)",
+                    "name": "Delni združeni postopek",
                     "class": "wind",
                     "article": "1_1_2_2.html",
                     "help": "1_1_2_2_help.html"
@@ -97,14 +97,14 @@
               {
                 "_id": 3,
                 "type": "menu",
-                "name": "Spremljajoča dejavnost (1.3)",
+                "name": "Spremljajoča dejavnost",
                 "class": "wind",
                 "help": "1_1_3_help.html",
                 "items": [
                   {
                     "_id": 1,
                     "type": "menu",
-                    "name": "Kmetijska zemljišča (1.3.1)",
+                    "name": "Kmetijska zemljišča",
                     "class": "wind",
                     "help": "1_1_3_1_help.html",
                     "items": [
@@ -154,7 +154,7 @@
                   {
                     "_id": 2,
                     "type": "menu",
-                    "name": "Gozdna zemljišča (1.3.2)",
+                    "name": "Gozdna zemljišča",
                     "class": "wind",
                     "help": "1_1_3_2_help.html",
                     "items": [
@@ -204,7 +204,7 @@
                   {
                     "_id": 3,
                     "type": "menu",
-                    "name": "Vodovarstvena območja (1.3.3)",
+                    "name": "Vodovarstvena območja",
                     "class": "wind",
                     "help": "1_1_3_3_help.html",
                     "items": [
@@ -254,7 +254,7 @@
                   {
                     "_id": 4,
                     "type": "menu",
-                    "name": "Zaprta odlagališča odpadkov (1.3.4)",
+                    "name": "Zaprta odlagališča odpadkov",
                     "class": "wind",
                     "help": "1_1_3_4_help.html",
                     "items": [
@@ -306,7 +306,7 @@
               {
                 "_id": 4,
                 "type": "link",
-                "name": "Regulatorni peskovnik (1.4)",
+                "name": "Regulatorni peskovnik",
                 "class": "wind",
                 "article": "1_1_4.html",
                 "help": "1_1_4_help.html"
@@ -316,28 +316,28 @@
           {
             "_id": 2,
             "type": "menu",
-            "name": "Male e. (2)",
+            "name": "Manjše",
             "class": "wind",
             "help": "1_2_help.html",
             "items": [
               {
                 "_id": 1,
                 "type": "menu",
-                "name": "Nazivna moč nad 50 kW do 10 MW (2.1)",
+                "name": "Nazivna moč nad 50 kW do 10 MW",
                 "class": "wind",
                 "help": "1_2_1_help.html",
                 "items": [
                   {
                     "_id": 1,
                     "type": "menu",
-                    "name": "Izven potencialnih prednostnih območij (2.1.1)",
+                    "name": "Izven potencialnih prednostnih območij",
                     "class": "wind",
                     "help": "1_2_1_1_help.html",
                     "items": [
                       {
                         "_id": 1,
                         "type": "link",
-                        "name": "OPN + nav. GD",
+                        "name": "OPN + navadno GD",
                         "class": "wind",
                         "article": "1_2_1_1_1.html",
                         "help": "1_2_1_1_1_help.html"
@@ -345,7 +345,7 @@
                       {
                         "_id": 2,
                         "type": "link",
-                        "name": "OPPN + nav. GD",
+                        "name": "OPPN + navadno GD",
                         "class": "wind",
                         "article": "1_2_1_1_2.html",
                         "help": "1_2_1_1_2_help.html"
@@ -355,14 +355,14 @@
                   {
                     "_id": 2,
                     "type": "menu",
-                    "name": "Potencialna prednostna območje (2.1.2)",
+                    "name": "Potencialna prednostna območja",
                     "class": "wind",
                     "help": "1_2_1_2_help.html",
                     "items": [
                       {
                         "_id": 1,
                         "type": "link",
-                        "name": "OPN + nav. GD",
+                        "name": "OPN brez CPVO + navadno GD",
                         "class": "wind",
                         "article": "1_2_1_2_1.html",
                         "help": "1_2_1_2_1_help.html"
@@ -370,7 +370,7 @@
                       {
                         "_id": 2,
                         "type": "link",
-                        "name": "OPPN + nav. GD",
+                        "name": "OPPN brez CPVO + navadno GD",
                         "class": "wind",
                         "article": "1_2_1_2_2.html",
                         "help": "1_2_1_2_2_help.html"
@@ -380,7 +380,7 @@
                   {
                     "_id": 3,
                     "type": "menu",
-                    "name": "Spremljajoča dejavnost (2.1.3)",
+                    "name": "Spremljajoča dejavnost",
                     "class": "wind",
                     "help": "1_2_1_3_help.html",
                     "items": [
@@ -394,7 +394,7 @@
                           {
                             "_id": 1,
                             "type": "link",
-                            "name": "OPN + nav. GD",
+                            "name": "OPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_1_1.html",
                             "help": "1_2_1_3_1_1_help.html"
@@ -402,7 +402,7 @@
                           {
                             "_id": 2,
                             "type": "link",
-                            "name": "OPPN + nav. GD",
+                            "name": "OPPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_1_2.html",
                             "help": "1_2_1_3_1_2_help.html"
@@ -419,7 +419,7 @@
                           {
                             "_id": 1,
                             "type": "link",
-                            "name": "OPN + nav. GD",
+                            "name": "OPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_2_1.html",
                             "help": "1_2_1_3_2_1_help.html"
@@ -427,7 +427,7 @@
                           {
                             "_id": 2,
                             "type": "link",
-                            "name": "OPPN + nav. GD",
+                            "name": "OPPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_2_2.html",
                             "help": "1_2_1_3_2_2_help.html"
@@ -444,7 +444,7 @@
                           {
                             "_id": 1,
                             "type": "link",
-                            "name": "OPN + nav. GD",
+                            "name": "OPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_3_1.html",
                             "help": "1_2_1_3_3_1_help.html"
@@ -452,7 +452,7 @@
                           {
                             "_id": 2,
                             "type": "link",
-                            "name": "OPPN + nav. GD",
+                            "name": "OPPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_3_2.html",
                             "help": "1_2_1_3_3_2_help.html"
@@ -469,7 +469,7 @@
                           {
                             "_id": 1,
                             "type": "link",
-                            "name": "OPN + nav. GD",
+                            "name": "OPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_4_1.html",
                             "help": "1_2_1_3_4_1_help.html"
@@ -477,7 +477,7 @@
                           {
                             "_id": 2,
                             "type": "link",
-                            "name": "OPPN + nav. GD",
+                            "name": "OPPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_4_2.html",
                             "help": "1_2_1_3_4_2_help.html"
@@ -489,7 +489,7 @@
                   {
                     "_id": 4,
                     "type": "link",
-                    "name": "Regulatorni peskovnik (2.1.4)",
+                    "name": "Regulatorni peskovnik",
                     "class": "wind",
                     "article": "1_2_1_4.html",
                     "help": "1_2_1_4_help.html"
@@ -499,7 +499,7 @@
               {
                 "_id": 2,
                 "type": "link",
-                "name": "Nazivna moč do 50 kW (brez GD) (2.2)",
+                "name": "Nazivna moč do 50 kW (brez GD)",
                 "class": "wind",
                 "article": "1_2_2.html",
                 "help": "1_2_2_help.html"
@@ -511,28 +511,28 @@
       {
         "_id": 2,
         "type": "menu",
-        "name": "Sončne",
+        "name": "Sončne elektrarne",
         "class": "solar solar-img",
         "help": "2_help.html",
         "items": [
           {
             "_id": 1,
             "type": "menu",
-            "name": "Večje (nazivna moč nad 10 MW) (3)",
+            "name": "Večje",
             "class": "solar",
             "help": "2_1_help.html",
             "items": [
               {
                 "_id": 1,
                 "type": "menu",
-                "name": "Izven potencialnih prednostnih območij (3.1)",
+                "name": "Izven prednostnih območij",
                 "class": "solar",
                 "help": "2_1_1_help.html",
                 "items": [
                   {
                     "_id": 1,
                     "type": "menu",
-                    "name": "Uredba o DPN (3.1.1)",
+                    "name": "Uredba o DPN",
                     "class": "solar",
                     "help": "2_1_1_1_help.html",
                     "items": [
@@ -557,7 +557,7 @@
                   {
                     "_id": 2,
                     "type": "link",
-                    "name": "Združeni postopek- celovito d. (3.1.2)",
+                    "name": "Združeni postopek",
                     "class": "solar",
                     "article": "2_1_1_2.html",
                     "help": "2_1_1_2_help.html"
@@ -565,7 +565,7 @@
                   {
                     "_id": 3,
                     "type": "link",
-                    "name": "Delni združeni postopek-celovito d. (3.1.3)",
+                    "name": "Delni združeni postopek",
                     "class": "solar",
                     "article": "2_1_1_3.html",
                     "help": "2_1_1_3_help.html"
@@ -575,14 +575,14 @@
               {
                 "_id": 2,
                 "type": "menu",
-                "name": "Potencialna prednostna območja (3.2)",
+                "name": "Prednostna območja",
                 "class": "solar",
                 "help": "2_1_2_help.html",
                 "items": [
                   {
                     "_id": 1,
                     "type": "link",
-                    "name": "Združeni postopek-celovito d. (3.2.1)",
+                    "name": "Združeni postopek",
                     "class": "solar",
                     "article": "2_1_2_1.html",
                     "help": "2_1_2_1_help.html"
@@ -590,7 +590,7 @@
                   {
                     "_id": 2,
                     "type": "link",
-                    "name": "Delni združen postopek -celovito d (3.2.2)",
+                    "name": "Delni združen postopek",
                     "class": "solar",
                     "article": "2_1_2_2.html",
                     "help": "2_1_2_2_help.html"
@@ -600,14 +600,14 @@
               {
                 "_id": 3,
                 "type": "menu",
-                "name": "Predpisana prednostna območja (3.3)",
+                "name": "Predpisana prednostna območja",
                 "class": "solar",
                 "help": "2_1_3_help.html",
                 "items": [
                   {
                     "_id": 1,
                     "type": "menu",
-                    "name": "Brez načrtovanja-elaborat OVE (1-5 8. čl) (3.3.1)",
+                    "name": "Brez načrtovanja",
                     "class": "solar",
                     "help": "2_1_3_1_help.html",
                     "items": [
@@ -632,7 +632,7 @@
                   {
                     "_id": 2,
                     "type": "menu",
-                    "name": "Načrtovanje 6,7 tč 8. čl + novogradnje (3.3.2)",
+                    "name": "Načrtovanje",
                     "class": "solar",
                     "help": "2_1_3_2_help.html",
                     "items": [
@@ -684,14 +684,14 @@
               {
                 "_id": 4,
                 "type": "menu",
-                "name": "Spremljajoča dejavnost (3.4)",
+                "name": "Spremljajoča dejavnost",
                 "class": "solar",
                 "help": "2_1_4_help.html",
                 "items": [
                   {
                     "_id": 1,
                     "type": "menu",
-                    "name": "Kmetijska zemljišča (3.4.1)",
+                    "name": "Kmetijska zemljišča",
                     "class": "solar",
                     "help": "2_1_4_1_help.html",
                     "items": [
@@ -741,7 +741,7 @@
                   {
                     "_id": 2,
                     "type": "menu",
-                    "name": "Vodovarstvena območja (3.4.2)",
+                    "name": "Vodovarstvena območja",
                     "class": "solar",
                     "help": "2_1_4_2_help.html",
                     "items": [
@@ -791,7 +791,7 @@
                   {
                     "_id": 3,
                     "type": "menu",
-                    "name": "Zaprta odlagališča odpadkov (3.4.3)",
+                    "name": "Zaprta odlagališča odpadkov",
                     "class": "solar",
                     "help": "2_1_4_3_help.html",
                     "items": [
@@ -843,7 +843,7 @@
               {
                 "_id": 5,
                 "type": "link",
-                "name": "Regulatorni peskovnik (3.5)",
+                "name": "Regulatorni peskovnik",
                 "class": "solar",
                 "article": "2_1_5.html",
                 "help": "2_1_5_help.html"
@@ -853,28 +853,28 @@
           {
             "_id": 2,
             "type": "menu",
-            "name": "Male e. (4)",
+            "name": "Manjše",
             "class": "solar",
             "help": "2_2_help.html",
             "items": [
               {
                 "_id": 1,
                 "type": "menu",
-                "name": "Nazivna moč med 1 MW do 10 MW (4.1)",
+                "name": "Nazivna moč med 1 MW do 10 MW",
                 "class": "solar",
                 "help": "2_2_1_help.html",
                 "items": [
                   {
                     "_id": 1,
                     "type": "menu",
-                    "name": "Izven potencialnih prednostnih območij (4.1.1)",
+                    "name": "Izven potencialnih prednostnih območij",
                     "class": "solar",
                     "help": "2_2_1_1_help.html",
                     "items": [
                       {
                         "_id": 1,
                         "type": "link",
-                        "name": "OPN + nav. GD",
+                        "name": "OPN + navadno GD",
                         "class": "solar",
                         "article": "2_2_1_1_1.html",
                         "help": "2_2_1_1_1_help.html"
@@ -882,7 +882,7 @@
                       {
                         "_id": 2,
                         "type": "link",
-                        "name": "OPPN + nav. GD",
+                        "name": "OPPN + navadno GD",
                         "class": "solar",
                         "article": "2_2_1_1_2.html",
                         "help": "2_2_1_1_2_help.html"
@@ -892,14 +892,14 @@
                   {
                     "_id": 2,
                     "type": "menu",
-                    "name": "Potencialna prednostna območja (4.1.2)",
+                    "name": "Potencialna prednostna območja",
                     "class": "solar",
                     "help": "2_2_1_2_help.html",
                     "items": [
                       {
                         "_id": 1,
                         "type": "link",
-                        "name": "OPN brez CPVO + nav GD",
+                        "name": "OPN brez CPVO + navadno GD",
                         "class": "solar",
                         "article": "2_2_1_2_1.html",
                         "help": "2_2_1_2_1_help.html"
@@ -907,7 +907,7 @@
                       {
                         "_id": 2,
                         "type": "link",
-                        "name": "OPPN brez CPVO + nav GD",
+                        "name": "OPPN brez CPVO + navadno GD",
                         "class": "solar",
                         "article": "2_2_1_2_2.html",
                         "help": "2_2_1_2_2_help.html"
@@ -917,14 +917,14 @@
                   {
                     "_id": 3,
                     "type": "menu",
-                    "name": "Predpisana prednostna območja (4.1.3)",
+                    "name": "Predpisana prednostna območja",
                     "class": "solar",
                     "help": "2_2_1_3_help.html",
                     "items": [
                       {
                         "_id": 1,
                         "type": "menu",
-                        "name": "Brez načrtovanja (1-5 8. čl)",
+                        "name": "Brez načrtovanja",
                         "class": "solar",
                         "help": "2_2_1_3_1_help.html",
                         "items": [
@@ -949,7 +949,7 @@
                       {
                         "_id": 2,
                         "type": "menu",
-                        "name": "Načrtovanje (6,7 tč 8. čl + novogradnje)",
+                        "name": "Načrtovanje",
                         "class": "solar",
                         "help": "2_2_1_3_2_help.html",
                         "items": [
@@ -1010,7 +1010,7 @@
                   {
                     "_id": 4,
                     "type": "menu",
-                    "name": "Spremljajoča dejavnost (4.1.4)",
+                    "name": "Spremljajoča dejavnost",
                     "class": "solar",
                     "help": "2_2_1_4_help.html",
                     "items": [
@@ -1196,7 +1196,7 @@
                   {
                     "_id": 5,
                     "type": "link",
-                    "name": "Regulatorni peskovnik (4.1.5)",
+                    "name": "Regulatorni peskovnik",
                     "class": "solar",
                     "article": "2_2_1_5.html",
                     "help": "2_2_1_5_help.html"
@@ -1206,7 +1206,7 @@
               {
                 "_id": 2,
                 "type": "link",
-                "name": "Nazivna moč do 1MW (brez GD) (4.2)",
+                "name": "Nazivna moč do 1MW (brez GD)",
                 "class": "solar",
                 "article": "2_2_2.html",
                 "help": "2_2_2_help.html"
