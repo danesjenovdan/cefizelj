@@ -8,4 +8,4 @@ resources:
 images:
   - name: volitveni-vodic-referendum-jek2
     newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-referendum-jek2
-    newTag: 'latest'
+    newTag: '5d62c9fb3a825c17f02d2d0fafe22fd35d656145'
