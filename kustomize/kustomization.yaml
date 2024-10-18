@@ -8,4 +8,4 @@ resources:
 images:
   - name: vodic-pic-obnovljivi-viri
     newName: rg.fr-par.scw.cloud/djnd/vodic-pic-obnovljivi-viri
-    newTag: '15f324bc2641a7b877d6a082c1ffdf1b2b0fb8ff'
+    newTag: '176e745519b6389b6d42cb7f12f73fc99de50566'
