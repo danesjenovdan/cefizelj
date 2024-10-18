@@ -39,7 +39,7 @@
                         "name": "Integralno gradbeno dovoljenje",
                         "class": "wind",
                         "article": "1_1_1_1_1.html",
-                        "help": "1_1_1_1_1_help.html"
+                        "__help": "1_1_1_1_1_help.html"
                       },
                       {
                         "_id": 2,
@@ -47,7 +47,7 @@
                         "name": "Navadno gradbeno dovoljenje",
                         "class": "wind",
                         "article": "1_1_1_1_2.html",
-                        "help": "1_1_1_1_2_help.html"
+                        "__help": "1_1_1_1_2_help.html"
                       }
                     ]
                   },
@@ -57,7 +57,7 @@
                     "name": "Združeni postopek",
                     "class": "wind",
                     "article": "1_1_1_2.html",
-                    "help": "1_1_1_2_help.html"
+                    "__help": "1_1_1_2_help.html"
                   },
                   {
                     "_id": 3,
@@ -65,7 +65,7 @@
                     "name": "Delni združeni postopek",
                     "class": "wind",
                     "article": "1_1_1_3.html",
-                    "help": "1_1_1_3_help.html"
+                    "__help": "1_1_1_3_help.html"
                   }
                 ]
               },
@@ -82,7 +82,7 @@
                     "name": "Združeni postopek",
                     "class": "wind",
                     "article": "1_1_2_1.html",
-                    "help": "1_1_2_1_help.html"
+                    "__help": "1_1_2_1_help.html"
                   },
                   {
                     "_id": 2,
@@ -90,7 +90,7 @@
                     "name": "Delni združeni postopek",
                     "class": "wind",
                     "article": "1_1_2_2.html",
-                    "help": "1_1_2_2_help.html"
+                    "__help": "1_1_2_2_help.html"
                   }
                 ]
               },
@@ -121,7 +121,7 @@
                             "name": "Integralno GD",
                             "class": "wind",
                             "article": "1_1_3_1_1_1.html",
-                            "help": "1_1_3_1_1_1_help.html"
+                            "__help": "1_1_3_1_1_1_help.html"
                           },
                           {
                             "_id": 2,
@@ -129,7 +129,7 @@
                             "name": "Navadno GD",
                             "class": "wind",
                             "article": "1_1_3_1_1_2.html",
-                            "help": "1_1_3_1_1_2_help.html"
+                            "__help": "1_1_3_1_1_2_help.html"
                           }
                         ]
                       },
@@ -139,7 +139,7 @@
                         "name": "Združeni postopek",
                         "class": "wind",
                         "article": "1_1_3_1_2.html",
-                        "help": "1_1_3_1_2_help.html"
+                        "__help": "1_1_3_1_2_help.html"
                       },
                       {
                         "_id": 3,
@@ -147,7 +147,7 @@
                         "name": "Delni združeni postopek",
                         "class": "wind",
                         "article": "1_1_3_1_3.html",
-                        "help": "1_1_3_1_3_help.html"
+                        "__help": "1_1_3_1_3_help.html"
                       }
                     ]
                   },
@@ -171,7 +171,7 @@
                             "name": "Integralno GD",
                             "class": "wind",
                             "article": "1_1_3_2_1_1.html",
-                            "help": "1_1_3_2_1_1_help.html"
+                            "__help": "1_1_3_2_1_1_help.html"
                           },
                           {
                             "_id": 2,
@@ -179,7 +179,7 @@
                             "name": "Navadno GD",
                             "class": "wind",
                             "article": "1_1_3_2_1_2.html",
-                            "help": "1_1_3_2_1_2_help.html"
+                            "__help": "1_1_3_2_1_2_help.html"
                           }
                         ]
                       },
@@ -189,7 +189,7 @@
                         "name": "Združeni postopek",
                         "class": "wind",
                         "article": "1_1_3_2_2.html",
-                        "help": "1_1_3_2_2_help.html"
+                        "__help": "1_1_3_2_2_help.html"
                       },
                       {
                         "_id": 3,
@@ -197,7 +197,7 @@
                         "name": "Delni združeni postopek",
                         "class": "wind",
                         "article": "1_1_3_2_3.html",
-                        "help": "1_1_3_2_3_help.html"
+                        "__help": "1_1_3_2_3_help.html"
                       }
                     ]
                   },
@@ -221,7 +221,7 @@
                             "name": "Integralno GD",
                             "class": "wind",
                             "article": "1_1_3_3_1_1.html",
-                            "help": "1_1_3_3_1_1_help.html"
+                            "__help": "1_1_3_3_1_1_help.html"
                           },
                           {
                             "_id": 2,
@@ -229,7 +229,7 @@
                             "name": "Navadno GD",
                             "class": "wind",
                             "article": "1_1_3_3_1_2.html",
-                            "help": "1_1_3_3_1_2_help.html"
+                            "__help": "1_1_3_3_1_2_help.html"
                           }
                         ]
                       },
@@ -239,7 +239,7 @@
                         "name": "Združeni postopek",
                         "class": "wind",
                         "article": "1_1_3_3_2.html",
-                        "help": "1_1_3_3_2_help.html"
+                        "__help": "1_1_3_3_2_help.html"
                       },
                       {
                         "_id": 3,
@@ -247,7 +247,7 @@
                         "name": "Delni združeni postopek",
                         "class": "wind",
                         "article": "1_1_3_3_3.html",
-                        "help": "1_1_3_3_3_help.html"
+                        "__help": "1_1_3_3_3_help.html"
                       }
                     ]
                   },
@@ -271,7 +271,7 @@
                             "name": "Integralno GD",
                             "class": "wind",
                             "article": "1_1_3_4_1_1.html",
-                            "help": "1_1_3_4_1_1_help.html"
+                            "__help": "1_1_3_4_1_1_help.html"
                           },
                           {
                             "_id": 2,
@@ -279,7 +279,7 @@
                             "name": "Navadno GD",
                             "class": "wind",
                             "article": "1_1_3_4_1_2.html",
-                            "help": "1_1_3_4_1_2_help.html"
+                            "__help": "1_1_3_4_1_2_help.html"
                           }
                         ]
                       },
@@ -289,7 +289,7 @@
                         "name": "Združeni postopek",
                         "class": "wind",
                         "article": "1_1_3_4_2.html",
-                        "help": "1_1_3_4_2_help.html"
+                        "__help": "1_1_3_4_2_help.html"
                       },
                       {
                         "_id": 3,
@@ -297,7 +297,7 @@
                         "name": "Delni združeni postopek",
                         "class": "wind",
                         "article": "1_1_3_4_3.html",
-                        "help": "1_1_3_4_3_help.html"
+                        "__help": "1_1_3_4_3_help.html"
                       }
                     ]
                   }
@@ -309,7 +309,7 @@
                 "name": "Regulatorni peskovnik",
                 "class": "wind",
                 "article": "1_1_4.html",
-                "help": "1_1_4_help.html"
+                "__help": "1_1_4_help.html"
               }
             ]
           },
@@ -340,7 +340,7 @@
                         "name": "OPN + navadno GD",
                         "class": "wind",
                         "article": "1_2_1_1_1.html",
-                        "help": "1_2_1_1_1_help.html"
+                        "__help": "1_2_1_1_1_help.html"
                       },
                       {
                         "_id": 2,
@@ -348,7 +348,7 @@
                         "name": "OPPN + navadno GD",
                         "class": "wind",
                         "article": "1_2_1_1_2.html",
-                        "help": "1_2_1_1_2_help.html"
+                        "__help": "1_2_1_1_2_help.html"
                       }
                     ]
                   },
@@ -365,7 +365,7 @@
                         "name": "OPN brez CPVO + navadno GD",
                         "class": "wind",
                         "article": "1_2_1_2_1.html",
-                        "help": "1_2_1_2_1_help.html"
+                        "__help": "1_2_1_2_1_help.html"
                       },
                       {
                         "_id": 2,
@@ -373,7 +373,7 @@
                         "name": "OPPN brez CPVO + navadno GD",
                         "class": "wind",
                         "article": "1_2_1_2_2.html",
-                        "help": "1_2_1_2_2_help.html"
+                        "__help": "1_2_1_2_2_help.html"
                       }
                     ]
                   },
@@ -397,7 +397,7 @@
                             "name": "OPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_1_1.html",
-                            "help": "1_2_1_3_1_1_help.html"
+                            "__help": "1_2_1_3_1_1_help.html"
                           },
                           {
                             "_id": 2,
@@ -405,7 +405,7 @@
                             "name": "OPPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_1_2.html",
-                            "help": "1_2_1_3_1_2_help.html"
+                            "__help": "1_2_1_3_1_2_help.html"
                           }
                         ]
                       },
@@ -422,7 +422,7 @@
                             "name": "OPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_2_1.html",
-                            "help": "1_2_1_3_2_1_help.html"
+                            "__help": "1_2_1_3_2_1_help.html"
                           },
                           {
                             "_id": 2,
@@ -430,7 +430,7 @@
                             "name": "OPPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_2_2.html",
-                            "help": "1_2_1_3_2_2_help.html"
+                            "__help": "1_2_1_3_2_2_help.html"
                           }
                         ]
                       },
@@ -447,7 +447,7 @@
                             "name": "OPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_3_1.html",
-                            "help": "1_2_1_3_3_1_help.html"
+                            "__help": "1_2_1_3_3_1_help.html"
                           },
                           {
                             "_id": 2,
@@ -455,7 +455,7 @@
                             "name": "OPPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_3_2.html",
-                            "help": "1_2_1_3_3_2_help.html"
+                            "__help": "1_2_1_3_3_2_help.html"
                           }
                         ]
                       },
@@ -472,7 +472,7 @@
                             "name": "OPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_4_1.html",
-                            "help": "1_2_1_3_4_1_help.html"
+                            "__help": "1_2_1_3_4_1_help.html"
                           },
                           {
                             "_id": 2,
@@ -480,7 +480,7 @@
                             "name": "OPPN + navadno GD",
                             "class": "wind",
                             "article": "1_2_1_3_4_2.html",
-                            "help": "1_2_1_3_4_2_help.html"
+                            "__help": "1_2_1_3_4_2_help.html"
                           }
                         ]
                       }
@@ -492,7 +492,7 @@
                     "name": "Regulatorni peskovnik",
                     "class": "wind",
                     "article": "1_2_1_4.html",
-                    "help": "1_2_1_4_help.html"
+                    "__help": "1_2_1_4_help.html"
                   }
                 ]
               },
@@ -502,7 +502,7 @@
                 "name": "Nazivna moč do 50 kW (brez GD)",
                 "class": "wind",
                 "article": "1_2_2.html",
-                "help": "1_2_2_help.html"
+                "__help": "1_2_2_help.html"
               }
             ]
           }
@@ -542,7 +542,7 @@
                         "name": "Integralno GD",
                         "class": "solar",
                         "article": "2_1_1_1_1.html",
-                        "help": "2_1_1_1_1_help.html"
+                        "__help": "2_1_1_1_1_help.html"
                       },
                       {
                         "_id": 2,
@@ -550,7 +550,7 @@
                         "name": "Navadno GD",
                         "class": "solar",
                         "article": "2_1_1_1_2.html",
-                        "help": "2_1_1_1_2_help.html"
+                        "__help": "2_1_1_1_2_help.html"
                       }
                     ]
                   },
@@ -560,7 +560,7 @@
                     "name": "Združeni postopek",
                     "class": "solar",
                     "article": "2_1_1_2.html",
-                    "help": "2_1_1_2_help.html"
+                    "__help": "2_1_1_2_help.html"
                   },
                   {
                     "_id": 3,
@@ -568,7 +568,7 @@
                     "name": "Delni združeni postopek",
                     "class": "solar",
                     "article": "2_1_1_3.html",
-                    "help": "2_1_1_3_help.html"
+                    "__help": "2_1_1_3_help.html"
                   }
                 ]
               },
@@ -585,7 +585,7 @@
                     "name": "Združeni postopek",
                     "class": "solar",
                     "article": "2_1_2_1.html",
-                    "help": "2_1_2_1_help.html"
+                    "__help": "2_1_2_1_help.html"
                   },
                   {
                     "_id": 2,
@@ -593,7 +593,7 @@
                     "name": "Delni združen postopek",
                     "class": "solar",
                     "article": "2_1_2_2.html",
-                    "help": "2_1_2_2_help.html"
+                    "__help": "2_1_2_2_help.html"
                   }
                 ]
               },
@@ -617,7 +617,7 @@
                         "name": "Integralno GD",
                         "class": "solar",
                         "article": "2_1_3_1_1.html",
-                        "help": "2_1_3_1_1_help.html"
+                        "__help": "2_1_3_1_1_help.html"
                       },
                       {
                         "_id": 2,
@@ -625,7 +625,7 @@
                         "name": "Navadno GD",
                         "class": "solar",
                         "article": "2_1_3_1_2.html",
-                        "help": "2_1_3_1_2_help.html"
+                        "__help": "2_1_3_1_2_help.html"
                       }
                     ]
                   },
@@ -649,7 +649,7 @@
                             "name": "Integralno GD",
                             "class": "solar",
                             "article": "2_1_3_2_1_1.html",
-                            "help": "2_1_3_2_1_1_help.html"
+                            "__help": "2_1_3_2_1_1_help.html"
                           },
                           {
                             "_id": 2,
@@ -657,7 +657,7 @@
                             "name": "Navadno GD",
                             "class": "solar",
                             "article": "2_1_3_2_1_2.html",
-                            "help": "2_1_3_2_1_2_help.html"
+                            "__help": "2_1_3_2_1_2_help.html"
                           }
                         ]
                       },
@@ -667,7 +667,7 @@
                         "name": "Združeni postopek",
                         "class": "solar",
                         "article": "2_1_3_2_2.html",
-                        "help": "2_1_3_2_2_help.html"
+                        "__help": "2_1_3_2_2_help.html"
                       },
                       {
                         "_id": 3,
@@ -675,7 +675,7 @@
                         "name": "Delni združeni postopek",
                         "class": "solar",
                         "article": "2_1_3_2_3.html",
-                        "help": "2_1_3_2_3_help.html"
+                        "__help": "2_1_3_2_3_help.html"
                       }
                     ]
                   }
@@ -708,7 +708,7 @@
                             "name": "Integralno GD",
                             "class": "solar",
                             "article": "2_1_4_1_1_1.html",
-                            "help": "2_1_4_1_1_1_help.html"
+                            "__help": "2_1_4_1_1_1_help.html"
                           },
                           {
                             "_id": 2,
@@ -716,7 +716,7 @@
                             "name": "Navadno GD",
                             "class": "solar",
                             "article": "2_1_4_1_1_2.html",
-                            "help": "2_1_4_1_1_2_help.html"
+                            "__help": "2_1_4_1_1_2_help.html"
                           }
                         ]
                       },
@@ -726,7 +726,7 @@
                         "name": "Združeni postopek",
                         "class": "solar",
                         "article": "2_1_4_1_2.html",
-                        "help": "2_1_4_1_2_help.html"
+                        "__help": "2_1_4_1_2_help.html"
                       },
                       {
                         "_id": 3,
@@ -734,7 +734,7 @@
                         "name": "Delni združeni postopek",
                         "class": "solar",
                         "article": "2_1_4_1_3.html",
-                        "help": "2_1_4_1_3_help.html"
+                        "__help": "2_1_4_1_3_help.html"
                       }
                     ]
                   },
@@ -758,7 +758,7 @@
                             "name": "Integralno GD",
                             "class": "solar",
                             "article": "2_1_4_2_1_1.html",
-                            "help": "2_1_4_2_1_1_help.html"
+                            "__help": "2_1_4_2_1_1_help.html"
                           },
                           {
                             "_id": 2,
@@ -766,7 +766,7 @@
                             "name": "Navadno GD",
                             "class": "solar",
                             "article": "2_1_4_2_1_2.html",
-                            "help": "2_1_4_2_1_2_help.html"
+                            "__help": "2_1_4_2_1_2_help.html"
                           }
                         ]
                       },
@@ -776,7 +776,7 @@
                         "name": "Združeni postopek",
                         "class": "solar",
                         "article": "2_1_4_2_2.html",
-                        "help": "2_1_4_2_2_help.html"
+                        "__help": "2_1_4_2_2_help.html"
                       },
                       {
                         "_id": 3,
@@ -784,7 +784,7 @@
                         "name": "Delni združeni postopek",
                         "class": "solar",
                         "article": "2_1_4_2_3.html",
-                        "help": "2_1_4_2_3_help.html"
+                        "__help": "2_1_4_2_3_help.html"
                       }
                     ]
                   },
@@ -808,7 +808,7 @@
                             "name": "Integralno GD",
                             "class": "solar",
                             "article": "2_1_4_3_1_1.html",
-                            "help": "2_1_4_3_1_1_help.html"
+                            "__help": "2_1_4_3_1_1_help.html"
                           },
                           {
                             "_id": 2,
@@ -816,7 +816,7 @@
                             "name": "Navadno GD",
                             "class": "solar",
                             "article": "2_1_4_3_1_2.html",
-                            "help": "2_1_4_3_1_2_help.html"
+                            "__help": "2_1_4_3_1_2_help.html"
                           }
                         ]
                       },
@@ -826,7 +826,7 @@
                         "name": "Združeni postopek",
                         "class": "solar",
                         "article": "2_1_4_3_2.html",
-                        "help": "2_1_4_3_2_help.html"
+                        "__help": "2_1_4_3_2_help.html"
                       },
                       {
                         "_id": 3,
@@ -834,7 +834,7 @@
                         "name": "Delni združeni postopek",
                         "class": "solar",
                         "article": "2_1_4_3_3.html",
-                        "help": "2_1_4_3_3_help.html"
+                        "__help": "2_1_4_3_3_help.html"
                       }
                     ]
                   }
@@ -846,7 +846,7 @@
                 "name": "Regulatorni peskovnik",
                 "class": "solar",
                 "article": "2_1_5.html",
-                "help": "2_1_5_help.html"
+                "__help": "2_1_5_help.html"
               }
             ]
           },
@@ -877,7 +877,7 @@
                         "name": "OPN + navadno GD",
                         "class": "solar",
                         "article": "2_2_1_1_1.html",
-                        "help": "2_2_1_1_1_help.html"
+                        "__help": "2_2_1_1_1_help.html"
                       },
                       {
                         "_id": 2,
@@ -885,7 +885,7 @@
                         "name": "OPPN + navadno GD",
                         "class": "solar",
                         "article": "2_2_1_1_2.html",
-                        "help": "2_2_1_1_2_help.html"
+                        "__help": "2_2_1_1_2_help.html"
                       }
                     ]
                   },
@@ -902,7 +902,7 @@
                         "name": "OPN brez CPVO + navadno GD",
                         "class": "solar",
                         "article": "2_2_1_2_1.html",
-                        "help": "2_2_1_2_1_help.html"
+                        "__help": "2_2_1_2_1_help.html"
                       },
                       {
                         "_id": 2,
@@ -910,7 +910,7 @@
                         "name": "OPPN brez CPVO + navadno GD",
                         "class": "solar",
                         "article": "2_2_1_2_2.html",
-                        "help": "2_2_1_2_2_help.html"
+                        "__help": "2_2_1_2_2_help.html"
                       }
                     ]
                   },
@@ -934,7 +934,7 @@
                             "name": "Integralno GD",
                             "class": "solar",
                             "article": "2_2_1_3_1_1.html",
-                            "help": "2_2_1_3_1_1_help.html"
+                            "__help": "2_2_1_3_1_1_help.html"
                           },
                           {
                             "_id": 2,
@@ -942,7 +942,7 @@
                             "name": "Navadno GD",
                             "class": "solar",
                             "article": "2_2_1_3_1_2.html",
-                            "help": "2_2_1_3_1_2_help.html"
+                            "__help": "2_2_1_3_1_2_help.html"
                           }
                         ]
                       },
@@ -966,7 +966,7 @@
                                 "name": "Integralno GD",
                                 "class": "solar",
                                 "article": "2_2_1_3_2_1_1.html",
-                                "help": "2_2_1_3_2_1_1_help.html"
+                                "__help": "2_2_1_3_2_1_1_help.html"
                               },
                               {
                                 "_id": 2,
@@ -974,7 +974,7 @@
                                 "name": "Navadno GD",
                                 "class": "solar",
                                 "article": "2_2_1_3_2_1_2.html",
-                                "help": "2_2_1_3_2_1_2_help.html"
+                                "__help": "2_2_1_3_2_1_2_help.html"
                               }
                             ]
                           },
@@ -991,7 +991,7 @@
                                 "name": "Integralno GD",
                                 "class": "solar",
                                 "article": "2_2_1_3_2_2_1.html",
-                                "help": "2_2_1_3_2_2_1_help.html"
+                                "__help": "2_2_1_3_2_2_1_help.html"
                               },
                               {
                                 "_id": 2,
@@ -999,7 +999,7 @@
                                 "name": "Navadno GD",
                                 "class": "solar",
                                 "article": "2_2_1_3_2_2_2.html",
-                                "help": "2_2_1_3_2_2_2_help.html"
+                                "__help": "2_2_1_3_2_2_2_help.html"
                               }
                             ]
                           }
@@ -1034,7 +1034,7 @@
                                 "name": "Integralno GD",
                                 "class": "solar",
                                 "article": "2_2_1_4_1_1_1.html",
-                                "help": "2_2_1_4_1_1_1_help.html"
+                                "__help": "2_2_1_4_1_1_1_help.html"
                               },
                               {
                                 "_id": 2,
@@ -1042,7 +1042,7 @@
                                 "name": "Navadno GD",
                                 "class": "solar",
                                 "article": "2_2_1_4_1_1_2.html",
-                                "help": "2_2_1_4_1_1_2_help.html"
+                                "__help": "2_2_1_4_1_1_2_help.html"
                               }
                             ]
                           },
@@ -1059,7 +1059,7 @@
                                 "name": "Integralno GD",
                                 "class": "solar",
                                 "article": "2_2_1_4_1_2_1.html",
-                                "help": "2_2_1_4_1_2_1_help.html"
+                                "__help": "2_2_1_4_1_2_1_help.html"
                               },
                               {
                                 "_id": 2,
@@ -1067,7 +1067,7 @@
                                 "name": "Navadno GD",
                                 "class": "solar",
                                 "article": "2_2_1_4_1_2_2.html",
-                                "help": "2_2_1_4_1_2_2_help.html"
+                                "__help": "2_2_1_4_1_2_2_help.html"
                               }
                             ]
                           }
@@ -1093,7 +1093,7 @@
                                 "name": "Integralno GD",
                                 "class": "solar",
                                 "article": "2_2_1_4_2_1_1.html",
-                                "help": "2_2_1_4_2_1_1_help.html"
+                                "__help": "2_2_1_4_2_1_1_help.html"
                               },
                               {
                                 "_id": 2,
@@ -1101,7 +1101,7 @@
                                 "name": "Navadno GD",
                                 "class": "solar",
                                 "article": "2_2_1_4_2_1_2.html",
-                                "help": "2_2_1_4_2_1_2_help.html"
+                                "__help": "2_2_1_4_2_1_2_help.html"
                               }
                             ]
                           },
@@ -1118,7 +1118,7 @@
                                 "name": "Integralno GD",
                                 "class": "solar",
                                 "article": "2_2_1_4_2_2_1.html",
-                                "help": "2_2_1_4_2_2_1_help.html"
+                                "__help": "2_2_1_4_2_2_1_help.html"
                               },
                               {
                                 "_id": 2,
@@ -1126,7 +1126,7 @@
                                 "name": "Navadno GD",
                                 "class": "solar",
                                 "article": "2_2_1_4_2_2_2.html",
-                                "help": "2_2_1_4_2_2_2_help.html"
+                                "__help": "2_2_1_4_2_2_2_help.html"
                               }
                             ]
                           }
@@ -1152,7 +1152,7 @@
                                 "name": "Integralno GD",
                                 "class": "solar",
                                 "article": "2_2_1_4_3_1_1.html",
-                                "help": "2_2_1_4_3_1_1_help.html"
+                                "__help": "2_2_1_4_3_1_1_help.html"
                               },
                               {
                                 "_id": 2,
@@ -1160,7 +1160,7 @@
                                 "name": "Navadno GD",
                                 "class": "solar",
                                 "article": "2_2_1_4_3_1_2.html",
-                                "help": "2_2_1_4_3_1_2_help.html"
+                                "__help": "2_2_1_4_3_1_2_help.html"
                               }
                             ]
                           },
@@ -1177,7 +1177,7 @@
                                 "name": "Integralno GD",
                                 "class": "solar",
                                 "article": "2_2_1_4_3_2_1.html",
-                                "help": "2_2_1_4_3_2_1_help.html"
+                                "__help": "2_2_1_4_3_2_1_help.html"
                               },
                               {
                                 "_id": 2,
@@ -1185,7 +1185,7 @@
                                 "name": "Navadno GD",
                                 "class": "solar",
                                 "article": "2_2_1_4_3_2_2.html",
-                                "help": "2_2_1_4_3_2_2_help.html"
+                                "__help": "2_2_1_4_3_2_2_help.html"
                               }
                             ]
                           }
@@ -1199,7 +1199,7 @@
                     "name": "Regulatorni peskovnik",
                     "class": "solar",
                     "article": "2_2_1_5.html",
-                    "help": "2_2_1_5_help.html"
+                    "__help": "2_2_1_5_help.html"
                   }
                 ]
               },
@@ -1209,7 +1209,7 @@
                 "name": "Nazivna moč do 1MW (brez GD)",
                 "class": "solar",
                 "article": "2_2_2.html",
-                "help": "2_2_2_help.html"
+                "__help": "2_2_2_help.html"
               }
             ]
           }
