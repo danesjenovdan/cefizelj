@@ -22,7 +22,7 @@
               {
                 "_id": 1,
                 "type": "menu",
-                "name": "Izven prednostnih območij",
+                "name": "Izven potencialnih prednostnih območij",
                 "class": "wind",
                 "help": "1_1_1_help.html",
                 "items": [
@@ -72,7 +72,7 @@
               {
                 "_id": 2,
                 "type": "menu",
-                "name": "Prednostna območja",
+                "name": "Potencialna prednostna območja",
                 "class": "wind",
                 "help": "1_1_2_help.html",
                 "items": [
@@ -323,7 +323,7 @@
               {
                 "_id": 1,
                 "type": "menu",
-                "name": "Nazivna moč nad 50 kW do 10 MW",
+                "name": "Nazivna moč od 50 kW do 10 MW",
                 "class": "wind",
                 "help": "1_2_1_help.html",
                 "items": [
@@ -525,7 +525,7 @@
               {
                 "_id": 1,
                 "type": "menu",
-                "name": "Izven prednostnih območij",
+                "name": "Izven potencialnih prednostnih območij",
                 "class": "solar",
                 "help": "2_1_1_help.html",
                 "items": [
@@ -575,7 +575,7 @@
               {
                 "_id": 2,
                 "type": "menu",
-                "name": "Prednostna območja",
+                "name": "Potencialna prednostna območja",
                 "class": "solar",
                 "help": "2_1_2_help.html",
                 "items": [
@@ -590,7 +590,7 @@
                   {
                     "_id": 2,
                     "type": "link",
-                    "name": "Delni združen postopek",
+                    "name": "Delni združeni postopek",
                     "class": "solar",
                     "article": "2_1_2_2.html",
                     "__help": "2_1_2_2_help.html"
@@ -860,7 +860,7 @@
               {
                 "_id": 1,
                 "type": "menu",
-                "name": "Nazivna moč med 1 MW do 10 MW",
+                "name": "Nazivna moč od 1 MW do 10 MW",
                 "class": "solar",
                 "help": "2_2_1_help.html",
                 "items": [
