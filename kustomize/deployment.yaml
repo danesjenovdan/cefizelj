@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: volitveni-vodic-za
+  labels:
+    app: volitveni-vodic-za
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: volitveni-vodic-za
+  template:
+    metadata:
+      labels:
+        app: volitveni-vodic-za
+    spec:
+      containers:
+        - name: volitveni-vodic-za
+          image: volitveni-vodic-za
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: 25Mi
+              cpu: 25m
+            limits:
+              memory: 25Mi
+              cpu: 25m
