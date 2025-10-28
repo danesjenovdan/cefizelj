@@ -8,4 +8,4 @@ resources:
 images:
   - name: volitveni-vodic-referendum-dostojna-smrt-2025
     newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-referendum-dostojna-smrt-2025
-    newTag: 'latest'
+    newTag: 'd3b973d6ba3460df3e5c1655b2788356ae4d3c20'
