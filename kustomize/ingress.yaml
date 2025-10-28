@@ -1,26 +1,26 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: volitveni-vodic-referendum-jek2
+  name: volitveni-vodic-referendum-dostojna-smrt-2025
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
     nginx.ingress.kubernetes.io/rewrite-target: /$2
     nginx.ingress.kubernetes.io/configuration-snippet: |
-      rewrite ^(/referendum/jek2)$ $1/ redirect; # add trailing slash
+      rewrite ^(/referendum/dostojna-smrt)$ $1/ redirect; # add trailing slash
 spec:
   ingressClassName: nginx
   tls:
     - hosts:
         - vodici.djnd.si
-      secretName: volitveni-vodic-referendum-jek2-tls
+      secretName: volitveni-vodic-referendum-dostojna-smrt-2025-tls
   rules:
     - host: vodici.djnd.si
       http:
         paths:
-          - path: /referendum/jek2(/|$)(.*)
+          - path: /referendum/dostojna-smrt(/|$)(.*)
             pathType: Prefix
             backend:
               service:
-                name: volitveni-vodic-referendum-jek2
+                name: volitveni-vodic-referendum-dostojna-smrt-2025
                 port:
                   number: 80
