@@ -23,7 +23,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'acumin-pro', sans-serif;
+  font-family: system-ui, sans-serif;
   font-weight: 400;
 }
 
@@ -51,7 +51,7 @@ h3 {
 
 /* p {
   font-size: 16px;
-  font-family: 'acumin-pro', sans-serif;
+  font-family: system-ui, sans-serif;
   font-weight: 300;
   margin: 0;
 } */
@@ -123,7 +123,7 @@ a {
   overflow: visible;
   font-size: 12px;
   line-height: 1.2em;
-  font-family: 'acumin-pro', sans-serif;
+  font-family: system-ui, sans-serif;
   cursor: pointer;
 }
 
@@ -373,7 +373,7 @@ a {
   line-height: 67px;
   text-align: center;
   /*text-transform: uppercase;*/
-  font-family: 'acumin-pro', sans-serif;
+  font-family: system-ui, sans-serif;
   position: relative;
   overflow: visible;
   background-color: #3d3d3d;
@@ -460,7 +460,7 @@ a {
   padding: 0;
   margin: 0;
   width: 100%;
-  font-family: 'acumin-pro', sans-serif;
+  font-family: system-ui, sans-serif;
   font-weight: 300;
 }
 
@@ -572,7 +572,7 @@ a {
   z-index: 9000;
   overflow: hidden;
   font-size: 18px;
-  /* font-family: 'acumin-pro'; */
+  /* font-family: system-ui, sans-serif; */
   cursor: pointer;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -709,7 +709,7 @@ a {
 
 .htmlcontainer ul li {
   font-size: 16px;
-  font-family: 'acumin-pro';
+  font-family: system-ui, sans-serif;
   list-style: none;
   padding-left: 0;
 }
@@ -863,7 +863,7 @@ a {
   display: inline-block;
   line-height: 30px;
   margin-right: 10px;
-  font-family: 'acumin-pro';
+  font-family: system-ui, sans-serif;
   font-weight: 700;
 }
 
@@ -943,7 +943,7 @@ content: "\e60f";
 /* sqs-block-content je direkt copy-paste iz njihovega sajta za referendum za vodo */
 .sqs-block-content {
   padding: 20px 40px;
-  font-family: 'acumin-pro', sans-serif;
+  font-family: system-ui, sans-serif;
   max-width: 1050px;
   margin: 0 auto;
 }
