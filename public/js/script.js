@@ -77,7 +77,7 @@ function generateFirstNode() {
   );
   if (basenode.image) {
     $('.half-left .fwd').addClass('has-img-root');
-    $('.half-left .fwd').prepend('<img class="img-root" src="' + basenode.image + '" alt="">');
+    $('.half-left .fwd').prepend('<img class="img-root" src="' + basenode.image + '?v=${COMMIT_SHA}" alt="">');
   }
   for (var i in basenode.items) {
     var node = basenode.items[i];

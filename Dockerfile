@@ -1,5 +1,5 @@
 # build image
-FROM debian:latest as build
+FROM debian:latest AS build
 
 RUN apt-get update && apt-get install -y gettext-base
 
