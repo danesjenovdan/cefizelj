@@ -3,6 +3,7 @@
   --bg-hover-color: #afe3ef;
   --border-color: #587278;
   --text-color: #333;
+  --text-accent-color: #3f5155;
 }
 
 .container-fluid {
@@ -891,7 +892,7 @@ h3 {
 }
 
 .sqs-block-content h3 {
-  color: var(--border-color);
+  color: var(--text-accent-color);
 }
 
 .sqs-block-content h3,
@@ -922,7 +923,7 @@ h3 {
 .sqs-block-content .btn.btn-primary {
   background: transparent;
   border-color: var(--border-color);
-  color: var(--border-color);
+  color: var(--text-accent-color);
   border-radius: 0;
   padding: 15px 20px;
   font-weight: 700;
