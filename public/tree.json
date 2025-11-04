@@ -7,24 +7,24 @@
     "items": [
       {
         "_id": "1",
-        "name": "… na dan volitev me ne bo doma.",
+        "name": "… na dan referenduma me ne bo doma.",
         "type": "menu",
         "items": [
           {
             "_id": "3",
-            "name": "Na dan volitev bom v tujini.",
+            "name": "Na dan referenduma bom v tujini.",
             "type": "link",
             "article": "v-tujini.html"
           },
           {
             "_id": "2",
-            "name": "Doma bom v tednu pred volitvami.",
+            "name": "Doma bom v tednu pred referendumom.",
             "type": "link",
             "article": "predcasno.html"
           },
           {
             "_id": "4",
-            "name": "Na dan volitev bom v Sloveniji.",
+            "name": "Na dan referenduma bom v Sloveniji.",
             "type": "menu",
             "items": [
               {
@@ -35,13 +35,13 @@
               },
               {
                 "_id": "8",
-                "name": "Na dan volitev bom izven kraja stalnega prebivališča.",
+                "name": "Na dan referenduma bom izven kraja stalnega prebivališča.",
                 "type": "link",
                 "article": "omnia.html"
               },
               {
                 "_id": "9",
-                "name": "Na dan volitev bom v bolnišnici, zdravilišču, socialnovarstvenem zavodu za institucionalno varstvo, priporu ali zavodu za prestajanje kazni.",
+                "name": "Na dan referenduma bom v bolnišnici, zdravilišču, socialnovarstvenem zavodu za institucionalno varstvo, priporu ali zavodu za prestajanje kazni.",
                 "type": "link",
                 "article": "posta-bolnisnica-pripor.html"
               }
@@ -56,13 +56,13 @@
         "items": [
           {
             "_id": "1",
-            "name": "Na dan volitev bom v tujini.",
+            "name": "Na dan referenduma bom v tujini.",
             "type": "link",
             "article": "v-tujini-stalno.html"
           },
           {
             "_id": "2",
-            "name": "Na dan volitev bom v Sloveniji.",
+            "name": "Na dan referenduma bom v Sloveniji.",
             "type": "link",
             "article": "zivim-v-tujini.html"
           }
@@ -81,7 +81,7 @@
           },
           {
             "_id": "11",
-            "name": "Na dan volitev bom v bolnišnici ali zdravilišču.",
+            "name": "Na dan referenduma bom v bolnišnici ali zdravilišču.",
             "type": "link",
             "article": "posta-bolnisnica.html"
           },
@@ -118,7 +118,7 @@
           },
           {
             "_id": "15",
-            "name": "Na dan volitev bom v priporu ali zavodu za prestajanje kazni.",
+            "name": "Na dan referenduma bom v priporu ali zavodu za prestajanje kazni.",
             "type": "link",
             "article": "posta-pripor.html"
           }
