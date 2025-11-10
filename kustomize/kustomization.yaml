@@ -8,4 +8,4 @@ resources:
 images:
   - name: volitveni-vodic-predsednik-2022
     newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-predsednik-2022
-    newTag: '1d95fef81804079b22ebbe539e925672bad5f04b'
+    newTag: '3b0710159939f412dd55d8f2e4a78f0e880747b0'
