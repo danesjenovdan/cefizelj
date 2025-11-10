@@ -12,9 +12,20 @@ spec:
   tls:
     - hosts:
         - vodici.djnd.si
+        - vodici.danesjenovdan.si
       secretName: volitveni-vodic-tls
   rules:
     - host: vodici.djnd.si
+      http:
+        paths:
+          - path: /volitve(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: volitveni-vodic
+                port:
+                  number: 80
+    - host: vodici.danesjenovdan.si
       http:
         paths:
           - path: /volitve(/|$)(.*)
