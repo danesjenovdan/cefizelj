@@ -12,9 +12,20 @@ spec:
   tls:
     - hosts:
         - vodici.djnd.si
+        - vodici.danesjenovdan.si
       secretName: volitveni-vodic-predsednik-2022-drugi-krog-tls
   rules:
     - host: vodici.djnd.si
+      http:
+        paths:
+          - path: /volitve/predsedniske/2(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: volitveni-vodic-predsednik-2022-drugi-krog
+                port:
+                  number: 80
+    - host: vodici.danesjenovdan.si
       http:
         paths:
           - path: /volitve/predsedniske/2(/|$)(.*)
