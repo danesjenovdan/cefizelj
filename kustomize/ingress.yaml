@@ -12,9 +12,20 @@ spec:
   tls:
     - hosts:
         - vodici.djnd.si
+        - vodici.danesjenovdan.si
       secretName: volitveni-vodic-referendum-dostojna-smrt-2025-tls
   rules:
     - host: vodici.djnd.si
+      http:
+        paths:
+          - path: /referendum/dostojna-smrt(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: volitveni-vodic-referendum-dostojna-smrt-2025
+                port:
+                  number: 80
+    - host: vodici.danesjenovdan.si
       http:
         paths:
           - path: /referendum/dostojna-smrt(/|$)(.*)
