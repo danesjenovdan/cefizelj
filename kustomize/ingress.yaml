@@ -12,9 +12,20 @@ spec:
   tls:
     - hosts:
         - vodici.djnd.si
+        - vodici.danesjenovdan.si
       secretName: volitveni-vodic-evropske-2024-tls
   rules:
     - host: vodici.djnd.si
+      http:
+        paths:
+          - path: /volitve/evropske(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: volitveni-vodic-evropske-2024
+                port:
+                  number: 80
+    - host: vodici.danesjenovdan.si
       http:
         paths:
           - path: /volitve/evropske(/|$)(.*)
