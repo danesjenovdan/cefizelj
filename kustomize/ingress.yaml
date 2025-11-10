@@ -12,9 +12,20 @@ spec:
   tls:
     - hosts:
         - vodici.djnd.si
+        - vodici.danesjenovdan.si
       secretName: volitveni-vodic-za-tls
   rules:
     - host: vodici.djnd.si
+      http:
+        paths:
+          - path: /referendum/za(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: volitveni-vodic-za
+                port:
+                  number: 80
+    - host: vodici.danesjenovdan.si
       http:
         paths:
           - path: /referendum/za(/|$)(.*)
