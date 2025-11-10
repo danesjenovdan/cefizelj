@@ -12,9 +12,20 @@ spec:
   tls:
     - hosts:
         - vodici.djnd.si
+        - vodici.danesjenovdan.si
       secretName: volitveni-vodic-rtv-referendum-2022-tls
   rules:
     - host: vodici.djnd.si
+      http:
+        paths:
+          - path: /referendum/rtv(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: volitveni-vodic-rtv-referendum-2022
+                port:
+                  number: 80
+    - host: vodici.danesjenovdan.si
       http:
         paths:
           - path: /referendum/rtv(/|$)(.*)
