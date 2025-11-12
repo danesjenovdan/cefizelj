@@ -8,4 +8,4 @@ resources:
 images:
   - name: volitveni-vodic
     newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic
-    newTag: '83542be85c18351d956edc71f47e43e1c8a7e81d'
+    newTag: '57cff079b7ad867593a0c9c471ea041c731c9bd5'
