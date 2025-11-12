@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: volitveni-vodic-voda
   annotations:
-    cert-manager.io/cluster-issuer: "letsencrypt-production"
+    #cert-manager.io/cluster-issuer: "letsencrypt-production"
     nginx.ingress.kubernetes.io/rewrite-target: /$2
     nginx.ingress.kubernetes.io/configuration-snippet: |
       rewrite ^(/referendum/voda)$ $1/ redirect; # add trailing slash
@@ -13,10 +13,11 @@ spec:
     - hosts:
         - vodici.djnd.si
         - vodici.danesjenovdan.si
-      secretName: volitveni-vodic-voda-tls
+        - vodici.lb.djnd.si
+      secretName: volitveni-vodici-tls
   rules:
     - host: vodici.djnd.si
-      http:
+      http: &http_paths
         paths:
           - path: /referendum/voda(/|$)(.*)
             pathType: Prefix
@@ -26,12 +27,6 @@ spec:
                 port:
                   number: 80
     - host: vodici.danesjenovdan.si
-      http:
-        paths:
-          - path: /referendum/voda(/|$)(.*)
-            pathType: Prefix
-            backend:
-              service:
-                name: volitveni-vodic-voda
-                port:
-                  number: 80
+      http: *http_paths
+    - host: vodici.lb.djnd.si
+      http: *http_paths
