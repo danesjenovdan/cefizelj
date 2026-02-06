@@ -6,6 +6,6 @@ resources:
   - service.yaml
   - ingress.yaml
 images:
-  - name: volitveni-vodic-referendum-dostojna-smrt-2025
-    newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-referendum-dostojna-smrt-2025
-    newTag: '6e77de72eafaf4404936184acb9d37651883aae5'
+  - name: volitveni-vodic-dz-2026
+    newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-dz-2026
+    newTag: "latest"

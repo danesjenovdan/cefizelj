@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: volitveni-vodic-referendum-dostojna-smrt-2025
+  name: volitveni-vodic-dz-2026
 spec:
   selector:
-    app: volitveni-vodic-referendum-dostojna-smrt-2025
+    app: volitveni-vodic-dz-2026
   ports:
     - protocol: TCP
       port: 80
