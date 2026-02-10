@@ -69,10 +69,6 @@ h3 {
   font-size: 0;
 }
 
-.half-content {
-  font-size: 1.4rem;
-}
-
 .half {
   width: 50%;
   height: 100%;
@@ -80,6 +76,15 @@ h3 {
   white-space: normal;
   vertical-align: top;
   position: relative;
+}
+
+.half-left {
+  width: calc(50% + 1px);
+  margin-right: -1px;
+}
+
+.half-content {
+  font-size: 1.4rem;
 }
 
 .item {
@@ -117,24 +122,32 @@ h3 {
 }
 .item:not(.noclick):focus-visible {
   outline: 2px solid var(--border-color);
-  outline-offset: 2px;
+  outline-offset: -5px;
 }
 
 .item-content {
   padding-inline: 6.4rem;
 }
 
-.fwd {
-  display: flex;
-  justify-content: space-between;
+.item-content h1 {
+  font-size: 3.2rem;
 }
 
+.fwd,
 .bck {
   display: flex;
+  align-items: center;
+  margin-block: 1.5rem;
+}
+.fwd {
+  justify-content: space-between;
+}
+.bck {
   justify-content: center;
 }
 
 .fwd:after {
+  flex-shrink: 0;
   content: "";
   width: 31px;
   height: 31px;
@@ -145,11 +158,12 @@ h3 {
   background-repeat: no-repeat;
   display: inline-block;
   position: relative;
-  top: 5px;
+  top: 0px;
   left: 10px;
 }
 
 .bck:before {
+  flex-shrink: 0;
   content: "";
   width: 31px;
   height: 31px;
@@ -160,182 +174,14 @@ h3 {
   background-repeat: no-repeat;
   display: inline-block;
   position: relative;
-  top: 5px;
+  top: 0px;
   left: -10px;
   transform: rotate(180deg);
 }
 
-.visible-xs {
-  display: none;
-}
-
-.nazajcontainer {
-  width: 100%;
-  height: 40px;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  text-align: center;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 9000;
-  overflow: hidden;
-  font-size: 1.8rem;
-  cursor: pointer;
-  user-select: none;
-}
-
-.nazajcontainer:hover {
-  background-color: var(--bg-hover-color);
-  color: var(--text-color);
-}
-
-.nazaj.bck:before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  font-size: 0;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMid' viewBox='0 0 100 100'%3E%3Cpath d='M81 50c0-.463-.28-1.077-.564-1.376l-16-17c-.747-.772-1.957-.862-2.828-.078-.778.7-.798 2.067-.078 2.828L74.374 48H21a2 2 0 1 0 0 4h53.374L61.53 65.625c-.72.76-.669 2.094.078 2.828.789.775 2.093.706 2.828-.078l16-17c.47-.461.556-.905.564-1.375z' fill='%23000'/%3E%3C/svg%3E");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: inline-block;
-  position: relative;
-  top: 3px;
-  left: -6px;
-}
-
-.nazajcontainer:hover .bck:before {
-  border-color: transparent #3d3d3d transparent transparent;
-}
-
-@media (max-width: 1441px) {
-  .fwd.has-img-root {
-    max-width: 605px;
-    font-size: 3.6rem;
-  }
-  .img-root {
-    width: 40rem;
-  }
-}
-
-@media (max-width: 1111px) {
-  .fwd.has-img-root {
-    font-size: 3.2rem;
-  }
-}
-
-/* small devices */
-
-@media (max-width: 991px) {
-  p {
-    font-size: 1.4rem;
-  }
-  h1 {
-    font-size: 2.4rem;
-  }
-  h2,
-  h3 {
-    font-size: 1.8rem;
-  }
-  .tab {
-    font-size: 2.4rem;
-    width: 50%;
-    margin: 0;
-  }
-  .fwd:before,
-  .fwd:after,
-  .bck:before,
-  .bck:after {
-    top: 8px;
-  }
-  .fwd.has-img-root {
-    max-width: 370px;
-    font-size: 2.8rem;
-  }
-  .img-root {
-    width: 40rem;
-  }
-}
-
-/* extra small devices */
-
-@media (max-width: 767px) {
-  .visible-xs {
-    display: block;
-  }
-  .fwd.has-img-root {
-    max-width: 280px;
-  }
-}
-
-@media (max-width: 575px) {
-  .fwd.has-img-root {
-    max-width: 280px;
-    font-size: 2.1rem;
-  }
-  .img-root {
-    width: 110px;
-    margin-bottom: 1rem;
-  }
-}
-
-/* naprej hack TODO */
-
-.naprejprosim {
-  background: red;
-  height: 100px;
-  color: var(--text-color);
-  cursor: pointer;
-}
-
-/* start slide */
-
 .contentcontainer {
   overflow-y: auto;
   height: 100%;
-}
-
-.half-left {
-  /* overflow: hidden; */
-  width: calc(50% + 1px);
-  margin-right: -1px;
-}
-
-/* font sizes */
-
-.item h1 {
-  font-size: 3.2rem;
-}
-
-@media (max-width: 767px) {
-  .half-content {
-    width: 100%;
-  }
-  .item h1 {
-    font-size: 1.4rem;
-  }
-  .fwd,
-  .bck {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  .fwd:after,
-  .bck:before {
-    width: 16px;
-    height: 16px;
-    top: 3px;
-    left: 6px;
-  }
-  .bck:before {
-    left: -6px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .item h1 {
-    font-size: 2rem;
-  }
 }
 
 /* sqs-block-content je direkt copy-paste iz njihovega sajta za referendum za vodo */
@@ -370,6 +216,7 @@ h3 {
 .sqs-block-content ul {
   font-size: 1.8rem;
   line-height: 1.4;
+  margin-bottom: 1em;
 }
 
 .sqs-block-content p.question {
@@ -413,25 +260,5 @@ h3 {
 }
 .sqs-block-content .btn.btn-primary:focus-visible {
   outline: 2px solid var(--border-color);
-  outline-offset: 2px;
-}
-
-@media (max-width: 575px) {
-  .sqs-block-content .btn.btn-primary {
-    font-size: 1.4rem;
-  }
-}
-
-dl {
-  font-size: 1.6rem;
-}
-
-dl dt {
-  margin-top: 1.5em;
-  margin-bottom: 1em;
-}
-
-p,
-ul {
-  margin-bottom: 1em;
+  outline-offset: -5px;
 }

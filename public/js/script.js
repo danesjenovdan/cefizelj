@@ -184,7 +184,7 @@ function renderNext(targetnode) {
 
 function createUrlHalf(url) {
   $.get(url + '?v=${COMMIT_SHA}', function(r) {
-    var result = '<div class="half half-rightr half-content"><div class="visible-xs nazajcontainer"><div class="nazaj bck">Nazaj</div></div>' + '<div class="contentcontainer" data-id="0">' + r + '</div></div>';
+    var result = '<div class="half half-rightr half-content"><div class="contentcontainer" data-id="0" tabindex="-1">' + r + '</div></div>';
     $('.half-right').after(result);
     repaintRightr();
     moveLeft();
@@ -388,12 +388,6 @@ $(document).ready(function () {
         onBackItemClick($(this));
       }
     }
-  });
-
-  // set event for mobile back
-  $('.cefizelj-container').on('click', '.nazajcontainer', function () {
-    var item = $(this).parents('.half').prev().children('.item-selected');
-    onBackItemClick(item);
   });
 
   $(window).on('popstate', function(event) {
