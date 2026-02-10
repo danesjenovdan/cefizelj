@@ -184,8 +184,7 @@ h3 {
   height: 100%;
 }
 
-/* sqs-block-content je direkt copy-paste iz njihovega sajta za referendum za vodo */
-.sqs-block-content {
+.article-content {
   padding: 20px 40px;
   font-family: system-ui, sans-serif;
   max-width: 1050px;
@@ -193,52 +192,52 @@ h3 {
   color: var(--text-color);
 }
 
-.sqs-block-content hr {
+.article-content hr {
   margin: 50px 0;
   border-top-color: var(--border-color);
 }
 
-.sqs-block-content h3 {
+.article-content h3 {
   color: var(--text-accent-color);
 }
 
-.sqs-block-content h3,
-.sqs-block-content h3 span {
+.article-content h3,
+.article-content h3 span {
   font-weight: 600 !important;
   line-height: 1.3;
 }
 
-.sqs-block-content h3 em {
+.article-content h3 em {
   font-style: normal;
 }
 
-.sqs-block-content p,
-.sqs-block-content ul {
+.article-content p,
+.article-content ul {
   font-size: 1.8rem;
   line-height: 1.4;
   margin-bottom: 1em;
 }
 
-.sqs-block-content p.question {
+.article-content p.question {
   margin-bottom: 0.5em;
   margin-top: 2em;
 }
 
-.sqs-block-content a {
+.article-content a {
   color: var(--border-color);
   font-weight: 600;
   font-size: 1.8rem;
 }
-.sqs-block-content a:focus-visible {
+.article-content a:focus-visible {
   outline: 2px solid var(--border-color);
   outline-offset: 2px;
 }
 
-.sqs-block-content strong {
+.article-content strong {
   font-weight: 600;
 }
 
-.sqs-block-content .btn.btn-primary {
+.article-content .btn.btn-primary {
   background: var(--bg-color);
   border-color: var(--border-color);
   color: var(--text-accent-color);
@@ -251,14 +250,14 @@ h3 {
   transition: none;
 }
 
-.sqs-block-content .btn.btn-primary:hover,
-.sqs-block-content .btn.btn-primary:focus-visible {
+.article-content .btn.btn-primary:hover,
+.article-content .btn.btn-primary:focus-visible {
   background-color: var(--bg-hover-color);
 }
-.sqs-block-content .btn.btn-primary:hover {
+.article-content .btn.btn-primary:hover {
   box-shadow: 0 0 0 1px var(--border-color) inset;
 }
-.sqs-block-content .btn.btn-primary:focus-visible {
+.article-content .btn.btn-primary:focus-visible {
   outline: 2px solid var(--border-color);
   outline-offset: -5px;
 }
