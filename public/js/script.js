@@ -20,11 +20,11 @@ var baseurl = window.location.pathname;
 //   baseurl = baseurl.slice(0, baseurl.indexOf('/korak/') + 1);
 // }
 
-var itemHTML = ['<div class="item centermycontentvertically" data-id="{{ id }}">',
+var itemHTML = ['<button class="item centermycontentvertically" data-id="{{ id }}">',
                   '<div class="centermevertically">',
                     '<h1 class="fwd" data-text="{{ itemcontent }}">{{ itemcontent }}</h1>',
                   '</div>',
-                '</div>'].join('\n');
+                '</button>'].join('\n');
 
 // ---
 // FIRST PAINT
@@ -68,12 +68,13 @@ function startApp() {
 
 // generate first node
 function generateFirstNode() {
-  $('.cefizelj-container').html('<div class="half half-left bck-red border-red"></div><div class="half half-right"></div>');
+  $('.cefizelj-container').html('<div class="half half-left"></div><div class="half half-right"></div>');
   $('.half-left').append(
     itemHTML
       .replace('{{ id }}', basenode._id)
       .replace(/{{ itemcontent }}/g, basenode.name)
       .replace(/"item /g, '"item noclick ')
+      .replace(' class=', 'tabindex="-1" class=')
   );
   if (basenode.image) {
     $('.half-left .fwd').addClass('has-img-root');
@@ -283,6 +284,7 @@ function stretchItem(item) {
   item
     .siblings()
     .addClass('shrunk')
+    .attr('tabindex', '-1')
     .animate({
       height: 0
     }, animateSpeedStretch);
@@ -343,7 +345,8 @@ function onBackItemClick(item) {
 
   item
     .siblings()
-    .removeClass('shrunk');
+    .removeClass('shrunk')
+    .removeAttr('tabindex');
 
   item
     .removeClass('item-red') // previous selected remove red
