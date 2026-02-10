@@ -101,15 +101,14 @@ h3 {
   padding: 0;
   cursor: pointer;
   background-color: var(--bg-color);
-  /* box-shadow: 0 0 0 1px var(--border-color); */
-  border: 0;
+  border: 1px solid var(--border-color);
   color: var(--text-color);
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   overflow: hidden;
   z-index: 0;
+}
+.item + .item:not(.stretched) {
+  border-top-width: 0;
 }
 .item.noclick {
   cursor: default;
@@ -121,15 +120,19 @@ h3 {
 .item:not(.noclick):hover,
 .item:not(.noclick):focus-visible {
   background-color: var(--bg-hover-color);
-  /* box-shadow: 0 0 0 2px var(--border-color); */
   color: var(--text-color);
   z-index: 1000;
-  outline: none;
 }
-
-.item-red {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+.item:not(.noclick):hover {
+  border-color: var(--border-color);
+  border-width: 2px;
+}
+.item + .item:not(.noclick):not(.stretched):hover {
+  border-top-width: 1px;
+}
+.item:not(.noclick):focus-visible {
+  outline: 2px solid var(--border-color);
+  outline-offset: 2px;
 }
 
 .fwd,
@@ -171,10 +174,6 @@ h3 {
   position: relative;
   top: 5px;
   left: -10px;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -212,9 +211,6 @@ h3 {
   overflow: hidden;
   font-size: 1.8rem;
   cursor: pointer;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -331,15 +327,9 @@ h3 {
 
 .half-left {
   overflow: hidden;
-  /* border-right: 1px solid var(--border-color); */
+  width: calc(50% + 1px);
+  margin-right: -1px;
 }
-/* .half-left .item {
-  box-shadow: 0 0 0 1px var(--border-color) inset;
-}
-.half-left .item:not(.noclick):hover,
-.half-left .item:not(.noclick):focus-visible {
-  box-shadow: 0 0 0 2px var(--border-color) inset;
-} */
 
 /* font sizes */
 

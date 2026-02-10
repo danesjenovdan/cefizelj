@@ -16,9 +16,6 @@ var animateSpeedStretch = 300;
 
 var originalTitle = document.title;
 var baseurl = window.location.pathname;
-// if (baseurl.indexOf('/korak/') !== -1) {
-//   baseurl = baseurl.slice(0, baseurl.indexOf('/korak/') + 1);
-// }
 
 var itemHTML = ['<button class="item centermycontentvertically" data-id="{{ id }}">',
                   '<div class="centermevertically">',
@@ -30,18 +27,26 @@ var itemHTML = ['<button class="item centermycontentvertically" data-id="{{ id }
 // FIRST PAINT
 // ---
 
+function getItemHeight(i, e) {
+  const parentHeight = e.parentElement.getBoundingClientRect().height;
+  const numItems = e.parentElement.querySelectorAll('.item').length;
+  return parentHeight / numItems;
+}
+
+function setItemHeight(i, e) {
+  e.style.height = `${getItemHeight(i, e)}px`;
+}
+
+function setStretchedItemHeight(i, e) {
+  const parentHeight = e.parentElement.getBoundingClientRect().height;
+  e.style.height = `${parentHeight}px`;
+}
+
 // set correct item heights
 function repaintMe() {
-  // $('.cefizelj-container').height($('.cefizelj-container').parent().height());
   $('.cefizelj-container').height('100vh');
-
-  $('.item').not('.stretched, .shrunk').each(function (i, e) {
-    $(e).height($(e).parent().height() / $(e).parent().children('.item').length);
-  });
-
-  $('.stretched').each(function (i, e) {
-    $(e).height($(e).parent().height());
-  });
+  $('.item').not('.stretched, .shrunk').each(setItemHeight);
+  $('.stretched').each(setStretchedItemHeight);
 }
 
 // api tree getter
@@ -74,7 +79,7 @@ function generateFirstNode() {
       .replace('{{ id }}', basenode._id)
       .replace(/{{ itemcontent }}/g, basenode.name)
       .replace(/"item /g, '"item noclick ')
-      .replace(' class=', 'tabindex="-1" class=')
+      .replace(' class=', ' tabindex="-1" class=')
   );
   if (basenode.image) {
     $('.half-left .fwd').addClass('has-img-root');
@@ -133,6 +138,10 @@ function animationFinished() {
   } else {
     animateSpeedMove = 500;
     animateSpeedStretch = 300;
+
+    // prevent focus on all buttons not on screen
+    $('.half:not(.half-left):not(.half-right) .item').attr('tabindex', '-1');
+    $('.half-left .item:not(.shrunk):not(.noclick), .half-right .item:not(.shrunk):not(.noclick)').removeAttr('tabindex');
   }
 }
 
@@ -176,9 +185,7 @@ function createUrlHalf(url) {
 
 // repaint rightr
 function repaintRightr() {
-  $('.half-rightr .item').each(function (i, e) {
-    $(e).height($(e).parent().height() / $(e).parent().children('.item').length);
-  });
+  $('.half-rightr .item').each(setItemHeight);
 }
 
 // create list half
@@ -274,32 +281,29 @@ function displayPreviousHalf() {
 // Stretch and shrink selected item
 // ---
 
-// stretch item
+// stretch item to fill height
 function stretchItem(item) {
+  const e = item[0];
+  const parentHeight = e.parentElement.getBoundingClientRect().height;
   item
-    .addClass('stretched')
-    .animate({
-      height: item.parent().height()
-    }, animateSpeedStretch);
+    .animate({ height: parentHeight }, animateSpeedStretch, function() {
+      $(this).addClass('stretched');
+    });
   item
     .siblings()
-    .addClass('shrunk')
-    .attr('tabindex', '-1')
-    .animate({
-      height: 0
-    }, animateSpeedStretch);
+    .animate({ height: 0 }, animateSpeedStretch, function() {
+      $(this).addClass('shrunk').attr('tabindex', '-1').hide();
+    });
 }
 
-// shrink item
-function shrinkItem(item) {
-  item.animate({
-    height: item.parent().height() / item.parent().children('.item').length
-  }, animateSpeedStretch);
-  item.siblings().each(function (i, e) {
-    $(e).animate({
-      height: $(e).parent().height() / $(e).parent().children('.item').length
-    }, animateSpeedStretch);
-  });
+// shrink item to proportional height of all items
+function shrinkItemAndSiblings(item) {
+  const itemHeight = getItemHeight(0, item[0]);
+  item.parent().children('.item')
+    .show()
+    .animate({ height: itemHeight }, animateSpeedStretch, function() {
+      $(this).removeClass('stretched shrunk').removeAttr('tabindex');
+    });
 }
 
 function onForwardItemClick(item) {
@@ -326,13 +330,12 @@ function onBackItemClick(item) {
   displayPreviousHalf();
 
   window.setTimeout(function () {
-    shrinkItem(item);
+    shrinkItemAndSiblings(item);
   }, animateSpeedStretch);
 
   // change text from nazaj to whatever it's supposed to be
   if (item.children('.centermevertically').children('h1').data('text')) {
     item
-      .removeClass('stretched')
       .children('.centermevertically')
       .children('h1')
       .text(
@@ -342,11 +345,6 @@ function onBackItemClick(item) {
           .data('text')
       );
   }
-
-  item
-    .siblings()
-    .removeClass('shrunk')
-    .removeAttr('tabindex');
 
   item
     .removeClass('item-red') // previous selected remove red
