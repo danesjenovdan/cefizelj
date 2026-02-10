@@ -17,8 +17,8 @@ var animateSpeedStretch = 300;
 var originalTitle = document.title;
 var baseurl = window.location.pathname;
 
-var itemHTML = ['<button class="item centermycontentvertically" data-id="{{ id }}">',
-                  '<div class="centermevertically">',
+var itemHTML = ['<button class="item" data-id="{{ id }}">',
+                  '<div class="item-content">',
                     '<h1 class="fwd" data-text="{{ itemcontent }}">{{ itemcontent }}</h1>',
                   '</div>',
                 '</button>'].join('\n');
@@ -52,7 +52,7 @@ function repaintMe() {
 // api tree getter
 function getTree(callback) {
   $.get('./tree.json?v=${COMMIT_SHA}', function (r) {
-    console.log('getTree response', r);
+    // console.log('getTree response', r);
     tree = r.tree;
     callback();
   });
@@ -78,7 +78,7 @@ function generateFirstNode() {
     itemHTML
       .replace('{{ id }}', basenode._id)
       .replace(/{{ itemcontent }}/g, basenode.name)
-      .replace(/"item /g, '"item noclick ')
+      .replace(/"item"/g, '"item noclick"')
       .replace(' class=', ' tabindex="-1" class=')
   );
   if (basenode.image) {
@@ -105,7 +105,7 @@ function animationFinished() {
   if (!dontChangeCrumbs) {
     var newhash = breadcrumbs.length ? '#/korak/' + breadcrumbs.join('/') : '';
     window.history.pushState(breadcrumbs, '', baseurl + newhash);
-    console.log('pushState', breadcrumbs);
+    // console.log('pushState', breadcrumbs);
     try {
       var data_item = tree
       for (var i = 0; i < breadcrumbs.length; i++) {
@@ -142,6 +142,14 @@ function animationFinished() {
     // prevent focus on all buttons not on screen
     $('.half:not(.half-left):not(.half-right) .item').attr('tabindex', '-1');
     $('.half-left .item:not(.shrunk):not(.noclick), .half-right .item:not(.shrunk):not(.noclick)').removeAttr('tabindex');
+
+    // set back button text and classes
+    $('.half-left .item.stretched')
+      .children('.item-content')
+      .children('h1')
+      .removeClass('fwd')
+      .addClass('bck')
+      .text('Nazaj');
   }
 }
 
@@ -176,7 +184,7 @@ function renderNext(targetnode) {
 
 function createUrlHalf(url) {
   $.get(url + '?v=${COMMIT_SHA}', function(r) {
-    var result = '<div class="half half-rightr half-content"><div class="visible-xs centermycontentvertically nazajcontainer"><div class="centermevertically nazaj bck">Nazaj</div></div>' + '<div class="contentcontainer" data-id="0">' + r + '</div></div>';
+    var result = '<div class="half half-rightr half-content"><div class="visible-xs nazajcontainer"><div class="nazaj bck">Nazaj</div></div>' + '<div class="contentcontainer" data-id="0">' + r + '</div></div>';
     $('.half-right').after(result);
     repaintRightr();
     moveLeft();
@@ -257,15 +265,12 @@ function displayPreviousHalf() {
   $('.half-leftr').animate({
     'margin-left': '0%'
   }, animateSpeedMove, function () {
-    //cleanup
+    // cleanup
     $('.half-right').remove();
 
     $('.half-left')
       .removeClass('half-left')
-      .addClass('half-right')
-      .children('h1')
-      .removeClass('bck')
-      .addClass('fwd');
+      .addClass('half-right');
 
     $('.half-leftr')
       .removeClass('half-leftr')
@@ -312,16 +317,10 @@ function onForwardItemClick(item) {
   stretchItem(item);
 
   window.setTimeout(function () {
-    // display next half
     displayNextHalf(item.data('id'));
   }, animateSpeedStretch);
 
-  item
-    .addClass('item-red') // make item selected
-    .children('.centermevertically') // toggle fwd/bck
-    .children('h1')
-    .toggleClass('fwd')
-    .toggleClass('bck');
+  item.addClass('item-selected');
 }
 
 function onBackItemClick(item) {
@@ -333,25 +332,18 @@ function onBackItemClick(item) {
     shrinkItemAndSiblings(item);
   }, animateSpeedStretch);
 
-  // change text from nazaj to whatever it's supposed to be
-  if (item.children('.centermevertically').children('h1').data('text')) {
-    item
-      .children('.centermevertically')
-      .children('h1')
-      .text(
-        item
-          .children('.centermevertically')
-          .children('h1')
-          .data('text')
-      );
-  }
+  item.removeClass('item-selected');
 
-  item
-    .removeClass('item-red') // previous selected remove red
-    .children('.centermevertically') // toggle fwd/bck
+  item.children('.item-content')
     .children('h1')
-    .toggleClass('fwd')
-    .toggleClass('bck');
+    .removeClass('bck')
+    .addClass('fwd');
+
+  // change text from nazaj to whatever it's supposed to be
+  const dataText = item.children('.item-content').children('h1').data('text');
+  if (dataText) {
+    item.children('.item-content').children('h1').text(dataText);
+  }
 }
 
 function goToNewCrumbs(newcrumbs) {
@@ -384,29 +376,6 @@ $(document).ready(function () {
   // get tree and start app
   getTree(startApp);
 
-  // setup events
-
-  // set back item hover events
-  $('.cefizelj-container').on({
-    'mouseenter': function () {
-      $(this)
-        .children('.centermevertically')
-        .children('h1')
-        .text('Nazaj'); // set text to nazaj
-    },
-    'mouseleave': function () {
-      $(this)
-        .children('.centermevertically')
-        .children('h1')
-        .text(
-          $(this)
-            .children('.centermevertically')
-            .children('h1')
-            .data('text')
-        );
-    }
-  }, '.item-red');
-
   // on clicking item
   $('.cefizelj-container').on('click', '.item', function () {
     // if not animating and not root
@@ -423,7 +392,7 @@ $(document).ready(function () {
 
   // set event for mobile back
   $('.cefizelj-container').on('click', '.nazajcontainer', function () {
-    var item = $(this).parents('.half').prev().children('.item-red');
+    var item = $(this).parents('.half').prev().children('.item-selected');
     onBackItemClick(item);
   });
 
