@@ -23,6 +23,9 @@ var itemHTML = ['<button class="item" data-id="{{ id }}">',
                   '</div>',
                 '</button>'].join('\n');
 
+var lastWidth = $(window).width();
+var tabletWidth = 992;
+
 // ---
 // FIRST PAINT
 // ---
@@ -43,15 +46,27 @@ function setStretchedItemHeight(i, e) {
 }
 
 // set correct item heights
-function repaintMe() {
+function setAllHeights() {
   $('.cefizelj-container').height('100vh');
   $('.item').not('.stretched, .shrunk').each(setItemHeight);
   $('.stretched').each(setStretchedItemHeight);
+
+  const width = $(window).width();
+
+  if (width < tabletWidth && lastWidth >= tabletWidth) {
+    // TODO: switch to mobile
+    return;
+  }
+
+  if (width >= tabletWidth && lastWidth < tabletWidth) {
+    // TODO: switch to desktop
+    return;
+  }
 }
 
 // api tree getter
 function getTree(callback) {
-  $.get('./tree.json?v=${COMMIT_SHA}', function (r) {
+  $.get('./tree.json?v=${COMMIT_SHA}', function(r) {
     // console.log('getTree response', r);
     tree = r.tree;
     callback();
@@ -94,7 +109,7 @@ function generateFirstNode() {
           .replace(/{{ itemcontent }}/g, node.name)
       );
   }
-  repaintMe();
+  setAllHeights();
 }
 
 // ---
@@ -175,7 +190,7 @@ function renderNext(targetnode) {
   } else if ((targetnode.items[0].type == 'menu') || (targetnode.items[0].type == 'link')) {
     // render list
     $('.half-right').after(createListHalf(targetnode.items));
-    repaintMe();
+    setAllHeights();
     moveLeft();
   } else {
     moveLeft();
@@ -186,21 +201,16 @@ function createUrlHalf(url) {
   $.get(url + '?v=${COMMIT_SHA}', function(r) {
     var result = '<div class="half half-rightr half-content"><div class="contentcontainer" data-id="0" tabindex="-1">' + r + '</div></div>';
     $('.half-right').after(result);
-    repaintRightr();
+    setAllHeights();
     moveLeft();
   });
-}
-
-// repaint rightr
-function repaintRightr() {
-  $('.half-rightr .item').each(setItemHeight);
 }
 
 // create list half
 function createListHalf(items) {
   var result = '<div class="half half-rightr">';
 
-  $.each(items, function (i, item) {
+  $.each(items, function(i, item) {
     result += itemHTML
       .replace('{{ id }}', item._id)
       .replace(/{{ itemcontent }}/g, item.name);
@@ -212,35 +222,34 @@ function createListHalf(items) {
 
 // move left and cleanup (next)
 function moveLeft() {
-  if ($(window).width() < 768 && $('.half-rightr').hasClass('half-content')) {
-    $('.half-left').animate({
-      'margin-left': '-100%'
-    }, animateSpeedMove, function () {
-      // cleanup
-      $('.half-leftr').removeClass('half-leftr'); // remove hidden left
+  // if ($(window).width() < 768 && $('.half-rightr').hasClass('half-content')) {
+  //   $('.half-left').animate({
+  //     'margin-left': '-100%'
+  //   }, animateSpeedMove, function() {
+  //     // cleanup
+  //     $('.half-leftr').removeClass('half-leftr'); // remove hidden left
 
-      // update classes
-      $('.half-left').removeClass('half-left').addClass('half-leftr'); // left -> leftr
-      $('.half-right').removeClass('half-right').addClass('half-left'); // right -> left
-      $('.half-rightr').removeClass('half-rightr').addClass('half-right').next().addClass('half-rightr').removeClass('half-right'); // rightr -> right, next -> rightr
+  //     // update classes
+  //     $('.half-left').removeClass('half-left').addClass('half-leftr'); // left -> leftr
+  //     $('.half-right').removeClass('half-right').addClass('half-left'); // right -> left
+  //     $('.half-rightr').removeClass('half-rightr').addClass('half-right').next().addClass('half-rightr').removeClass('half-right'); // rightr -> right, next -> rightr
 
-      animationFinished();
-    });
-  } else {
-    $('.half-left').animate({
-      'margin-left': '-50%'
-    }, animateSpeedMove, function () {
-      // cleanup
-      $('.half-leftr').removeClass('half-leftr'); // remove hidden left
+  //     animationFinished();
+  //   });
+  // } else {
+  // }
+  $('.half-left').animate({ 'margin-left': '-50%' }, animateSpeedMove, function() {
+    // cleanup
+    $('.half-leftr').removeClass('half-leftr'); // remove hidden left
 
-      // update classes
-      $('.half-left').removeClass('half-left').addClass('half-leftr'); // left -> leftr
-      $('.half-right').removeClass('half-right').addClass('half-left'); // right -> left
-      $('.half-rightr').removeClass('half-rightr').addClass('half-right').next().addClass('half-rightr').removeClass('half-right'); // rightr -> right, next -> rightr
+    // update classes
+    $('.half-left').removeClass('half-left').addClass('half-leftr').hide(); // left -> leftr
+    $('.half-right').removeClass('half-right').addClass('half-left'); // right -> left
+    $('.half-rightr').removeClass('half-rightr').addClass('half-right') // rightr -> right
+      .next().addClass('half-rightr'); // next -> rightr
 
-      animationFinished();
-    });
-  }
+    animationFinished();
+  });
 }
 
 // ---
@@ -262,21 +271,16 @@ function displayPreviousHalf() {
     })[0];
   }
 
-  $('.half-leftr').animate({
-    'margin-left': '0%'
-  }, animateSpeedMove, function () {
+  $('.half-leftr').show()
+  setAllHeights();
+  $('.half-leftr').animate({ 'margin-left': '0%' }, animateSpeedMove, function() {
     // cleanup
     $('.half-right').remove();
 
-    $('.half-left')
-      .removeClass('half-left')
-      .addClass('half-right');
-
-    $('.half-leftr')
-      .removeClass('half-leftr')
-      .addClass('half-left')
-      .prev()
-      .addClass('half-leftr');
+    // update classes
+    $('.half-left').removeClass('half-left').addClass('half-right'); // left -> right
+    $('.half-leftr').removeClass('half-leftr').addClass('half-left') // leftr -> left
+      .prev().addClass('half-leftr'); // prev -> leftr
 
     animationFinished();
   });
@@ -316,7 +320,7 @@ function onForwardItemClick(item) {
 
   stretchItem(item);
 
-  window.setTimeout(function () {
+  window.setTimeout(function() {
     displayNextHalf(item.data('id'));
   }, animateSpeedStretch);
 
@@ -328,7 +332,7 @@ function onBackItemClick(item) {
 
   displayPreviousHalf();
 
-  window.setTimeout(function () {
+  window.setTimeout(function() {
     shrinkItemAndSiblings(item);
   }, animateSpeedStretch);
 
@@ -364,20 +368,20 @@ function goToNewCrumbs(newcrumbs) {
 // RUN ON LOAD
 // ---
 
-$(document).ready(function () {
-  // first, repaint
-  repaintMe();
+$(document).ready(function() {
+  // first, set all heights
+  setAllHeights();
 
   // set onresize events
-  window.onresize = function () {
-    repaintMe();
-  }
+  $(window).on('resize', function() {
+    setAllHeights();
+  });
 
   // get tree and start app
   getTree(startApp);
 
   // on clicking item
-  $('.cefizelj-container').on('click', '.item', function () {
+  $('.cefizelj-container').on('click', '.item', function() {
     // if not animating and not root
     if (!animating && !$(this).hasClass('noclick')) {
       if ($(this).parent().hasClass('half-right')) {
@@ -406,7 +410,7 @@ $(document).ready(function () {
   if (path.indexOf('/korak/') !== -1) {
     var newcrumbs = path.slice(path.indexOf('/korak/') + '/korak/'.length)
       .split('/')
-      .filter(function (part) {
+      .filter(function(part) {
         return part.length;
       });
     for (var i in newcrumbs) {
