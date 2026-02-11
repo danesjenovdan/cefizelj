@@ -78,7 +78,7 @@ async function startApp() {
 // generate first node
 async function generateFirstNode() {
   $('.cefizelj-container').html('<div class="half half-left"></div><div class="half half-right"></div>');
-  $('.half-left').append(
+  $('.half-left').addClass('half-root').append(
     itemHTML
       .replace('{{ id }}', basenode._id)
       .replace(/{{ itemcontent }}/g, basenode.name)
@@ -233,7 +233,15 @@ function moveLeft() {
 
     animationFinished();
   }
-  $('.half-left').animate({ 'margin-left': '-50%' }, animateSpeedMove, cleanup);
+
+  if (windowWidth < 768 && $('.half-rightr').hasClass('half-content')) {
+    $('.half-left').animate({ 'margin-left': '-100%' }, animateSpeedMove, () => {
+      cleanup();
+      $('.half-left').hide();
+    });
+  } else {
+    $('.half-left').animate({ 'margin-left': '-50%' }, animateSpeedMove, cleanup);
+  }
 }
 
 // ---
@@ -255,7 +263,8 @@ function displayPreviousHalf() {
     })[0];
   }
 
-  $('.half-leftr').show()
+  $('.half-leftr').show(); // always hidden after moving offscreen
+  $('.half-left').show(); // in case it was hidden on mobile
   setAllHeights();
   $('.half-leftr').animate({ 'margin-left': 0 }, animateSpeedMove, function() {
     // cleanup
@@ -302,23 +311,13 @@ function shrinkItemAndSiblings(item) {
 function onForwardItemClick(item) {
   animating = true;
 
-  // if (windowWidth < tabletWidth) {
-  //   // move "half-left" up
-  //   $('.half-left').animate({ 'margin-top': '-100%' }, animateSpeedMove, function() {
-  //     // debugger;
-  //     // displayNextHalf(item.data('id'));
-  //     // stretchItem(item);
-  //   });
+  stretchItem(item);
 
-  // } else {
-    stretchItem(item);
+  window.setTimeout(function() {
+    displayNextHalf(item.data('id'));
+  }, animateSpeedStretch);
 
-    window.setTimeout(function() {
-      displayNextHalf(item.data('id'));
-    }, animateSpeedStretch);
-
-    item.addClass('item-selected');
-  // }
+  item.addClass('item-selected');
 }
 
 function onBackItemClick(item) {
