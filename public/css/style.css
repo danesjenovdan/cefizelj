@@ -38,13 +38,13 @@ button {
   font-size: 0;
   overflow: hidden;
 }
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   .cefizelj-container {
     display: flex;
     flex-direction: column;
     white-space: normal;
   }
-}
+} */
 
 .half {
   width: 50%;
@@ -54,22 +54,22 @@ button {
   vertical-align: top;
   position: relative;
 }
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   .half {
     width: 100%;
   }
-}
+} */
 
 .half-left {
   width: calc(50% + 1px);
   margin-right: -1px;
 }
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   .half-left {
     width: 100%;
     margin-right: 0;
   }
-}
+} */
 
 .half-content {
   border: 1px solid var(--border-color);

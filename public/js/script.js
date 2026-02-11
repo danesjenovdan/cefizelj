@@ -22,6 +22,7 @@ var itemHTML = `<button class="item" data-id="{{ id }}">
   </div>
 </button>`;
 
+var tabletItemSize = 100;
 var tabletWidth = 992;
 var windowWidth = $(window).width();
 var windowHeight = $(window).height();
@@ -301,13 +302,23 @@ function shrinkItemAndSiblings(item) {
 function onForwardItemClick(item) {
   animating = true;
 
-  stretchItem(item);
+  // if (windowWidth < tabletWidth) {
+  //   // move "half-left" up
+  //   $('.half-left').animate({ 'margin-top': '-100%' }, animateSpeedMove, function() {
+  //     // debugger;
+  //     // displayNextHalf(item.data('id'));
+  //     // stretchItem(item);
+  //   });
 
-  window.setTimeout(function() {
-    displayNextHalf(item.data('id'));
-  }, animateSpeedStretch);
+  // } else {
+    stretchItem(item);
 
-  item.addClass('item-selected');
+    window.setTimeout(function() {
+      displayNextHalf(item.data('id'));
+    }, animateSpeedStretch);
+
+    item.addClass('item-selected');
+  // }
 }
 
 function onBackItemClick(item) {
