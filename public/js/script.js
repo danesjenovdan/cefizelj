@@ -16,12 +16,11 @@ var animateSpeedStretch = 300;
 
 var originalTitle = document.title;
 var baseurl = window.location.pathname;
-
-var itemHTML = ['<button class="item" data-id="{{ id }}">',
-                  '<div class="item-content">',
-                    '<h1 class="fwd" data-text="{{ itemcontent }}">{{ itemcontent }}</h1>',
-                  '</div>',
-                '</button>'].join('\n');
+var itemHTML = `<button class="item" data-id="{{ id }}">
+  <div class="item-content">
+    <div class="item-text fwd" data-text="{{ itemcontent }}">{{ itemcontent }}</div>
+  </div>
+</button>`;
 
 var lastWidth = $(window).width();
 var tabletWidth = 992;
@@ -94,7 +93,7 @@ function generateFirstNode() {
       .replace('{{ id }}', basenode._id)
       .replace(/{{ itemcontent }}/g, basenode.name)
       .replace(/"item"/g, '"item noclick"')
-      .replace(' class=', ' tabindex="-1" class=')
+      .replace(' class="', ' tabindex="-1" class="item-root ')
   );
   if (basenode.image) {
     $('.half-left .fwd').addClass('has-img-root');
@@ -134,8 +133,7 @@ function animationFinished() {
     } catch (error) {}
   }
 
-  // var title = $('.half-right .contentcontainer .block-heading .info__title h1').first().text();
-  var selectedItem = $('.half-left .item.stretched h1').first();
+  var selectedItem = $('.half-left .item.stretched .item-text').first();
   var title = selectedItem.data('text') || selectedItem.text();
   if (title) {
     document.title = title + ' - ' + originalTitle;
@@ -161,7 +159,7 @@ function animationFinished() {
     // set back button text and classes
     $('.half-left .item.stretched')
       .children('.item-content')
-      .children('h1')
+      .children('.item-text')
       .removeClass('fwd')
       .addClass('bck')
       .text('Nazaj');
@@ -339,14 +337,14 @@ function onBackItemClick(item) {
   item.removeClass('item-selected');
 
   item.children('.item-content')
-    .children('h1')
+    .children('.item-text')
     .removeClass('bck')
     .addClass('fwd');
 
   // change text from nazaj to whatever it's supposed to be
-  const dataText = item.children('.item-content').children('h1').data('text');
+  const dataText = item.children('.item-content').children('.item-text').data('text');
   if (dataText) {
-    item.children('.item-content').children('h1').text(dataText);
+    item.children('.item-content').children('.item-text').text(dataText);
   }
 }
 
