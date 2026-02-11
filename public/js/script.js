@@ -22,8 +22,9 @@ var itemHTML = `<button class="item" data-id="{{ id }}">
   </div>
 </button>`;
 
-var lastWidth = $(window).width();
 var tabletWidth = 992;
+var windowWidth = $(window).width();
+var windowHeight = $(window).height();
 
 // ---
 // FIRST PAINT
@@ -48,19 +49,7 @@ function setStretchedItemHeight(i, e) {
 function setAllHeights() {
   $('.cefizelj-container').height('100vh');
   $('.item').not('.stretched, .shrunk').each(setItemHeight);
-  $('.stretched').each(setStretchedItemHeight);
-
-  const width = $(window).width();
-
-  if (width < tabletWidth && lastWidth >= tabletWidth) {
-    // TODO: switch to mobile
-    return;
-  }
-
-  if (width >= tabletWidth && lastWidth < tabletWidth) {
-    // TODO: switch to desktop
-    return;
-  }
+  $('.item.stretched').each(setStretchedItemHeight);
 }
 
 // api tree getter
@@ -73,12 +62,12 @@ function getTree(callback) {
 }
 
 // start the app
-function startApp() {
+async function startApp() {
   // set basenode and currentnode
   basenode = tree;
   currentnode = basenode;
 
-  generateFirstNode();
+  await generateFirstNode();
 
   if (animationQueue.length) {
     goToNewCrumbs(animationQueue.shift());
@@ -86,7 +75,7 @@ function startApp() {
 }
 
 // generate first node
-function generateFirstNode() {
+async function generateFirstNode() {
   $('.cefizelj-container').html('<div class="half half-left"></div><div class="half half-right"></div>');
   $('.half-left').append(
     itemHTML
@@ -101,8 +90,15 @@ function generateFirstNode() {
   itemContent.append('<h1 class="sr-only">' + basenode.name + '</h1>');
 
   if (basenode.image) {
-    $('.half-left .fwd').addClass('has-img-root');
-    $('.half-left .fwd').prepend('<img class="img-root" src="' + basenode.image + '?v=${COMMIT_SHA}" alt="">');
+    const img = await new Promise((resolve) => {
+      const image = new Image();
+      image.src = basenode.image + '?v=${COMMIT_SHA}';
+      image.onload = () => resolve(image);
+      image.onerror = () => resolve(image);
+    });
+    img.classList.add('img-root');
+    img.alt = '';
+    $('.half-left .fwd').addClass('has-img-root').prepend(img);
   }
   for (var i in basenode.items) {
     var node = basenode.items[i];
@@ -182,9 +178,7 @@ function displayNextHalf(target) {
   if (!dontChangeCrumbs) {
     breadcrumbs.push(target);
   }
-  renderNext(currentnode.items.filter(function(item) {
-    return item._id == target;
-  })[0]);
+  renderNext(currentnode.items.filter((item) => item._id == target)[0]);
 }
 
 // render next half
@@ -227,24 +221,7 @@ function createListHalf(items) {
 
 // move left and cleanup (next)
 function moveLeft() {
-  // if ($(window).width() < 768 && $('.half-rightr').hasClass('half-content')) {
-  //   $('.half-left').animate({
-  //     'margin-left': '-100%'
-  //   }, animateSpeedMove, function() {
-  //     // cleanup
-  //     $('.half-leftr').removeClass('half-leftr'); // remove hidden left
-
-  //     // update classes
-  //     $('.half-left').removeClass('half-left').addClass('half-leftr'); // left -> leftr
-  //     $('.half-right').removeClass('half-right').addClass('half-left'); // right -> left
-  //     $('.half-rightr').removeClass('half-rightr').addClass('half-right').next().addClass('half-rightr').removeClass('half-right'); // rightr -> right, next -> rightr
-
-  //     animationFinished();
-  //   });
-  // } else {
-  // }
-  $('.half-left').animate({ 'margin-left': '-50%' }, animateSpeedMove, function() {
-    // cleanup
+  function cleanup() {
     $('.half-leftr').removeClass('half-leftr'); // remove hidden left
 
     // update classes
@@ -254,7 +231,8 @@ function moveLeft() {
       .next().addClass('half-rightr'); // next -> rightr
 
     animationFinished();
-  });
+  }
+  $('.half-left').animate({ 'margin-left': '-50%' }, animateSpeedMove, cleanup);
 }
 
 // ---
@@ -278,7 +256,7 @@ function displayPreviousHalf() {
 
   $('.half-leftr').show()
   setAllHeights();
-  $('.half-leftr').animate({ 'margin-left': '0%' }, animateSpeedMove, function() {
+  $('.half-leftr').animate({ 'margin-left': 0 }, animateSpeedMove, function() {
     // cleanup
     $('.half-right').remove();
 
@@ -380,10 +358,14 @@ function goToNewCrumbs(newcrumbs) {
 
 $(document).ready(function() {
   // first, set all heights
+  windowWidth = $(window).width();
+  windowHeight = $(window).height();
   setAllHeights();
 
   // set onresize events
   $(window).on('resize', function() {
+    windowWidth = $(window).width();
+    windowHeight = $(window).height();
     setAllHeights();
   });
 

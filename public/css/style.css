@@ -36,6 +36,14 @@ button {
   margin-left: -15px;
   margin-right: -15px;
   font-size: 0;
+  overflow: hidden;
+}
+@media (max-width: 991.98px) {
+  .cefizelj-container {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+  }
 }
 
 .half {
