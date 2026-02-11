@@ -95,6 +95,11 @@ function generateFirstNode() {
       .replace(/"item"/g, '"item noclick"')
       .replace(' class="', ' tabindex="-1" class="item-root ')
   );
+
+  // add hidden title for screen readers
+  const itemContent = $('.half-left .item-root .item-content');
+  itemContent.append('<h1 class="sr-only">' + basenode.name + '</h1>');
+
   if (basenode.image) {
     $('.half-left .fwd').addClass('has-img-root');
     $('.half-left .fwd').prepend('<img class="img-root" src="' + basenode.image + '?v=${COMMIT_SHA}" alt="">');
@@ -157,12 +162,14 @@ function animationFinished() {
     $('.half-left .item:not(.shrunk):not(.noclick), .half-right .item:not(.shrunk):not(.noclick)').removeAttr('tabindex');
 
     // set back button text and classes
-    $('.half-left .item.stretched')
-      .children('.item-content')
-      .children('.item-text')
-      .removeClass('fwd')
-      .addClass('bck')
-      .text('Nazaj');
+    const itemContent = $('.half-left .item.stretched .item-content');
+    const itemText = itemContent.children('.item-text');
+    itemText.removeClass('fwd').addClass('bck').text('Nazaj');
+
+    // add hidden title for screen readers if it doesn't exist
+    if (!itemContent.children('h1.sr-only').length) {
+      itemContent.append(`<h1 class="sr-only">${itemText.data('text')}</h1>`);
+    }
   }
 }
 
@@ -341,10 +348,15 @@ function onBackItemClick(item) {
     .removeClass('bck')
     .addClass('fwd');
 
+  // remove hidden title for screen readers
+  const itemContent = item.children('.item-content');
+  itemContent.children('h1.sr-only').remove();
+
   // change text from nazaj to whatever it's supposed to be
-  const dataText = item.children('.item-content').children('.item-text').data('text');
+  const itemText = itemContent.children('.item-text');
+  const dataText = itemText.data('text');
   if (dataText) {
-    item.children('.item-content').children('.item-text').text(dataText);
+    itemText.text(dataText);
   }
 }
 
