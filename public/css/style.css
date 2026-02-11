@@ -347,7 +347,12 @@ button {
 .article-content a {
   color: var(--border-color);
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: inherit;
+  text-decoration: underline;
+}
+.article-content a:hover {
+  color: var(--text-color);
+  text-decoration: none;
 }
 .article-content a:focus-visible {
   outline: 2px solid var(--border-color);
@@ -369,6 +374,7 @@ button {
   margin-right: 1.5rem;
   font-size: 1.8rem;
   transition: none;
+  text-decoration: none;
 }
 @media (max-width: 575.98px) {
   .article-content .btn.btn-primary {
