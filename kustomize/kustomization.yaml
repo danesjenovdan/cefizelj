@@ -8,4 +8,4 @@ resources:
 images:
   - name: volitveni-vodic-dz-2026
     newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-dz-2026
-    newTag: '67bd6f78bf571deb16d4fd16c0a9fa9b534de516'
+    newTag: 'bf30d234658233ca77a793508af945f3350e0e4b'
