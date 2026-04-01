@@ -27,8 +27,8 @@ metadata:
     traefik.ingress.kubernetes.io/router.middlewares: |
       traefik-redirect-to-https@kubernetescrd,
       vodici-redirect-domain@kubernetescrd,
-      rtv-add-trailing-slash@kubernetescrd,
-      rtv-strip-prefix@kubernetescrd
+      vodici-rtv-add-trailing-slash@kubernetescrd,
+      vodici-rtv-strip-prefix@kubernetescrd
 spec:
   ingressClassName: traefik
   rules:
