@@ -8,4 +8,4 @@ resources:
 images:
   - name: volitveni-vodic-predsednik-2022-drugi-krog
     newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-predsednik-2022-drugi-krog
-    newTag: 'bddf23f9f03f728691d4cc270b6361f9739b0c25'
+    newTag: '9295e49567c63eee52a0cb5545071f10b21b4760'
