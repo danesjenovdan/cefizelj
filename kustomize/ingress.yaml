@@ -30,9 +30,13 @@ metadata:
       vodici-voda-strip-prefix@kubernetescrd
 spec:
   ingressClassName: traefik
+  tls:
+    - hosts:
+        - vodici.danesjenovdan.si
+      secretName: volitveni-vodic-voda-tls
   rules:
-    - host: vodici.djnd.si
-      http: &http_paths
+    - host: vodici.danesjenovdan.si
+      http:
         paths:
           - path: /referendum/voda
             pathType: Prefix
@@ -41,5 +45,3 @@ spec:
                 name: volitveni-vodic-voda
                 port:
                   number: 80
-    - host: vodici.danesjenovdan.si
-      http: *http_paths
