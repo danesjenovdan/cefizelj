@@ -22,7 +22,8 @@ kind: Ingress
 metadata:
   name: volitveni-vodic-voda
   annotations:
-    # do not put cert manager here, the root redirect owns the tls secret
+    # Do not put cert manager here, root redirect ingress (in `ops` repo) will
+    # handle it. If we put it here, they will fight over it.
     traefik.ingress.kubernetes.io/router.middlewares: |
       traefik-redirect-to-https@kubernetescrd,
       vodici-redirect-domain@kubernetescrd,
@@ -30,10 +31,6 @@ metadata:
       vodici-voda-strip-prefix@kubernetescrd
 spec:
   ingressClassName: traefik
-  tls:
-    - hosts:
-        - vodici.danesjenovdan.si
-      secretName: volitveni-vodic-voda-tls
   rules:
     - host: vodici.danesjenovdan.si
       http:
