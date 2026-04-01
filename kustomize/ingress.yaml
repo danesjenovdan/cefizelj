@@ -4,8 +4,8 @@ metadata:
   name: voda-add-trailing-slash
 spec:
   redirectRegex:
-    regex: (/referendum/voda)$
-    replacement: ${1}/
+    regex: (/referendum/voda)(\?.*)?$
+    replacement: ${1}/${2}
     permanent: false
 ---
 apiVersion: traefik.io/v1alpha1
