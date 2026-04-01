@@ -24,9 +24,9 @@ metadata:
   annotations:
     # do not put cert manager here, the root redirect owns the tls secret
     traefik.ingress.kubernetes.io/router.middlewares: |
-      traefik-redirect-to-https@kubernetescrd
-      vodici-redirect-domain@kubernetescrd
-      vodici-voda-add-trailing-slash@kubernetescrd
+      traefik-redirect-to-https@kubernetescrd,
+      vodici-redirect-domain@kubernetescrd,
+      vodici-voda-add-trailing-slash@kubernetescrd,
       vodici-voda-strip-prefix@kubernetescrd
 spec:
   ingressClassName: traefik
