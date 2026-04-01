@@ -4,20 +4,17 @@ metadata:
   name: eu-poslovi
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
-    nginx.ingress.kubernetes.io/rewrite-target: /$2
-    nginx.ingress.kubernetes.io/configuration-snippet: |
-      rewrite ^(/eu-poslovi)$ $1/ redirect; # add trailing slash
 spec:
-  ingressClassName: nginx
+  ingressClassName: traefik
   tls:
     - hosts:
-        - parlametar.lb.djnd.si
+        - eu-poslovi.parlametar.hr
       secretName: eu-poslovi-tls
   rules:
-    - host: parlametar.lb.djnd.si
+    - host: eu-poslovi.parlametar.hr
       http:
         paths:
-          - path: /eu-poslovi(/|$)(.*)
+          - path: /
             pathType: Prefix
             backend:
               service:
