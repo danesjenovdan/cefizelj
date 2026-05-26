@@ -6,6 +6,6 @@ resources:
   - service.yaml
   - ingress.yaml
 images:
-  - name: volitveni-vodic-dz-2026
-    newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-dz-2026
-    newTag: 'e2b6b411cfd3d5a96b3e4d9cb9a6ca801a068d9c'
+  - name: volitveni-vodic-razkroj-2026
+    newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-razkroj-2026
+    newTag: "latest"
