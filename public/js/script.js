@@ -186,7 +186,11 @@ function displayNextHalf(target) {
 function renderNext(targetnode) {
   currentnode = targetnode;
   if (targetnode.type === 'link') {
-    createUrlHalf(targetnode.article);
+    if (targetnode.content) {
+      createContentHalf(targetnode.content);
+    } else {
+      createUrlHalf(targetnode.article);
+    }
   } else if ((targetnode.items[0].type == 'menu') || (targetnode.items[0].type == 'link')) {
     // render list
     $('.half-right').after(createListHalf(targetnode.items));
@@ -195,6 +199,13 @@ function renderNext(targetnode) {
   } else {
     moveLeft();
   }
+}
+
+function createContentHalf(content) {
+  var result = '<div class="half half-rightr half-content"><div class="contentcontainer" data-id="0" tabindex="-1">' + content + '</div></div>';
+  $('.half-right').after(result);
+  setAllHeights();
+  moveLeft();
 }
 
 function createUrlHalf(url) {

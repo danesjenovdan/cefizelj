@@ -1,128 +1,58 @@
 {
   "tree": {
     "_id": "0",
-    "name": "Želim glasovati na državnozborskih volitvah, ki bodo v nedeljo, 22.&nbsp;3.&nbsp;2026, toda&nbsp;…",
-    "image": "img/intro-slika.png",
+    "name": "Želim oddati podpis v podporo referendumu",
     "type": "menu",
     "items": [
       {
         "_id": "1",
-        "name": "… na dan volitev me ne bo doma.",
+        "name": "Podpis želim oddati preko spleta",
         "type": "menu",
         "items": [
           {
             "_id": "1",
-            "name": "Na dan volitev bom v tujini.",
+            "name": "Lahko podpisujem vloge v e-upravi",
             "type": "link",
-            "article": "v-tujini.html"
+            "content": "<div class=\"article-content\">\n<h2>Oddaj svoj podpis v podporo refereundumu</h2>\n<p>Od prvega junija naprej lahko klikneš na spodnji gumb in oddaš svoj podpis.</p>\n<p>Če imaš kake težave, pošlji mail na <a href=\"mailto:podpora+referendum@danesjenovdan.si\">podpora+referendum@danesjenovdan.si</a>. V sporočilo napiši čim več podrobnosti:</p>\n<ul>\n<li>kaj se je zgodilo,</li>\n<li>operacijski sistem,</li>\n<li>vrsto in verzijo brskalnika,</li>\n<li>posnetek zaslona,</li>\n<li>...</li>\n</ul>\n<p><a class=\"btn btn-primary\" href=\"#\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Oddaj podpis</a></p>\n\n</div>"
           },
           {
             "_id": "2",
-            "name": "Doma bom v tednu pred volitvami.",
-            "type": "link",
-            "article": "predcasno.html"
-          },
-          {
-            "_id": "3",
-            "name": "Na dan volitev bom v Sloveniji.",
+            "name": "Ne morem podpisovati vlog v e-upravi",
             "type": "menu",
             "items": [
               {
                 "_id": "1",
-                "name": "Stalno prebivališče imam v tujini.",
+                "name": "Imam SI-PASS račun",
                 "type": "link",
-                "article": "zivim-v-tujini.html"
+                "content": "<div class=\"article-content\">\n<h2>Kar pojdi podpisat</h2>\n<p>Od prvega junija naprej lahko na spodnjem gumbu oddaš svoj podpis. Ko boš začel_a proces ti bo e-uprava povedala, da ne moreš podpisovati. Ne se ustrašit, preberi obvestilo do konca. Klikni na link in potem še nekajkrat, da zaključiš proces. Vzelo ti bo dodatni dve minuti, pa samo enkrat moraš to naredit.</p>\n<p>Klikni na spodnji gumb in na oddaj podpis preko spleta.</p>\n<p>Če imaš kake težave, pošlji mail na <a href=\"mailto:podpora+referendum@danesjenovdan.si\">podpora+referendum@danesjenovdan.si</a>. V sporočilo napiši čim več podrobnosti:</p>\n<ul>\n<li>kaj se je zgodilo,</li>\n<li>operacijski sistem,</li>\n<li>vrsto in verzijo brskalnika,</li>\n<li>posnetek zaslona,</li>\n<li>...</li>\n</ul>\n<p><a class=\"btn btn-primary\" href=\"#\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Oddaj podpis</a></p>\n\n</div>"
               },
               {
                 "_id": "2",
-                "name": "Na dan volitev bom izven kraja stalnega prebivališča.",
+                "name": "Nimam SI-PASS računa",
                 "type": "link",
-                "article": "omnia.html"
+                "content": "<div class=\"article-content\">\n<h2>Kako si zrihtaš SI-PASS račun</h2>\n<p>Proces bo relativno neboleč, veliko večino lahko opraviš preko interneta, samo enkrat boš moral_a obiskati tudi upravno enoto. Ampak samo enkrat in zelo na hitro.</p>\n<p>Najprej obišči spletno mesto SI-PASS in prični proces. Vpiši svoje podatke, potem pa izberi najljubši način prijave. Da boš čim prej gotov_a, ti priporočamo, da izbereš smsPASS. Kasneje lahko dodaš še druge načine prijave, med seboj se ne izključujejo.</p>\n<p>Ko boš izpolnil_a in oddal_a obrazec, boš po elektronski pošti obveščen_a kdaj se moraš zglasiti TODO</p>\n<p><a class=\"btn btn-primary\" href=\"https://sicas.gov.si/IdP-RM-Front/registerSMSPass/start.htm\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Prični z registracijo</a></p>\n\n</div>"
               },
               {
                 "_id": "3",
-                "name": "Na dan volitev bom v bolnišnici, zdravilišču, socialnovarstvenem zavodu za institucionalno varstvo, priporu ali zavodu za prestajanje kazni.",
+                "name": "Ne vem, če imam SI-PASS račun",
                 "type": "link",
-                "article": "posta-bolnisnica-pripor.html"
+                "content": "<div class=\"article-content\">\n<h2>Preveri na e-upravi</h2>\n<p>Obišči <a href=\"https://sicas.gov.si/shibboleth-sp/about.html\">SI-PASS prijavno stran</a> in klikni Prijava v uporabniške strani SI-PASS. Če ti uspe, imaš račun. Če ne, ga nimaš. Ko to izveš, se vrni v vodič in nadaljuj po pravih korakih.</p>\n<p><a class=\"btn btn-primary\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://sicas.gov.si/shibboleth-sp/about.html\">SI-PASS prijava</a></p>\n\n</div>"
               }
             ]
+          },
+          {
+            "_id": "3",
+            "name": "Ne vem, če lahko podpisujem vloge v e-upravi",
+            "type": "link",
+            "content": "<div class=\"article-content\">\n<h2>Ni panike</h2>\n<p>Najbolje, da kar poskusiš. Če ne bo šlo, se vrni v vodič glede na to kaj se je zgodilo.</p>\n<p><a class=\"btn btn-primary\" href=\"#\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Oddaj podpis</a></p>\n\n</div>"
           }
         ]
       },
       {
         "_id": "2",
-        "name": "… stalno prebivališče imam v tujini.",
-        "type": "menu",
-        "items": [
-          {
-            "_id": "1",
-            "name": "Na dan volitev bom v tujini.",
-            "type": "link",
-            "article": "v-tujini-stalno.html"
-          },
-          {
-            "_id": "2",
-            "name": "Na dan volitev bom v Sloveniji.",
-            "type": "link",
-            "article": "zivim-v-tujini.html"
-          }
-        ]
-      },
-      {
-        "_id": "3",
-        "name": "… volišče mi ni dostopno.",
-        "type": "menu",
-        "items": [
-          {
-            "_id": "1",
-            "name": "Zaradi bolezni ali invalidnosti ne morem od doma.",
-            "type": "link",
-            "article": "na-domu.html"
-          },
-          {
-            "_id": "2",
-            "name": "Na dan volitev bom v bolnišnici ali zdravilišču.",
-            "type": "link",
-            "article": "posta-bolnisnica.html"
-          },
-          {
-            "_id": "3",
-            "name": "Bivam v domu za starejše, ki je moje stalno prebivališče.",
-            "type": "link",
-            "article": "posta-socialzavod-stalno.html"
-          },
-          {
-            "_id": "4",
-            "name": "Imam status invalida in želim glasovati po pošti.",
-            "type": "menu",
-            "items": [
-              {
-                "_id": "1",
-                "name": "Po pošti želim glasovati enkratno.",
-                "type": "link",
-                "article": "posta-invalidi.html"
-              },
-              {
-                "_id": "2",
-                "name": "Po pošti želim glasovati stalno.",
-                "type": "link",
-                "article": "posta-invalidi-stalno.html"
-              }
-            ]
-          },
-          {
-            "_id": "5",
-            "name": "Bivam v domu za starejše, ki ni moje stalno prebivališče.",
-            "type": "link",
-            "article": "posta-socialzavod.html"
-          },
-          {
-            "_id": "6",
-            "name": "Na dan volitev bom v priporu ali zavodu za prestajanje kazni.",
-            "type": "link",
-            "article": "posta-pripor.html"
-          }
-        ]
+        "name": "Podpis želim oddati v živo",
+        "type": "link",
+        "content": "<div class=\"article-content\">\n<h2>Oddaj podpis na upravni enoti</h2>\n<p>Svoj podpis lahko oddaš na kateri koli upravni enoti v času uradnih ur. Vedeti moraš TO PA TO PA TO PA TO. Če ne veš kam in kdaj, uporabi seznam upravnih enot spodaj. TODO</p>\n\n</div>"
       }
     ]
   }
