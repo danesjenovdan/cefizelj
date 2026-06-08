@@ -8,4 +8,4 @@ resources:
 images:
   - name: volitveni-vodic-razkroj-2026
     newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-razkroj-2026
-    newTag: '54dce483ffa95bd3c620c0c056ec207cce0ce84c'
+    newTag: '734e9b68a892559d586f6a26f7fee08c2042dd72'
