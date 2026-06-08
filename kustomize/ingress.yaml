@@ -4,7 +4,7 @@ metadata:
   name: razkroj-2026-add-trailing-slash
 spec:
   redirectRegex:
-    regex: (/referendum/razkroj)(\?.*)?$
+    regex: (/referendum/proti-politicni-policiji)(\?.*)?$
     replacement: ${1}/${2}
     permanent: false
 ---
@@ -15,7 +15,7 @@ metadata:
 spec:
   stripPrefix:
     prefixes:
-      - /referendum/razkroj
+      - /referendum/proti-politicni-policiji
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -35,7 +35,7 @@ spec:
     - host: vodici.danesjenovdan.si
       http:
         paths:
-          - path: /referendum/razkroj
+          - path: /referendum/proti-politicni-policiji
             pathType: Prefix
             backend:
               service:

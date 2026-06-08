@@ -1,122 +1,122 @@
 {
   "tree": {
     "_id": "0",
-    "name": "Želim oddajati podpise v podporo referendumom",
+    "name": "Želim oddati podpis za referendum proti politični policiji",
     "type": "menu",
     "items": [
       {
         "_id": "1",
-        "name": "Podpise želim oddajati na spletu",
+        "name": "Podpis želim oddati na spletu",
         "type": "menu",
         "items": [
           {
             "_id": "1",
-            "name": "Imam SI-PASS",
+            "name": "Podpis želim oddati s telefonom",
             "type": "menu",
             "items": [
               {
                 "_id": "1",
-                "name": "Podpise želim oddajati s telefonom",
+                "name": "Imam smsPASS",
+                "type": "link",
+                "content": "<div class=\"article-content\">\n<h2>Oddaj podpis s telefonom</h2>\n<p>Če imaš urejen smsPASS, <strong>lahko s telefonom oddaš podpis</strong> za referendum proti politični policiji:</p>\n<ul>\n<li><p>klikni na spodnji gumb in <strong>obišči portal eUprava</strong>,</p>\n</li>\n<li><p>pri prijavi <strong>SI-PASS</strong> izberi <strong>smsPASS</strong>,</p>\n</li>\n<li><p>sledi navodilom in <strong>oddaj podpis</strong>.</p>\n</li>\n</ul>\n<p>Priporočamo ti, da delovanje svoje mobilne identitete <strong>za vsak slučaj preveriš tukaj</strong>.</p>\n\n</div>"
+              },
+              {
+                "_id": "2",
+                "name": "Imam novo osebno izkaznico",
                 "type": "menu",
                 "items": [
                   {
                     "_id": "1",
-                    "name": "Imam smsPASS",
+                    "name": "Znam uporabljati aplikacijo eOsebna",
                     "type": "link",
-                    "content": "<div class=\"article-content\">\n<h2>Oddaj podpis s telefonom</h2>\n<p>Če imaš urejen smsPASS, <strong>je vse pripravljeno za oddajo podpisa</strong> v podporo referendumu s telefonom.</p>\n<p>V brskalniku na telefonu <strong>obišči portal eUprava</strong>, pri prijavi <strong>SI-PASS</strong> izberi <strong>smsPASS</strong> in sledi navodilom.</p>\n<p>Priporočamo ti, da delovanje svoje mobilne identitete <strong>za vsak slučaj preveriš tukaj</strong>.</p>\n<p>Ko se bo uradno začelo zbirati podpise za referendumsko pobudo, <strong>te bomo o tem obvestili</strong>.</p>\n\n</div>"
+                    "content": "<div class=\"article-content\">\n<h2>Oddaj podpis s telefonom</h2>\n<p>Če imaš novo osebno izkaznico in znaš uporabljati aplikacijo eOsebna, <strong>lahko s telefonom oddaš podpis</strong> za referendum proti politični policiji:</p>\n<ul>\n<li><p>klikni na spodnji gumb in <strong>obišči portal eUprava</strong>,</p>\n</li>\n<li><p>pri prijavi <strong>SI-PASS</strong> izberi <strong>Mobilna aplikacija eOsebna</strong>,</p>\n</li>\n<li><p>sledi navodilom in <strong>oddaj podpis</strong>.</p>\n</li>\n</ul>\n<p>Priporočamo ti, da delovanje svoje aplikacije <strong>za vsak slučaj preveriš tukaj</strong>.</p>\n\n</div>"
                   },
                   {
                     "_id": "2",
-                    "name": "Imam novo osebno izkaznico",
-                    "type": "menu",
-                    "items": [
-                      {
-                        "_id": "1",
-                        "name": "Znam uporabljati aplikacijo eOsebna",
-                        "type": "link",
-                        "content": "<div class=\"article-content\">\n<h2>Oddaj podpis s telefonom</h2>\n<p>Če imaš novo osebno izkaznico in znaš uporabljati aplikacijo eOsebna, <strong>je vse pripravljeno za oddajo podpisa</strong> v podporo referendumu s telefonom.</p>\n<p>V brskalniku na telefonu <strong>obišči portal eUprava</strong>, pri prijavi <strong>SI-PASS</strong> izberi <strong>Mobilna aplikacija eOsebna</strong> in sledi navodilom.</p>\n<p>Priporočamo ti, da delovanje svoje aplikacije <strong>za vsak slučaj preveriš tukaj</strong>.</p>\n<p>Ko se bo uradno začelo zbirati podpise za referendumsko pobudo, <strong>te bomo o tem obvestili</strong>.</p>\n\n</div>"
-                      },
-                      {
-                        "_id": "2",
-                        "name": "Ne poznam aplikacije eOsebna",
-                        "type": "link",
-                        "content": "<div class=\"article-content\">\n<h2>Namesti si aplikacijo eOsebna</h2>\n<p>Za oddajo podpisa v podporo referendumu z uporabo nove osebne izkaznice si moraš <strong>na svoj telefon najprej namestiti <a href=\"https://www.si-trust.gov.si/sl/mobilna-aplikacija-eosebna\">aplikacijo eOsebna</a></strong>, ki jo najdeš v trgovini Google Play ali App Store.</p>\n<p>Ko imaš aplikacijo nameščeno, <strong>lahko postopek oddaje podpisa izvedeš v spletnem brskalniku na telefonu</strong>, in sicer tako, da slediš spodnjim korakom:</p>\n<ul>\n<li>Ko se prijavljaš v portal eUprava, <strong>izberi možnost Mobilna aplikacija eOsebna</strong>.</li>\n<li>Aplikacija se bo na tvojem telefonu odprla samodejno.</li>\n<li><strong>Svojo osebno izkaznico prisloni na hrbtno stran telefona</strong>, da aplikacija prebere tvoje podatke.</li>\n<li>Ko aplikacija potrdi tvojo identiteto, se vrneš v portal eUprava, kjer oddaš podpis.</li>\n</ul>\n<p>Ko se bo uradno začelo zbirati podpise za referendumsko pobudo, <strong>te bomo o tem obvestili</strong>.</p>\n<p><a class=\"btn btn-primary\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.si-trust.gov.si/sl/mobilna-aplikacija-eosebna\">Namesti si aplikacijo eOsebna</a></p>\n\n</div>"
-                      }
-                    ]
-                  },
-                  {
-                    "_id": "3",
-                    "name": "Nimam nič od tega",
+                    "name": "Ne poznam aplikacije eOsebna",
                     "type": "link",
-                    "content": "<div class=\"article-content\">\n<h2>Uredi si smsPASS</h2>\n<p>Če nimaš niti mobilne identitete smsPASS niti nove osebne izkaznice, predlagamo, <strong>da si za digitalno podpisovanje urediš smsPASS</strong>. Postopek je <strong>zelo preprost</strong> in ga večinoma opraviš prek spleta, enkrat pa moraš (zelo na hitro) tudi na upravno enoto.</p>\n<p>Kaj moraš narediti?</p>\n<ul>\n<li><p><strong>Začni na spletu:</strong> Obišči <a href=\"https://www.si-trust.gov.si/sl/si-pass/mobilna-identiteta\">spletno mesto SI-PASS</a> in izberi možnost <strong>Imam račun SI-PASS</strong>.</p>\n</li>\n<li><p><strong>Izberi smsPASS:</strong> Izberi možnost Pridobitev smsPASS.</p>\n</li>\n<li><p><strong>Oddaj obrazec:</strong> Ko izpolniš in oddaš spletni obrazec, na svoj elektronski naslov prejmeš potrdilo o oddani vlogi in referenčno številko.</p>\n</li>\n<li><p><strong>En hiter obisk upravne enote:</strong> To je edini del, ki zahteva tvojo fizično prisotnost. Z veljavnim osebnim dokumentom in referenčno številko obišči katero koli upravno enoto v času njihovih uradnih ur. Uradna oseba bo tam potrdila tvojo identiteto.</p>\n</li>\n</ul>\n<p>Ko si urediš smsPASS, lahko podpise v podporo referendumom oddajaš s telefonom.</p>\n<p>Ko se bo uradno začelo zbirati podpise za referendumsko pobudo, <strong>te bomo o tem obvestili</strong>.</p>\n<p><a class=\"btn btn-primary\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.si-trust.gov.si/sl/si-pass/mobilna-identiteta\">Začni z registracijo</a></p>\n\n</div>"
+                    "content": "<div class=\"article-content\">\n<h2>Namesti si aplikacijo eOsebna in oddaj podpis</h2>\n<p>Za oddajo podpisa v podporo referendumu proti politični policiji z novo osebno izkaznico <strong>na svoj telefon namesti <a href=\"https://www.si-trust.gov.si/sl/mobilna-aplikacija-eosebna\">aplikacijo eOsebna</a></strong>, ki jo najdeš v trgovini Google Play ali App Store, in <strong>se registriraj</strong>.</p>\n<p>Ko imaš aplikacijo nameščeno, <strong>lahko podpis oddaš v spletnem brskalniku na telefonu</strong>:</p>\n<ul>\n<li><p>klikni na spodnji gumb in <strong>obišči portal eUprava</strong>,</p>\n</li>\n<li><p>pri prijavi <strong>SI-PASS</strong> izberi <strong>Mobilna aplikacija eOsebna</strong>,</p>\n</li>\n<li><p>aplikacija se bo na tvojem telefonu odprla samodejno,</p>\n</li>\n<li><p><strong>osebno izkaznico prisloni na hrbtno stran telefona</strong>, da aplikacija prebere tvoje podatke, nato pa <strong>vnesi izbrano številko PIN</strong>,</p>\n</li>\n<li><p>ko aplikacija potrdi tvojo identiteto, se vrneš v portal eUprava, kjer <strong>oddaš podpis</strong>.</p>\n</li>\n</ul>\n\n</div>"
                   }
                 ]
               },
               {
-                "_id": "2",
-                "name": "Podpise želim oddajati z računalnikom",
-                "type": "menu",
-                "items": [
-                  {
-                    "_id": "1",
-                    "name": "Imam novo osebno izkaznico",
-                    "type": "menu",
-                    "items": [
-                      {
-                        "_id": "1",
-                        "name": "Znam uporabljati aplikacijo eOsebna",
-                        "type": "link",
-                        "content": "<div class=\"article-content\">\n<h2>Oddaj podpis z računalnikom</h2>\n<p>Če imaš novo osebno izkaznico in znaš uporabljati aplikacijo eOsebna, <strong>je vse pripravljeno za oddajo podpisa</strong> v podporo referendumu z računalnikom.</p>\n<p>V brskalniku na računalniku <strong>obišči portal eUprava</strong>, pri prijavi <strong>SI-PASS</strong> izberi <strong>Mobilna aplikacija eOsebna</strong> in sledi navodilom.</p>\n<p>Priporočamo ti, da delovanje svoje aplikacije <strong>za vsak slučaj preveriš tukaj</strong>.</p>\n<p>Ko se bo uradno začelo zbirati podpise za referendumsko pobudo, <strong>te bomo o tem obvestili</strong>.</p>\n\n</div>"
-                      },
-                      {
-                        "_id": "2",
-                        "name": "Ne poznam aplikacije eOsebna",
-                        "type": "link",
-                        "content": "<div class=\"article-content\">\n<h2>Namesti si aplikacijo eOsebna</h2>\n<p>Za oddajo podpisa v podporo referendumu z uporabo nove osebne izkaznice si moraš <strong>na svoj telefon najprej namestiti <a href=\"https://www.si-trust.gov.si/sl/mobilna-aplikacija-eosebna\">aplikacijo eOsebna</a></strong>, ki jo najdeš v trgovini Google Play ali App Store.</p>\n<p>Ko imaš aplikacijo nameščeno, <strong>lahko postopek oddaje podpisa izvedeš v spletnem brskalniku na računalniku</strong>, in sicer tako, da slediš spodnjim korakom:</p>\n<ul>\n<li>Ko se prijavljaš v portal eUprava, <strong>izberi možnost Mobilna aplikacija eOsebna</strong>.</li>\n<li>Aplikacija se bo na tvojem telefonu odprla samodejno.</li>\n<li><strong>Svojo osebno izkaznico prisloni na hrbtno stran telefona</strong>, da aplikacija prebere tvoje podatke.</li>\n<li>Ko aplikacija potrdi tvojo identiteto, se vrneš v portal eUprava, kjer oddaš podpis.</li>\n</ul>\n<p>Ko se bo uradno začelo zbirati podpise za referendumsko pobudo, <strong>te bomo o tem obvestili</strong>.</p>\n<p><a class=\"btn btn-primary\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.si-trust.gov.si/sl/mobilna-aplikacija-eosebna\">Namesti si aplikacijo eOsebna</a></p>\n\n</div>"
-                      }
-                    ]
-                  },
-                  {
-                    "_id": "2",
-                    "name": "Imam kvalificirano digitalno potrdilo (ali Rekono)",
-                    "type": "link",
-                    "content": "<div class=\"article-content\">\n<h2>Oddaj podpis z računalnikom</h2>\n<p>Če <strong>imaš kvalificirano digitalno potrdilo</strong> (npr. SIGEN-CA ali Halcom) ali <strong>Rekono račun</strong>, je <strong>vse pripravljeno za oddajo podpisa</strong> v podporo referendumu z računalnikom.</p>\n<p>V brskalniku na računalniku <strong>obišči portal eUprava</strong> in pri prijavi <strong>SI-PASS</strong> izberi <strong>svoje digitalno potrdilo</strong> oziroma možnost <strong>Rekono</strong>.</p>\n<p>Priporočamo ti, da delovanje svojega potrdila <strong>za vsak slučaj preveriš tukaj</strong>.</p>\n<p>Ko se bo uradno začelo zbirati podpise za referendumsko pobudo, <strong>te bomo o tem obvestili</strong>.</p>\n\n</div>"
-                  },
-                  {
-                    "_id": "3",
-                    "name": "Imam smsPASS",
-                    "type": "link",
-                    "content": "<div class=\"article-content\">\n<h2>Oddaj podpis s telefonom</h2>\n<p>Če imaš urejen smsPASS, <strong>je vse pripravljeno za oddajo podpisa</strong> v podporo referendumu z računalnikom.</p>\n<p>V brskalniku na računalniku <strong>obišči portal eUprava</strong>, pri prijavi <strong>SI-PASS</strong> izberi <strong>smsPASS</strong> in sledi navodilom.</p>\n<p>Priporočamo ti, da delovanje svoje mobilne identitete <strong>za vsak slučaj preveriš tukaj</strong>.</p>\n<p>Ko se bo uradno začelo zbirati podpise za referendumsko pobudo, <strong>te bomo o tem obvestili</strong>.</p>\n\n</div>"
-                  },
-                  {
-                    "_id": "4",
-                    "name": "Nimam nič od tega",
-                    "type": "link",
-                    "content": "<div class=\"article-content\">\n<h2>Uredi si digitalno identiteto</h2>\n<p>Če za oddajo podpisa z računalnikom nimaš nobene digitalne identitete, izberi eno od naslednjih možnosti</p>\n<h3>Uredi si smsPASS</h3>\n<p>Postopek za pridobitev mobilne identitete smsPASS je <strong>zelo preprost</strong> in ga <strong>večinoma opraviš prek spleta</strong>, enkrat pa moraš (zelo na hitro) <strong>tudi na upravno enoto</strong>. To je verjetno najpreprostejša in najbolj praktična možnost za digitalno podpisovanje, ki ti bo koristila tudi, če želiš ta postopek opraviti na telefonu.</p>\n<p>Kaj moraš narediti?</p>\n<ul>\n<li><p><strong>Začni na spletu:</strong> Obišči <a href=\"https://www.si-trust.gov.si/sl/si-pass/mobilna-identiteta\">spletno mesto SI-PASS</a> in izberi možnost <strong>Imam račun SI-PASS</strong>.</p>\n</li>\n<li><p><strong>Izberi smsPASS:</strong> Izberi možnost Pridobitev smsPASS.</p>\n</li>\n<li><p><strong>Oddaj obrazec:</strong> Ko izpolniš in oddaš spletni obrazec, na svoj elektronski naslov prejmeš potrdilo o oddani vlogi in referenčno številko.</p>\n</li>\n<li><p><strong>En hiter obisk upravne enote:</strong> To je edini del, ki zahteva tvojo fizično prisotnost. Z veljavnim osebnim dokumentom in referenčno številko obišči katero koli upravno enoto v času njihovih uradnih ur. Uradna oseba bo tam potrdila tvojo identiteto.</p>\n</li>\n</ul>\n<p>Ko si urediš smsPASS, lahko podpise v podporo referendumom oddajaš z računalnikom.</p>\n<p>Ko se bo uradno začelo zbirati podpise za referendumsko pobudo, <strong>te bomo o tem obvestili</strong>.</p>\n<p><a class=\"btn btn-primary\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.si-trust.gov.si/sl/si-pass/mobilna-identiteta\">Začni z registracijo</a></p>\n<h3>Uredi si kvalificirano digitalno potrdilo</h3>\n<p>Če želiš <strong>digitalno podpisovati na računalniku</strong> in ne želiš uporabljati mobilne identitete, je najboljša izbira <strong>kvalificirano digitalno potrdilo</strong> (najpogosteje <a href=\"https://www.si-trust.gov.si/sl/digitalna-potrdila\">SIGEN-CA</a>). Potrdilo namestiš v svoj računalnik, brskalnik pa ga nato uporabi za varno prijavo in podpisovanje vsakič, ko ga potrebuješ.</p>\n<p>Zahtevek za pridobitev kvalificiranega digitalnega potrdila <strong>moraš oddati osebno na prijavni službi na upravni enoti</strong>.</p>\n<p>Kaj moraš narediti?</p>\n<ul>\n<li><p><strong>Poišči najboljšo upravno enoto in se naroči</strong>: Najprej <a href=\"https://www.gov.si/drzavni-organi/upravne-enote/\">na seznamu vseh upravnih enot</a> poišči, katera ti je najbližje, in ugotovi, kje točno se ureja digitalno potrdilo ter ali se moraš za obisk predhodno naročiti.</p>\n</li>\n<li><p><strong>Pojdi na upravno enoto</strong>: Zglasi se osebno na prijavni službi in povej, da želiš pridobiti digitalno potrdilo SIGEN-CA za fizične osebe. S seboj prinesi veljaven osebni dokument, svoj elektronski naslov in telefonsko številko. Pripravi si tudi geslo za preklic (do 20 znakov), ki ga moraš povedati uradni osebi.</p>\n</li>\n<li><p><strong>Namesti potrdilo</strong>: Ko na upravni enoti urediš formalnosti, se vrni domov, obišči portal SIGEN-CA in s pridovljenimi podatki potrdilo namesti v svoj računalnik.</p>\n</li>\n</ul>\n<p>Ko imaš potrdilo nameščeno, lahko podpise v podporo referendumu oddajaš z računalnikom.</p>\n<p>Ko se bo uradno začelo zbirati podpise za referendumsko pobudo, <strong>te bomo o tem obvestili</strong>.</p>\n\n</div>"
-                  }
-                ]
+                "_id": "3",
+                "name": "Nimam nič od tega",
+                "type": "link",
+                "content": "<div class=\"article-content\">\n<h2>Uredi si smsPASS in oddaj podpis</h2>\n<p>Če nimaš mobilne identitete smsPASS ali nove osebne izkaznice, <strong>si za digitalno podpisovanje uredi smsPASS</strong>. Postopek je <strong>zelo preprost</strong> in ga večinoma opraviš prek spleta, enkrat pa moraš (zelo na hitro) tudi na upravno enoto.</p>\n<p>Kaj moraš narediti?</p>\n<ul>\n<li><p><strong>Začni na spletu</strong>: Obišči <a href=\"https://www.si-trust.gov.si/sl/si-pass/mobilna-identiteta\">spletno mesto SI-PASS</a>. Če še nimaš računa SI-PASS, izberi to možnost in uredi oboje skupaj. Če že imaš račun SI-PASS, klikni na &quot;Imam račun SI-PASS&quot;.</p>\n</li>\n<li><p><strong>Izberi smsPASS</strong>: Izberi možnost Pridobitev smsPASS.</p>\n</li>\n<li><p><strong>Oddaj obrazec</strong>: Ko izpolniš in oddaš spletni obrazec, na svoj elektronski naslov prejmeš potrdilo o oddani vlogi in referenčno številko.</p>\n</li>\n<li><p><strong>Hiter obisk upravne enote</strong>: To je edini del, ki zahteva tvojo fizično prisotnost. Z veljavnim osebnim dokumentom in referenčno številko <a href=\"https://www.gov.si/drzavni-organi/upravne-enote/\">obišči katero koli upravno enoto</a> v času njihovih uradnih ur, kjer bodo potrdili tvojo identiteto.</p>\n</li>\n</ul>\n<p>Ko si urediš smsPASS, lahko s telefonom oddaš podpis za referendum proti politični policiji.</p>\n<p><a class=\"btn btn-primary\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.si-trust.gov.si/sl/si-pass/mobilna-identiteta\">Začni z registracijo</a></p>\n\n</div>"
               }
             ]
           },
           {
             "_id": "2",
-            "name": "Nimam SI-PASS",
-            "type": "link",
-            "content": "<div class=\"article-content\">\n<h2>Uredi si SI-PASS</h2>\n<p>Tako si narediš SI-PASS</p>\n<ul>\n<li>List item</li>\n<li>List item</li>\n</ul>\n<h3>Subheading</h3>\n<p>Another paragraph.</p>\n<hr>\n<p><a class=\"btn btn-primary\" href=\"#\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Button link</a></p>\n\n</div>"
-          },
-          {
-            "_id": "3",
-            "name": "Ne vem, če imam SI-PASS",
-            "type": "link",
-            "content": "<div class=\"article-content\">\n<p>to je samo kopirano iz njihovega sajta, treba uredit:</p>\n<p>Ne vem ali imam račun SI-PASS:\nNa strani Registracija in smsPASS poskusite registrirati račun SI-PASS. Pri izpolnjevanju obrazca Registracija obkljukate &quot;Želim pridobiti tudi smsPASS&quot; in vnesite vaše podatke (ime in priimek, datum rojstva, davčna številka in telefonska številka). Postopek vas bo vodil v preverjanje telefonske številke z vnosom SMS sporočila. \nČe imate že registriran račun SI-PASS,</p>\n<p>ste na e-naslov prejeli obvestilo, da je bil za isti e-naslov že odprt račun SI-PASS. \nZa obstoječi račun SI-PASS potrebujete geslo. Če se gesla ne spomnite, ga ponastavite na strani Ponastavitev gesla. \nPostopek aktivacije smsPASS lahko pričnete na strani Pridobitev smsPASS. Po prijavi z uporabniškim imenom in geslom ter po vnosu obveznih podatkov (ime in priimek, datum rojstva, davčna številka), ter registraciji vaše telefonske številke, bo vaš zahtevek za pridobitev smsPASS posredovan na prijavno službo SI-TRUST. \nZglasiti se morate osebno na prijavni službi SI-TRUST, kjer boste izkazali svojo istovetnost in podpisali zahtevek za pridobitev smsPASS. Pred obiskom prijavne službe na upravni enoti preverite, če se je potrebno predhodno naročiti.\nČe računa še nimate,</p>\n<p>boste na e-naslov prejeli sporočilo o registraciji računa, ki ga morate potrditi.\nZglasiti se morate osebno na prijavni službi SI-TRUST, kjer boste izkazali svojo istovetnost in podpisali zahtevek za pridobitev smsPASS. Pred obiskom prijavne službe na upravni enoti preverite, če se je potrebno predhodno naročiti.\nPo opravljeni identifikaciji in oddanem spletnem zahtevku za smsPASS je storitev smsPASS aktivirana in jo lahko uporabljate takoj. smsPASS lahko uporabljate tako za e-podpisovanje dokumentov kot za prijavo v e-storitve, ki podpirajo smsPASS.</p>\n<p>Videovodič z navodili</p>\n\n</div>"
+            "name": "Podpis želim oddati z računalnikom",
+            "type": "menu",
+            "items": [
+              {
+                "_id": "1",
+                "name": "Imam e-podpis",
+                "type": "menu",
+                "items": [
+                  {
+                    "_id": "1",
+                    "name": "Imam SI-PASS",
+                    "type": "link",
+                    "content": "<div class=\"article-content\">\n<h2>Oddaj podpis z računalnikom</h2>\n<p>Če imaš urejen smsPASS, <strong>lahko s telefonom oddaš podpis</strong> za referendum proti politični policiji:</p>\n<ul>\n<li><p>klikni na spodnji gumb in <strong>obišči portal eUprava</strong>,</p>\n</li>\n<li><p>pri prijavi <strong>SI-PASS</strong> izberi <strong>SI-PASS</strong>,</p>\n</li>\n<li><p>sledi navodilom in <strong>oddaj podpis</strong>.</p>\n</li>\n</ul>\n<p>Priporočamo ti, da delovanje svojega računa SI-PASS <strong>za vsak slučaj preveriš tukaj</strong>.</p>\n\n</div>"
+                  },
+                  {
+                    "_id": "2",
+                    "name": "Imam kvalificirano digitalno potrdilo, Halcom ali Rekono",
+                    "type": "link",
+                    "content": "<div class=\"article-content\">\n<h2>Oddaj podpis z računalnikom</h2>\n<p>Če <strong>imaš kvalificirano digitalno potrdilo</strong> (npr. SIGEN-CA ali Halcom) ali <strong>Rekono račun</strong>, <strong>lahko z računalnikom oddaš podpis</strong> za referendum proti politični policiji.</p>\n<ul>\n<li><p>klikni na spodnji gumb in <strong>obišči portal eUprava</strong>,</p>\n</li>\n<li><p>pri prijavi <strong>SI-PASS</strong> izberi <strong>potrdilo, ki ga imaš</strong>,</p>\n</li>\n<li><p>sledi navodilom in <strong>oddaj podpis</strong>.</p>\n</li>\n</ul>\n<p>Priporočamo ti, da delovanje svojega digitalnega potrdila <strong>za vsak slučaj preveriš tukaj</strong>.</p>\n\n</div>"
+                  },
+                  {
+                    "_id": "3",
+                    "name": "Imam smsPASS",
+                    "type": "link",
+                    "content": "<div class=\"article-content\">\n<h2>Oddaj podpis s telefonom</h2>\n<p>Če imaš urejen smsPASS, <strong>lahko s telefonom oddaš podpis</strong> za referendum proti politični policiji:</p>\n<ul>\n<li><p>klikni na spodnji gumb in <strong>obišči portal eUprava</strong>,</p>\n</li>\n<li><p>pri prijavi <strong>SI-PASS</strong> izberi <strong>smsPASS</strong>,</p>\n</li>\n<li><p>sledi navodilom in <strong>oddaj podpis</strong>.</p>\n</li>\n</ul>\n<p>Priporočamo ti, da delovanje svoje mobilne identitete <strong>za vsak slučaj preveriš tukaj</strong>.</p>\n\n</div>"
+                  }
+                ]
+              },
+              {
+                "_id": "2",
+                "name": "Imam novo osebno izkaznico",
+                "type": "menu",
+                "items": [
+                  {
+                    "_id": "1",
+                    "name": "Znam uporabljati aplikacijo eOsebna",
+                    "type": "link",
+                    "content": "<div class=\"article-content\">\n<h2>Oddaj podpis s telefonom</h2>\n<p>Če imaš novo osebno izkaznico in znaš uporabljati aplikacijo eOsebna, <strong>lahko z računalnikom oddaš podpis</strong> za referendum proti politični policiji:</p>\n<ul>\n<li><p>klikni na spodnji gumb in <strong>obišči portal eUprava</strong>,</p>\n</li>\n<li><p>pri prijavi <strong>SI-PASS</strong> izberi <strong>Mobilna aplikacija eOsebna</strong>,</p>\n</li>\n<li><p>sledi navodilom in <strong>oddaj podpis</strong>.</p>\n</li>\n</ul>\n<p>Priporočamo ti, da delovanje svoje aplikacije <strong>za vsak slučaj preveriš tukaj</strong>.</p>\n\n</div>"
+                  },
+                  {
+                    "_id": "2",
+                    "name": "Ne poznam aplikacije eOsebna",
+                    "type": "link",
+                    "content": "<div class=\"article-content\">\n<h2>Namesti si aplikacijo eOsebna in oddaj podpis</h2>\n<p>Za oddajo podpisa v podporo referendumu proti politični policiji z novo osebno izkaznico <strong>na svoj telefon namesti <a href=\"https://www.si-trust.gov.si/sl/mobilna-aplikacija-eosebna\">aplikacijo eOsebna</a></strong>, ki jo najdeš v trgovini Google Play ali App Store, in <strong>se registriraj</strong>.</p>\n<p>Ko imaš aplikacijo nameščeno, <strong>lahko podpis oddaš v spletnem brskalniku na računalniku</strong>:</p>\n<ul>\n<li><p>klikni na spodnji gumb in <strong>obišči portal eUprava</strong>,</p>\n</li>\n<li><p>pri prijavi <strong>SI-PASS</strong> izberi <strong>Mobilna aplikacija eOsebna</strong>,</p>\n</li>\n<li><p>aplikacija se bo na tvojem telefonu odprla samodejno,</p>\n</li>\n<li><p><strong>osebno izkaznico prisloni na hrbtno stran telefona</strong>, da aplikacija prebere tvoje podatke, nato pa <strong>vnesi izbrano številko PIN</strong>,</p>\n</li>\n<li><p>ko aplikacija potrdi tvojo identiteto, se vrneš v portal eUprava, kjer <strong>oddaš podpis</strong>.</p>\n</li>\n</ul>\n\n</div>"
+                  }
+                ]
+              },
+              {
+                "_id": "3",
+                "name": "Nimam nič od tega",
+                "type": "link",
+                "content": "<div class=\"article-content\">\n<h2>Uredi si digitalno identiteto in oddaj podpis</h2>\n<p>Če za oddajo podpisa z računalnikom nimaš nobene digitalne identitete, izberi eno od naslednjih možnosti</p>\n<h3>Uredi si SI-PASS in smsPASS</h3>\n<p>Postopek za pridobitev digitalne identitete je <strong>zelo preprost</strong> in ga <strong>večinoma opraviš prek spleta</strong>, enkrat pa moraš (zelo na hitro) <strong>tudi na upravno enoto</strong>.</p>\n<p>Kaj moraš narediti?</p>\n<ul>\n<li><p><strong>Začni na spletu</strong>: Obišči <a href=\"https://www.si-trust.gov.si/sl/si-pass/mobilna-identiteta\">spletno mesto SI-PASS</a> in izberi možnost &quot;Nimam računa SI-PASS&quot;.</p>\n</li>\n<li><p><strong>Izberi smsPASS</strong>: Klikni na Registracija in smsPASS.</p>\n</li>\n<li><p><strong>Oddaj obrazec</strong>: Ko izpolniš in oddaš spletni obrazec, na svoj elektronski naslov prejmeš potrdilo o oddani vlogi in referenčno številko.</p>\n</li>\n<li><p><strong>Hiter obisk upravne enote</strong>: To je edini del, ki zahteva tvojo fizično prisotnost. Z veljavnim osebnim dokumentom in referenčno številko <a href=\"https://www.gov.si/drzavni-organi/upravne-enote/\">obišči katero koli upravno enoto</a> v času njihovih uradnih ur, kjer bodo potrdili tvojo identiteto.</p>\n</li>\n</ul>\n<p>Ko si urediš smsPASS, lahko s telefonom oddaš podpis za referendum proti politični policiji.</p>\n<p><a class=\"btn btn-primary\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.si-trust.gov.si/sl/si-pass/mobilna-identiteta\">Začni z registracijo</a></p>\n<h3>Uredi si kvalificirano digitalno potrdilo</h3>\n<p>Če želiš <strong>digitalno podpisovati samo na računalniku</strong> in ne želiš uporabljati mobilne identitete, je najboljša izbira <strong>kvalificirano digitalno potrdilo</strong> (najpogosteje <a href=\"https://www.si-trust.gov.si/sl/digitalna-potrdila\">SIGEN-CA</a>). Potrdilo namestiš v svoj računalnik in z njim varno podpisuješ.</p>\n<p>Zahtevek za pridobitev kvalificiranega digitalnega potrdila <strong>moraš oddati osebno na prijavni službi na upravni enoti</strong>.</p>\n<p>Kaj moraš narediti?</p>\n<ul>\n<li><p><strong>Poišči najboljšo upravno enoto in se naroči</strong>: <a href=\"https://www.gov.si/drzavni-organi/upravne-enote/\">Na seznamu vseh upravnih enot</a> poišči najbližjo in ugotovi, kje se ureja digitalno potrdilo ter ali se moraš za obisk naročiti.</p>\n</li>\n<li><p><strong>Pojdi na upravno enoto</strong>: Zglasi se na prijavni službi in povej, da želiš pridobiti digitalno potrdilo SIGEN-CA za fizične osebe. S seboj <strong>prinesi veljaven osebni dokument, svoj elektronski naslov in telefonsko številko</strong>. Pripravi si tudi <strong>geslo za preklic</strong> (do 20 znakov), ki ga moraš povedati uradni osebi.</p>\n</li>\n<li><p><strong>Namesti potrdilo</strong>: Ko na upravni enoti urediš formalnosti, obišči portal SIGEN-CA in s pridobljenimi podatki potrdilo namesti v svoj računalnik.</p>\n</li>\n</ul>\n<p>Ko si urediš digitalno potrdilo, lahko s telefonom oddaš podpis za referendum proti politični policiji.</p>\n\n</div>"
+              },
+              {
+                "_id": "4",
+                "name": "Ne vem, če imam SI-PASS",
+                "type": "link",
+                "content": "<div class=\"article-content\">\n<h2>Preveri, ali imaš SI-PASS</h2>\n<p>Na <a href=\"https://sicas.gov.si/IdP-RM-Front/registerSMSPass/start.htm\">spletni strani Registracija in smsPASS</a> <strong>poskusi registrirati račun SI-PASS</strong>:</p>\n<ul>\n<li><p>ko izpolnjuješ obrazec Registracija, <strong>obkljukaj &quot;Želim pridobiti tudi smsPASS&quot;</strong>,</p>\n</li>\n<li><p><strong>vnesi svoje podatke</strong> (ime in priimek, datum rojstva, davčna številka in telefonska številka),</p>\n</li>\n<li><p><strong>preveri svojo telefonsko številko</strong> z vnosom kode iz SMS sporočila.</p>\n</li>\n</ul>\n<p>Če SI-PASS že imaš, <strong>na e-naslov prejmeš obvestilo, da je za ta naslov račun že odprt</strong>. Če se ne spomniš gesla, <strong>obišči <a href=\"https://sicas.gov.si/IdP-RM-Front/reset/start.htm\">stran Ponastavitev gesla</a></strong>. Potem <strong>lahko oddaš podpis</strong> za referendum proti politični policiji.</p>\n<p>Če računa SI-PASS še nimaš, pojdi korak nazaj v vodiču in <strong>izberi možnost Nimam nič od tega</strong>.</p>\n\n</div>"
+              }
+            ]
           }
         ]
       },
       {
         "_id": "2",
-        "name": "Podpise želim oddajati na upravni enoti",
+        "name": "Podpis želim oddati na upravni enoti",
         "type": "link",
-        "content": "<div class=\"article-content\">\n<h2>Oddaj podpis na upravni enoti</h2>\n<p>Podpis v podporo referendumu <strong>lahko oddaš na kateri koli upravni enoti v državi</strong>, ne glede na to, kje imaš stalno prebivališče. To lahko storiš <strong>v času uradnih ur</strong>, pri čemer je pomembno vedeti, da je <strong>oddaja podpisa mogoča tudi ob četrtkih</strong>, ko so upravne enote sicer zaprte za večino drugih postopkov.</p>\n<p>Za oddajo overjenega podpisa na upravni enoti potrebuješ le <strong>veljaven osebni dokument</strong> in <strong>podatek o tem, katero referendumsko pobudo želiš podpreti</strong>. O tem podatku te bomo pravočasno obvestili.</p>\n<p>Če ne veš, kje in kdaj oddati podpis, <strong><a href=\"https://www.gov.si/drzavni-organi/upravne-enote/\">pobrskaj po seznamu upravnih enot</a></strong>, kjer so objavljene njihove lokacije in delovni časi.</p>\n<p>Podpis pa <strong>lahko oddaš tudi na krajevnih uradih</strong> posamezne upravne enote, ki se praviloma nahajajo v manjših krajih. Ti uradi pogosto nimajo enakih delovnih časov kot sedeži upravnih enot, saj so lahko odprti le nekaj dni v tednu. Podatke o krajevnih uradih najdeš tako, da na spletnem mestu <strong>izbereš upravno enoto, nato pa možnost O upravni enoti</strong>. Pred obiskom jih lahko tudi pokličeš in preveriš njihov delovni čas.</p>\n<p>Ko oddaš svoj podpis, bo ta v sistemu zabeležen takoj. <strong>Potrdilo o oddaji praviloma ni potrebno</strong>, če pa ga želiš, ti ga mora uradna oseba na tvojo željo izdati.</p>\n\n</div>"
+        "content": "<div class=\"article-content\">\n<h2>Oddaj podpis na upravni enoti</h2>\n<h3>Kje?</h3>\n<p>Podpis v podporo referendumu <strong>lahko oddaš na kateri koli upravni enoti v državi</strong>, ne glede na to, kje imaš stalno prebivališče.</p>\n<p><strong><a href=\"https://www.gov.si/drzavni-organi/upravne-enote/\">Pobrskaj po seznamu upravnih enot</a></strong>, kjer so objavljene njihove lokacije in delovni časi.</p>\n<p>Podpis <strong>lahko oddaš tudi na krajevnih uradih</strong> posamezne upravne enote, ki se praviloma nahajajo v manjših krajih. Podatke o njih najdeš tako, da na zgornjem seznamu <strong>izbereš upravno enoto, nato pa možnost O upravni enoti</strong>.</p>\n<h3>Kdaj?</h3>\n<p>Podpis lahko oddaš <strong>v času uradnih ur</strong>, pri čemer je pomembno vedeti, da je <strong>oddaja mogoča tudi ob četrtkih</strong>, ko so upravne enote sicer zaprte za večino drugih postopkov.</p>\n<p><strong>Krajevni uradi pogosto nimajo enakih delovnih časov kot sedeži upravnih enot</strong>, saj so lahko odprti le nekaj dni v tednu. Zato pred obiskom na zgornjem seznamu <strong>preveri njihov delovni čas</strong>, lahko pa jih tudi pokličeš.</p>\n<h3>Kaj potrebuješ?</h3>\n<p>Za oddajo overjenega podpisa na upravni enoti potrebuješ:</p>\n<ul>\n<li><p><strong>veljaven osebni dokument</strong>,</p>\n</li>\n<li><p><strong>podatek o tem, katero referendumsko pobudo želiš podpreti</strong>.</p>\n</li>\n</ul>\n<p><em>Ko oddaš svoj podpis, bo ta v sistemu zabeležen takoj. Potrdilo o oddaji praviloma ni potrebno, če pa ga želiš, ti ga mora uradna oseba na tvojo željo izdati.</em></p>\n\n</div>"
       }
     ]
   }
