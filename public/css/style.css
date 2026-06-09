@@ -1,9 +1,9 @@
 :root {
-  --bg-color: #fff7db;
-  --bg-hover-color: #f4e2a2;
-  --border-color: #000;
-  --text-color: #000;
-  --text-accent-color: #000;
+  --bg-color: #132e75;
+  --bg-hover-color: #3b6ef7;
+  --border-color: #fff;
+  --text-color: #fff;
+  --text-accent-color: #fff;
 }
 
 *,
@@ -61,6 +61,7 @@ button {
 }
 
 .half-content {
+  background-color: var(--bg-color);
   border: 1px solid var(--border-color);
 }
 @media (max-width: 767.98px) {
@@ -248,7 +249,7 @@ button {
   width: 31px;
   height: 31px;
   font-size: 0;
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 15"><path fill="%23000" d="M29.707 8.071a1 1 0 0 0 0-1.414L23.343.293a1 1 0 1 0-1.414 1.414l5.657 5.657-5.657 5.657a1 1 0 0 0 1.414 1.414zM0 7.364v1h29v-2H0z"/></svg>');
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 15"><path fill="%23fff" d="M29.707 8.071a1 1 0 0 0 0-1.414L23.343.293a1 1 0 1 0-1.414 1.414l5.657 5.657-5.657 5.657a1 1 0 0 0 1.414 1.414zM0 7.364v1h29v-2H0z"/></svg>');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -289,6 +290,7 @@ button {
   font-family: system-ui, sans-serif;
   max-width: 1050px;
   margin: 0 auto;
+  background-color: var(--bg-color);
   color: var(--text-color);
 }
 @media (max-width: 991.98px) {
