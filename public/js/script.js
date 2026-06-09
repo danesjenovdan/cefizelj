@@ -203,7 +203,8 @@ function renderNext(targetnode) {
 
 function createContentHalf(content) {
   var result = '<div class="half half-rightr half-content"><div class="contentcontainer" data-id="0" tabindex="-1">' + content + '</div></div>';
-  $('.half-right').after(result);
+  var $result = setOpenLinksInNewTab(result);
+  $('.half-right').after($result);
   setAllHeights();
   moveLeft();
 }
@@ -211,10 +212,22 @@ function createContentHalf(content) {
 function createUrlHalf(url) {
   $.get(url + '?v=${COMMIT_SHA}', function(r) {
     var result = '<div class="half half-rightr half-content"><div class="contentcontainer" data-id="0" tabindex="-1">' + r + '</div></div>';
-    $('.half-right').after(result);
+    var $result = setOpenLinksInNewTab(result);
+    $('.half-right').after($result);
     setAllHeights();
     moveLeft();
   });
+}
+
+function setOpenLinksInNewTab(html) {
+  var $html = $(html);
+  $html.find('a').each(function() {
+    const href = $(this).attr('href');
+    if (href && !href.startsWith('#')) {
+      $(this).attr('target', '_blank');
+    }
+  });
+  return $html;
 }
 
 // create list half
