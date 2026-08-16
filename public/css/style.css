@@ -31,61 +31,61 @@ button {
   width: auto;
   height: 100%;
   position: relative;
-  overflow: visible;
-  white-space: nowrap;
+  overflow: hidden;
   margin-left: -15px;
   margin-right: -15px;
-  font-size: 0;
-  overflow: hidden;
 }
-/* @media (max-width: 991.98px) {
-  .cefizelj-container {
-    display: flex;
-    flex-direction: column;
-    white-space: normal;
-  }
-} */
 
 .half {
-  width: 50%;
-  height: 100%;
-  display: inline-block;
-  white-space: normal;
-  vertical-align: top;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
   position: relative;
 }
 
 .half-left {
-  width: calc(50% + 1px);
-  margin-right: -1px;
+  height: calc(50% + 1px);
+  margin-bottom: -1px;
+}
+
+/* when the panel below is a content/article page, give the back button
+   half only a quarter of the height so the content half gets more room */
+.half-left:has(+ .half-content) {
+  height: calc(25% + 1px);
 }
 
 .half-content {
   background-color: var(--bg-color);
   border: 1px solid var(--border-color);
+  height: 75%;
 }
 @media (max-width: 767.98px) {
   .half-content {
-    width: 100%;
+    height: 100%;
   }
 }
 
 .item {
   position: relative;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 0;
   cursor: pointer;
   background-color: var(--bg-color);
   border: 1px solid var(--border-color);
-  text-align: left;
+  text-align: center;
   color: var(--text-color);
   user-select: none;
   overflow: hidden;
   z-index: 0;
 }
 .item + .item:not(.stretched) {
-  border-top-width: 0;
+  border-left-width: 0;
 }
 .item.noclick {
   cursor: default;
@@ -164,8 +164,9 @@ button {
 
 .item-root .item-text {
   display: block;
-  text-align: left;
+  text-align: center;
   max-width: 735px;
+  margin-inline: auto;
   font-size: 4.8rem;
   line-height: 1.2;
   font-weight: 700;
@@ -199,6 +200,7 @@ button {
 .item-root .img-root {
   display: block;
   width: 40rem;
+  margin-inline: auto;
   margin-bottom: 3rem;
 }
 @media (max-width: 1399.98px) {
@@ -220,14 +222,91 @@ button {
 .fwd,
 .bck {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-block: 1.5rem;
 }
-.fwd {
-  justify-content: space-between;
+
+/* the back button never shows its info text when it precedes a content
+   (article) page - that page already gets the extra room instead */
+.half-left:has(+ .half-content) .item-info {
+  display: none;
 }
-.bck {
+
+/* when a back-button info text is present, keep the "Nazaj" button content
+   pinned at its natural top position, and let the info block below grow to
+   fill and center itself in the remaining space */
+.half-left:not(:has(+ .half-content)) .item:has(.item-info) > .item-content {
+  padding-block-start: 3rem;
+}
+@media (max-width: 991.98px) {
+  .half-left:not(:has(+ .half-content)) .item:has(.item-info) > .item-content {
+    padding-block-start: 2rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .half-left:not(:has(+ .half-content)) .item:has(.item-info) > .item-content {
+    padding-block-start: 1rem;
+  }
+}
+
+.item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  gap: 1.2rem;
+  max-width: 700px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+}
+
+.item-info-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="%23fff" stroke-width="1.5"/><rect x="11" y="10" width="2" height="7" fill="%23fff"/><rect x="11" y="6.5" width="2" height="2" fill="%23fff"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (max-width: 991.98px) {
+  .item-info-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media (max-width: 575.98px) {
+  .item-info-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.item-info-text {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  opacity: 0.85;
+}
+@media (max-width: 1199.98px) {
+  .item-info-text {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .item-info-text {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .item-info-text {
+    font-size: 1.4rem;
+  }
 }
 @media (max-width: 991.98px) {
   .fwd,
@@ -259,11 +338,12 @@ button {
   left: 0;
 }
 .fwd::after {
-  margin-left: 10px;
+  margin-top: 10px;
+  transform: rotate(90deg);
 }
 .bck::before {
-  margin-right: 10px;
-  transform: rotate(180deg);
+  margin-bottom: 10px;
+  transform: rotate(270deg);
 }
 @media (max-width: 991.98px) {
   .fwd::after,
@@ -282,6 +362,7 @@ button {
 
 .contentcontainer {
   overflow-y: auto;
+  width: 100%;
   height: 100%;
 }
 

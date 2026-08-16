@@ -22,6 +22,9 @@ var itemHTML = `<button class="item" data-id="{{ id }}">
   </div>
 </button>`;
 
+// placeholder back button info text
+var backInfoText = 'SI-PASS je državni sistem za urejanje spletni lovenski nacionalni sistem, ki deluje kot enotna točka za varno spletno prijavo in elektronsko podpisovanje.';
+
 var tabletItemSize = 100;
 var tabletWidth = 992;
 var windowWidth = $(window).width();
@@ -31,26 +34,26 @@ var windowHeight = $(window).height();
 // FIRST PAINT
 // ---
 
-function getItemHeight(i, e) {
-  const parentHeight = e.parentElement.getBoundingClientRect().height;
+function getItemWidth(i, e) {
+  const parentWidth = e.parentElement.getBoundingClientRect().width;
   const numItems = e.parentElement.querySelectorAll('.item').length;
-  return parentHeight / numItems;
+  return parentWidth / numItems;
 }
 
-function setItemHeight(i, e) {
-  e.style.height = `${getItemHeight(i, e)}px`;
+function setItemWidth(i, e) {
+  e.style.width = `${getItemWidth(i, e)}px`;
 }
 
-function setStretchedItemHeight(i, e) {
-  const parentHeight = e.parentElement.getBoundingClientRect().height;
-  e.style.height = `${parentHeight}px`;
+function setStretchedItemWidth(i, e) {
+  const parentWidth = e.parentElement.getBoundingClientRect().width;
+  e.style.width = `${parentWidth}px`;
 }
 
-// set correct item heights
-function setAllHeights() {
+// set correct item widths
+function setAllSizes() {
   $('.cefizelj-container').height('100vh');
-  $('.item').not('.stretched, .shrunk').each(setItemHeight);
-  $('.item.stretched').each(setStretchedItemHeight);
+  $('.item').not('.stretched, .shrunk').each(setItemWidth);
+  $('.item.stretched').each(setStretchedItemWidth);
 }
 
 // api tree getter
@@ -110,7 +113,7 @@ async function generateFirstNode() {
           .replace(/{{ itemcontent }}/g, node.name)
       );
   }
-  setAllHeights();
+  setAllSizes();
 }
 
 // ---
@@ -159,13 +162,22 @@ function animationFinished() {
     $('.half-left .item:not(.shrunk):not(.noclick), .half-right .item:not(.shrunk):not(.noclick)').removeAttr('tabindex');
 
     // set back button text and classes
-    const itemContent = $('.half-left .item.stretched .item-content');
+    const stretchedItem = $('.half-left .item.stretched');
+    const itemContent = stretchedItem.children('.item-content');
     const itemText = itemContent.children('.item-text');
     itemText.removeClass('fwd').addClass('bck').text('Nazaj');
 
     // add hidden title for screen readers if it doesn't exist
     if (!itemContent.children('h1.sr-only').length) {
       itemContent.append(`<h1 class="sr-only">${itemText.data('text')}</h1>`);
+    }
+
+    // add back button info text (with icon) if it doesn't exist
+    if (!stretchedItem.children('.item-info').length) {
+      $('<div class="item-info"></div>')
+        .append('<span class="item-info-icon" aria-hidden="true"></span>')
+        .append($('<span class="item-info-text"></span>').text(backInfoText))
+        .appendTo(stretchedItem);
     }
   }
 }
@@ -194,10 +206,10 @@ function renderNext(targetnode) {
   } else if ((targetnode.items[0].type == 'menu') || (targetnode.items[0].type == 'link')) {
     // render list
     $('.half-right').after(createListHalf(targetnode.items));
-    setAllHeights();
-    moveLeft();
+    setAllSizes();
+    moveUp();
   } else {
-    moveLeft();
+    moveUp();
   }
 }
 
@@ -205,8 +217,8 @@ function createContentHalf(content) {
   var result = '<div class="half half-rightr half-content"><div class="contentcontainer" data-id="0" tabindex="-1">' + content + '</div></div>';
   var $result = setOpenLinksInNewTab(result);
   $('.half-right').after($result);
-  setAllHeights();
-  moveLeft();
+  setAllSizes();
+  moveUp();
 }
 
 function createUrlHalf(url) {
@@ -214,8 +226,8 @@ function createUrlHalf(url) {
     var result = '<div class="half half-rightr half-content"><div class="contentcontainer" data-id="0" tabindex="-1">' + r + '</div></div>';
     var $result = setOpenLinksInNewTab(result);
     $('.half-right').after($result);
-    setAllHeights();
-    moveLeft();
+    setAllSizes();
+    moveUp();
   });
 }
 
@@ -244,10 +256,10 @@ function createListHalf(items) {
   return result;
 }
 
-// move left and cleanup (next)
-function moveLeft() {
+// move up and cleanup (next)
+function moveUp() {
   function cleanup() {
-    $('.half-leftr').removeClass('half-leftr'); // remove hidden left
+    $('.half-leftr').removeClass('half-leftr'); // remove hidden top
 
     // update classes
     $('.half-left').removeClass('half-left').addClass('half-leftr').hide(); // left -> leftr
@@ -259,12 +271,12 @@ function moveLeft() {
   }
 
   if (windowWidth < 768 && $('.half-rightr').hasClass('half-content')) {
-    $('.half-left').animate({ 'margin-left': '-100%' }, animateSpeedMove, () => {
+    $('.half-left').animate({ 'margin-top': '-100%' }, animateSpeedMove, () => {
       cleanup();
       $('.half-left').hide();
     });
   } else {
-    $('.half-left').animate({ 'margin-left': '-50%' }, animateSpeedMove, cleanup);
+    $('.half-left').animate({ 'margin-top': '-50%' }, animateSpeedMove, cleanup);
   }
 }
 
@@ -289,8 +301,8 @@ function displayPreviousHalf() {
 
   $('.half-leftr').show(); // always hidden after moving offscreen
   $('.half-left').show(); // in case it was hidden on mobile
-  setAllHeights();
-  $('.half-leftr').animate({ 'margin-left': 0 }, animateSpeedMove, function() {
+  setAllSizes();
+  $('.half-leftr').animate({ 'margin-top': 0 }, animateSpeedMove, function() {
     // cleanup
     $('.half-right').remove();
 
@@ -310,24 +322,24 @@ function displayPreviousHalf() {
 // stretch item to fill height
 function stretchItem(item) {
   const e = item[0];
-  const parentHeight = e.parentElement.getBoundingClientRect().height;
+  const parentWidth = e.parentElement.getBoundingClientRect().width;
   item
-    .animate({ height: parentHeight }, animateSpeedStretch, function() {
+    .animate({ width: parentWidth }, animateSpeedStretch, function() {
       $(this).addClass('stretched');
     });
   item
     .siblings()
-    .animate({ height: 0 }, animateSpeedStretch, function() {
+    .animate({ width: 0 }, animateSpeedStretch, function() {
       $(this).addClass('shrunk').attr('tabindex', '-1').hide();
     });
 }
 
-// shrink item to proportional height of all items
+// shrink item to proportional width of all items
 function shrinkItemAndSiblings(item) {
-  const itemHeight = getItemHeight(0, item[0]);
+  const itemWidth = getItemWidth(0, item[0]);
   item.parent().children('.item')
     .show()
-    .animate({ height: itemHeight }, animateSpeedStretch, function() {
+    .animate({ width: itemWidth }, animateSpeedStretch, function() {
       $(this).removeClass('stretched shrunk').removeAttr('tabindex');
     });
 }
@@ -363,6 +375,7 @@ function onBackItemClick(item) {
   // remove hidden title for screen readers
   const itemContent = item.children('.item-content');
   itemContent.children('h1.sr-only').remove();
+  item.children('.item-info').remove();
 
   // change text from nazaj to whatever it's supposed to be
   const itemText = itemContent.children('.item-text');
@@ -394,13 +407,13 @@ $(document).ready(function() {
   // first, set all heights
   windowWidth = $(window).width();
   windowHeight = $(window).height();
-  setAllHeights();
+  setAllSizes();
 
   // set onresize events
   $(window).on('resize', function() {
     windowWidth = $(window).width();
     windowHeight = $(window).height();
-    setAllHeights();
+    setAllSizes();
   });
 
   // get tree and start app
