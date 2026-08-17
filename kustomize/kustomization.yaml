@@ -6,6 +6,6 @@ resources:
   - service.yaml
   - ingress.yaml
 images:
-  - name: volitveni-vodic-razkroj-2026
-    newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-razkroj-2026
-    newTag: '75eb21426a78b708a63d45018e38120b24d25f38'
+  - name: volitveni-vodic-mocljudem-digitalna-identiteta-2026
+    newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-mocljudem-digitalna-identiteta-2026
+    newTag: "latest"

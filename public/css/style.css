@@ -1,9 +1,24 @@
+@font-face {
+  font-family: "wf-mango-grotesque";
+  font-weight: 400;
+  font-style: normal;
+  src: url("fonts/MangoGrotesque-Regular.woff2") format("woff2");
+}
+
 :root {
-  --bg-color: #132e75;
-  --bg-hover-color: #1f4ec7;
+  --bg-color: #000000;
+  --bg-hover-color: #131211;
   --border-color: #fff;
   --text-color: #fff;
   --text-accent-color: #fff;
+  --outline-color: #ffae00;
+  --outline-width: 4px;
+  --outline-offset: -4px;
+  --outline-link-color: var(--outline-color);
+  --outline-link-width: 2px;
+  --outline-link-offset: 1px;
+  --button-bg-color: #ce9bff;
+  --button-color: var(--bg-color);
 }
 
 *,
@@ -38,13 +53,6 @@ button {
   font-size: 0;
   overflow: hidden;
 }
-/* @media (max-width: 991.98px) {
-  .cefizelj-container {
-    display: flex;
-    flex-direction: column;
-    white-space: normal;
-  }
-} */
 
 .half {
   width: 50%;
@@ -96,16 +104,16 @@ button {
 
 .item:not(.noclick):hover,
 .item:not(.noclick):focus-visible {
-  background-color: var(--bg-hover-color);
   color: var(--text-color);
   z-index: 1000;
 }
 .item:not(.noclick):hover {
-  box-shadow: 0 0 0 1px var(--border-color) inset;
+  background-color: var(--bg-hover-color);
+  box-shadow: 0 0 0 2px var(--border-color) inset;
 }
 .item:not(.noclick):focus-visible {
-  outline: 2px solid var(--border-color);
-  outline-offset: -5px;
+  outline: var(--outline-width) solid var(--outline-color);
+  outline-offset: var(--outline-offset);
 }
 
 .item-content {
@@ -165,56 +173,47 @@ button {
 .item-root .item-text {
   display: block;
   text-align: left;
-  max-width: 735px;
-  font-size: 4.8rem;
-  line-height: 1.2;
+  max-width: 610px;
+  font-family: "wf-mango-grotesque", sans-serif;
+  font-size: 10rem;
+  line-height: 0.9;
   font-weight: 700;
+  text-transform: uppercase;
 }
 @media (max-width: 1399.98px) {
   .item-root .item-text {
-    font-size: 3.6rem;
+    font-size: 9rem;
   }
 }
 @media (max-width: 1199.98px) {
   .item-root .item-text {
-    font-size: 3.2rem;
+    font-size: 7rem;
+    max-width: 480px;
   }
 }
 @media (max-width: 991.98px) {
   .item-root .item-text {
-    font-size: 2.8rem;
+    font-size: 5rem;
+    max-width: 350px;
   }
 }
 @media (max-width: 767.98px) {
   .item-root .item-text {
-    font-size: 2.4rem;
+    font-size: 4rem;
+    max-width: 260px;
   }
 }
 @media (max-width: 575.98px) {
   .item-root .item-text {
-    font-size: 1.8rem;
+    font-size: 3.5rem;
+    max-width: 240px;
   }
 }
 
 .item-root .img-root {
   display: block;
-  width: 40rem;
-  margin-bottom: 3rem;
-}
-@media (max-width: 1399.98px) {
-  .item-root .img-root {
-    width: 30rem;
-  }
-}
-@media (max-width: 991.98px) {
-  .item-root .img-root {
-    width: 75%;
-  }
-}
-@media (max-width: 575.98px) {
-  .item-root .img-root {
-    width: 100%;
-  }
+  width: 3.25em;
+  margin-top: 0.45em;
 }
 
 .fwd,
@@ -286,7 +285,7 @@ button {
 }
 
 .article-content {
-  padding: 2rem 4rem;
+  padding: 4rem;
   font-family: system-ui, sans-serif;
   max-width: 1050px;
   margin: 0 auto;
@@ -357,8 +356,8 @@ button {
   text-decoration: none;
 }
 .article-content a:focus-visible {
-  outline: 2px solid var(--border-color);
-  outline-offset: 2px;
+  outline: var(--outline-link-width) solid var(--outline-link-color);
+  outline-offset: var(--outline-link-offset);
 }
 
 .article-content strong {
@@ -366,9 +365,9 @@ button {
 }
 
 .article-content .btn.btn-primary {
-  background: var(--bg-color);
-  border-color: var(--border-color);
-  color: var(--text-accent-color);
+  background: var(--button-bg-color);
+  border-color: var(--button-color);
+  color: var(--button-color);
   border-radius: 0;
   padding: 1.5rem 2rem;
   font-weight: 600;
@@ -387,14 +386,9 @@ button {
   }
 }
 
-.article-content .btn.btn-primary:hover,
-.article-content .btn.btn-primary:focus-visible {
-  background-color: var(--bg-hover-color);
-}
 .article-content .btn.btn-primary:hover {
-  box-shadow: 0 0 0 1px var(--border-color) inset;
-}
-.article-content .btn.btn-primary:focus-visible {
-  outline: 2px solid var(--border-color);
-  outline-offset: -5px;
+  background-color: var(--button-color);
+  color: var(--button-bg-color);
+  border-color: var(--button-bg-color);
+  box-shadow: 0 0 0 3px var(--button-bg-color) inset;
 }

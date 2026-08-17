@@ -99,7 +99,7 @@ async function generateFirstNode() {
     });
     img.classList.add('img-root');
     img.alt = '';
-    $('.half-left .fwd').addClass('has-img-root').prepend(img);
+    $('.half-left .fwd').addClass('has-img-root').append(img);
   }
   for (var i in basenode.items) {
     var node = basenode.items[i];

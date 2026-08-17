@@ -1,4 +1,3 @@
-cefizelj
-========
+# cefizelj
 
-RAZKROJ 2026
+mocljudem-digitalna-identiteta-2026

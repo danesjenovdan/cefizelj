@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: volitveni-vodic-razkroj-2026
+  name: volitveni-vodic-mocljudem-digitalna-identiteta-2026
   labels:
-    app: volitveni-vodic-razkroj-2026
+    app: volitveni-vodic-mocljudem-digitalna-identiteta-2026
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: volitveni-vodic-razkroj-2026
+      app: volitveni-vodic-mocljudem-digitalna-identiteta-2026
   template:
     metadata:
       labels:
-        app: volitveni-vodic-razkroj-2026
+        app: volitveni-vodic-mocljudem-digitalna-identiteta-2026
     spec:
       containers:
-        - name: volitveni-vodic-razkroj-2026
-          image: volitveni-vodic-razkroj-2026
+        - name: volitveni-vodic-mocljudem-digitalna-identiteta-2026
+          image: volitveni-vodic-mocljudem-digitalna-identiteta-2026
           ports:
             - containerPort: 80
           resources:
