@@ -10,15 +10,16 @@
   --bg-hover-color: #131211;
   --border-color: #fff;
   --text-color: #fff;
-  --text-accent-color: #fff;
   --outline-color: #ffae00;
+  --outline-focus-color: #ce9bff;
   --outline-width: 4px;
-  --outline-offset: -4px;
-  --outline-link-color: var(--outline-color);
+  --outline-offset: -12px;
+  --outline-link-color: #ffae00;
   --outline-link-width: 2px;
   --outline-link-offset: 1px;
   --button-bg-color: #ce9bff;
   --button-color: var(--bg-color);
+  --link-color: var(--button-bg-color);
 }
 
 *,
@@ -109,10 +110,10 @@ button {
 }
 .item:not(.noclick):hover {
   background-color: var(--bg-hover-color);
-  box-shadow: 0 0 0 2px var(--border-color) inset;
+  box-shadow: 0 0 0 4px var(--outline-color) inset;
 }
 .item:not(.noclick):focus-visible {
-  outline: var(--outline-width) solid var(--outline-color);
+  outline: var(--outline-width) solid var(--outline-focus-color);
   outline-offset: var(--outline-offset);
 }
 
@@ -346,13 +347,13 @@ button {
 }
 
 .article-content a {
-  color: var(--border-color);
+  color: var(--link-color);
   font-weight: 600;
   font-size: inherit;
   text-decoration: underline;
 }
 .article-content a:hover {
-  color: var(--text-color);
+  color: var(--link-color);
   text-decoration: none;
 }
 .article-content a:focus-visible {
