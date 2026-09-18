@@ -2,7 +2,7 @@ name: Build and publish Docker image
 on:
   push:
     branches:
-      - "mocljudem-digitalna-identiteta-2026"
+      - "4xproti"
 jobs:
   push_to_registry:
     name: Build and push Docker image to registry
@@ -32,8 +32,8 @@ jobs:
             COMMIT_SHA=${{ github.sha }}
           push: true
           tags: |
-            rg.fr-par.scw.cloud/djnd/volitveni-vodic-mocljudem-digitalna-identiteta-2026:${{ github.sha }}
-            rg.fr-par.scw.cloud/djnd/volitveni-vodic-mocljudem-digitalna-identiteta-2026:latest
+            rg.fr-par.scw.cloud/djnd/volitveni-vodic-4xproti:${{ github.sha }}
+            rg.fr-par.scw.cloud/djnd/volitveni-vodic-4xproti:latest
 
       - name: Update image versions in kustomize/kustomization.yaml
         run: |
