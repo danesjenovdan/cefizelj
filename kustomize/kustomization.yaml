@@ -8,4 +8,4 @@ resources:
 images:
   - name: volitveni-vodic-4xproti
     newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-4xproti
-    newTag: '8fe9d57b531d5e4a63afb2cecec1c4fc760ba3c5'
+    newTag: 'f40368cd315dbc4e7be51dd5f44bb158259c7747'
