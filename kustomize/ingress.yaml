@@ -1,7 +1,7 @@
 apiVersion: traefik.io/v1alpha1
 kind: Middleware
 metadata:
-  name: razkroj-2026-add-trailing-slash
+  name: politicna-policija-2026-add-trailing-slash
 spec:
   redirectRegex:
     regex: (/referendum/proti-politicni-policiji)(\?.*)?$
@@ -11,7 +11,7 @@ spec:
 apiVersion: traefik.io/v1alpha1
 kind: Middleware
 metadata:
-  name: razkroj-2026-strip-prefix
+  name: politicna-policija-2026-strip-prefix
 spec:
   stripPrefix:
     prefixes:
@@ -20,15 +20,15 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: volitveni-vodic-razkroj-2026
+  name: volitveni-vodic-politicna-policija-2026
   annotations:
     # Do not put cert manager here, root redirect ingress (in `ops` repo) will handle it.
     # If we put it here, they will both try to issue the certificate and letsencrypt will rate limit us.
     traefik.ingress.kubernetes.io/router.middlewares: |
       traefik-redirect-to-https@kubernetescrd,
       vodici-redirect-domain@kubernetescrd,
-      vodici-razkroj-2026-add-trailing-slash@kubernetescrd,
-      vodici-razkroj-2026-strip-prefix@kubernetescrd
+      vodici-politicna-policija-2026-add-trailing-slash@kubernetescrd,
+      vodici-politicna-policija-2026-strip-prefix@kubernetescrd
 spec:
   ingressClassName: traefik
   rules:
@@ -39,6 +39,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: volitveni-vodic-razkroj-2026
+                name: volitveni-vodic-politicna-policija-2026
                 port:
                   number: 80
