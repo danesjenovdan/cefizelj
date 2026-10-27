@@ -8,4 +8,4 @@ resources:
 images:
   - name: volitveni-vodic-mocljudem-digitalna-identiteta-2026
     newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-mocljudem-digitalna-identiteta-2026
-    newTag: 'f89a7729438113ca8ee78a27453e398224aaaf3d'
+    newTag: 'f89a7729438113ca8ee78a27453e398224aaaf3d' #
