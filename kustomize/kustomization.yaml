@@ -8,4 +8,4 @@ resources:
 images:
   - name: volitveni-vodic-politicna-policija-2026
     newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-politicna-policija-2026
-    newTag: 'fee687d4ea87e80c1ee773d69ddcdb1f276997a3'
+    newTag: 'fee687d4ea87e80c1ee773d69ddcdb1f276997a3' #
