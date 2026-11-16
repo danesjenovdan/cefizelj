@@ -384,7 +384,7 @@ button {
 
 .article-content .btn.btn-primary:hover {
   background-color: var(--button-color);
-  color: var(--button-bg-color);
+  color: var(--text-color);
   border-color: var(--button-bg-color);
   box-shadow: 0 0 0 3px var(--button-bg-color) inset;
 }
