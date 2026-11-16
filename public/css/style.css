@@ -1,8 +1,8 @@
 @font-face {
-  font-family: "wf-mango-grotesque";
-  font-weight: 400;
+  font-family: "wf-anybody";
+  font-weight: 600;
   font-style: normal;
-  src: url("fonts/MangoGrotesque-Regular.woff2") format("woff2");
+  src: url("fonts/Anybody-SemiBold.woff2") format("woff2");
 }
 
 :root {
@@ -174,46 +174,41 @@ button {
 .item-root .item-text {
   display: block;
   text-align: left;
-  max-width: 610px;
-  font-family: "wf-mango-grotesque", sans-serif;
-  font-size: 10rem;
+  max-width: 600px;
+  font-family: "wf-anybody", sans-serif;
+  font-size: 6rem;
   line-height: 0.9;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
 }
 @media (max-width: 1399.98px) {
   .item-root .item-text {
-    font-size: 9rem;
+    font-size: 5rem;
+    max-width: 515px;
   }
 }
 @media (max-width: 1199.98px) {
   .item-root .item-text {
-    font-size: 7rem;
-    max-width: 480px;
+    font-size: 4rem;
+    max-width: 410px;
   }
 }
 @media (max-width: 991.98px) {
   .item-root .item-text {
-    font-size: 5rem;
+    font-size: 4rem;
     max-width: 350px;
   }
 }
 @media (max-width: 767.98px) {
   .item-root .item-text {
-    font-size: 4rem;
-    max-width: 260px;
-  }
-}
-@media (max-width: 575.98px) {
-  .item-root .item-text {
-    font-size: 3.5rem;
-    max-width: 240px;
+    font-size: 2.5rem;
+    max-width: 245px;
   }
 }
 
 .item-root .img-root {
   display: block;
-  width: 3.25em;
+  width: 4em;
   margin-top: 0.45em;
 }
 
