@@ -1,3 +1,3 @@
 # cefizelj
 
-4xproti
+zakon-za-bogate

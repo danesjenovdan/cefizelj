@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: volitveni-vodic-4xproti
+  name: volitveni-vodic-zakon-za-bogate
 spec:
   selector:
-    app: volitveni-vodic-4xproti
+    app: volitveni-vodic-zakon-za-bogate
   ports:
     - protocol: TCP
       port: 80

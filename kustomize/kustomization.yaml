@@ -6,6 +6,6 @@ resources:
   - service.yaml
   - ingress.yaml
 images:
-  - name: volitveni-vodic-4xproti
-    newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-4xproti
+  - name: volitveni-vodic-zakon-za-bogate
+    newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-zakon-za-bogate
     newTag: '99cb97335ace9114a7c977905cfc0f6b81d70cc9'

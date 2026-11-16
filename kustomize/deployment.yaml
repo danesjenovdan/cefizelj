@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: volitveni-vodic-4xproti
+  name: volitveni-vodic-zakon-za-bogate
   labels:
-    app: volitveni-vodic-4xproti
+    app: volitveni-vodic-zakon-za-bogate
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: volitveni-vodic-4xproti
+      app: volitveni-vodic-zakon-za-bogate
   template:
     metadata:
       labels:
-        app: volitveni-vodic-4xproti
+        app: volitveni-vodic-zakon-za-bogate
     spec:
       containers:
-        - name: volitveni-vodic-4xproti
-          image: volitveni-vodic-4xproti
+        - name: volitveni-vodic-zakon-za-bogate
+          image: volitveni-vodic-zakon-za-bogate
           ports:
             - containerPort: 80
           resources:
