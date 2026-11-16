@@ -8,4 +8,4 @@ resources:
 images:
   - name: volitveni-vodic-zakon-za-bogate
     newName: rg.fr-par.scw.cloud/djnd/volitveni-vodic-zakon-za-bogate
-    newTag: 'dc18df3aa24d0e22a922c68c382db39c348a422c'
+    newTag: 'bc6ab68a2437bb19c998671f9c0efc098a4e295c'
